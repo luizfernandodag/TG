@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.5)  30 JAN 2016 15:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.5)  18 FEB 2016 20:48
 entering extended mode
 **./principal_relatorio.tex
 (principal_relatorio.tex
@@ -364,6 +364,47 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\listingsutf8.sty"
+Package: listingsutf8 2011/11/10 v1.2 Allow UTF-8 in listings input (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count112
+\lst@gtempboxa=\box33
+\lst@token=\toks48
+\lst@length=\count113
+\lst@currlwidth=\dimen136
+\lst@column=\count114
+\lst@pos=\count115
+\lst@lostspace=\dimen137
+\lst@width=\dimen138
+\lst@newlines=\count116
+\lst@lineno=\count117
+\lst@maxwidth=\dimen139
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count118
+\lst@skipnumbers=\count119
+\lst@framebox=\box34
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\stringenc.sty"
+Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdfescape.sty"
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 ) (ft2unb.sty
 Package: ft2unb 2006/03/19 v1.0
 
@@ -379,36 +420,40 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 
 Writing index file principal_relatorio.idx
 (principal_relatorio.aux (resumos.aux) (simbolos.aux) (cap_Introducao.aux)
-(cap_RevisaoBibliografica.aux) (cap_Desenvolvimento.aux) (cap_Experimentos.aux)
-(cap_Conclusoes.aux) (anexo_Esquematicos.aux) (anexo_CD.aux))
+(cap_RevisaoBibliografica.aux
+
+LaTeX Warning: Label `CapIntro' multiply defined.
+
+) (cap_Desenvolvimento.aux) (cap_Experimentos.aux) (cap_Conclusoes.aux)
+(anexo_Esquematicos.aux) (anexo_CD.aux))
 \openout1 = `principal_relatorio.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
-\scratchdimen=\dimen136
-\scratchbox=\box33
-\nofMPsegments=\count113
-\nofMParguments=\count114
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count115
-\MPscratchDim=\dimen137
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
-\everyMPtoPDFconversion=\toks49
+\scratchcounter=\count120
+\scratchdimen=\dimen140
+\scratchbox=\box35
+\nofMPsegments=\count121
+\nofMParguments=\count122
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count123
+\MPscratchDim=\dimen141
+\MPnumerator=\count124
+\makeMPintoPDFobject=\count125
+\everyMPtoPDFconversion=\toks50
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -444,12 +489,19 @@ LaTeX Font Info:    ... okay on input line 48.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box34
-LaTeX Font Info:    Try loading font information for U+msa on input line 104.
+\c@lstlisting=\count126
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks51
+\inpenc@posthook=\toks52
+)
+\AtBeginShipoutBox=\box36
+LaTeX Font Info:    Try loading font information for U+msa on input line 169.
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 104.
+LaTeX Font Info:    Try loading font information for U+msb on input line 169.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -495,6 +547,10 @@ nd font file missing
 
  (cap_Introducao.tex
 Cap\'{\i }tulo 1.
+
+LaTeX Warning: Reference `CapRevisaoBibliografica' on page 1 undefined on input
+ line 22.
+
 ) [1
 
 
@@ -504,7 +560,6 @@ Cap\'{\i }tulo 1.
 \openout2 = `cap_RevisaoBibliografica.aux'.
 
  (cap_RevisaoBibliografica.tex
-Cap\'{\i }tulo 2.
 Package epstopdf Info: Source file: <figs/atuador_malha_de_controle.eps>
 (epstopdf)                    date: 2006-01-17 01:25:18
 (epstopdf)                    size: 139869 bytes
@@ -514,26 +569,26 @@ ed-to.pdf>
 (epstopdf)                    size: 28627 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/atuador_malha_de_contr
 ole-eps-converted-to.pdf figs/atuador_malha_de_controle.eps>
-(epstopdf)             \includegraphics on input line 20.
+(epstopdf)             \includegraphics on input line 141.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/atuador_malha_de_controle-eps-converted-to.pdf, id=45, 188.705pt x 42.157
+<figs/atuador_malha_de_controle-eps-converted-to.pdf, id=46, 188.705pt x 42.157
 5pt>
 File: figs/atuador_malha_de_controle-eps-converted-to.pdf Graphic file (type pd
 f)
  <use figs/atuador_malha_de_controle-eps-converted-to.pdf>
 Package pdftex.def Info: figs/atuador_malha_de_controle-eps-converted-to.pdf us
-ed on input line 20.
+ed on input line 141.
 (pdftex.def)             Requested size: 371.48076pt x 82.99733pt.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 27.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 148.
+
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [2
 
 
-
-]
+ <./figs/atuador_malha_de_controle-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/atuador_classe_B.eps>
 (epstopdf)                    date: 2006-01-17 02:49:54
 (epstopdf)                    size: 144281 bytes
@@ -543,15 +598,15 @@ Package epstopdf Info: Source file: <figs/atuador_classe_B.eps>
 (epstopdf)                    size: 29595 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/atuador_classe_B-eps-c
 onverted-to.pdf figs/atuador_classe_B.eps>
-(epstopdf)             \includegraphics on input line 35.
+(epstopdf)             \includegraphics on input line 156.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/atuador_classe_B-eps-converted-to.pdf, id=51, 110.4125pt x 110.4125pt>
+<figs/atuador_classe_B-eps-converted-to.pdf, id=54, 110.4125pt x 110.4125pt>
 File: figs/atuador_classe_B-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/atuador_classe_B-eps-converted-to.pdf>
 Package pdftex.def Info: figs/atuador_classe_B-eps-converted-to.pdf used on inp
-ut line 35.
+ut line 156.
 (pdftex.def)             Requested size: 162.52504pt x 162.53352pt.
 Package epstopdf Info: Source file: <figs/atuador_classe_AB.eps>
 (epstopdf)                    date: 2006-01-17 03:37:38
@@ -562,15 +617,15 @@ f>
 (epstopdf)                    size: 42721 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/atuador_classe_AB-eps-
 converted-to.pdf figs/atuador_classe_AB.eps>
-(epstopdf)             \includegraphics on input line 35.
+(epstopdf)             \includegraphics on input line 156.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/atuador_classe_AB-eps-converted-to.pdf, id=52, 121.45375pt x 114.4275pt>
+<figs/atuador_classe_AB-eps-converted-to.pdf, id=55, 121.45375pt x 114.4275pt>
 File: figs/atuador_classe_AB-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/atuador_classe_AB-eps-converted-to.pdf>
 Package pdftex.def Info: figs/atuador_classe_AB-eps-converted-to.pdf used on in
-put line 35.
+put line 156.
 (pdftex.def)             Requested size: 185.73683pt x 174.99142pt.
 Package epstopdf Info: Source file: <figs/atuador_classe_AB_multVBE.eps>
 (epstopdf)                    date: 2006-01-17 12:06:38
@@ -581,59 +636,59 @@ ed-to.pdf>
 (epstopdf)                    size: 53786 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/atuador_classe_AB_mult
 VBE-eps-converted-to.pdf figs/atuador_classe_AB_multVBE.eps>
-(epstopdf)             \includegraphics on input line 37.
+(epstopdf)             \includegraphics on input line 158.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/atuador_classe_AB_multVBE-eps-converted-to.pdf, id=53, 138.5175pt x 126.4
+<figs/atuador_classe_AB_multVBE-eps-converted-to.pdf, id=56, 138.5175pt x 126.4
 725pt>
 File: figs/atuador_classe_AB_multVBE-eps-converted-to.pdf Graphic file (type pd
 f)
  <use figs/atuador_classe_AB_multVBE-eps-converted-to.pdf>
 Package pdftex.def Info: figs/atuador_classe_AB_multVBE-eps-converted-to.pdf us
-ed on input line 37.
+ed on input line 158.
 (pdftex.def)             Requested size: 208.9557pt x 190.78703pt.
-) [3 <./figs/atuador_malha_de_controle-eps-converted-to.pdf>] [4 <./figs/atuado
-r_classe_B-eps-converted-to.pdf> <./figs/atuador_classe_AB-eps-converted-to.pdf
-> <./figs/atuador_classe_AB_multVBE-eps-converted-to.pdf>]
+) [3 <./figs/atuador_classe_B-eps-converted-to.pdf> <./figs/atuador_classe_AB-e
+ps-converted-to.pdf> <./figs/atuador_classe_AB_multVBE-eps-converted-to.pdf>]
 \openout2 = `cap_Desenvolvimento.aux'.
 
- (cap_Desenvolvimento.tex
-Cap\'{\i }tulo 3.
-[5
+
+(cap_Desenvolvimento.tex
+Cap\'{\i }tulo 2.
+[4
 
 
 
-]) [6]
+]) [5]
 \openout2 = `cap_Experimentos.aux'.
 
  (cap_Experimentos.tex
-Cap\'{\i }tulo 4.
-) [7
+Cap\'{\i }tulo 3.
+) [6
 
 
 
-] [8]
+] [7]
 \openout2 = `cap_Conclusoes.aux'.
 
  (cap_Conclusoes.tex
-Cap\'{\i }tulo 5.
-) [9
+Cap\'{\i }tulo 4.
+) [8
 
 
 
-] (principal_relatorio.bbl) [10
+] (principal_relatorio.bbl) [9
 
 
 ]
-\c@noAnexo=\count118
- [11
+\c@noAnexo=\count127
+ [10
 
 ]
 \openout2 = `anexo_Esquematicos.aux'.
 
  (anexo_Esquematicos.tex
 ANEXO I.
-) [12
+) [11
 
 
 ]
@@ -641,7 +696,7 @@ ANEXO I.
 
  (anexo_CD.tex
 ANEXO II.
-) [13
+) [12
 
 
 
@@ -652,45 +707,52 @@ ANEXO II.
  (principal_relatorio.aux (resumos.aux) (simbolos.aux)
 (cap_Introducao.aux) (cap_RevisaoBibliografica.aux) (cap_Desenvolvimento.aux)
 (cap_Experimentos.aux) (cap_Conclusoes.aux) (anexo_Esquematicos.aux)
-(anexo_CD.aux)) ) 
+(anexo_CD.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5083 strings out of 493634
- 68512 string characters out of 3143748
- 150706 words of memory out of 3000000
- 8231 multiletter control sequences out of 15000+200000
+ 6548 strings out of 493634
+ 90863 string characters out of 3143748
+ 189887 words of memory out of 3000000
+ 9666 multiletter control sequences out of 15000+200000
  28383 words of font info for 72 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 42i,12n,43p,858b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super
--t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
-y10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/cm-super/sfbx2074.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
-r/sfcc1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm060
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0900.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/cm-super/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-cm-super/sfti1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/
-sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1095.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1095.pfb>
-Output written on principal_relatorio.pdf (20 pages, 613156 bytes).
+ 42i,12n,49p,858b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-s
+uper/sfbx2074.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx
+2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1095.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0900.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-sup
+er/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti10
+00.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1095.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1095.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/cm-super/sfxc1095.pfb>
+Output written on principal_relatorio.pdf (19 pages, 613647 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
+ 197 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

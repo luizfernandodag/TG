@@ -1,0 +1,798 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Rightslink&reg; by Copyright Clearance Center</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta name="description" content="Copyright Clearance Center is your one stop shopping for digital rights.">
+<meta name="keywords" content="digital rights, digital copyright, copyright, licensing, article, articles">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<LINK REL='stylesheet' type='text/css' href='/App/styles/rightslink_font.css'>
+<script language="JavaScript" src= "/App/JavaScript/MM.js"></script>
+<script language="JavaScript" src="/Common/JavaScript/BrowserInfo.js"></script>
+<script language="JavaScript" src= "/App/JavaScript/NoRightClick.js"></script>
+<script language="JavaScript" src= "/App/JavaScript/DefaultMethods.js"></script>
+<script language="JavaScript" src="/Common/JavaScript/FullPopUp.js"></script>
+<script language="JavaScript" src="/Common/JavaScript/Cookies.js"></script>
+<script language="JavaScript">
+if (browserInfo.isNetscape4)
+{
+	document.write ("<LINK REL='stylesheet' type='text/css' href='/App/styles/rightslink_layout_ns4.css'>");
+}
+else if (browserInfo.isIE)
+{
+	document.write ("<LINK REL='stylesheet' type='text/css' href='/App/styles/rightslink_layout_msie.css'>");
+}
+else
+{
+	document.write ("<LINK REL='stylesheet' type='text/css' href='/App/styles/rightslink_layout_ns6.css'>");
+}
+
+function openHelp(page)
+{
+	var loadedWindow = false;
+	if (page)
+	{
+		
+		rHelp = window.open('', 'rHelp', 'menubar=yes,toolbar=yes,location=no,status=no,width=625,height=400,scrollbars=yes,resizable=yes');
+		if (rHelp.frames.length == 2)
+		{
+			if (rHelp.frames[1].frames.length == 2)
+			{
+				theWindow = rHelp.frames[1].frames[1];
+				theWindow.document.location= page;
+				theWindow.focus();
+				loadedWindow = true;
+			}
+		}
+		if (!loadedWindow)
+		{
+			
+			FullPopUp(page, 'rHelp');
+		}
+	}
+	else
+	{
+	    FullPopUp('/help/rightslinkhelppages/helpstart.htm', 'rHelp');
+	}
+}
+
+function openTC()
+{
+	var location = '/clients/ccc_creditcard_tc.html';
+	window.open(location, '_Terms', 'location=no,toolbar=no,status=no,width=500,height=400,scrollbars=yes,resizable=yes');
+
+}
+function openPubFAQ(anchor)
+{
+     //For locale specific help replace "/help/rightslinkhelppages/ with jsp tagged nonPubHelpRoot
+    var urlToUse = "/help/rightslinkhelppages/Frequently_Asked_Questions_" + "ELS" + ".htm";
+    if (anchor) 
+        urlToUse = urlToUse + "#" + anchor;
+ 
+    FullPopUp(urlToUse, 'rHelp');
+}
+
+function openRFPHelp(name)
+{
+	if (name)
+	{
+	    FullHelpPopUp('/App/RFPHelp.jsp?name='+name, 'rOpenHelp');
+	}
+}
+
+function metaDataLogin()
+{
+    document.TheForm.doCalc.value = "false";
+	document.TheForm.targetPage.value= "metadatalogin";
+    document.TheForm.passThroughTarget.value = "additionaldata";
+	document.TheForm.ignoreErrors.value= "true";
+	document.TheForm.target = "_top";
+	document.TheForm.isMyAccount.value = "false";
+	document.TheForm.buttonClicked.value = "logina";
+	document.TheForm.submit();
+}
+
+
+function resetPassword()
+{
+    document.TheForm.targetPage.value = "resetPassword";
+    document.TheForm.passThroughTarget.value = "resetPasswordStatus";
+    document.TheForm.ignoreErrors.value= "false";
+    document.TheForm.buttonClicked.value = "continue";
+    document.TheForm.submit();
+}
+
+
+function outOfUS()
+{
+
+    openHelp('/help/rightslinkhelppages/Shipping_&_Delivery.htm#International_Shipping');
+
+}
+
+
+function autoLoginHelp()
+{
+    openHelp('/help/rightslinkhelppages/Enable_Auto_Log-in.htm');
+}
+
+function taxHelp()
+{
+
+    openHelp('/help/rightslinkhelppages/Payment_Pricing_Promotions.htm#Tax');
+
+}
+
+</script>
+</head>
+<body bgcolor="#FFFFFF" onLoad="setup();">
+<a name="top"></a>
+
+
+
+
+<form action="/AppDispatchServlet" method="post" name="TheForm" AUTOCOMPLETE="OFF" onKeyPress="return handleKeyPress(event,this);" id="TheForm">
+<input type="hidden" name="orderBeanReset" value="false">
+<input type="hidden" name="insideApp" value="true">
+<input type="hidden" name="doCalc" value="true">
+<input type="hidden" name="ignoreErrors" value="false">
+<input type="hidden" name="grantDenyCheckIgnoreErrors" value="false">
+<input type="hidden" name="loggedIn" value="false">
+<input type="hidden" name="myaccountlogin" value="true">
+<input type="hidden" name="rlPaymentProfileId" value="0">
+<input type="hidden" name="install" value="">
+
+
+<script>
+function createAccount()
+{
+
+	    document.TheForm.passThroughTarget.value = "quickprice";
+
+	document.TheForm.targetPage.value = "createaccountstep1";
+	document.TheForm.ignoreErrors.value= "true";
+	document.TheForm.target = "_top";
+	document.TheForm.isMyAccount.value = "false";
+	document.TheForm.buttonClicked.value = "createaccount";
+	document.TheForm.submit();
+}
+
+</script>
+
+
+<TABLE cellpadding="0" cellspacing="0" border=0 width="640">
+<TR>
+
+	<TD width="443" height="48"><img src="/App/Images/branding_poweredby.gif" width="443" height="48" border=0></TD>
+    <TD><A HREF="javascript:goHome()" onMouseOver="MM_swapImage('home','','/App/Images/branding_home_over.gif',1)" onMouseOut="MM_swapImgRestore()"><img NAME=home src="/App/Images/branding_home.gif" border="0"></A></TD>
+
+		<TD><A HREF="javascript:createAccount();" onMouseOver="MM_swapImage('createaccount','','/App/Images/branding_createaccount_over.gif',1)" onMouseOut="MM_swapImgRestore()"><img NAME=createaccount src="/App/Images/branding_createaccount.gif" border=0></A></TD>
+	
+
+
+	<TD><A HREF="javascript:openHelp();" onMouseOver="MM_swapImage('help','','/App/Images/branding_help_over.gif',1)" onMouseOut="MM_swapImgRestore()"><img NAME=help src="/App/Images/branding_help.gif" border=0></A></TD>
+
+
+
+    <td><a onmouseout="document.liveChatImage.src='/App/Images/live_chat_2.png';" onmouseover="document.liveChatImage.src='/App/Images/live_chat_hover_2.png';" href="https://na4.mycontactual.com/SC/sc_chat_entryway.php?queue_id=cccenter01~~queue~~chat~~120&amp;channel_name=Licensee&amp;direct_entry=sc_chat" target="_blank"><img width="60" height="42" border="0" src="/App/Images/live_chat_2.png" name="liveChatImage"></a></td>
+
+
+
+</TR>
+</TABLE>
+
+<BR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<TABLE cellpadding="0" cellspacing="0" border="0" width="640">
+<TR>
+	<TD width="180" valign="top" align="center"><img src="/clients/elsevier/images/10715819.gif"></TD>
+	<TD width="5"></TD>
+	<TD width="290" valign="top">
+		<TABLE border="0" width="290">
+
+   		<TR valign="top">
+   			<TD class="MetaDataTitle"><p name="metaDataTitleLabel">Title:</p></TD>
+   			<TD class="RegularText"><p name="metaDataTitle">Gamification in theory and action: A survey</p></TD>
+   		</TR>
+   
+   		<TR valign="top">
+   			<TD class="MetaDataTitle"><p name="metaDataAuthorLabel">Author:</p></TD>
+   			<TD class="RegularText"><p name="metaDataAuthor">Katie Seaborn,Deborah I. Fels</p></TD>
+   		</TR>
+   
+   		<TR valign="top">
+   			<TD class="MetaDataTitle"><p name="metaDataPublicationLabel">Publication:</p></TD>
+   			<TD class="RegularText"><p name="metaDataPublication">International Journal of Human-Computer Studies</p></TD>
+   		</TR>
+   
+   		<TR valign="top">
+   			<TD class="MetaDataTitle"><p name="metaDataPublisherLabel">Publisher:</p></TD>
+   			<TD class="RegularText"><p name="metaDataPublisher">Elsevier</p></TD>
+   		</TR>
+   
+   		<TR valign="top">
+   		
+   			<TD class="MetaDataTitle"><p name="metaDataPublicationDateLabel">Date:</p></TD>
+   			
+   			<TD class="RegularText"><p name="metaDataPublicationDate">February 2015</p></TD>
+   		</TR>
+   
+   		<TR valign="top">
+   			<TD class="RegularNote" colspan="2">
+   			<p name="metaDataCopyright">Copyright © 2014 Elsevier Ltd. All rights reserved.</p>
+   			</TD>
+   		</TR>
+   
+</TABLE>
+</TD>
+
+
+
+<TD width="5"></TD>
+<TD width="160" class="MetaDataBox" valign="top">
+  <TABLE class="SpecialMargin" cellspacing="0" border="1" rules="none" cellpadding="0" width="100%">
+    <TR>
+      <TD bgcolor="#efefef" height="4"></TD>
+    </TR>
+    <TR>
+        <TD bgcolor="#efefef" align="center"><A HREF="javascript:doCasLogin();" onMouseOver="MM_swapImage('logina','','/App/Images/metadata_logina_over.gif',1)" onMouseOut="MM_swapImgRestore()"><img NAME="logina" src="/App/Images/metadata_logina.gif" width="108" height="18" alt="" border="0"></A></TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#efefef" height="4"></TD>
+    </TR>
+    <TR>
+      <TD align="left" class="EmphasisBlueTextSmall">If you're a copyright.com user, <font class="RegularNote"> you can login to RightsLink using your copyright.com credentials.</font></TD>
+    </TR>
+
+    <TR>
+      <TD align="left" class="RegularNote">Already <font class="EmphasisBlueTextSmall"> a RightsLink user</font> or want to <font class="EmphasisNote"><a href="javascript:openHelp('/Help/CreateAccount/create_account_learnmore.htm');">learn more?</a></font></TD>
+    </TR>
+
+  </TABLE>
+  
+</TD>
+</TR>
+</TABLE>
+ 
+
+<BR>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/App/JavaScript/jquery-1.3.2.js"></script>
+
+<a id="formTop"></a>
+<table width="640" cellspacing="5" cellpadding="0" border="0">
+<tr>
+<td colspan="4" rowspan="1" class="PageTitleCell"><p class="PageTitle" name="pgTitle" id="pgTitle" >Welcome to RightsLink</p></td>
+</tr>
+<tr>
+<td colspan="4" rowspan="1" class="MainInstructionsCell"><p class="MainInstructions" name="Instructions" id="Instructions" >Elsevier has partnered with Copyright Clearance Center's RightsLink service to offer a variety of options for reusing Elsevier content. Select the "I would like to ..." drop-down menu to view the many reuse options available to you.</p></td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1" class="DefaultLabel"><p class="RegularField" name="OfferNameLabel" id="OfferNameLabel" >I would like to...<a href="javascript:openRFPHelp('offerIDValue.118990157.type_of_use');"><img border="0" src="/App/Images/helpmark.gif"></a></p></td>
+<td colspan="1" rowspan="6" class="DefaultSpace"><p class="RegularText" name="Space" id="Space" >&nbsp;</p></td>
+<td colspan="1" rowspan="1" class="DefaultField"><select class="DefaultDropDown" name="offerIDValue" onChange="offerChange(this, 'quickprice');">
+<option value="NOTSELECTED"> make a selection</option><option value="733">rent this content</option><option value="734">purchase this content</option><option value="18">order reprints</option><option value="375">order reprints (with translations by Elsevier)</option><option value="376">order reprints (with translations by customer)</option><option value="378">order e-prints</option><option value="528">reuse in a book/textbook</option><option value="539">reuse in a journal/magazine</option><option value="848">reuse in a presentation/slide kit/poster</option><option value="849">reuse in promotional materials/pamphlet/brochure</option><option value="850">reuse in training/CME Materials</option><option value="542">reuse in a thesis/dissertation</option><option value="535">reuse in coursepack/classroom materials</option><option value="851">reuse in a CD-ROM/DVD/other storage media</option><option value="852">reuse in news media</option><option value="534">make photocopies</option><option value="536">reuse in conference proceedings</option><option value="538">reuse in a government report</option><option value="540">post on a website</option><option value="853">reuse in broadcast media</option><option value="572">reuse in a mobile application</option></select></td>
+<td colspan="1" rowspan="7" class="DefaultNotice"><p class="RegularNote" name="Footer" id="Footer" ></p></td>
+</tr>
+<tr>
+<td colspan="4" rowspan="1" class="MainInstructionsCell"><p class="RegularNote" name="touNotListedLinkJournal" id="touNotListedLinkJournal" ><br>To request permission for a type of use not listed, please contact <a href="javascript:openHelp('/help/rightslinkhelppages/Frequently_Asked_Questions_ELS.htm#contact');">Elsevier</a> Global Rights Department.<br><br>Are you the <a href="http://www.elsevier.com/wps/find/supportfaq.cws_home/copyright" target="_authorels">author<a/> of this Elsevier journal article?</p></td>
+</tr>
+
+</table>
+
+
+
+<input type="hidden" name="isStartPage" value="true">
+<input type="hidden" name="publisherID" value="70">
+<input type="hidden" name="subPublisherID" value="-5555">
+<input type="hidden" name="publisherName" value="ELS">
+<input type="hidden" name="publication" value="1071-5819">
+<input type="hidden" name="publicationID" value="12243">
+<input type="hidden" name="isMyAccount" value="">
+<input type="hidden" name="popBackPage" value="">
+<input type="hidden" name="isCancelPressed" value="false">
+<input type="hidden" name="currentTargetPage" value="quickprice">
+<input type="hidden" name="passThroughTarget" value="">
+<input type="hidden" name="targetPage" value="additionaldata">
+<input type="hidden" name="currentTargetPageID" value="5646396">
+<input type="hidden" name="currentHeaderPage" value="/App/Includes/Header.jsp">
+<input type="hidden" name="currentBodyPage" value="/App/QuickPrice.jsp">
+<input type="hidden" name="currentFooterPage" value="/App/Includes/Footer.jsp">
+<input type="hidden" name="timeStamp" value="1454956636544"><input type="hidden" name="requestToken" value="36EzStLFVfDEQ31gHW1WFAzz">
+<input type="hidden" name="buttonClicked" value="unknown">
+<input type="hidden" name="linkClicked" value="unknown">
+
+
+
+<input type="hidden" name="orderThreadID" value="1089576587063992729">
+
+<script language="JavaScript" type="text/javascript">
+
+var iChanged;
+
+var portionUsed = "NOTSELECTED";
+
+onbeforeunload=function()
+{
+	if(iChanged && iChanged.selectedIndex != 0)
+		iChanged.selectedIndex=-1;
+}
+
+function switchOffer(rentalOnly, purchaseOnly, offerIDValue) {
+    if (document.TheForm.rentalOnly) {
+    	document.TheForm.rentalOnly.value = rentalOnly;
+    }
+    if (document.TheForm.purchaseOnly) {
+    	document.TheForm.purchaseOnly.value = purchaseOnly;
+    }
+    if ((document.TheForm.offerIDValue) && (offerIDValue > -1)) {
+    	document.TheForm.offerIDValue.value = offerIDValue;
+    }
+	offerChange(document.TheForm.offerIDValue, 'quickprice');   
+}
+
+function placeOrder()
+{
+    if (document.TheForm.loggedIn.value == "true")
+	{
+    	document.TheForm.doCalc.value = "true";
+	    document.TheForm.targetPage.value= "additionaldata";
+	}
+	else
+	{
+        document.TheForm.passThroughTarget.value= "additionaldata";
+	    document.TheForm.targetPage.value= "inflowlogin";
+	}
+
+	document.TheForm.ignoreErrors.value= "false";
+	document.TheForm.isMyAccount.value = "false";
+	document.TheForm.target = "_top";
+	document.TheForm.buttonClicked.value = "continue";
+	document.TheForm.submit();
+	
+}
+
+function overrideCurrentTargetPage(targetValue)
+{
+	document.TheForm.currentTargetPage.value= targetValue;
+}
+
+function checkLen(textbox, maxlimit)
+{
+	if (textbox.value.length > maxlimit)
+	{
+		textbox.value = textbox.value.substring(0, maxlimit);
+	}
+}
+
+function submitNoCalc(permissionChoice, targetValue, ignoreTheErrors){
+	document.TheForm.doCalc.value = "false";
+	document.TheForm.targetPage.value = targetValue;
+	if(ignoreTheErrors == "true")
+		document.TheForm.ignoreErrors.value = "true";
+	else
+		document.TheForm.ignoreErrors.value = "false";		
+	document.TheForm.passThroughTarget.value = "";
+	document.TheForm.isMyAccount.value = "false";
+	document.TheForm.target = "_top";
+	document.TheForm.submit();
+}
+
+
+function offerChange(permissionChoice, targetValue, grantDenyCheckIgnoreErrors)
+{
+		document.TheForm.doCalc.value = "false";
+		document.TheForm.targetPage.value= targetValue;
+		document.TheForm.ignoreErrors.value= "false";
+		document.TheForm.passThroughTarget.value="";	//TM, 11-19-2002 reset to avoid incoherent orders
+		document.TheForm.isMyAccount.value = "false";
+		document.TheForm.target = "_top";
+		iChanged = permissionChoice;
+		if(!iChanged && permissionChoice == document.TheForm.RequesterType)
+		{
+		  	if(document.TheForm.requesterType)
+		  		iChanged = document.TheForm.requesterType;
+		  	else if(document.TheForm.userType)	
+		  		iChanged = document.TheForm.userType;
+		  		
+		 }
+		 if ((document.TheForm.grantDenyCheckIgnoreErrors) && (grantDenyCheckIgnoreErrors)) {
+		     document.TheForm.grantDenyCheckIgnoreErrors.value = grantDenyCheckIgnoreErrors;
+		 }
+		document.TheForm.action = document.TheForm.action + "#formTop"
+		document.TheForm.submit();
+}
+
+function intendedUseChange(targetValue)
+{
+	document.TheForm.doCalc.value = "false";
+	document.TheForm.targetPage.value= targetValue;
+	document.TheForm.ignoreErrors.value= "false";
+	document.TheForm.passThroughTarget.value="";
+	document.TheForm.isMyAccount.value = "false";
+	document.TheForm.target = "_top";
+	document.TheForm.action = document.TheForm.action + "#formTop"
+	document.TheForm.submit();
+}
+
+function portionChange(permissionChoice, targetValue)
+{
+	document.TheForm.doCalc.value = "false";
+	document.TheForm.targetPage.value= targetValue;
+	document.TheForm.ignoreErrors.value= "false";
+	document.TheForm.passThroughTarget.value="";
+	document.TheForm.isMyAccount.value = "false";
+	document.TheForm.target = "_top";
+	iChanged = permissionChoice;
+	document.TheForm.action = document.TheForm.action + "#formTop"
+	document.TheForm.submit();
+}
+
+
+function openCCCLink(link, windowName)
+{
+	window.open(link, windowName);
+	return false;
+}
+
+function quickPrice(permissionChoice, targetValue, doCalc)
+{
+    if (targetValue == 'moreoptions')
+	{
+	    if (doCalc)
+		{
+		    document.TheForm.doCalc.value = "true";
+        	document.TheForm.ignoreErrors.value= "false";
+		}
+		else
+		{
+		    document.TheForm.doCalc.value = "false";
+        	document.TheForm.ignoreErrors.value= "true";
+		}
+	}
+	else
+	{
+	    document.TheForm.doCalc.value = "true";
+    	document.TheForm.ignoreErrors.value= "false";
+    }
+    
+   // if(!document.TheForm.getElementsByName("portionUsed") && (portionUsed == "" || portionUsed == "Not specified"))
+   // 	document.createElement("<INPUT TYPE= 'hidden' name='portionUsed' value='Not specified'");
+    
+    document.TheForm.targetPage.value= targetValue;
+	document.TheForm.isMyAccount.value = "false";
+	document.TheForm.target = "_top";
+	document.TheForm.buttonClicked.value = "quickprice";
+	document.TheForm.action = document.TheForm.action + "#formTop"
+	document.TheForm.submit();
+}
+
+function showTerms(thePublisher){
+ 
+    var location = "/App/SpecialTerms.jsp?termsSource=Content";
+ 
+	window.open(location, '_Terms', 'location=no,toolbar=no,status=no,width=500,height=400,scrollbars=yes,resizable=yes');
+}
+
+function quickBuyTerms()
+{
+	document.TheForm.buttonClicked.value = "quickbuy";
+	if (document.TheForm.quickBuy)
+	    document.TheForm.quickBuy.value = "true";
+	
+	if (document.TheForm.termsAgree)
+	{
+	    if (document.TheForm.termsAgree.checked)
+	    {
+	        finishOrderTerms();
+	    }
+		else
+		{
+		    window.alert("Please check the \"I agree to these terms and conditions\" check box.");
+		}
+	}
+	else
+	{
+	    finishOrderTerms();
+	}
+}
+
+function continueTerms()
+{
+	document.TheForm.buttonClicked.value = "payment";
+	if (document.TheForm.quickBuy)
+	    document.TheForm.quickBuy.value = "false";
+	    
+	if (document.TheForm.termsAgree)
+	{
+	    if (document.TheForm.termsAgree.checked)
+	    {
+	        finishOrderTerms();
+	    }
+		else
+		{
+		    window.alert("Please check the \"I agree to these terms and conditions\" check box.");
+		}
+	}
+	else
+	{
+	    finishOrderTerms();
+	}
+}
+
+function finishOrderTerms()
+{
+    if (document.TheForm.loggedIn.value == "true")
+	{
+		document.TheForm.targetPage.value = "payment-method-select";
+		document.TheForm.passThroughTarget.value = "createjobticket";
+       	if (document.TheForm.buttonClicked.value == "payment") 
+       	{
+			document.TheForm.buttonClicked.value = "";
+		} 
+  	}
+   	else
+   	{
+		document.TheForm.targetPage.value= "inflowlogin";
+		document.TheForm.passThroughTarget.value = "payment-method-select";
+	}
+    document.TheForm.ignoreErrors.value= "false";
+    document.TheForm.target = "_top";
+	document.TheForm.isMyAccount.value = "false";
+    document.TheForm.buttonClicked.value = "accept";
+	document.TheForm.submit();
+}
+
+function placeOrderTerms(targetPage)
+{
+	if (document.TheForm.termsAgree.checked)
+	{
+	    if (document.TheForm.loggedIn.value == "true")
+		{
+			document.TheForm.targetPage.value = targetPage;
+ 	 	}
+ 	  	else
+ 	  	{
+			document.TheForm.targetPage.value= "inflowlogin";
+			document.TheForm.passThroughTarget.value = targetPage;
+		}
+	    document.TheForm.ignoreErrors.value= "false";
+    	document.TheForm.target = "_top";
+		document.TheForm.isMyAccount.value = "false";
+    	document.TheForm.buttonClicked.value = "accept";
+		document.TheForm.submit();
+	}
+	else
+	{
+	    window.alert("Please check the \"I agree to these terms and conditions\" check box.");
+	}
+}
+
+function clicked(checkbox, correHiddenName)
+{
+	var correHidden = document.getElementsByName(correHiddenName)[0];
+	if (checkbox.checked)
+		correHidden.value = "checked";
+	else
+		correHidden.value = "";
+}
+function disclaimerUpdateClicked()
+{
+	var disclaimerCheckBox = document.getElementsByName('disclaimerLanguageSelected')[0];
+	if (disclaimerCheckBox.checked)
+	{
+		document.TheForm.targetPage.value = "additionaldata";
+	}
+	else
+	{
+		document.TheForm.targetPage.value = "confirmorder";
+	}
+}
+
+function djWRROfferChange(permissionChoice, targetValue)
+{
+	document.TheForm.targetPage.value= targetValue;
+	document.TheForm.doCalc.value = "false";
+	document.TheForm.ignoreErrors.value= "false";
+	document.TheForm.passThroughTarget.value="";	//TM, 11-19-2002 reset to avoid incoherent orders
+	document.TheForm.isMyAccount.value = "false";
+	document.TheForm.target = "_top";
+	document.TheForm.submit();
+}
+
+</script>
+<script language="JavaScript">
+// reset the form upon entry.  This is provided to protect the form from being
+// out of synch.  Because of the onChange events and the dreaded back button
+// it is possible for the offer to be out of synch with the remaining form data.
+// The reset of the form should nullify that possibility.
+document.TheForm.reset();
+setDefaultCookie("OrderThreadID", "1089576587063992729", false);
+</script>
+<script type="text/javascript" src="/Common/JavaScript/webtrends.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+_tag.DCS.dcsuri="/Elsevier/OrderProcess/LandingPage/LandingPage.html";
+_tag.WT.ti="Landing Page";
+_tag.WT.cg_n="Order Process";
+_tag.WT.cg_s="Landing Page";
+_tag.WT.z_page_title="Landing Page";
+_tag.WT.z_publisher="Elsevier";
+_tag.WT.z_publication="International Journal of Human-Computer Studies";
+_tag.WT.z_article="Gamification in theory and action: A survey";
+_tag.WT.si_n="Order Process;RLSO";
+_tag.WT.si_x="1;2";
+_tag.WT.pn_sku="No TOU";
+
+_tag.WT.tx_base_currency_type="USD";_tag.dcsCollect();
+//]]>>
+</script>
+
+
+
+
+
+
+
+<script language="JavaScript" type="text/javascript">
+
+    var el = document.TheForm.elements['keyPressTarget'];
+    
+    var isLogin = el && el.value == 'authenticate';
+    
+    var isBack = getCookie("history_back_event") == '1';
+    removeCookie("history_back_event");
+
+    
+    if (isBack) {
+        
+        el = document.TheForm.elements['currentTargetPage'];
+        if (el && el.value.indexOf('createaccount') != -1) {
+            goQuickPrice();
+        }
+    } else if (isLogin) {
+        doCasLogin();
+    }
+    
+
+
+history.back = function () {
+    setDefaultCookie("history_back_event", "1");
+    history.go(-1);
+}
+
+if (typeof jQuery === "undefined")
+{
+    var script_tag = document.createElement('script');
+    script_tag.setAttribute("type","text/javascript");
+    script_tag.setAttribute("src","/App/JavaScript/jquery-1.3.2.js");
+    script_tag.onload = main; 
+    script_tag.onreadystatechange = function () { 
+      if (this.readyState == 'complete' || this.readyState == 'loaded') main();
+    }
+    document.getElementsByTagName("head")[0].appendChild(script_tag);
+} else {
+    main();
+}
+
+
+$(window).bind('beforeunload', function() {
+    new Image().src = "/CAS/Images/singlepixel.cas?" + new Date().getTime();
+});
+
+function main(){
+	var pageid = document.TheForm.currentTargetPageID.value;
+	var linktext = $("#debuglink").text();
+	linktext += " : " + pageid;
+	$("#debuglink").attr("title", pageid);
+	$("#debuglink").html(linktext);
+}
+
+    function paymentTerms() {
+        var location = "/App/PaymentTermsAndConditions.jsp";
+        window.open(location, '_Terms', 'location=no,toolbar=no,status=no,width=500,height=400,scrollbars=yes,resizable=yes');
+    }
+</script>
+<html>
+	<body>
+		<table width="640" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+					&nbsp;
+				</td>
+				
+				<td class="FullCellLeftTop">
+					<p class="RegularNote">
+						Copyright &copy;
+						2016
+						<a href="http://www.copyright.com" target="_newWindow">Copyright
+							Clearance Center, Inc.</a> All Rights Reserved.
+						<a target="_newWindow" href="http://www.copyright.com/content/cc3/en_US/tools/footer/privacypolicy.html">Privacy statement</a>. <a href="javascript:paymentTerms();">Terms and Conditions</a>.
+						<br>
+						Comments? We would like to hear from you. E-mail us at
+						<a href="mailto:customercare@copyright.com">customercare@copyright.com</a>
+						<br>
+						<br>
+					</p>
+				</td>
+			</tr>
+		</table>
+
+		<form name="scratch">
+			<input type="hidden" name="TermsAndConditions" value="">
+		</form>
+		
+	</body>
+</html>
+<!-- ServerIdentityFooter -->
+<html>
+	<body>
+		<table width="640" border="0" cellspacing="0" cellpadding="0">
+			
+		</table>
+	</body>
+</html>
+<!-- ServerIdentityFooter End -->
+

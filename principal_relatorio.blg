@@ -10,8 +10,19 @@ The style file: abnt-num.bst
 A level-1 auxiliary file: anexo_Esquematicos.aux
 A level-1 auxiliary file: anexo_CD.aux
 Database file #1: relatorio.bib
+You're missing a field name---line 196 of file relatorio.bib
+ : 
+ : %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Parte 2: Proposta de disciplina %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 198 of file relatorio.bib
+ :  
+ :  author = {Pre-College Task Force Comm. of the Educ. Board of the ACM, CORPORATE},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 +---------------------------------------------------------+
 | Estilo bibliográfico abnt-num.bst versão 1.42.2.1           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
+(There were 2 error messages)
