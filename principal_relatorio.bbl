@@ -5,6 +5,53 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.42.2.1 }
 
+\bibitem{Parte1:artigo10}
+\abntrefinfo{Sovic, Jagust e Sersic}{SOVIC; JAGUST; SERSIC}{2014}
+{SOVIC, A.; JAGUST, T.; SERSIC, D. How to teach basic university-level
+  programming concepts to first graders? In:  \emph{Integrated STEM Education
+  Conference (ISEC), 2014 IEEE}. [S.l.: s.n.], 2014. p.~1--6.}
+
+\bibitem{Parte1:artigo3}
+\abntrefinfo{Coto, Mora e Alfaro}{COTO; MORA; ALFARO}{2013}
+{COTO, M.; MORA, S.; ALFARO, G. Giving more autonomy to computer engineering
+  students: Are we ready? In:  \emph{{IEEE} Global Engineering Education
+  Conference, {EDUCON} 2013, Berlin, Germany, March 13-15, 2013}. [s.n.], 2013.
+  p. 618--626. Dispon{\'\i}vel em:
+  $<$http://dx.doi.org/10.1109/EduCon.2013.6530170$>$.}
+
+\bibitem{Parte1:artigo02}
+\abntrefinfo{CELETI}{CELETI}{2012}
+{CELETI, F.~R. Origem da educação obrigatória: Um olhar sobre a prússia.
+\emph{Revista Saber Acadêmico}, v.~1, n.~1, p. 29--33, June 2012.}
+
+\bibitem{Parte1:artigo0}
+\abntrefinfo{F.}{F.}{2005}
+{F. de O.~V. Crescimento, evolução e o futuro dos cursos de engenharia.
+\emph{Revista de Ensino de Engenharia}, v.~24, n.~2, p. 3--12, December 2005.}
+
+\bibitem{Parte1:artigoWEB0}
+\abntrefinfo{R.}{R.}{2013}
+{R., W. \emph{Alta taxa de desistência na universidade causa déficit de
+  engenheiros}. Setembro 2013.
+[Online; posted 4-Setembro-2013].}
+
+\bibitem{Parte1:artigo2}
+\abntrefinfo{Lahtinen, Ala-Mutka e J\"{a}rvinen}{LAHTINEN; ALA-MUTKA;
+  J\"{a}RVINEN}{2005}
+{LAHTINEN, E.; ALA-MUTKA, K.; J\"{a}RVINEN, H.-M. A study of the difficulties
+  of novice programmers.
+\emph{SIGCSE Bull.}, ACM, New York, NY, USA, v.~37, n.~3, p. 14--18, jun. 2005.
+ISSN 0097-8418.
+Dispon{\'\i}vel em: $<$http://doi.acm.org/10.1145/1151954.1067453$>$.}
+
+\bibitem{Parte1:artigo12}
+\abntrefinfo{Oliver e Toledo}{OLIVER; TOLEDO}{2012}
+{OLIVER, J.; TOLEDO, R. On the use of robots in a pbl in the first year of
+  computer science / computer engineering studies. In:  \emph{Global
+  Engineering Education Conference (EDUCON), 2012 IEEE}. [S.l.: s.n.], 2012.
+  p.~1--6.
+ISSN 2165-9559.}
+
 \bibitem{article:glofarelli:2001}
 \abntrefinfo{Golfarelli, Mario e Rizzi}{GOLFARELLI; MARIO; RIZZI}{2001}
 {GOLFARELLI, M.; MARIO, D.; RIZZI, S. Correction of dead-reckoning errors in
