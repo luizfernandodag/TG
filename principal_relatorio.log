@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.5)  25 FEB 2016 21:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.5)  25 FEB 2016 22:00
 entering extended mode
 **./principal_relatorio.tex
 (principal_relatorio.tex
@@ -539,7 +539,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 
 ] (principal_relatorio.toc
 LaTeX Font Info:    Font shape `OMS/cmr/m/sc' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
 )
 \tf@toc=\write5
 \openout5 = `principal_relatorio.toc'.
@@ -584,12 +584,14 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <8> not available
 
  (cap_RevisaoBibliografica.tex
 Cap\'{\i }tulo 2.
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 35.
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 33.
 
 LaTeX Warning: Reference `FigPlacaIntelGalileo_vistas' on page 4 undefined on i
-nput line 38.
+nput line 36.
 
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 54.
 Package epstopdf Info: Source file: <figs/galileoFrentePinos.eps>
 (epstopdf)                    date: 2016-02-25 18:22:27
 (epstopdf)                    size: 1173150 bytes
@@ -599,7 +601,7 @@ df>
 (epstopdf)                    size: 89465 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/galileoFrentePinos-eps
 -converted-to.pdf figs/galileoFrentePinos.eps>
-(epstopdf)             \includegraphics on input line 65.
+(epstopdf)             \includegraphics on input line 63.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -610,7 +612,7 @@ df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 File: figs/galileoFrentePinos-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/galileoFrentePinos-eps-converted-to.pdf>
 Package pdftex.def Info: figs/galileoFrentePinos-eps-converted-to.pdf used on i
-nput line 65.
+nput line 63.
 (pdftex.def)             Requested size: 162.52504pt x 97.7971pt.
 Package epstopdf Info: Source file: <figs/galileoTrasPinos.eps>
 (epstopdf)                    date: 2016-02-25 18:22:41
@@ -621,7 +623,7 @@ Package epstopdf Info: Source file: <figs/galileoTrasPinos.eps>
 (epstopdf)                    size: 75883 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/galileoTrasPinos-eps-c
 onverted-to.pdf figs/galileoTrasPinos.eps>
-(epstopdf)             \includegraphics on input line 73.
+(epstopdf)             \includegraphics on input line 71.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -633,15 +635,15 @@ File: figs/galileoTrasPinos-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/galileoTrasPinos-eps-converted-to.pdf>
 Package pdftex.def Info: figs/galileoTrasPinos-eps-converted-to.pdf used on inp
-ut line 73.
+ut line 71.
 (pdftex.def)             Requested size: 162.52504pt x 105.09795pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 84.
+               Default added (so using `tbp') on input line 82.
 
 
-Overfull \hbox (68.90408pt too wide) in paragraph at lines 88--103
+Overfull \hbox (68.90408pt too wide) in paragraph at lines 86--101
  [][] 
  []
 
@@ -651,7 +653,7 @@ Overfull \hbox (68.90408pt too wide) in paragraph at lines 88--103
 
 ]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 111.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 109.
 ) [5 <./figs/galileoFrentePinos-eps-converted-to.pdf> <./figs/galileoTrasPinos-
 eps-converted-to.pdf>] [6]
 \openout2 = `cap_Desenvolvimento.aux'.
@@ -717,44 +719,46 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6609 strings out of 493634
- 91129 string characters out of 3143748
+ 6621 strings out of 493634
+ 91293 string characters out of 3143748
  191518 words of memory out of 3000000
- 9714 multiletter control sequences out of 15000+200000
- 33489 words of font info for 83 fonts, out of 3000000 for 9000
+ 9723 multiletter control sequences out of 15000+200000
+ 36846 words of font info for 92 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  42i,16n,49p,1028b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbi1095.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/cm-super/sfbx0600.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
-r/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx207
-4.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx2488.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1095.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/cm-super/sfrm0900.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/cm-super/sfrm1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-cm-super/sfrm1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/
-sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1000.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1095.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/cm-super/sfxc1095.pfb>
-Output written on principal_relatorio.pdf (24 pages, 666379 bytes).
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/cm-super/sfbi1095.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/cm-super/sfbx0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/cm-super/sfbx0700.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/cm-super/sfbx1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-su
+per/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1
+440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx2488.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/cm-super/sfcc1095.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/cm-super/sfrm0900.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
+r/sfrm1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm109
+5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1000.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/cm-super/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/cm-super/sfxc1095.pfb>
+Output written on principal_relatorio.pdf (24 pages, 675944 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
+ 216 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,10 +3,9 @@
 \contentsline {section}{\numberline {1.1}Objetivo}{2}
 \contentsline {section}{\numberline {1.2}Apresentação do manuscrito}{3}
 \contentsline {chapter}{\numberline {2}Revisão Bibliográfica}{4}
-\contentsline {section}{\numberline {2.1}Revisão Bibliográfica }{4}
-\contentsline {subsection}{\numberline {2.1.1}Placa Intel \textsuperscript {\textregistered } Galileo}{4}
-\contentsline {subsubsection}{\numberline {2.1.1.1}Pinagem da placa Intel \textsuperscript {\textregistered } Galileo}{4}
-\contentsline {subsubsection}{\numberline {2.1.1.2}Características Elétricas e Eletrônicas da placa Intel \textsuperscript {\textregistered } Galileo}{5}
+\contentsline {section}{\numberline {2.1}Placa Intel \textsuperscript {\textregistered } Galileo}{4}
+\contentsline {subsection}{\numberline {2.1.1}Pinagem da placa Intel \textsuperscript {\textregistered } Galileo}{4}
+\contentsline {subsection}{\numberline {2.1.2}Características Elétricas e Eletrônicas da placa Intel \textsuperscript {\textregistered } Galileo}{5}
 \contentsline {chapter}{\numberline {3}Desenvolvimento}{7}
 \contentsline {section}{\numberline {3.1}Introdu\c {c}\~{a}o}{7}
 \contentsline {section}{\numberline {3.2}Arquitetura geral}{7}
