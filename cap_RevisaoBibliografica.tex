@@ -1,8 +1,5 @@
 %TCIDATA{LaTeXparent=0,0,relatorio.tex}
-                      
-                      
-                      
-%\chapter{Revisão Bibliográfica}\label{CapRevisaoBibliografica}
+\chapter{Revisão Bibliográfica}\label{CapRevisaoBibliografica}
 
 %%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -12,7 +9,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%  %%%%%%%%%%%%%%%%%%%%%%%%%%
 %\chapter{Revisão bibliográfica}
-%\label{revbib} % Always give a unique label
+\label{revbib} % Always give a unique label
 % use \chaptermark{}
 % to alter or adjust the chapter heading in the running head
 
@@ -31,132 +28,104 @@
 
 % Resumo opcional. Comentar se não usar.
 %\resumodocapitulo{Neste capítulo }
-
 \section{Revisão Bibliográfica }
-\label{CapIntro}
- O objetivo deste capítulo é explicitar todos conceitos relevantes deste trabalho relativos a ensino e aprendizagem de Ciências Exatas e Engenharia e a estrutura da placa Intel Galileu. Esses estudos servirão de base para a proposição um modelo de aula de programação básica para estudantes de graduação levando em conta os paradigmas de educação mais eficientes dentre os elencados.
+\label{CapRevBib}
+ O objetivo deste capítulo é explicitar todos conceitos relevantes deste trabalho relativos a ensino e aprendizagem de Ciências Exatas e Engenharia e a estrutura detalhada da placa Intel Galileu. Esses estudos servirão de base para a proposição um modelo de aula de programação básica para estudantes de graduação levando em conta os paradigmas de educação mais eficientes dentre os elencados.
 
-\subsection{Educação}
-%\include{capEducacao}
+\subsection{Placa Intel \textsuperscript{\textregistered} Galileo}
+\label{CapGalileo}
 
-A educação 
+A placa Intel\textsuperscript{\textregistered}  Galileo é uma \textit{placa de desenvolvimento} com microcontrolador baseado processador Intel\textsuperscript{\textregistered} Quark SoC X1000\cite{DATASHEET0}. A placa Galileo possui software e hardware compatível com a placa \textit{Arduino} com relação aos pinos digitais e analógicos. Um programa escrito para Arduino pode ser usado no Galileu por causa dessa compatibilidade. A Figura \ref{FigPlacaIntelGalileo_vistas} mostra a placa Intel \textsuperscript{\textregistered} em suas visão frontal e traseira. 
 
+Nesta seção são apresentadas, enumeradas e explicadas todas características da placa Intel\textsuperscript{\textregistered} Galileo. 
 
+Primeiramente são apresentados os pinos da placa Galileo juntamente com uma breve descrição de seu uso. Após isso são descritas as enumeradas e explicadas todas características eletro-eletrônicas da placa. Para cada tecnologia na placa é reservada uma pequena sub-seção neste capítulo para sua devida elucidação.
 
+\begin{comment}
+\begin{figure}[tb]
+	\centering
+	\mbox{
+		\subfigure[Placa Intel\textsuperscript{\textregistered} Galileo - Parte Frontal]{\includegraphics[width=0.3\textwidth]{figs/galileofrente.eps}}\quad\quad
+		\subfigure[Placa Intel\textsuperscript{\textregistered} Galileo - Parte Traseira]{\includegraphics[width=0.35\textwidth]{figs/galileotras.eps}}}
+	
+	\caption{Placa Intel\textsuperscript{\textregistered} Galileo \cite{DATASHEET1} }
+	\label{FigPlacaIntelGalileo_vistas}
+\end{figure}
+\end{comment}
 
+\subsubsection{Pinagem  da placa Intel \textsuperscript{\textregistered} Galileo}
+\label{SecPinagemGalileo}
+ 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Nem todos os trabalhos de graduação têm um capítulo específico para revisão bibliográfica. De fato, um capítulo específico para revisão bibliográfica se aplic para trabalhos em que o a teoria empregada não é coberta por disciplinas do curso. Caso contrário, uma breve revisão pode ser feita no capítulo  
-
-Não esquecer de fazer citações à bibliografia. No latex, somente são inseridos na bibliografia aqueles trabalhos que foram citados \cite{article:glofarelli:2001}  \cite{Parte1:artigo1}. Ou você pode citar assim \cite{article:glofarelli:2001,inproc:duckett:2000}, no caso de citações múltiplas. Entretanto, citações não são de exclusividade deste capítulo. Em outros capítulos, citações devem ser feitas quando for pertinente.
-
-Na seção a seguir, é mostrado um exemplo com figuras.
-
-\section{Técnicas de acionamentos de motores de corrente contínua}
+Os pinos da placa Galileo nas partes frontal e traseira são mostrados nas figuras \ref{FigPinosFrente} e \ref{FigPinosTras} 
 
 \begin{figure}[t]
-\centering
-\includegraphics[width=0.8\textwidth]{figs/atuador_malha_de_controle.eps}
-\caption{O atuador na malha de controle}
-\label{FigMalhaDeControle}
+	\centering
+	\includegraphics[width=0.35\textwidth]{figs/galileoFrentePinos.eps}
+	\caption{Descrição dos pinos da placa Galileo - parte frontal\cite{DATASHEET1}}
+	\label{FigPinosFrente}
 \end{figure}
 
-Um dos elementos mais importantes na malha de controle é o atuador. Como mostrado na Fig. \ref{FigMalhaDeControle}, este elemento é o elo de conexão entre a saída do controlador e a entrada do processo. No caso específico deste tratablho, o processo é um motor de corrente contínua. 
 
-Deve ser observado aque toda figura deve ser referenciada no texto. A figura deve estar posicionada no começo ou no final da página, e sempre na mesma página da primeira citação ou em páginas seguintes. Nunca colocar a figura em páginas anteriores à da primeira citação. No caso de múltiplos gráficos em uma mesma figura, pode-se usar o pacote \texttt{subfigure}, como mostrado no parágrafo seguinte.  
-
-A Figura \ref{FigEstagios} apresenta alguns dos mais usados estágios de potência de acionadores lineares. Dentre eles, o mais simples é o estágio classe B (Fig. \ref{FigEstagios}(a)). Neste estágio, apenas um dos transistores conduz por vez. Entretanto, este circuito apresenta forte não-linearidade devido a um intervalo de tensões ${v_e}$ em que nenhum dos transistores opera em modo ativo. As soluções existentes para este minimizar este problema consistem em fazer com que ambos os transistores conduzam sempre. Alguns exemplos são mostrados nas Figs. \ref{FigEstagios}(b-c). Apesar de ainda apresentarem não-linearidade e curva característica dependente da carga, estes problemas praticamente desaparecem se as etapas de potência estiverem em uma malha fechada com alto ganho. 
-
-\begin{figure}[tb]
-\centering
-\mbox{
-\subfigure[Classe B]{\includegraphics[width=0.35\textwidth]{figs/atuador_classe_B.eps}}\quad\quad
-\subfigure[Classe AB com diodos]{\includegraphics[width=0.4\textwidth]{figs/atuador_classe_AB.eps}}}
-\subfigure[Classe AB com multiplicador de $V_{BE}$]{\includegraphics[width=0.45\textwidth]{figs/atuador_classe_AB_multVBE.eps}
-}
-\caption{Estágios de potência comumente usados em atuadores lineares}
-\label{FigEstagios}
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.35\textwidth]{figs/galileoTrasPinos.eps}
+	\caption{Descrição dos pinos da placa Galileo - parte traseira\cite{DATASHEET1}}
+	\label{FigPinosTras}
 \end{figure}
+
+
+
+
+
+A descrição de cada um desses pinos é a descrita na tabela \ref{TabPinos}:
+
+\begin{table}[]
+	\centering
+	\caption{Pinos Galileo\cite{DATASHEET1}}
+	\label{TabPinos}
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Pino}           & \textbf{Descrição}                                                                                                                                                                                                 \\ \hline
+		Micro SD Card Slot      & \begin{tabular}[c]{@{}l@{}}Pino no qual se pode um SD Card para permitir ao Galileo\\  a execução de uma versão de Linux com mais recursos\end{tabular}                                                            \\ \hline
+		Arduino Expansions Pins & \begin{tabular}[c]{@{}l@{}}Pinos de entrada e saída da placa Galileo. Esses pinos são compatíveis\\  com os pinos do Arduino e Shields relacionadas.\end{tabular}                                                  \\ \hline
+		USB Device Port         & \begin{tabular}[c]{@{}l@{}}Pino para conectar um cabo USB do Galileo ao computador\\  para carregar o Galileo com um programa Arduino\end{tabular}                                                                 \\ \hline
+		Host USB Port           & Pino para conectar um dispositivo periférico ( como webcam, caixa de som, etc)                                                                                                                                     \\ \hline
+		6-Pin FTDI Header       & Adaptador para comunicação serial computador - Linux instalado no Galileo                                                                                                                                          \\ \hline
+		Power Input             & \begin{tabular}[c]{@{}l@{}}Conexão para bateria de 12V. ATENÇÃO, a bateria sempre deve ser conectada\\ ao Galileo antes de conectar um cabo USB do Galileo ao computador para evitar\\ danos a placa.\end{tabular} \\ \hline
+		Ethernet Port           & Pino para conectar o Galileo à Internet pelo cabo Ethernet                                                                                                                                                         \\ \hline
+		Mini PCI Express Slot   & Pino para conectar um cartão WiFi                                                                                                                                                                                  \\ \hline
+		Clock Baterry Power     & \begin{tabular}[c]{@{}l@{}}Conexão para uma bateria de relógio de 3V de forma a fazer com Galileo guarde \\ informações de data e hora\end{tabular}                                                                \\ \hline
+		Reboot Button           & Botão para realizar a placa, inclusive o sistema operacional                                                                                                                                                       \\ \hline
+		Reset Button            & Botão para resetar o código que foi carregado no Galileo                                                                                                                                                           \\ \hline
+	\end{tabular}
+\end{table}
+
+
+
+\subsubsection{Características Elétricas e Eletrônicas da placa Intel \textsuperscript{\textregistered} Galileo}
+
+As características elétricas e eletrônicas da placa são enumeradas a seguir. As características que têm uma sub-seção para explicação mais aprofundada estão marcadas com \textit{itálico} e \textbf{negrito}: 
+\begin{itemize}
+	\item 14 pinos digitais para entrada e saída, 6 das quais podem ser usadas para saída \textit{\textbf{PWM}}
+	\item 6 pinos para entrada analógica utilizando o\textit{\textbf{ conversor analógico-digital AD7298}}
+	\item Barramento Serial \textit{\textbf{I2C}}
+	\item Comunicação serial com periféricos \textit{\textbf{SPI}}
+	\item Porta Serial \textit{\textbf{UART}}
+	\item 16KBytes de memória \textit{\textbf{L1 Cache}}
+	\item 512KBytes de memória \textit{\textbf{SRAM}}
+	\item Clock de tempo real integrado \textit{\textbf{(RTC)}}
+	\item Barramento \textit{\textbf{PCI Express}}
+	\item Conexão para \textit{\textbf{USB Host e USB Client}}
+	\item 10 pinos padrões \textit{\textbf{JTAG}} para debug
+	\item 256 MBytes de memória \textit{\textbf{DRAM}}
+	\item 11 KBytes de memória \textit{\textbf{EEPROM}} 
+\end{itemize}
+
+
+\footnote{oiiiiii}
+
+
+
 

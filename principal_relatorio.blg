@@ -11,13 +11,8 @@ A level-1 auxiliary file: anexo_Esquematicos.aux
 A level-1 auxiliary file: anexo_CD.aux
 Database file #1: relatorio.bib
 Warning--string name "http://www.gazetadopovo.com.br/vida-e-cidadania/alta-taxa-de-desistencia-na-universidade-causa-deficit-de-engenheiros-b715q0ivu7bm1qu70lmxhrdqm" is undefined
---line 14 of file relatorio.bib
-You're missing a field name---line 254 of file relatorio.bib
- : 
- : %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Parte 2: Proposta de disciplina %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 264 of file relatorio.bib
+--line 57 of file relatorio.bib
+I was expecting a `,' or a `}'---line 307 of file relatorio.bib
  :  
  :  author = {Pre-College Task Force Comm. of the Educ. Board of the ACM, CORPORATE},
 (Error may have been on previous line)
@@ -30,4 +25,4 @@ Warning--I didn't find a database entry for "DBLP:conf/educon/2013"
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-(There were 3 error messages)
+(There were 2 error messages)

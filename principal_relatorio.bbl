@@ -24,6 +24,14 @@
 {CELETI, F.~R. Origem da educação obrigatória: Um olhar sobre a prússia.
 \emph{Revista Saber Acadêmico}, v.~1, n.~1, p. 29--33, June 2012.}
 
+\bibitem{Parte1:artigo12}
+\abntrefinfo{Oliver e Toledo}{OLIVER; TOLEDO}{2012}
+{OLIVER, J.; TOLEDO, R. On the use of robots in a pbl in the first year of
+  computer science / computer engineering studies. In:  \emph{Global
+  Engineering Education Conference (EDUCON), 2012 IEEE}. [S.l.: s.n.], 2012.
+  p.~1--6.
+ISSN 2165-9559.}
+
 \bibitem{Parte1:artigo0}
 \abntrefinfo{F.}{F.}{2005}
 {F. de O.~V. Crescimento, evolução e o futuro dos cursos de engenharia.
@@ -44,31 +52,23 @@
 ISSN 0097-8418.
 Dispon{\'\i}vel em: $<$http://doi.acm.org/10.1145/1151954.1067453$>$.}
 
-\bibitem{Parte1:artigo12}
-\abntrefinfo{Oliver e Toledo}{OLIVER; TOLEDO}{2012}
-{OLIVER, J.; TOLEDO, R. On the use of robots in a pbl in the first year of
-  computer science / computer engineering studies. In:  \emph{Global
-  Engineering Education Conference (EDUCON), 2012 IEEE}. [S.l.: s.n.], 2012.
-  p.~1--6.
-ISSN 2165-9559.}
+\bibitem{Parte2:artigo9}
+\abntrefinfo{Escudero, Hierro e Pablo}{ESCUDERO; HIERRO; PABLO}{2013}
+{ESCUDERO, M. R.; HIERRO, C. M.; PABLO, A. P{\'{e}}rez de Madrid~y. Using
+  arduino to enhance computer programming courses in science and engineering.
+  In:  \emph{EDULEARN13 Proceedings}. [S.l.]: IATED, 2013.  (5th International
+  Conference on Education and New Learning Technologies), p. 5127--5133.
+ISBN 978-84-616-3822-2.
+ISSN 2340-1117.}
 
-\bibitem{article:glofarelli:2001}
-\abntrefinfo{Golfarelli, Mario e Rizzi}{GOLFARELLI; MARIO; RIZZI}{2001}
-{GOLFARELLI, M.; MARIO, D.; RIZZI, S. Correction of dead-reckoning errors in
-  map building in map building for mobile robots.
-\emph{IEEE Transactions on Robotics and Automation}, v.~17, n.~1, p. 37--47,
-  February 2001.}
+\bibitem{DATASHEET0}
+\abntrefinfo{Intel}{INTEL}{2014}
+{INTEL. \emph{DataSheet Intel Galileo Gen 2 Development Board}.
+[S.l.], 2014.}
 
-\bibitem{Parte1:artigo1}
-\abntrefinfo{K.R}{K.R}{2014}
-{K.R, S. Competências do século 21.
-\emph{Revista Pesquisa e Debate em Educação}, v.~4, n.~2, p. 15--30, August
-  2014.}
-
-\bibitem{inproc:duckett:2000}
-\abntrefinfo{Duckett, Marsland e Shapiro}{DUCKETT; MARSLAND; SHAPIRO}{2000}
-{DUCKETT, T.; MARSLAND, S.; SHAPIRO, J. Learning globally consistent maps by
-  relaxation. In:  \emph{IEEE International Conference on Robotics and
-  Automation}. [S.l.: s.n.], 2000. p. 3841--3846.}
+\bibitem{DATASHEET1}
+\abntrefinfo{S. Burfoot~J.}{S. BURFOOT~J.}{2015}
+{S. BURFOOT~J., G. D. e. H.~C. B. \emph{A Teacher's Guide to Intel Galileo}.
+Buildind C5B, Macquarie University, North Ryde, NSW, 2109, 2015.}
 
 \end{thebibliography}
