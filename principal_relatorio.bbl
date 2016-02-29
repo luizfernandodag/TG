@@ -5,6 +5,11 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.42.2.1 }
 
+\bibitem{DATASHEET1}
+\abntrefinfo{S. Burfoot~J.}{S. BURFOOT~J.}{2015}
+{S. BURFOOT~J., G. D. e. H.~C. B. \emph{A Teacher's Guide to Intel Galileo}.
+Buildind C5B, Macquarie University, North Ryde, NSW, 2109, 2015.}
+
 \bibitem{Parte1:artigo10}
 \abntrefinfo{Sovic, Jagust e Sersic}{SOVIC; JAGUST; SERSIC}{2014}
 {SOVIC, A.; JAGUST, T.; SERSIC, D. How to teach basic university-level
@@ -66,9 +71,9 @@ ISSN 2340-1117.}
 {INTEL. \emph{DataSheet Intel Galileo Gen 2 Development Board}.
 [S.l.], 2014.}
 
-\bibitem{DATASHEET1}
-\abntrefinfo{S. Burfoot~J.}{S. BURFOOT~J.}{2015}
-{S. BURFOOT~J., G. D. e. H.~C. B. \emph{A Teacher's Guide to Intel Galileo}.
-Buildind C5B, Macquarie University, North Ryde, NSW, 2109, 2015.}
+\bibitem{livro:Sedra}
+\abntrefinfo{Sedra. e Smith}{SEDRA.; SMITH}{2004}
+{SEDRA., A.~S.; SMITH, K.~C. \emph{Microeletronics Cicuits}. [S.l.]: Oxford
+  University Press, 2004.}
 
 \end{thebibliography}

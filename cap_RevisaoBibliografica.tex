@@ -33,7 +33,7 @@
 \section{Placa Intel \textsuperscript{\textregistered} Galileo}
 \label{CapGalileo}
 
-A placa Intel\textsuperscript{\textregistered}  Galileo é uma \textit{placa de desenvolvimento} com microcontrolador baseado processador Intel\textsuperscript{\textregistered} Quark SoC X1000\cite{DATASHEET0}. A placa Galileo possui software e hardware compatível com a placa \textit{Arduino} com relação aos pinos digitais e analógicos. Um programa escrito para Arduino pode ser usado no Galileu por causa dessa compatibilidade. A Figura \ref{FigPlacaIntelGalileo_vistas} mostra a placa Intel \textsuperscript{\textregistered} em suas visão frontal e traseira. 
+A placa Intel\textsuperscript{\textregistered}  Galileo é uma \textit{placa de desenvolvimento} com microcontrolador baseado processador Intel\textsuperscript{\textregistered} Quark SoC X1000\cite{DATASHEET0}. A placa Galileo possui software e hardware compatível com a placa \textit{Arduino} com relação aos pinos digitais e analógicos. Um programa escrito para Arduino pode ser usado no Galileu por causa dessa compatibilidade. As Figura \ref{FigPinosFrente} e \ref{FigPinosTras} mostram a placa Intel \textsuperscript{\textregistered} em suas visão frontal e traseira. 
 
 Nesta seção são apresentadas, enumeradas e explicadas todas características da placa Intel\textsuperscript{\textregistered} Galileo. 
 
@@ -60,7 +60,7 @@ Os pinos da placa Galileo nas partes frontal e traseira são mostrados nas figura
 
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=0.35\textwidth]{figs/galileoFrentePinos.eps}
+	\includegraphics[width=0.31\textwidth]{figs/galileoFrentePinos.eps}
 	\caption{Descrição dos pinos da placa Galileo - parte frontal\cite{DATASHEET1}}
 	\label{FigPinosFrente}
 \end{figure}
@@ -68,7 +68,7 @@ Os pinos da placa Galileo nas partes frontal e traseira são mostrados nas figura
 
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=0.35\textwidth]{figs/galileoTrasPinos.eps}
+	\includegraphics[width=0.31\textwidth]{figs/galileoTrasPinos.eps}
 	\caption{Descrição dos pinos da placa Galileo - parte traseira\cite{DATASHEET1}}
 	\label{FigPinosTras}
 \end{figure}
@@ -106,6 +106,8 @@ A descrição de cada um desses pinos é a descrita na tabela \ref{TabPinos}:
 
 As características elétricas e eletrônicas da placa são enumeradas a seguir. As características que têm uma sub-seção para explicação mais aprofundada estão marcadas com \textit{itálico} e \textbf{negrito}: 
 \begin{itemize}
+	\item Clock de 400 MHz
+	\item Arquitetura Intel\textsuperscript{\textregistered} 32 bits
 	\item 14 pinos digitais para entrada e saída, 6 das quais podem ser usadas para saída \textit{\textbf{PWM}}
 	\item 6 pinos para entrada analógica utilizando o\textit{\textbf{ conversor analógico-digital AD7298}}
 	\item Barramento Serial \textit{\textbf{I2C}}
@@ -121,8 +123,105 @@ As características elétricas e eletrônicas da placa são enumeradas a seguir. As 
 	\item 11 KBytes de memória \textit{\textbf{EEPROM}} 
 \end{itemize}
 
+\subsubsection{Sinal PWM}
 
-\footnote{oiiiiii}
+Pulse Width Modulation (PWM) ou Modulação por Largura de Pulso é uma técnica que modulação de impulso utilizada principalmente para codificar uma mensagem num sinal pulsante\cite{livro:Sedra} 
+
+Para o caso do Intel Galileo, as aplicações do sinal PWM são principalmente relacionadas ao controle da tensão DC fornecida a um circuito. 
+
+O sinal PWM é gerado com ondas quadradas, de périodo \textit{T} de ciclo. Durante parte do período, o sinal terá amplitude \textit{Vmax}. O intervalo de tempo no qual no sinal tem amplitude \textit{Vmax} é chamado \textit{Duty-Cicle} como mostra a Figura \ref{FigPWM}. O valor DC de um sinal periódico é calculado como a média aritmética da amplitude do sinal no período. O valor da tensão DC fornecida ao circuito pelo Sinal PWM é calculado com a equação \ref{EqPMW1}:     
+
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/PWM.eps}
+	\caption{Sinal PWM}
+	\label{FigPWM}
+\end{figure}    
+
+\begin{equation}
+V_{dc} = 1/T() \int_{0}^{Duty Cicle}Vmax dt + \int_{Duty Cicle}^{T}Vmin dt)%
+ \label{EqPMW1}
+\end{equation}
+
+\begin{equation}
+V_{dc} = 1/T(Duty Cicle*V_{max} + T*V_{min} - Duty Cicle*V_{min} )%
+\label{EqPMW2}
+\end{equation}
+
+Se a tensão mínima (Vmin) for igual a zero, o valor DC do sinal PWM é dado por:
+
+\begin{equation}
+V_{dc} = \frac{DutyCicle*V_{max}}{T}
+\label{EqPMW3}
+\end{equation}
+
+A equação \ref{EqPMW3} mostra que quanto maior for o tempo que o sinal permanecer no seu valor máximo (Vmax), mais próximo de Vmax será o valor DC fornecido ao circuito. 
+
+O sinal PMW é gerado na placa Galileo utilizando o clock interno máximo de 400 MHz e registradores de Timer específicos para contagem de pulsos do clock. 
+
+Como exemplo para a geração do sinal PWM, digamos que o clock da placa foi setado para a frequência 1kHz. Isso significa que a cada 1ms, o clock gerará um pulso, como indicado na equação \ref{EqPMW4}.
+
+\begin{equation}
+f = 1 Khz \;  ->   T = 1ms \; -> 1000\;pulsos\; de\; clock\; por\; segundo
+\label{EqPMW4}
+\end{equation}
+
+Como a tensão de operação da placa Galileo é 5 V, então:
+
+\begin{equation}
+V_{max} = 5 V
+\label{EqPMW5}
+\end{equation}
+
+Caso se queria gerar um sinal PWM cujo componente DC seja 2.5,  é necessário então que durante metade do ciclo do sinal PWM, a amplitude do cinal seja 5 V e durante a outra metade do ciclo, a amplitude seja 0V. Para criar tal sinal, o microcontrolador realiza contagem de pulsos de clock.
+
+ Para gerar 2.5 V, o microcontrolador( para a frequência exemplo de 1kHz) realiza a contagem de 500 pulsos de clock no intervalo de \textit{DutyCicle} e realiza, após isso, a contagem de 500 pulsos no período no qual a amplitude será de 0 V.Dessa forma, é gerado digitalmente o sinal PWM na placa Galileo. 
+ 
+ Como dito no ínicio desta seção, placa Galileo é compatível com a placa Arduíno, tanto a nível de hardware quanto a nível de software. Daí, para executar a criação de um sinal PWM na placa galileu  deve-se chamar a função \textit{analogWrite(int porta, int valor)}. 
+ 
+A função \textit{analogWrite(int porta, int valor)} recebe como parâmetros dois inteiros. O inteiro \textit{porta} indica quais dos pinos digitais, habilitados para saída PWM, foi selecionado. O inteiro valor deve ser um inteiro entre 0 e 255.
+\begin{lstlisting}
+//Comando para setar na porta digital 5 o valor 5*(127/255) = 2.5 Volts
+analogWrite(5, 127);
+\end{lstlisting}
+
+A tensão DC que estará presente no pino digital segue a formula: \ref{EqPMW6}
+
+\begin{equation}
+V_{dc} =  \frac{5*valor}{255}
+\label{EqPMW6}
+\end{equation}
+
+
+
+
+
+\subsubsection{Conversão analógico-digital}
+\subsubsection{Barramento Serial I2C}
+\subsubsection{Comunicação serial SPI}
+\subsubsection{Porta Serial UART}
+\subsubsection{Memória Cache}
+\subsubsection{Memória SRAM}
+\subsubsection{Clock de tempo real - RTC}
+\subsubsection{Barramento PCI-Express}
+\subsubsection{USB Host e USB Client}
+\subsubsection{Pinos JTAG}
+\subsubsection{Memória DRAM}
+\subsubsection{Memória EEPROM}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
