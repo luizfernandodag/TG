@@ -76,4 +76,45 @@ ISSN 2340-1117.}
 {SEDRA., A.~S.; SMITH, K.~C. \emph{Microeletronics Cicuits}. [S.l.]: Oxford
   University Press, 2004.}
 
+\bibitem{DATASHEET2}
+\abntrefinfo{DEVICES}{DEVICES}{2011}
+{DEVICES, A. \emph{DATASHEET AD7298}.
+One Technology Way, P.O. Box 9106, Norwood, MA 02062-9106, U.S.A., 2011.}
+
+\bibitem{livroADC}
+\abntrefinfo{Baker}{BAKER}{2010}
+{BAKER, R.~J. \emph{CMOS Circuit Design, Layout, and Simulation, 3rd Edition
+  (IEEE Press Series on Microelectronic Systems)}. [S.l.]: Wiley-IEEE Press,
+  2010.}
+
+\bibitem{livroI2C}
+\abntrefinfo{Himpe}{HIMPE}{2011}
+{HIMPE, V. \emph{Mastering the I²C bus}. Susteren: Elektor International Media,
+  2011.
+ISBN 978-0-905705-98-9.}
+
+\bibitem{LivroSPI}
+\abntrefinfo{Russell}{RUSSELL}{2012}
+{RUSSELL, R.~C. J. \emph{Serial peripheral interface bus}. Place of publication
+  not identified: Book On Demand Ltd, 2012.
+ISBN 5513504936.}
+
+\bibitem{LivroUART}
+\abntrefinfo{Osborne}{OSBORNE}{1980}
+{OSBORNE, A. \emph{An introduction to microcomputers}. Berkeley, Calif:
+  Osborne/McGraw-Hill, 1980.
+ISBN 0-931988-34-9.}
+
+\bibitem{LivroCache}
+\abntrefinfo{Hennessy}{HENNESSY}{2012}
+{HENNESSY, J. \emph{Computer architecture : a quantitative approach}. Waltham,
+  MA: Morgan Kaufmann, 2012.
+ISBN 978-0-12-383872-8.}
+
+\bibitem{LivroSRAM}
+\abntrefinfo{Ishibashi}{ISHIBASHI}{2011}
+{ISHIBASHI, K. \emph{Low power and reliable SRAM memory cell and array design}.
+  Berlin New York: Springer, 2011.
+ISBN 978-3-642-19567-9.}
+
 \end{thebibliography}

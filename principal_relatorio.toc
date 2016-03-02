@@ -1,36 +1,36 @@
-\select@language {brazilian}
+\select@language {portuguese}
 \contentsline {chapter}{\numberline {1}Introdução}{1}
 \contentsline {section}{\numberline {1.1}Objetivo}{2}
 \contentsline {section}{\numberline {1.2}Apresentação do manuscrito}{3}
 \contentsline {chapter}{\numberline {2}Revisão Bibliográfica}{4}
 \contentsline {section}{\numberline {2.1}Placa Intel \textsuperscript {\textregistered } Galileo}{4}
 \contentsline {subsection}{\numberline {2.1.1}Pinagem da placa Intel \textsuperscript {\textregistered } Galileo}{4}
-\contentsline {subsection}{\numberline {2.1.2}Características Elétricas e Eletrônicas da placa Intel \textsuperscript {\textregistered } Galileo}{5}
-\contentsline {subsubsection}{\numberline {2.1.2.1}Sinal PWM}{6}
+\contentsline {subsection}{\numberline {2.1.2}Características Elétricas e Eletrônicas da placa Intel \textsuperscript {\textregistered } Galileo}{6}
+\contentsline {subsubsection}{\numberline {2.1.2.1}Sinal PWM}{7}
 \contentsline {subsubsection}{\numberline {2.1.2.2}Conversão analógico-digital}{8}
-\contentsline {subsubsection}{\numberline {2.1.2.3}Barramento Serial I2C}{8}
-\contentsline {subsubsection}{\numberline {2.1.2.4}Comunicação serial SPI}{8}
-\contentsline {subsubsection}{\numberline {2.1.2.5}Porta Serial UART}{8}
-\contentsline {subsubsection}{\numberline {2.1.2.6}Memória Cache}{8}
-\contentsline {subsubsection}{\numberline {2.1.2.7}Memória SRAM}{8}
-\contentsline {subsubsection}{\numberline {2.1.2.8}Clock de tempo real - RTC}{8}
-\contentsline {subsubsection}{\numberline {2.1.2.9}Barramento PCI-Express}{8}
-\contentsline {subsubsection}{\numberline {2.1.2.10}USB Host e USB Client}{8}
-\contentsline {subsubsection}{\numberline {2.1.2.11}Pinos JTAG}{8}
-\contentsline {subsubsection}{\numberline {2.1.2.12}Memória DRAM}{8}
-\contentsline {subsubsection}{\numberline {2.1.2.13}Memória EEPROM}{8}
-\contentsline {chapter}{\numberline {3}Desenvolvimento}{9}
-\contentsline {section}{\numberline {3.1}Introdu\c {c}\~{a}o}{9}
-\contentsline {section}{\numberline {3.2}Arquitetura geral}{9}
-\contentsline {section}{\numberline {3.3}Classificador estat\'{i}stico de padr\~{o}es}{9}
-\contentsline {section}{\numberline {3.4}Seção}{10}
-\contentsline {subsection}{\numberline {3.4.1}Sub-seção}{10}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Sub-sub-seção}{10}
-\contentsline {chapter}{\numberline {4}Resultados Experimentais}{11}
-\contentsline {section}{\numberline {4.1}Introdução}{11}
-\contentsline {section}{\numberline {4.2}Avaliação do algoritmo de resolução da equação algébrica de Riccati}{11}
-\contentsline {chapter}{\numberline {5}Conclus\~{o}es}{13}
-\contentsline {chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}{14}
-\contentsline {chapter}{{Anexos}}{15}
-\contentsline {chapter}{\numberline {I}Diagramas Esquemáticos}{16}
-\contentsline {chapter}{\numberline {II}Descrição do conteúdo do CD}{17}
+\contentsline {subsubsection}{\numberline {2.1.2.3}Barramento Serial I2C}{10}
+\contentsline {subsubsection}{\numberline {2.1.2.4}Comunicação serial SPI}{11}
+\contentsline {subsubsection}{\numberline {2.1.2.5}Porta Serial UART}{13}
+\contentsline {subsubsection}{\numberline {2.1.2.6}Memória Cache}{15}
+\contentsline {subsubsection}{\numberline {2.1.2.7}Memória SRAM}{16}
+\contentsline {subsubsection}{\numberline {2.1.2.8}Memória DRAM}{17}
+\contentsline {subsubsection}{\numberline {2.1.2.9}Memória EEPROM}{17}
+\contentsline {subsubsection}{\numberline {2.1.2.10}Clock de tempo real - RTC}{17}
+\contentsline {subsubsection}{\numberline {2.1.2.11}Barramento PCI-Express}{17}
+\contentsline {subsubsection}{\numberline {2.1.2.12}USB Host e USB Client}{17}
+\contentsline {subsubsection}{\numberline {2.1.2.13}Pinos JTAG}{17}
+\contentsline {chapter}{\numberline {3}Desenvolvimento}{18}
+\contentsline {section}{\numberline {3.1}Introdu\c {c}\~{a}o}{18}
+\contentsline {section}{\numberline {3.2}Arquitetura geral}{18}
+\contentsline {section}{\numberline {3.3}Classificador estat\'{i}stico de padr\~{o}es}{18}
+\contentsline {section}{\numberline {3.4}Seção}{19}
+\contentsline {subsection}{\numberline {3.4.1}Sub-seção}{19}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Sub-sub-seção}{19}
+\contentsline {chapter}{\numberline {4}Resultados Experimentais}{20}
+\contentsline {section}{\numberline {4.1}Introdução}{20}
+\contentsline {section}{\numberline {4.2}Avaliação do algoritmo de resolução da equação algébrica de Riccati}{20}
+\contentsline {chapter}{\numberline {5}Conclus\~{o}es}{22}
+\contentsline {chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}{23}
+\contentsline {chapter}{{Anexos}}{25}
+\contentsline {chapter}{\numberline {I}Diagramas Esquemáticos}{26}
+\contentsline {chapter}{\numberline {II}Descrição do conteúdo do CD}{27}

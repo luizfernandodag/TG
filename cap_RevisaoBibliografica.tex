@@ -86,15 +86,15 @@ A descrição de cada um desses pinos é a descrita na tabela \ref{TabPinos}:
 	\begin{tabular}{|l|l|}
 		\hline
 		\textbf{Pino}           & \textbf{Descrição}                                                                                                                                                                                                 \\ \hline
-		Micro SD Card Slot      & \begin{tabular}[c]{@{}l@{}}Pino no qual se pode um SD Card para permitir ao Galileo\\  a execução de uma versão de Linux com mais recursos\end{tabular}                                                            \\ \hline
-		Arduino Expansions Pins & \begin{tabular}[c]{@{}l@{}}Pinos de entrada e saída da placa Galileo. Esses pinos são compatíveis\\  com os pinos do Arduino e Shields relacionadas.\end{tabular}                                                  \\ \hline
+		Micro SD Card Slot      & \begin{tabular}[c]{@{}l@{}}Pino no qual se pode um SD Card para permitir ao Galileo\\  a execução de uma versão de Linux com mais recursos\end{tabular}                                                 \\ \hline
+		Arduino Expansions Pins & \begin{tabular}[c]{@{}l@{}}Pinos de entrada e saída da placa Galileo.\\ Esses pinos são compatíveis\\  com os pinos do Arduino e Shields relacionadas.\end{tabular}                                                  \\ \hline
 		USB Device Port         & \begin{tabular}[c]{@{}l@{}}Pino para conectar um cabo USB do Galileo ao computador\\  para carregar o Galileo com um programa Arduino\end{tabular}                                                                 \\ \hline
-		Host USB Port           & Pino para conectar um dispositivo periférico ( como webcam, caixa de som, etc)                                                                                                                                     \\ \hline
-		6-Pin FTDI Header       & Adaptador para comunicação serial computador - Linux instalado no Galileo                                                                                                                                          \\ \hline
-		Power Input             & \begin{tabular}[c]{@{}l@{}}Conexão para bateria de 12V. ATENÇÃO, a bateria sempre deve ser conectada\\ ao Galileo antes de conectar um cabo USB do Galileo ao computador para evitar\\ danos a placa.\end{tabular} \\ \hline
+		Host USB Port           & Pino para conectar um dispositivo periférico\\ ( como webcam, caixa de som, etc)                                                                                                                                     \\ \hline
+		6-Pin FTDI Header       & Adaptador para comunicação serial computador\\ - Linux instalado no Galileo                                                                                                                                          \\ \hline
+		Power Input             & \begin{tabular}[c]{@{}l@{}}Conexão para bateria de 12V. ATENÇÃO, a bateria\\ sempre deve ser conectada ao Galileo antes de conectar\\ um cabo USB do Galileo ao computador para evitar\\ danos a placa.\end{tabular} \\ \hline
 		Ethernet Port           & Pino para conectar o Galileo à Internet pelo cabo Ethernet                                                                                                                                                         \\ \hline
 		Mini PCI Express Slot   & Pino para conectar um cartão WiFi                                                                                                                                                                                  \\ \hline
-		Clock Baterry Power     & \begin{tabular}[c]{@{}l@{}}Conexão para uma bateria de relógio de 3V de forma a fazer com Galileo guarde \\ informações de data e hora\end{tabular}                                                                \\ \hline
+		Clock Baterry Power     & \begin{tabular}[c]{@{}l@{}}Conexão para uma bateria de relógio de 3V de forma\\ a fazer com Galileo guarde  informações de data e hora\end{tabular}                                                                \\ \hline
 		Reboot Button           & Botão para realizar a placa, inclusive o sistema operacional                                                                                                                                                       \\ \hline
 		Reset Button            & Botão para resetar o código que foi carregado no Galileo                                                                                                                                                           \\ \hline
 	\end{tabular}
@@ -103,7 +103,7 @@ A descrição de cada um desses pinos é a descrita na tabela \ref{TabPinos}:
 
 
 \subsection{Características Elétricas e Eletrônicas da placa Intel \textsuperscript{\textregistered} Galileo}
-
+\label{CaracteristicasGalileo}
 As características elétricas e eletrônicas da placa são enumeradas a seguir. As características que têm uma sub-seção para explicação mais aprofundada estão marcadas com \textit{itálico} e \textbf{negrito}: 
 \begin{itemize}
 	\item Clock de 400 MHz
@@ -124,7 +124,7 @@ As características elétricas e eletrônicas da placa são enumeradas a seguir. As 
 \end{itemize}
 
 \subsubsection{Sinal PWM}
-
+\label{PWM}
 Pulse Width Modulation (PWM) ou Modulação por Largura de Pulso é uma técnica que modulação de impulso utilizada principalmente para codificar uma mensagem num sinal pulsante\cite{livro:Sedra} 
 
 Para o caso do Intel Galileo, as aplicações do sinal PWM são principalmente relacionadas ao controle da tensão DC fornecida a um circuito. 
@@ -140,7 +140,7 @@ O sinal PWM é gerado com ondas quadradas, de périodo \textit{T} de ciclo. Durant
 \end{figure}    
 
 \begin{equation}
-V_{dc} = 1/T() \int_{0}^{Duty Cicle}Vmax dt + \int_{Duty Cicle}^{T}Vmin dt)%
+V_{dc} = 1/T() \int_{0}^{Duty Cicle}V_{max} dt + \int_{Duty Cicle}^{T}V_{min} dt%
  \label{EqPMW1}
 \end{equation}
 
@@ -180,7 +180,7 @@ Caso se queria gerar um sinal PWM cujo componente DC seja 2.5,  é necessário ent
  
  Como dito no ínicio desta seção, placa Galileo é compatível com a placa Arduíno, tanto a nível de hardware quanto a nível de software. Daí, para executar a criação de um sinal PWM na placa galileu  deve-se chamar a função \textit{analogWrite(int porta, int valor)}. 
  
-A função \textit{analogWrite(int porta, int valor)} recebe como parâmetros dois inteiros. O inteiro \textit{porta} indica quais dos pinos digitais, habilitados para saída PWM, foi selecionado. O inteiro valor deve ser um inteiro entre 0 e 255.
+A função \textit{analogWrite(int porta, int valor)} recebe como parâmetros dois inteiros. O inteiro \textit{porta} indica quais dos pinos digitais, habilitados para saída PWM, foi selecionado. O inteiro \textit{valor} deve ser um inteiro entre 0 e 255.
 \begin{lstlisting}
 //Comando para setar na porta digital 5 o valor 5*(127/255) = 2.5 Volts
 analogWrite(5, 127);
@@ -198,17 +198,233 @@ V_{dc} =  \frac{5*valor}{255}
 
 
 \subsubsection{Conversão analógico-digital}
+
+A placa Galileo utiliza para a conversão analógico-digital o circuito integrado \textit{AD7298} \cite{DATASHEET2}. O conversor analógico-digital AD7298 é um conversor de 12 bits e usa para a conversão a técnica de \textit{aproximações sucessivas}.
+
+A figura \ref{ADC1} mostra uma figura esquemática para o processo de conversão analógico-digital utlizando a técnica de \textit{aproximações sucessivas} e os termos chave para essa técnica são os seguintes:
+\begin{itemize}
+	\item Registrador de aproximação sucessiva (SAR)
+	\item Circuito de amostragem e retenção ( Track and Hold)
+	\item Tensão de entrada V\textsubscript{IN}
+	\item Tensão de referência V\textsubscript{REF}
+	\item Registrador de N bits (N-BIT REGISTER)
+	\item Conversor digital para analógico de N bits(N-BIT DAC)
+	\item Circuito Comparador
+\end{itemize}
+ Num primeiro instante, o bit mais significante do conversor D/A é setado para 1, enquanto os outros N-1 bits são setados para 0. Essa configuração inicial dos N bits do conversor D/A força com que na saída exista 1/2 da tensão de referência V\textsubscript{REF}, ou seja V\textsubscript{DAC} = 1/2 V\textsubscript{REF}.
+
+
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/ADC1.eps}
+	\caption{Figura esquemática do processo de conversão analógico para digital}
+	\label{ADC1}
+\end{figure}
+Caso a tensão V\textsubscript{DAC} seja maior que a tensão de entrada V\textsubscript{IN}, o bit mais significativo será mantido, caso o contrário, esse bit será setado no valor 0. Depois disso, registrador SAR grava o resultado obtido no comparador no bit avaliado. O processo se repete para os N bits,sempre comparando a tensão de entrada V\textsubscript{IN} com a tensão de conversão V\textsubscript{DAC}, fazendo com que a saída da conversão se aproxime progresivamente a cada iteração\cite{livroADC}. 
+
+A eficiência do processo de conversão analógico-digital está intimamente ligada ao processo interno de conversão digital-analógico. Há diversos processos de conversão digital-analógico, entretanto, para todos, a quantidade de bits a serem convertidos influencia diretamente na linearidade do processo. Por isso se escolhe, em geral, um conversor digital-analógico de 12 bits. 
+
+O conversor A/D utilzado na placa Galileo, segundo seu respectivo datasheet \cite{DATASHEET2}, possui características implementadas que, entre outras incluem:
+ 
+\begin{itemize}
+ 	\item Sensor de temperatura integrado para devidos ajustes às variações de parâmetros causados pela variação de temperatura
+ 	\item Taxa de saída de conversões completadas superior a 1 MSPS ( Million Samples Per Second)
+\end{itemize}
+
+	
+     
 \subsubsection{Barramento Serial I2C}
+
+
+I2C(Inter-Intergrated-Circuit) é um protocolo de comunicação serial desenvolvida originalmente pela \textit{NXP Semiconductor}. Ela permite a comunicação direta entre diversos componentes utilizando apenas três  barramentos: um barramento para transmissão de bits dados - \textit{Serial Data Line(SDA)} - um barramento para o sinal de clock - \textit{Serial Clock Line(SCL)} e um barramento para o uso de um resistor de \textit{pull-up} ligado diretamente uma tensão V\textsubscript{dd} de 5V ou 3.3V. O endereçamento no protocolo I2C pode ser de 7 ou 10 bits. A velocidade de transmissão de dados variam de 10kbits/s - para o modo \textit{low speed}- 400 kbits/s - para o modo \textit{Fast mode} - e 3.4Mbit/s para o \textit{modo Fast mode plus} \cite{livroI2C}. 
+
+O resistor \textit{pull-up} serve para ter como valor alto de tensão( lógico 1) tanto o barramento de clock como o barramento de dados, Fig.\ref{I2C1}. Para trocar o valor lógico enviado nos barramentos, os dispositivos devem chavear suas respectivas conexões com os barramentos.
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/I2C1.eps}
+	\caption{Figura esquemática do barramento serial I2C}
+	\label{I2C1}
+\end{figure}
+
+No protocolo I2C, sempre existem os dispositivos que agem como \textit{dispositivos mestres}(Masters) e os dispositivos que agem como \textit{dispositivos escravos}(Slaves).
+
+Um \textit{dispositivo mestre} pode escolher com qual dos \textit{dispositivos escravos} ele deseja se comunicar realizando a "mensagem de início".Após isso mandando os bits de endereço do \textit{dispositivo escravo} são enviados no barramento de dados. É enviada, juntamente com uma mensagem do endereço, uma indicação, por parte do \textit{dispositivo mestre} mostrando se ele deseja escrever ou ler do \textit{dispositivo escravo}. Após isso, o \textit{dispositivo escravo} deve enviar uma mensagem ACK para completar o estabelecimento da comunicação.Para enviar uma mensagem ACK, o \textit{dispositivo escravo} seta o barramento de dados para o valor 0.   
+
+Tendo sido estabelecida a comunicação entre \textit{dispositivo mestre} e \textit{dispositivo escravo}, é incubência do \textit{dispositivo escravo} enviar, a cada 8 bits recebidos, uma mensagem ACK. 
+
+
+Os \textit{dispositivos mestres} sempre retem o controle do barramento de clock. Quando um \textit{dispositivo mestre} faz com que o barramento de clock tenha o valor lógico 0, é indicado para os \textit{dispositivos escravos} que eles devem setar o barramento de dados com um bit 0 ou 1.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/I2C2.eps}
+	\caption{I2C - Clock Stretching }
+	\label{I2C2}
+\end{figure}
+
+Para assegurar o recebimento dos dados, os \textit{dispositivo escravos} podem, possivelmente, realizar o chamado \textit{Clock Stretching},, Fig \ref{I2C2}, o qual consiste em manter o barramento de clock no nível 0, mesmo que o mestre o tenha setado para o nível. Isso é feito para, ampliar o tempo do processo de recebimento dos dados, por parte dos \textit{dispositivo escravos}, para assegurar o sucesso de tal processo.
+
+I2C oferece um bom suporte para a comunicação entre dispositivos eletrônicos  que são acessados de forma ocasional. A vantagem competitiva da I2C sobre outros protocolos de comunicação de curta distância de baixa velocidade é que seu custo e complexidade não aumenta com o número de dispositivos no barramento. 
+
+Por outro lado, a complexidade dos componentes de software I2C de suporte pode ser significativamente mais elevada do que a de vários protocolos concorrentes (SPI e MicroWire, por exemplo) com uma configuração muito simples. Entretanto, seu modelo de endereçamento próprio, aliado com a forma de transferência simples de bytes para necessidades de comunicação simples.
+
+O protocolo I2C é muito utilizado em projetos no placas Galileo utilizando a biblioteca: \textit{Wire.h}
+
+
+
+
 \subsubsection{Comunicação serial SPI}
+
+Assim como o protocolo I2C, o protocolo de Interface Serial com Periféricos - Serial Peripheral Interface (SPI) - tem como utilidade a comunicação de curta distância entre dispositivos eletrônicos\cite{LivroSPI}.
+
+No protocolo SPI, há apenas um \textit{dispositivo mestre} para vários \textit{dispositivo escravos}. A comunincação entre os \textit{dispositivo mestre} e os \textit{dispositivos escravos} é \textit{full-duplex}, ou seja, os dispositivos citados podem se comunicar entre si em ambas direções. Os pinos \textit{dispositivo mestre} e nos \textit{dispositivos escravos}, como mostrados na Figura \ref{SPI1}, são os seguintes:
+
+\begin{itemize}
+	\item SCLK: Barramento Serial para o sinal de Clock originado no \textit{dispositivo mestre}
+	\item MOSI: \textit{Master Output Slave Input}; sinal originado no \textit{dispositivo mestre}
+	\item MISO: \textit{Master Input Slave Output};sinal originado em um dos \textit{dispositivos escravos}
+	\item SS: \textit{Slave Select}; sinal originado no \textit{dispositivo mestre}
+	
+\end{itemize}
+
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/SPI0.eps}
+	\caption{Barramento SPI - Um \textit{dispositivo mestre} para \textit{dispositivos escravos}  }
+	\label{SPI1}
+\end{figure}
+
+O pino SS é utilizado pelo \textit{dispositivo mestre} para selecionar com qual dos \textit{dispositivos escravos} ele se comunicará (seja para receber mensagens ou enviar). Usualmente, quando um dos \textit{dispositivos escravos} é selecionado, todos outros, pela lógica \textit{tri-state} das entradas SS, assumem altas impedância de entrada - o que significa que virtualmente tais escravos estão desconectados do circuito com o \textit{dispositivo mestre}.
+
+Primeiramente, no começo da comunicação com o dispositivo selecionado, é configurado no \textit{dispositivo mestre} a frequência do clock que sai da pino SCLK.
+
+Após isso, começa a ocorrer a troca de bits entre os dispositivos. Para cada bit que o pino MOSI recebe, é também recebido um bit no pino MISO. 
+
+Comparado a outros protocolos de inter-comunicação, o protocolo SPI oferece uma das maiores taxas de saída de bits. Isso se deve, dentre outros fatores, a não limitação do tamanho da palavra binária transmitida. As taxas de transmissão são, em geral, da ordem de MHz, entretanto tal taxa é intimamente ligada a velocidade do clock no \textit{dispositivo mestre}, podendo portanto ser livremente aumentada. Além disso, os \textit{dispositivos escravos} não necessitam de um endereço único como no protocolo I2C, daí, todas fase de reconhecimento e estabelecimento de comunicação é facilitada. Entretanto, tais facilidades tornam o protocolo com dificil deburação de erros e não há controle de fluxo nem nos \textit{dispositivos escravos}.
+
+SPI é utilizado em muitas aplicações. Dentre elas, por exemplo:
+\begin{itemize}
+	\item Aplicações com sensores:
+	\begin{itemize}
+		\item Comunicação com sensores de temperatura
+		\item Comunicação com sensores de pressão
+		\item Comunicação com sensores de toque
+	\end{itemize}
+	\item aplicações com tipos específicos de mémoria
+	\begin{itemize}
+		\item Flash
+		\item EEPROM
+	\end{itemize}
+	
+\end{itemize}
+
+Para fazer projetos com SPI na placa Galileo deve ser utilizada a biblioteca \textit{SPI.h}
+
 \subsubsection{Porta Serial UART}
+
+UART significa \textit{Universal Asynchronous Receiver/Transmitter} (Receptor/Transmissor Universal Assíncrono). Um dispositivo UART é um microchip que tem como responsabilidade controlar a comunicação de um computador ou microcontrolador conectados serialmente. Essencialmente, um dispositivo UART é a dispositivo intermediário entre interfaces seriais e paralelas\cite{LivroUART}.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/UART2.eps}
+	\caption{Modelo simplificado de um dispositivo UART}
+	\label{UART2}
+\end{figure}
+
+A Figura \ref{UART2} mostra um modelo simplicado do que consiste um dispositivo UART. Na parte esquerda da figura, são mostrados os pinos de comunicação paralela pelo barramento de dados (Data Bus). O pinos R/W é utilizado para setar entre modos de leitura e escrita (Read/Write). O pino CLK é o pino do sinal de clock. O pino INT é o pino usado para interrupção de software para avisar o sistema que há dados para serem lidos/escritos no dispositivo UART.
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/UART1.eps}
+	\caption{Frame UART para transmissão de 1 byte }
+	\label{UART1}
+\end{figure}
+ 
+A Figura \ref{UART1} mostra o chamado \textit{frame} de dados da placa UART. O \textit{frame} é composto de 10 bits. O primeiro bit é o bit de \textit{start} utilizado para indicar o ínicio do envio ou recebimento de um byte (8 bits) de dados. O bit \textit{stop} indica o fim do frame. 
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/UART3.eps}
+	\caption{Modelo completo de um dispositivo UART}
+	\label{UART3}
+\end{figure}
+
+Já a Figura \ref{UART3} mostra em detalhes o processo que ocorre num dispositivo UART. Na figura, \verb|UART_DR_D| é o \textit{registrador de dados (Data Register)}, o qual é preenchido pela dispositivo que deseja realizar a comunicação utilizando o dispositivo UART. FIFO é a fila de recebimento(RX) ou transmissão de dados(TX). Ambas as filas tem 16 bits de tamanho. No caso da fila de recebimento de dados, 4 dos 16 bits são bits de flags para indicar erros na transmissão.
+
+ RXFE é uma flag que indica se que a fila de recebimento  está vazia e RXFF é outra flag que indica que a fila de recebeminto está vazia. Quanto as filas de transmissão, TXEF indica que a fila está vazia e TXFF indica que a fila está cheia. UOTX e UORX são \textit{shift register} são os responsáveis pela transformação da comunicação em série para paralela e vice-versa. 
+
+O processo de transmissão de dados é o seguinte:
+
+\begin{itemize}
+	\item 1) Dados armazenados no registrador de dados são enviados para a fila
+	\item Caso a fila esteja vazia( flag TX), a fila recebe os bits do registrador de dados
+	\item 2) Os bits são enviados para o shift register UOTX, começando no b0 e sendo "shiftados" até o bit b7.
+	\item 3) Os bits armazenados no UOTX são enviados de forma serial para 
+	o shift register receptor UORX.
+	\item 4) Caso a fila de recepção esteja vazia (flag RX), os dados são colocados na pilha e lá permanecem até serem lidos.
+\end{itemize} 
+
+UART é muito utilizado para projetos que requerem comunicação serial com Galileo ou projeto de Multiplas Entradas e Saída Única (MISO) ou projeto com Entrada Única e Saída Múltipla (SIMO). Para trabalhar com UART, deve usar a biblioteca \textit{SoftwareSerial.h}
+
+
+%%SPI
+%? EEPROM
+%? UART
+%? GPIO
+%? Wi-Fi
+%? Servo
+%? USB Host 
+
 \subsubsection{Memória Cache}
+
+Dentre as operações num sistema computacional, a operação mais demorada é o acesso à memória. Para evitar tais operações, é usada a chamada memória cache\cite{LivroCache}. 
+
+A memória cache faz parte da organização da memória de um sistema computacional. A memória num sistema computacional é organizada da seguinte forma, Fig.\ref{CACHE0}:
+\begin{itemize}
+	\item Memória de armazenamento(Storage Device - Memória ROM): Este nível de memória é o que possível mais espaço, entretanto é a memória que demanda mais tempo para ser modificada, por isso, em geral, nesse nível ficam armazenados sistemas operacionais, arquivos de BOOT do sistema, firwares, etc. A memória nesse nível não-volátil, o que significa que ela não é perdida ao se desligar o sistema.
+	\item RAM(Random Access Memory): Este nível de memória é utilizado como memória principal. A memória RAM é de leitura e escrita. Essa memória é utilizada pelo CPU para armazenar e ler dados, arquivos e programas que estão sendo utilizados no momento. A memória RAM é uma memória volátil, o que significa que o conteúdo armazenado nela é perdido após o desligamento do sistema.
+	\item A memória cache é a parte da memória utilizada pela unidade de processamento central (CPU) de um computador para reduzir o tempo médio necessário para ler ou escrever aos dados a partir da memória principal. A memória cache é uma memória menor, mais rápida que armazena cópias dos dados de localizações de memória principais utilizados com frequência para evitar a repetição de acessos lentos. A maioria dos processadores têm diferentes caches independentes, incluindo instruções e dados caches, onde o cache de dados é normalmente organizadas como uma hierarquia de níveis mais cache (L1, L2, etc).
+	\item CPU: Na CPU está armazenada toda arquitetura de instruções do sistema computacional. A CPU é responsável pela gerência de todos processos que ocorrem no computador e ela utiliza a memória cache para realizar a maior parte de suas operações
+	  
+\end{itemize}
+
+Para toda operação que a CPU executa a qual necessita de certo dado da memória, é sempre verificadp, primeiramente, se o dado já se encontra na memória cache. Caso o dado não se encontre na cache, é solicitado dos níveis mais baixos da memória o dado em questão. Caso o dado já se encontre na cache, ele é lido e processado rapidamente pela CPU.
+
+Microcontroladores simples, em geral, não possuem a memória cache, visto que toda sua estrutura é simplificada. No caso da placa Galileo e placas similares, a memória cache é necessária, visto que tais sistemas podem, inclusive, executar sistemas operacionais e tem grande quantidade de memória de armazenamento.
+
+Atualmente, vem-se dividindo a mémoria cache em níveis: cache L1, cache L2, cache L3, etc. Tal divisão é feita para amplificar o efeito de manter na cache os dados de memória usualmente acessados. A cache L1 contêm os dados acessados mais frequentemente, a cache L2 contêm os dados acessados frequentemente, mas não tanto quanto os dados na cache L1, etc. 
+
+No caso da placa Galileo, há apenas um nível de cache: a cache L1 com 16 KBytes, como mostrado na seção \ref{CaracteristicasGalileo}.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/cache0.eps}
+	\caption{Organização da memória num sistema computacional}
+	\label{CACHE0}
+\end{figure}
+
+
 \subsubsection{Memória SRAM}
+
+Memória SRAM (Static Random Access Memory) é o tipo de memória geralemte utilizado no nível de memória cache. É uma memória volátil, apesar de exibir certar remanescência para o caso de desligamento.
+
+A memória SRAM é construída utilizando transistores MOSFETs. A Figura \ref{SRAM0} mostra a estrutura básica de armazenamento de bit da memória SRAM. 
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/SRAM0.eps}
+	\caption{Estrutura CMOS SRAM}
+	\label{SRAM0}
+\end{figure}
+
+Resumidamente, os transistores M1, M2, M3 e M4 são os responsáveis por guardar o bit\cite{LivroSRAM}. Os transistores M5 e M6 são usados para ler ou escrever da célula de memória por meio das linhas de bit BL e B\textsuperscript{-}L. Tal processo de leitura ou escrita pode ser realizado, em média, em 70 a 100 ns, velocidade a qual é bastante alta para sistemas computacionais.
+
+A memória SRAM é utilizada nós mais variados ambientes como: computadores pessoais, microcontroladores, FPGAs, etc. Na placa Galileo, existem 512 Kbytes de SRAM integrados, tornando a placa Galileo altamente eficiente no tocante ao acesso e atualização da memória.  
+
+\subsubsection{Memória DRAM}
+\subsubsection{Memória EEPROM}
 \subsubsection{Clock de tempo real - RTC}
 \subsubsection{Barramento PCI-Express}
 \subsubsection{USB Host e USB Client}
 \subsubsection{Pinos JTAG}
-\subsubsection{Memória DRAM}
-\subsubsection{Memória EEPROM}
 
 
 

@@ -1,0 +1,24 @@
+﻿"UNIVERSIDADE Name","PAIS","POSICAO ","CURSO FK","SCORE MEDIO","SCORE ENSINO","SCORE PANORAMA INTERNACIONAL","SCORE IMPACTO NA INDUSTRIA","SCORE PESQUISA","SCORE CITACAO"
+"Universidade de Brasilia","Brasil","800","Engenharia de Energia
+Engenharia Automotiva
+Engenharia Aeroespacial
+Engenharia de Software
+Engenharia Eletrônica
+Engenharia de Redes 
+Engenharia de Produção 
+Engenharia de Computação
+Engenharia Mecatrônica","20.0","21.9","24.1","20.0","7.4","10.4",
+"Universidade Pontificia Católica do Rio de Janeiro","Brasil","600","","20.0","24.5","31.3","100.0","24.1","23.1",
+"Universidade Federal do Rio de Janeiro","Brasil","600","","20.0","32.4","25.1","42.9","19.7","18.3",
+"Universidade de Campinas","Brasil","400","","20.0","44.6","21.1","49.4","42.3","22.6",
+"University of São Paulo","Brasil","300","","20.0","59.1","25.3","30.5","57.1","20.4",
+"University of Chicago","EUA","10","","87.9","85.7","65.0","36.6","88.9","99.2",
+"ETH Zurich – Swiss Federal Institute of Technology Zurich","Suiça","9","","88.3","77.0","97.9","80.0","95.0","91.1",
+"Imperial College London","Reino Unido","8","","89.1","83.3","96.0","53.7","88.5","96.7",
+"Princeton University","EUA","7","","90.1","85.1","78.5","52.1","91.9","99.3",
+"Harvard University","EUA","6","","91.6","83.6","77.2","45.2","99.0","99.8",
+"Massachusetts Institute of Technology","EUA","5","","92.0","89.4","84.0","95.4","88.6","99.7",
+"University of Cambridge","Reino Unido","4","","92.8","88.2","91.5","55.0","96.7","97.0",
+"Stanford University","EUA","3","","93.9","92.5","76.3","63.3","96.2","99.9",
+"University of Oxford","Reino Unido","2","","94.2","86.5","94.4","73.1","98.9","98.8",
+"California Institute of Technology","EUA","1","","95.2","95.6","64.0","97.8","97.6","99.8",

@@ -1,9 +1,18 @@
-\select@language {brazilian}
+\select@language {portuguese}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Descrição dos pinos da placa Galileo - parte frontal\cite {DATASHEET1}}}{5}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Descrição dos pinos da placa Galileo - parte traseira\cite {DATASHEET1}}}{5}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Descrição dos pinos da placa Galileo - parte frontal\cite {DATASHEET1}}}{6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Descrição dos pinos da placa Galileo - parte traseira\cite {DATASHEET1}}}{6}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Sinal PWM}}{7}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Figura esquemática do processo de conversão analógico para digital}}{9}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Figura esquemática do barramento serial I2C}}{10}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces I2C - Clock Stretching }}{11}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Barramento SPI - Um \textit {dispositivo mestre} para \textit {dispositivos escravos} }}{12}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Modelo simplificado de um dispositivo UART}}{14}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Frame UART para transmissão de 1 byte }}{14}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Modelo completo de um dispositivo UART}}{15}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Organização da memória num sistema computacional}}{16}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Estrutura CMOS SRAM}}{17}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

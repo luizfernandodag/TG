@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.5)  28 FEB 2016 21:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.5)  2 MAR 2016 20:16
 entering extended mode
 **./principal_relatorio.tex
 (principal_relatorio.tex
@@ -48,6 +48,9 @@ File: babel.def 2015/08/03 3.9m Babel common definitions
 )
 \l@brazilian = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-portuges\portuges.ldf"
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
@@ -406,6 +409,14 @@ Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdfescape.sty"
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
 )))
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count120
+\float@exts=\toks51
+\float@box=\box35
+\@float@everytoks=\toks52
+\@floatcapt=\box36
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -445,17 +456,17 @@ LaTeX Font Info:    ... okay on input line 114.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
+\scratchcounter=\count121
 \scratchdimen=\dimen140
-\scratchbox=\box35
-\nofMPsegments=\count121
-\nofMParguments=\count122
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count123
+\scratchbox=\box37
+\nofMPsegments=\count122
+\nofMParguments=\count123
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count124
 \MPscratchDim=\dimen141
-\MPnumerator=\count124
-\makeMPintoPDFobject=\count125
-\everyMPtoPDFconversion=\toks52
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
+\everyMPtoPDFconversion=\toks54
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -491,13 +502,13 @@ LaTeX Font Info:    ... okay on input line 114.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count126
+\c@lstlisting=\count127
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks53
-\inpenc@posthook=\toks54
+\inpenc@prehook=\toks55
+\inpenc@posthook=\toks56
 )
-\AtBeginShipoutBox=\box36
+\AtBeginShipoutBox=\box38
 LaTeX Font Info:    Try loading font information for U+msa on input line 170.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -639,7 +650,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 82.
 
 
-Overfull \hbox (68.90408pt too wide) in paragraph at lines 86--101
+Overfull \hbox (15.56554pt too wide) in paragraph at lines 86--101
  [][] 
  []
 
@@ -647,10 +658,10 @@ Overfull \hbox (68.90408pt too wide) in paragraph at lines 86--101
 
 
 
-]
+] [5]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 109.
- [5 <./figs/galileoFrentePinos-eps-converted-to.pdf> <./figs/galileoTrasPinos-e
+ [6 <./figs/galileoFrentePinos-eps-converted-to.pdf> <./figs/galileoTrasPinos-e
 ps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/PWM.eps>
 (epstopdf)                    date: 2016-02-28 17:41:00
@@ -671,59 +682,260 @@ Package epstopdf Info: Result file: <figs/PWM-eps-converted-to.pdf>
 
 pdfTeX warning: pdflatex.exe (file ./figs/PWM-eps-converted-to.pdf): PDF inclus
 ion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/PWM-eps-converted-to.pdf, id=79, 682.34924pt x 315.77975pt>
+<figs/PWM-eps-converted-to.pdf, id=82, 682.34924pt x 315.77975pt>
 File: figs/PWM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/PWM-eps-converted-to.pdf>
 Package pdftex.def Info: figs/PWM-eps-converted-to.pdf used on input line 137.
 (pdftex.def)             Requested size: 464.34918pt x 214.8912pt.
- [6] [7 <./figs/PWM-eps-converted-to.pdf>]
+ [7 <./figs/PWM-eps-converted-to.pdf>]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 184.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)) [8]
+) [8]
+Package epstopdf Info: Source file: <figs/ADC1.eps>
+(epstopdf)                    date: 2016-02-29 21:35:00
+(epstopdf)                    size: 444771 bytes
+(epstopdf)             Output file: <figs/ADC1-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-02-29 21:36:46
+(epstopdf)                    size: 25825 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/ADC1-eps-converted-to.
+pdf figs/ADC1.eps>
+(epstopdf)             \includegraphics on input line 220.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./figs/ADC1-eps-converted-to.pdf): PDF inclu
+sion: found PDF version <1.6>, but at most version <1.5> allowed
+<figs/ADC1-eps-converted-to.pdf, id=95, 671.30798pt x 393.06851pt>
+File: figs/ADC1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/ADC1-eps-converted-to.pdf>
+Package pdftex.def Info: figs/ADC1-eps-converted-to.pdf used on input line 220.
+
+(pdftex.def)             Requested size: 464.34918pt x 271.89531pt.
+ [9 <./figs/ADC1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figs/I2C1.eps>
+(epstopdf)                    date: 2016-03-01 16:53:39
+(epstopdf)                    size: 596069 bytes
+(epstopdf)             Output file: <figs/I2C1-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-01 16:58:59
+(epstopdf)                    size: 23464 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/I2C1-eps-converted-to.
+pdf figs/I2C1.eps>
+(epstopdf)             \includegraphics on input line 245.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./figs/I2C1-eps-converted-to.pdf): PDF inclu
+sion: found PDF version <1.6>, but at most version <1.5> allowed
+<figs/I2C1-eps-converted-to.pdf, id=103, 579.66562pt x 204.26312pt>
+File: figs/I2C1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/I2C1-eps-converted-to.pdf>
+Package pdftex.def Info: figs/I2C1-eps-converted-to.pdf used on input line 245.
+
+(pdftex.def)             Requested size: 371.48076pt x 130.90248pt.
+ [10 <./figs/I2C1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figs/I2C2.eps>
+(epstopdf)                    date: 2016-03-01 18:43:31
+(epstopdf)                    size: 1285650 bytes
+(epstopdf)             Output file: <figs/I2C2-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-01 18:44:51
+(epstopdf)                    size: 28529 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/I2C2-eps-converted-to.
+pdf figs/I2C2.eps>
+(epstopdf)             \includegraphics on input line 260.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./figs/I2C2-eps-converted-to.pdf): PDF inclu
+sion: found PDF version <1.6>, but at most version <1.5> allowed
+<figs/I2C2-eps-converted-to.pdf, id=111, 662.475pt x 387.54788pt>
+File: figs/I2C2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/I2C2-eps-converted-to.pdf>
+Package pdftex.def Info: figs/I2C2-eps-converted-to.pdf used on input line 260.
+
+(pdftex.def)             Requested size: 278.61234pt x 162.9878pt.
+ [11 <./figs/I2C2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figs/SPI0.eps>
+(epstopdf)                    date: 2016-03-01 20:49:35
+(epstopdf)                    size: 982105 bytes
+(epstopdf)             Output file: <figs/SPI0-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-01 20:50:32
+(epstopdf)                    size: 27068 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/SPI0-eps-converted-to.
+pdf figs/SPI0.eps>
+(epstopdf)             \includegraphics on input line 293.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./figs/SPI0-eps-converted-to.pdf): PDF inclu
+sion: found PDF version <1.6>, but at most version <1.5> allowed
+<figs/SPI0-eps-converted-to.pdf, id=118, 496.85625pt x 394.17264pt>
+File: figs/SPI0-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/SPI0-eps-converted-to.pdf>
+Package pdftex.def Info: figs/SPI0-eps-converted-to.pdf used on input line 293.
+
+(pdftex.def)             Requested size: 371.48076pt x 294.71452pt.
+ [12 <./figs/SPI0-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figs/UART2.eps>
+(epstopdf)                    date: 2016-03-02 16:11:54
+(epstopdf)                    size: 1160473 bytes
+(epstopdf)             Output file: <figs/UART2-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-02 16:11:48
+(epstopdf)                    size: 32349 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/UART2-eps-converted-to
+.pdf figs/UART2.eps>
+(epstopdf)             \includegraphics on input line 330.
+runsystem(epstopdf --outfile=figs/UART2-eps-converted-to.pdf figs/UART2.eps)...
+disabled (restricted).
+
+Package epstopdf Info: Result file: <figs/UART2-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-02 16:11:48
+(epstopdf)                    size: 32349 bytes.
+
+
+pdfTeX warning: pdflatex.exe (file ./figs/UART2-eps-converted-to.pdf): PDF incl
+usion: found PDF version <1.6>, but at most version <1.5> allowed
+<figs/UART2-eps-converted-to.pdf, id=125, 552.0625pt x 419.5675pt>
+File: figs/UART2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/UART2-eps-converted-to.pdf>
+Package pdftex.def Info: figs/UART2-eps-converted-to.pdf used on input line 330
+.
+(pdftex.def)             Requested size: 325.043pt x 247.0433pt.
+Package epstopdf Info: Source file: <figs/UART1.eps>
+(epstopdf)                    date: 2016-03-02 16:00:20
+(epstopdf)                    size: 364354 bytes
+(epstopdf)             Output file: <figs/UART1-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-02 16:01:17
+(epstopdf)                    size: 38050 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/UART1-eps-converted-to
+.pdf figs/UART1.eps>
+(epstopdf)             \includegraphics on input line 338.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./figs/UART1-eps-converted-to.pdf): PDF incl
+usion: found PDF version <1.6>, but at most version <1.5> allowed
+<figs/UART1-eps-converted-to.pdf, id=126, 1190.2468pt x 181.07649pt>
+File: figs/UART1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/UART1-eps-converted-to.pdf>
+Package pdftex.def Info: figs/UART1-eps-converted-to.pdf used on input line 338
+.
+(pdftex.def)             Requested size: 371.48076pt x 56.51442pt.
+Package epstopdf Info: Source file: <figs/UART3.eps>
+(epstopdf)                    date: 2016-03-02 16:25:36
+(epstopdf)                    size: 1036703 bytes
+(epstopdf)             Output file: <figs/UART3-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-02 16:25:39
+(epstopdf)                    size: 78191 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/UART3-eps-converted-to
+.pdf figs/UART3.eps>
+(epstopdf)             \includegraphics on input line 346.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./figs/UART3-eps-converted-to.pdf): PDF incl
+usion: found PDF version <1.6>, but at most version <1.5> allowed
+<figs/UART3-eps-converted-to.pdf, id=127, 1567.8575pt x 395.27673pt>
+File: figs/UART3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/UART3-eps-converted-to.pdf>
+Package pdftex.def Info: figs/UART3-eps-converted-to.pdf used on input line 346
+.
+(pdftex.def)             Requested size: 464.34918pt x 117.06401pt.
+ [13] [14 <./figs/UART2-eps-converted-to.pdf> <./figs/UART1-eps-converted-to.pd
+f>] [15 <./figs/UART3-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figs/cache0.eps>
+(epstopdf)                    date: 2016-03-02 18:46:35
+(epstopdf)                    size: 2088023 bytes
+(epstopdf)             Output file: <figs/cache0-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-02 18:47:14
+(epstopdf)                    size: 26326 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/cache0-eps-converted-t
+o.pdf figs/cache0.eps>
+(epstopdf)             \includegraphics on input line 400.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./figs/cache0-eps-converted-to.pdf): PDF inc
+lusion: found PDF version <1.6>, but at most version <1.5> allowed
+<figs/cache0-eps-converted-to.pdf, id=147, 767.36688pt x 544.33362pt>
+File: figs/cache0-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/cache0-eps-converted-to.pdf>
+Package pdftex.def Info: figs/cache0-eps-converted-to.pdf used on input line 40
+0.
+(pdftex.def)             Requested size: 232.17459pt x 164.68842pt.
+Package epstopdf Info: Source file: <figs/SRAM0.eps>
+(epstopdf)                    date: 2016-03-02 19:49:01
+(epstopdf)                    size: 219528 bytes
+(epstopdf)             Output file: <figs/SRAM0-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-02 19:49:36
+(epstopdf)                    size: 16762 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/SRAM0-eps-converted-to
+.pdf figs/SRAM0.eps>
+(epstopdf)             \includegraphics on input line 413.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./figs/SRAM0-eps-converted-to.pdf): PDF incl
+usion: found PDF version <1.6>, but at most version <1.5> allowed
+<figs/SRAM0-eps-converted-to.pdf, id=148, 414.04688pt x 310.25912pt>
+File: figs/SRAM0-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/SRAM0-eps-converted-to.pdf>
+Package pdftex.def Info: figs/SRAM0-eps-converted-to.pdf used on input line 413
+.
+(pdftex.def)             Requested size: 325.043pt x 243.57288pt.
+ [16 <./figs/cache0-eps-converted-to.pdf>]) [17 <./figs/SRAM0-eps-converted-to.
+pdf>]
 \openout2 = `cap_Desenvolvimento.aux'.
 
-
-(cap_Desenvolvimento.tex
+ (cap_Desenvolvimento.tex
 Cap\'{\i }tulo 3.
-[9
+[18
 
 
 
-]) [10]
+]) [19]
 \openout2 = `cap_Experimentos.aux'.
 
  (cap_Experimentos.tex
 Cap\'{\i }tulo 4.
-) [11
+) [20
 
 
 
-] [12]
+] [21]
 \openout2 = `cap_Conclusoes.aux'.
 
  (cap_Conclusoes.tex
 Cap\'{\i }tulo 5.
-) [13
+) [22
 
 
 
-] (principal_relatorio.bbl) [14
+] (principal_relatorio.bbl [23
 
 
-]
-\c@noAnexo=\count127
- [15
+]) [24]
+\c@noAnexo=\count128
+ [25
 
 ]
 \openout2 = `anexo_Esquematicos.aux'.
 
  (anexo_Esquematicos.tex
 ANEXO I.
-) [16
+) [26
 
 
 ]
@@ -731,7 +943,7 @@ ANEXO I.
 
  (anexo_CD.tex
 ANEXO II.
-) [17
+) [27
 
 
 
@@ -744,10 +956,10 @@ ANEXO II.
 (cap_Experimentos.aux) (cap_Conclusoes.aux) (anexo_Esquematicos.aux)
 (anexo_CD.aux)) ) 
 Here is how much of TeX's memory you used:
- 6732 strings out of 493634
- 92852 string characters out of 3143748
- 191518 words of memory out of 3000000
- 9828 multiletter control sequences out of 15000+200000
+ 6875 strings out of 493634
+ 95534 string characters out of 3143748
+ 193364 words of memory out of 3000000
+ 9955 multiletter control sequences out of 15000+200000
  37473 words of font info for 94 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  42i,16n,49p,1028b,1001s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -782,10 +994,11 @@ rogram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1000.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1095.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/cm-super/sftt0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/cm-super/sfxc1095.pfb>
-Output written on principal_relatorio.pdf (26 pages, 746927 bytes).
+public/cm-super/sftt1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm
+-super/sfxc1095.pfb>
+Output written on principal_relatorio.pdf (36 pages, 1076276 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
+ 306 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
