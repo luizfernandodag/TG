@@ -405,28 +405,187 @@ No caso da placa Galileo, há apenas um nível de cache: a cache L1 com 16 KBytes,
 
 \subsubsection{Memória SRAM}
 
-Memória SRAM (Static Random Access Memory) é o tipo de memória geralemte utilizado no nível de memória cache. É uma memória volátil, apesar de exibir certar remanescência para o caso de desligamento.
+Memória SRAM (Static Random Access Memory) é o tipo de memória de acesso aleatório geralmente utilizado no nível de memória cache. Ser de de acesso aleatório significa que qualquer porção da memória é acessada num tempo igual. SRAM é uma memória estática, o que significa que o dados se manterá armazenado durante um largo intervalo de tempo depois do desligamento do sistema.
 
-A memória SRAM é construída utilizando transistores MOSFETs. A Figura \ref{SRAM0} mostra a estrutura básica de armazenamento de bit da memória SRAM. 
+A memória SRAM é construída utilizando com flip-flops com transistores MOSFETs. A Figura \ref{SRAM0} mostra a estrutura básica de armazenamento de uma célula de um bit da memória SRAM. 
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figs/SRAM0.eps}
-	\caption{Estrutura CMOS SRAM}
+	\includegraphics[width=0.4\textwidth]{figs/SRAM0.eps}
+	\caption{Estrutura da célula de memória SRAM}
 	\label{SRAM0}
 \end{figure}
 
-Resumidamente, os transistores M1, M2, M3 e M4 são os responsáveis por guardar o bit\cite{LivroSRAM}. Os transistores M5 e M6 são usados para ler ou escrever da célula de memória por meio das linhas de bit BL e B\textsuperscript{-}L. Tal processo de leitura ou escrita pode ser realizado, em média, em 70 a 100 ns, velocidade a qual é bastante alta para sistemas computacionais.
+Resumidamente, os transistores M1, M2, M3 e M4 são os responsáveis por guardar o bit\cite{LivroSRAM}. A estrutura do circuito formada por M1, M2, M3 e M4 realiza a realimentação do bit, sendo responsável pelo qualidade de memória estática que a SRAM possui. A Figura \ref{SRAM1} mostra como os transistores M1, M2, M3 e M4 podem ser vistos como um par de emissores. Quando um Q, na Figura \ref{SRAM1}, é igual a 1, seu oposto, $\overline{Q}$ = 0, é criado na saida do inverso e o sinal Q = 1 é realimentado pelo segundo inversor. 
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figs/SRAM1.eps}
+	\caption{Estrutura da célula SRAM com dois inversores}
+	\label{SRAM1}
+\end{figure}
+
+
+ Dessa maneira, a estrutura da célula de um bit de memória SRAM torna desnecessário \textit{recarregamento} do dado armazenado. Os transistores M5 e M6 são usados para ler ou escrever da célula de memória por meio das linhas de bit BL e $\overline{BL}$. Tal processo de leitura ou escrita pode ser realizado, em média, em 2ns, velocidade a qual é bastante alta para sistemas computacionais.
 
 A memória SRAM é utilizada nós mais variados ambientes como: computadores pessoais, microcontroladores, FPGAs, etc. Na placa Galileo, existem 512 Kbytes de SRAM integrados, tornando a placa Galileo altamente eficiente no tocante ao acesso e atualização da memória.  
 
 \subsubsection{Memória DRAM}
+
+Dynamic Random Access Memory (DRAM) é uma memória de acesso aleatório como a SRAM. Ao contrário da memória SRAM, a memória DRAM é uma memória \textit{dinâmica}, o que significa que os dados armazenados precisam ser periodicamente recarregados.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/DRAM1.eps}
+	\caption{Estrutura da célula de memória DRAM}
+	\label{DRAM1}
+\end{figure}
+
+
+
+Os bits, na mémoria DRAM, são armazenados numa estrutura de um capacitor juntamente com um transistor. O capacitor estar carregado significa o bit 1, e o capacitor está descarregado significa o bit 0. Na Figura \ref{DRAM1} é mostrada a estrutura de uma célula de memória DRAM. O capacitor marcado pelo número 4 é onde o bit é armazenado.
+
+O processo de escrita no bit é da seguinte forma:
+
+\begin{itemize}
+	\item 1) Na linha marcada pelo número 1(Bit Line) é escrito um bit lógico 0 ou 1( 0 ou +Vcc Volts)
+	\item 2) A linha marcada pelo número 2 ativa o transistor conectando a Bit line com o capacitor C (marcado pelo número 4) 
+\end{itemize}
+
+O processo de leitura é feita da mesma forma que o processo de escrita, entretanto, a Bit line possui capacitância parasita apreciável. Na figura, essa capacitância é marcada pelo número 5. Tal capacitância parasita diminui a velocidade do processo de leitura por tomar parte da carga armazenada no capacitor marcado pelo número 4 para si.
+
+O descarregamento natural dos capacitores, ainda que em circuito aberto, e a existência de capacitores parasitas na célula de memória trazem a necessidade de circuitos responsáveis por recarregar, a cada leitura, as células DRAM.
+
+O tempo médio de leitura na memória DRAM é de 64 ns. Pelo tempo de leitura e pela necessidade de recarregamento, em geral, a memória DRAM é usada para memórias menos acessadas. 
+
+A placa Galileo possui 256 MByte de memória DRAM gerenciados pelo sistema operacional.
+
+
 \subsubsection{Memória EEPROM}
+
+EEPROM, Electrically Erasable Programmable Read-Only Memory é uma memória não volátil, o que significa que os dados não são apagados após o desligamento do sistema. A memória EEPROM é similar à memória FLASH. Assim como ela, a memória EEPROM escrita aproximadamente 100.000 vezes. A principal vantagem que a memória EEPROM apresenta em relação a memória FLASH é que ela deve escrever em bytes individualmente, enquanto na memória FLASH é necessário escrever um setor inteiro para alterar bytes individuais. Tal característica torna a memória FLASH mais rápida e com vida-útil menor que a memória EEPROM.
+
+Na placa Galileo há 11 Kbytes memória EEPROM. A EEPROM pode ser programada na placa Galileo com a biblioteca \textit{EEPROM.h}.
+
 \subsubsection{Clock de tempo real - RTC}
-\subsubsection{Barramento PCI-Express}
-\subsubsection{USB Host e USB Client}
-\subsubsection{Pinos JTAG}
+
+Um clock de tempo (RTC) é um clock comum de um sistema computacional com a funcionalidade de ter armazenado nele tempo atual, mesmo que o sistema esteja desligado. Quase todos equipamentos eletrônicos atuais, como computadores, celulares, etc, possuem um clock de tempo real integrado. O tempo atual pode ser adquirido com outros equipamentos além do RTC, entretanto, o RTC têm as seguintes vantagens:
+
+\begin{itemize}
+	\item Baixo consumo de energia
+	\item O fato de ser um sistema indepedente do sistema central, faz com este tenha seu processamento livre para outras tarefas
+\end{itemize}
 
 
+\subsubsection{Barramento Mini PCI-Express}
+
+Mini PCI-Express é um barramento de alta velocidade de transmissão de dados com 52 pinos. Por meio desses 52 pinos, existem as seguintes conexões:
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/PCI1.eps}
+	\caption{Estrutura da célula de memória DRAM}
+	\label{DRAM1}
+\end{figure}
+
+
+\begin{itemize}
+	\item Conexões para o barramento PCI Express x1
+	\item Conexões para USB 2.0 
+	\item Conexões para SMBus
+	\item Conexões para LEDs de diagnostico de conexões wireless
+	\item Conexões para SIM Card 
+	\item Conexões para outras extensões PCI
+	\item Saída de 1.5V e 3.3 V 
+\end{itemize}
+
+
+
+
+\subsubsection{USB}
+
+USB ou \textit{Universal Serial Bus} é um padrão cabos, conectores e protocolos. O propósito do USB é padronizar a comunicação com equipamentos periféricos como teclados, cameras, impressoras, telefones, etc. USB já passou por três padronizações: 
+\begin{itemize}
+	\item USB 1.0 com velocidade máxima de transmissão de dados de 12 Mbits/s
+	\item USB 2.0 com velocidade máxima de transmissão de dados 480 Mbits/s
+	\item USB 3.1 com velocidade máxima de transmissão de 10 dados Gbits/s
+\end{itemize}
+
+Para comunicação com periféricos, USB já tem conseguido subsituir com sucesso a comunicação serial e paralela.
+
+A topologia USB é assimétrica em formatado de estrela com um dispositivo central (Host), como mostrado no exemplo da Figura \ref{USB3}. 	
+
+Quando um novo equipamento é conectado, o sistema operacional do dispositivo central, a placa galileo por exemplo, detecta a nova conexão e solicita o driver do equipamento para possibilitar a comunicação. Como mostrado na Figura \ref{USB1}, os cabos e conexões USB obedecem os padrões de duas classes: a classe A e a classe B.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.45\textwidth]{figs/USB3.eps}
+	\caption{Exemplo: Topologia Estrela USB}
+	\label{USB3}
+\end{figure}
+
+Quando o dispositivo central é ligado, é definido para cada dispositivo conectado um endereço. Tal processo inicial é chamado de \textit{enumeração}. Durante a \textit{enumeração}, é também solicitado a cada equipamento o tipo de transferência de dados a ser realizado com ele:
+
+
+\begin{itemize}
+	\item Transferência de dados por meio de interrupção: Transferência de dados pouco frequente e de baixa quantidade, como transferência com teclado e mouse. Nesse caso, vale a pena interromper o sistema operacional.
+	
+	\item Transferência de dados por meio de pacotes: Transferência de dados pouco frequentes e de grande quantidade de dados, como, por exemplo, a transferência realizada para impressoras. Nesse caso, um bloco de dados e transferido de uma vez só pela porta USB.
+	\item Transferência de dados isócrono(tempo real): Transferência de dados frequente e contínua, como as necessárias num alto falante.
+\end{itemize}
+
+Para cada uma das formas de transferência de dados supracitadas, é reservado pelo USB a largura de banda necessária em frames de largura de banda.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.45\textwidth]{figs/USB1.eps}
+	\caption{Pinos USB }
+	\label{USB1}
+\end{figure}
+
+
+
+
+\subsubsection{JTAG}
+
+JTAG(Joint Test Action Group) é a padronização IEEE-1149.1 usada para testes de circuitos impressos. JTAG foi criada para ajudar no problema da crescente dificuldade de testar circuitos associada com a crescente diminuição dos tamanhos do circuitos. Como mostrado na Figura \ref{JTAG1}, a implementação mais simples de JTAG requer 4 fios para sinalização:
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/JTAG1.eps}
+	\caption{JTAG monitorando a conexão de um CPU com uma FPGA }
+	\label{JTAG1}
+\end{figure}
+
+\begin{itemize}
+	\item TDI: Pino para sinal de entrada para a query de teste.
+	\item TDO: Pino para sinal de saída para a query de teste.
+	\item TCK: Sinal do relógio de sicronização do JTAG. Todos outros sinais(TDI, TDO, TMS) são síncronos a esse sinal. 
+	\item TMS: Sinal para controlar o estado da máquina de estados interna ao JTAG, a qual tem 16 estados distintos, como mostrado na figura \ref{JTAG2}.
+\end{itemize}
+
+
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/JTAG2.eps}
+	\caption{Máquina de estados - JTAG}
+	\label{JTAG2}
+\end{figure}
+
+Na máquina de estados mostrada em \ref{JTAG2}, geralmente a JTAG é levada para os estados \textit{Shift-DR}, em primeira instância, e, após isso, levada para o estado \textit{Shift-IR}, onde o dado é coletado. \textit{Shift-DR} e \textit{Shift-IR} tem o mesmo tamanho \textit{N} de bits. Por exemplo, se \textit{Shift-DR} e \textit{Shift-IR} tiverem 6 bits de tamanho, após 6 clock realizados no TCK, o dado que chegou no \textit{Shift-IR} chega no \textit{Shift-DR}.
+
+A figura \ref{JTAG3} mostra fluxo de dados de ida e volta num debug JTAG: JTAG -> CPU -> FPGA. O dado saí pelo pino TDI, percorre a CPU e a FPGA e volta no pino TDO sendo tudo isso controlado pelo pino TMS tendo todos esses pinos sincronizados pelo pino TCK.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/JTAG3.eps}
+	\caption{Fluxo de dados num debug JTAG}
+	\label{JTAG3}
+\end{figure}
+
+A verificação de entrada e saída, incluíndo o tempo de tais eventos, com testes JTAG tornou possível testes complexos em circuitos integrados.
+
+A placa Galileo, como grande partes dos circuitos integrados atuais, possui 9 pinos próprio para debug com JTAG.
 
 
 

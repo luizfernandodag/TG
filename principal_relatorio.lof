@@ -12,9 +12,12 @@
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Frame UART para transmissão de 1 byte }}{14}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Modelo completo de um dispositivo UART}}{15}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Organização da memória num sistema computacional}}{16}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Estrutura CMOS SRAM}}{17}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Estrutura da célula de memória SRAM}}{17}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Estrutura da célula SRAM com dois inversores}}{17}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Estrutura da célula de memória DRAM}}{18}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Estrutura da célula de memória DRAM}}{20}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Exemplo: Topologia Estrela USB}}{20}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Pinos USB }}{21}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces JTAG monitorando a conexão de um CPU com uma FPGA }}{22}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Máquina de estados - JTAG}}{22}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Fluxo de dados num debug JTAG}}{23}
