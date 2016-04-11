@@ -6,6 +6,12 @@
 % \documentclass[11pt,a4paper,openright,titlepage]{book}
 
 % Pacotes
+\usepackage{tabu}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{longtable}
 \usepackage[T1]{fontenc}
 \usepackage[brazilian, portuguese]{babel}
 \usepackage{epsfig}
@@ -130,8 +136,8 @@
 % Desta forma o autor define como quer que o título seja dividio em várias linhas. 
 % O exemplo abaixo é para um título que ocupa três linhas. Observe que mesmo com a linha
 % 4 não sendo utilizada, o comando \titulolinhaiv é chamado.
-\titulolinhai{AULAS GALILEU}
-\titulolinhaii{}
+\titulolinhai{Proposta de Curso Prático em Algoritmos e Programação}
+\titulolinhaii{Computadores Utilizando Placa Intel \textsuperscript{\textregistered} Galileo }
 \titulolinhaiii{}
 \titulolinhaiv{}
 
@@ -152,12 +158,12 @@
 % Os nomes definidos pelos comandos abaixo aparecem na ordem de i a v.
 \membrodabancai{Prof. Alexandre Zaghetto, CIC/UnB}
 \membrodabancaifuncao{Orientador}
-\membrodabancaii{Prof. Fulano de Tal 2, ENE/UnB}
-\membrodabancaiifuncao{Co-orientador}
-\membrodabancaiii{Prof. Fulano de Tal 3, EESC/USP}
-\membrodabancaiiifuncao{Examinador externo}
-\membrodabancaiv{Prof. Fulano de Tal 4, ENE/UnB}
-\membrodabancaivfuncao{Examinador interno}
+\membrodabancaii{}
+\membrodabancaiifuncao{}
+\membrodabancaiii{}
+\membrodabancaiiifuncao{}
+\membrodabancaiv{}
+\membrodabancaivfuncao{}
 \membrodabancav{}
 \membrodabancavfuncao{}
 
@@ -234,10 +240,11 @@
 \include{cap_Introducao}
 
 % *** Revisao Bibliografica ***
+% *** Proposta de Formato de Curso
+%\include{cap_PropostaCurso}
 \include{cap_RevisaoBibliografica}
-
 % *** Desenvolvimento ***
-%\include{cap_Desenvolvimento}
+\include{cap_Desenvolvimento}
 
 % *** Resultados Experimentais ***
 %\include{cap_Experimentos}

@@ -1,13 +1,13 @@
-Ôªø"DISCIPLINA_CURSO Name","DISCIPLINA FK","CURSO FK"
-"CALTECH ntroduction to Computer Programming","Introduction to Computer Programming","Ci√™ncia Da Computa√ß√£o",
-"CALTECH - Introduction to Matlab and MAthematica","Introduction to Matlab and Mathematica","Matem√°tica Computacional Aplicada",
-"UnB - Engenharia Mecatr√¥nica","Algoritmos e Programa√ß√£o de Computadores - UnB","Engenharia Mecatr√¥nica",
-"UnB - Engenharia de Computa√ß√£o","Algoritmos e Programa√ß√£o de Computadores - UnB","Engenharia de Computa√ß√£o",
-"UnB - Engenharia de Produ√ß√£o","INTRODUCAO A CIENCIA DA COMPUTACAO - UnB","Engenharia de Produ√ß√£o ",
-"UnB - Ci√™ncias da Computa√ß√£o","INTRODUCAO A CIENCIA DA COMPUTACAO - UnB","Ci√™ncia Da Computa√ß√£o",
-"UnB - Engenharia de Redes","Computa√ß√£o para Engenharia - UnB","Engenharia de Redes ",
-"UnB - Engenharia Eletr√¥nica","Algoritmos e Programa√ß√£o de Computadores - UnB","Engenharia Eletr√¥nica",
-"UnB - Engenharia de Software","Algoritmos e Programa√ß√£o de Computadores - UnB","Engenharia de Software",
-"UnB - Engenharia AeroEspacial","Algoritmos e Programa√ß√£o de Computadores - UnB","Engenharia Aeroespacial",
-"UnB - Engenharia Automotiva","Algoritmos e Programa√ß√£o de Computadores - UnB","Engenharia Automotiva",
-"UnB - Engenharia de Energia ","Algoritmos e Programa√ß√£o de Computadores - UnB","Engenharia de Energia",
+		Universidade - Curso	Disciplina
+		CALTECH - Computer Science	Introduction to Computer Programming
+		CALTECH - Computing and Mathematical Sciences	Introduction to Matlab and Mathematica
+		UnB - Engenharia MecatrÙnica	Algoritmos e ProgramaÁ„o de Computadores - UnB
+		UnB - Engenharia de ComputaÁ„o	Algoritmos e ProgramaÁ„o de Computadores - UnB
+		UnB - Engenharia de ProduÁ„o	INTRODUCAO A CI NCIA DA COMPUTA«√O - UnB
+		UnB - CiÍncias da ComputaÁ„o	INTRODUCAO A CI NCIA DA COMPUTA«√O - UnB
+		UnB - Engenharia de Redes	ComputaÁ„o para Engenharia - UnB
+		UnB - Engenharia EletrÙnica	Algoritmos e ProgramaÁ„o de Computadores - UnB
+		UnB - Engenharia de Software	Algoritmos e ProgramaÁ„o de Computadores - UnB
+		UnB - Engenharia AeroEspacial	Algoritmos e ProgramaÁ„o de Computadores - UnB
+		UnB - Engenharia Automotiva	Algoritmos e ProgramaÁ„o de Computadores - UnB
+		UnB - Engenharia de Energia 	Algoritmos e ProgramaÁ„o de Computadores - UnB

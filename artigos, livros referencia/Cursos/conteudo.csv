@@ -1,30 +1,19 @@
-Ôªø"CONTEUDO Name","JA ENSINADO COM APRENDIZAGEM ATIVA","PODE SER ENSINADO COM GALILEU?","QUANTIDADE DE HORAS DE ENSINO","DESCRICAO"
-"Python","No","Yes","0.0","Python",
-"n, solving nonlinear equations, fast Fourier transform, and ODE solvers","No","No","0.0","n, solving nonlinear equations, fast Fourier transform, and ODE solvers",
-"ectorization; scripts, and functions; file i/o; arrays, structures, and strings","No","No","0.0","ectorization; scripts, and functions; file i/o; arrays, structures, and strings",
-"debugging; help interface; basic linear algebra;","No","No","0.0","debugging; help interface; basic linear algebra;",
-". Matlab: basic syntax and development ","No","No","0.0",". Matlab: basic syntax and development ",
-"8. Registros  Composi√ß√£o de structs. Arrays e structs. Structs em arquivos.","No","Yes","2.0","8. Registros  Composi√ß√£o de structs. Arrays e structs. Structs em arquivos.",
-"7. Vetores  Tipo Array. Pesquisa em Vetores. Ordena√ß√£o de Vetores. Strings.  Arrays multidimensional.","No","Yes","2.0","7. Vetores  Tipo Array. Pesquisa em Vetores. Ordena√ß√£o de Vetores. Strings.  Arrays multidimensional.",
-"6. Arquivos  Arquivos text. Manipula√ß√£o de arquivos. ","No","Yes","2.0","6. Arquivos  Arquivos text. Manipula√ß√£o de arquivos. ",
-"5. Ponteiros e Fun√ß√µes  Ponteiros. Fun√ß√µes.","No","Yes","2.0","5. Ponteiros e Fun√ß√µes  Ponteiros. Fun√ß√µes.",
-"4. Estruturas de Repeti√ß√£o  Comando Do-While. Comando While. Comando For.","No","Yes","2.0","4. Estruturas de Repeti√ß√£o  Comando Do-While. Comando While. Comando For.",
-"3. Estruturas Condicionais  Comando IF. Comando Switch. ","No","Yes","0.0","3. Estruturas Condicionais  Comando IF. Comando Switch. ",
-"Linguagem C  Estrutura de um programa em C. Vari√°veis e tipos b√°sicos. Constantes  Operadores, Fun√ßoes e Express√µes. Atribui√ß√£o. Entrada e Sa√≠da de dados.  Operador Cast. ","No","Yes","2.0","Linguagem C  Estrutura de um programa em C. Vari√°veis e tipos b√°sicos. Constantes  Operadores, Fun√ßoes e Express√µes. Atribui√ß√£o. Entrada e Sa√≠da de dados.  Operador Cast. ",
-"4. Estruturas de Repeti√ß√£o  Comando Do-While. Comando While. Comando For.","No","Yes","2.0","4. Estruturas de Repeti√ß√£o  Comando Do-While. Comando While. Comando For.",
-"Registros  Composi√ß√£o de structs. Arrays e structs. Structs em arquivos.","No","Yes","2.0","Registros  Composi√ß√£o de structs. Arrays e structs. Structs em arquivos.",
-" Vetores  Tipo Array. Pesquisa em Vetores. Ordena√ß√£o de Vetores. Strings.  Arrays multidimensional.","No","Yes","2.0"," Vetores  Tipo Array. Pesquisa em Vetores. Ordena√ß√£o de Vetores. Strings.  Arrays multidimensional.",
-"Arquivos  Arquivos text. Manipula√ß√£o de arquivos. ","No","Yes","2.0","Arquivos  Arquivos text. Manipula√ß√£o de arquivos. ",
-"5. Ponteiros e Fun√ß√µes  Ponteiros. Fun√ß√µes.","No","Yes","2.0","5. Ponteiros e Fun√ß√µes  Ponteiros. Fun√ß√µes.",
-"Estruturas de Repeti√ß√£o  Comando Do-While. Comando While. Comando For.","No","Yes","2.0","Estruturas de Repeti√ß√£o  Comando Do-While. Comando While. Comando For.",
-" Estruturas Condicionais  Comando IF. Comando Switch. ","No","Yes","2.0"," Estruturas Condicionais  Comando IF. Comando Switch. ",
-"Linguagem C","No","Yes","0.0","Estrutura de um programa em C. Vari√°veis e tipos b√°sicos. Constantes  Operadores, Fun√ßoes e Express√µes. Atribui√ß√£o. Entrada e Sa√≠da de dados.  Operador Cast. ",
-"Introdu√ß√£o  Hardware. Software. ","No","Yes","2.0","Introdu√ß√£o  Hardware. Software. ",
-"Itera√ß√£o e recurs√£o","No","Yes","2.0","Itera√ß√£o e recurs√£o",
-"Entrada e sa√≠da de dados","No","Yes","2.0","Entrada e sa√≠da de dados",
-" Estruturas de controle: condicional e repeti√ß√£o","No","Yes","2.0"," Estruturas de controle: condicional e repeti√ß√£o",
-"No√ß√µes de programa√ß√£o estruturada","No","Yes","2.0","No√ß√µes de programa√ß√£o estruturada",
-"Testes e depura√ß√£o","No","Yes","2.0","Testes e depura√ß√£o",
-"Especifica√ß√£o de vari√°veis e fun√ß√µes","No","Yes","2.0","Especifica√ß√£o de vari√°veis e fun√ß√µes",
-"Constru√ß√£o de algoritmos e sua representa√ß√£o em pseudoc√≥digo e linguagens de alto n√≠vel","No","Yes","2.0","Constru√ß√£o de algoritmos e sua representa√ß√£o em pseudoc√≥digo e linguagens de alto n√≠vel",
-"Princ√≠pios fundamentais de constru√ß√£o de programas","No","Yes","2.0","Princ√≠pios fundamentais de constru√ß√£o de programas",
+CONTE⁄DO	J¡ ENSINADO COM APRENDIZAGEM ATIVA?	PODE SER ENSINADO COM GALILEU?	DESCRI«√O
+"Linguagem C  Estrutura de um programa em C. Vari·veis e tipos b·sicos. Constantes  Operadores, FunÁoes e Expressıes. AtribuiÁ„o. Entrada e SaÌda de dados.  Operador Cast. "	No	Yes	"Linguagem C  Estrutura de um programa em C. Vari·veis e tipos b·sicos. Constantes  Operadores, FunÁoes e Expressıes. AtribuiÁ„o. Entrada e SaÌda de dados.  Operador Cast. "
+4. Estruturas de RepetiÁ„o  Comando Do-While. Comando While. Comando For.	No	Yes	4. Estruturas de RepetiÁ„o  Comando Do-While. Comando While. Comando For.
+Registros  ComposiÁ„o de structs. Arrays e structs. Structs em arquivos.	No	Yes	Registros  ComposiÁ„o de structs. Arrays e structs. Structs em arquivos.
+ Vetores  Tipo Array. Pesquisa em Vetores. OrdenaÁ„o de Vetores. Strings.  Arrays multidimensional.	No	Yes	 Vetores  Tipo Array. Pesquisa em Vetores. OrdenaÁ„o de Vetores. Strings.  Arrays multidimensional.
+Arquivos  Arquivos text. ManipulaÁ„o de arquivos. 	No	Yes	Arquivos  Arquivos text. ManipulaÁ„o de arquivos. 
+5. Ponteiros e FunÁıes  Ponteiros. FunÁıes.	No	Yes	5. Ponteiros e FunÁıes  Ponteiros. FunÁıes.
+Estruturas de RepetiÁ„o  Comando Do-While. Comando While. Comando For.	No	Yes	Estruturas de RepetiÁ„o  Comando Do-While. Comando While. Comando For.
+ Estruturas Condicionais  Comando IF. Comando Switch. 	No	Yes	 Estruturas Condicionais  Comando IF. Comando Switch. 
+Linguagem C	No	Yes	"Estrutura de um programa em C. Vari·veis e tipos b·sicos. Constantes  Operadores, FunÁoes e Expressıes. AtribuiÁ„o. Entrada e SaÌda de dados.  Operador Cast. "
+IntroduÁ„o  Hardware. Software. 	No	Yes	IntroduÁ„o  Hardware. Software. 
+IteraÁ„o e recurs„o	No	Yes	IteraÁ„o e recurs„o
+Entrada e saÌda de dados	No	Yes	Entrada e saÌda de dados
+ Estruturas de controle: condicional e repetiÁ„o	No	Yes	 Estruturas de controle: condicional e repetiÁ„o
+NoÁıes de programaÁ„o estruturada	No	Yes	NoÁıes de programaÁ„o estruturada
+Testes e depuraÁ„o	No	Yes	Testes e depuraÁ„o
+EspecificaÁ„o de vari·veis e funÁıes	No	Yes	EspecificaÁ„o de vari·veis e funÁıes
+ConstruÁ„o de algoritmos e sua representaÁ„o em pseudocÛdigo e linguagens de alto nÌvel	No	Yes	ConstruÁ„o de algoritmos e sua representaÁ„o em pseudocÛdigo e linguagens de alto nÌvel
+PrincÌpios fundamentais de construÁ„o de programas	No	Yes	PrincÌpios fundamentais de construÁ„o de programas

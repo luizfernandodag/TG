@@ -3,21 +3,33 @@
 \contentsline {section}{\numberline {1.1}Objetivo}{2}
 \contentsline {section}{\numberline {1.2}Apresentação do manuscrito}{3}
 \contentsline {chapter}{\numberline {2}Revisão Bibliográfica}{4}
-\contentsline {section}{\numberline {2.1}Placa Intel \textsuperscript {\textregistered } Galileo}{4}
-\contentsline {subsection}{\numberline {2.1.1}Pinagem da placa Intel \textsuperscript {\textregistered } Galileo}{4}
-\contentsline {subsection}{\numberline {2.1.2}Características Elétricas e Eletrônicas da placa Intel \textsuperscript {\textregistered } Galileo}{6}
-\contentsline {subsubsection}{\numberline {2.1.2.1}Sinal PWM}{7}
-\contentsline {subsubsection}{\numberline {2.1.2.2}Conversão analógico-digital}{8}
-\contentsline {subsubsection}{\numberline {2.1.2.3}Barramento Serial I2C}{10}
-\contentsline {subsubsection}{\numberline {2.1.2.4}Comunicação serial SPI}{11}
-\contentsline {subsubsection}{\numberline {2.1.2.5}Porta Serial UART}{13}
-\contentsline {subsubsection}{\numberline {2.1.2.6}Memória Cache}{15}
-\contentsline {subsubsection}{\numberline {2.1.2.7}Memória SRAM}{16}
-\contentsline {subsubsection}{\numberline {2.1.2.8}Memória DRAM}{17}
-\contentsline {subsubsection}{\numberline {2.1.2.9}Memória EEPROM}{19}
-\contentsline {subsubsection}{\numberline {2.1.2.10}Clock de tempo real - RTC}{19}
-\contentsline {subsubsection}{\numberline {2.1.2.11}Barramento Mini PCI-Express}{19}
-\contentsline {subsubsection}{\numberline {2.1.2.12}USB}{20}
-\contentsline {subsubsection}{\numberline {2.1.2.13}JTAG}{21}
-\contentsline {chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}{24}
-\contentsline {chapter}{{Anexos}}{26}
+\contentsline {section}{\numberline {2.1}Teorias Pedagógicas}{4}
+\contentsline {subsection}{\numberline {2.1.1}Estudo de currículos relacionados a \textit {Algoritmos e Programação de Computadores} }{4}
+\contentsline {subsection}{\numberline {2.1.2}Estudo da teoria pedagógica de aprendizagem ativa focando na teoria de \textit {aprendizagem por masterização} }{8}
+\contentsline {subsection}{\numberline {2.1.3}Estudo da metodologia SCRUM para desenvolvimento agíl de projetos }{8}
+\contentsline {subsection}{\numberline {2.1.4}Proposta de curso}{9}
+\contentsline {subsubsection}{\numberline {2.1.4.1}Adaptação dos princípios e fluxo metodologia Scrum à disciplina \textit {Algoritmos e Programação de Computadores}}{9}
+\contentsline {subsubsection}{\numberline {2.1.4.2}Definição de objetivos educacionais na forma da metologogia Scrum}{12}
+\contentsline {subsubsection}{\numberline {2.1.4.3}Definição de objetivos educacionais para a Disciplina \textit {Algoritmos e Programação de Computadores}}{16}
+\contentsline {subsubsection}{\numberline {2.1.4.4}Definição de objetivos educacionais para a Disciplina \textit {Algoritmos e Programação de Computadores} com relação às atividades práticas}{20}
+\contentsline {section}{\numberline {2.2}Placa Intel \textsuperscript {\textregistered } Galileo}{21}
+\contentsline {subsection}{\numberline {2.2.1}Pinagem da placa Intel \textsuperscript {\textregistered } Galileo}{21}
+\contentsline {subsection}{\numberline {2.2.2}Características Elétricas e Eletrônicas da placa Intel \textsuperscript {\textregistered } Galileo}{22}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Sinal PWM}{24}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Conversão analógico-digital}{25}
+\contentsline {subsubsection}{\numberline {2.2.2.3}Barramento Serial I2C}{27}
+\contentsline {subsubsection}{\numberline {2.2.2.4}Comunicação serial SPI}{29}
+\contentsline {subsubsection}{\numberline {2.2.2.5}Porta Serial UART}{30}
+\contentsline {subsubsection}{\numberline {2.2.2.6}Memória Cache}{32}
+\contentsline {subsubsection}{\numberline {2.2.2.7}Memória SRAM}{33}
+\contentsline {subsubsection}{\numberline {2.2.2.8}Memória DRAM}{35}
+\contentsline {subsubsection}{\numberline {2.2.2.9}Memória EEPROM}{36}
+\contentsline {subsubsection}{\numberline {2.2.2.10}Clock de tempo real - RTC}{36}
+\contentsline {subsubsection}{\numberline {2.2.2.11}Barramento Mini PCI-Express}{36}
+\contentsline {subsubsection}{\numberline {2.2.2.12}USB}{37}
+\contentsline {subsubsection}{\numberline {2.2.2.13}JTAG}{38}
+\contentsline {chapter}{\numberline {3}Desenvolvimento}{41}
+\contentsline {section}{\numberline {3.1}Introdução}{41}
+\contentsline {section}{\numberline {3.2}Proposta de Curso}{41}
+\contentsline {chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}{42}
+\contentsline {chapter}{{Anexos}}{44}

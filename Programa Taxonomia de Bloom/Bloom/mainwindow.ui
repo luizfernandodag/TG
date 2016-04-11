@@ -1,0 +1,1473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1202</width>
+    <height>692</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="produto_visual">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>200</y>
+      <width>1121</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tabProcessoCognitivo">
+     <attribute name="title">
+      <string>Processo Cognitivo</string>
+     </attribute>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>20</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Dimensões do processo cognitivo</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>77</y>
+        <width>1021</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_13">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QComboBox" name="nivel1Conhecimento">
+             <item>
+              <property name="text">
+               <string>definir</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>denominar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>enumerar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>relembrar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>recordar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>nomear</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string comment="aaaaaaaaaaaaaaaaaaaa">lembrar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>listar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>definir</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>expor</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>repetir</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>duplicar</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextBrowser" name="textBrowser_2">
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.064pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;1. CONHECIMENTO:&lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:400;&quot;&gt; Processos que requerem que o estudante reproduza com exatidão uma informação que lhe tenha sido dada, seja ela uma data, um relato, um procedimento, uma fórmula ou uma teoria.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QComboBox" name="nivel2Compreensao">
+             <item>
+              <property name="text">
+               <string>classificar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>descrever</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>discutir</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>explicar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>identificar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>localizar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>reconhecer</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>reportar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>selecionar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>traduzir</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>parafrasear</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextBrowser" name="textBrowser">
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.064pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;2. COMPREENSÃO: &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt; font-weight:400; color:#000000; background-color:#fefed6;&quot;&gt;requer elaboração (modificação) de um dado ou informação original. O estudante deverá ser capaz de usar uma informação original e ampliá-la, reduzí-la, representá-la de outra forma ou prever consequências resultantes da informação original.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QComboBox" name="nivel3Aplicacao">
+             <item>
+              <property name="text">
+               <string>escolher</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>resolver</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>demonstrar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>programar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>dramatizar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>empregar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ilustrar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>interpretar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>operar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>esboçar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>usar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>planejar</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextBrowser" name="textBrowser_3">
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.064pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:8pt; color:#000000; background-color:#fefed6;&quot;&gt;3. APLICAÇÃO: &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:8pt; font-weight:400; color:#000000; background-color:#fefed6;&quot;&gt;reune processos nos quais o estudante transporta uma informação genérica para uma situação nova e específica.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_23">
+           <item>
+            <widget class="QComboBox" name="nivel4Analise">
+             <item>
+              <property name="text">
+               <string>avaliar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>comparar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>contrastar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>criticar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>diferenciar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>discriminar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>distinguir</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>examinar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>experimentar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>questionar</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextBrowser" name="textBrowser_4">
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.064pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt; color:#000000; background-color:#fefed6;&quot;&gt;4. ANÁLISE: &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:8pt; font-weight:400; color:#000000; background-color:#fefed6;&quot;&gt;caracterizam-se por separar uma informação em elementos componentes e estabelecer relações entre eles.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QComboBox" name="nivel5Avaliacao">
+             <item>
+              <property name="text">
+               <string>avaliar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>argumentar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>constratar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>defender</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>julgar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>selecionar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>apoiar</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextBrowser" name="textBrowser_5">
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.064pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt; color:#000000;&quot;&gt;5. AVALIAÇÃO: &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:8pt; font-weight:400; color:#000000;&quot;&gt;representa os processos cognitivos mais complexos. Consiste em confrontar um dado, uma informação, uma teoria, um produto etc... com um critério ou conjunto de critérios, que podem ser internos ao próprio objeto de avaliação, ou externos a ele.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QComboBox" name="nivel6Criacao">
+             <item>
+              <property name="text">
+               <string>construir</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>escrever</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>montar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>integrar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>projetar</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>desenvolver</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>formular</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextBrowser" name="textBrowser_6">
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.064pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;6. CRIAÇÃO: &lt;span style=&quot; font-weight:400;&quot;&gt;o estudante é capaz de empregar níveis superios de racioncínio e habilidades de solução de problemas em aplicações diretas no mundo real&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <zorder>label_7</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder></zorder>
+     <zorder>plainTextEdit</zorder>
+     <zorder>textBrowser_3</zorder>
+     <zorder>textBrowser_4</zorder>
+     <zorder>textBrowser_5</zorder>
+     <zorder>textBrowser_6</zorder>
+     <zorder></zorder>
+    </widget>
+    <widget class="QWidget" name="tabConteudo">
+     <attribute name="title">
+      <string>Amplitude</string>
+     </attribute>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>100</y>
+        <width>198</width>
+        <height>57</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Profundidade</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="conteudo_profundidade">
+         <item>
+          <property name="text">
+           <string>a noção geral</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>as questões não resolvidas</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>a ética</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>os padrões</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>as regras</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>os detalhes essênciais</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>a tendência</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>100</y>
+        <width>221</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Complexidade</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="conteudo_complexidade">
+         <item>
+          <property name="text">
+           <string>os múltiplos pontos de vista</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>a mudança com o tempo</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>pelas disciplinas</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>20</y>
+        <width>257</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_19">
+       <item>
+        <widget class="QRadioButton" name="radioButtonConteudo">
+         <property name="text">
+          <string>Usarei especificador de amplitude</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_10"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>100</y>
+        <width>299</width>
+        <height>53</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QLabel" name="conteudo_imperativo">
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Imperativos</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="conteudo_imperativo_2">
+             <item>
+              <property name="text">
+               <string>a origem</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>a convergência</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>os paralelos</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>o paradoxo</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>a contribuição</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_10">
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Palavras Chave</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="conteudo_palavrasChave">
+           <item>
+            <property name="text">
+             <string>as conseguências</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>as motivações</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>as implicações</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>a significância</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabRecursos">
+     <attribute name="title">
+      <string>Recursos</string>
+     </attribute>
+     <widget class="QRadioButton" name="radioButtonRecursos">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>20</y>
+        <width>253</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Usarei especificador de recursos</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>70</y>
+        <width>412</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_11">
+         <item>
+          <widget class="QLabel" name="label_12">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Recursos Offline</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="recursos_Offline">
+           <item>
+            <property name="text">
+             <string>livro</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>revista</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>jornal</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>entrevista</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>enciclopédia</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>especialista</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_12">
+         <item>
+          <widget class="QLabel" name="label_13">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Recursos Online</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="recursos_online">
+           <item>
+            <property name="text">
+             <string>site</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>wikipedia</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>enciclopédia online</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>jornal</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>artigo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>especialista</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <zorder></zorder>
+     <zorder>radioButtonRecursos</zorder>
+     <zorder>layoutWidget_2</zorder>
+    </widget>
+    <widget class="QWidget" name="tabProdutos">
+     <attribute name="title">
+      <string>Produtos</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>80</y>
+        <width>929</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_9">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <item>
+            <widget class="QLabel" name="label_14">
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Visual</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="produto_grafico">
+             <item>
+              <property name="text">
+               <string>um gráfico</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um desenho</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma linha do tempo</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um diagrama</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um mapa</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um quadrinho</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma capa de livro</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um poster</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <widget class="QLabel" name="label_15">
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Construção</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="produto_construcao">
+             <item>
+              <property name="text">
+               <string>um modelo</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma escultura</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um diorama</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma miniatura</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma galeria de arte</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma exibição num museu</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um mobil</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_15">
+           <item>
+            <widget class="QLabel" name="label_16">
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Oral</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="produto_oral">
+             <item>
+              <property name="text">
+               <string>um debate</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um paínel de discussão</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma aula</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um relatório</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um jogo</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma peça de teatro</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma conferência de imprensa</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um programa de entrevista</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um monólogo</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma resenha de filme</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_16">
+           <item>
+            <widget class="QLabel" name="label_17">
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Multimídia</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="produto_multimidia">
+             <item>
+              <property name="text">
+               <string>uma música</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um livro ilustrado</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um jornal</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um programa de tv</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um PowerPoint</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma poesia em vídeo</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um ensaio fotográfico</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um website</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um relatório de viagem em vídeo</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma reportagem</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_17">
+           <item>
+            <widget class="QLabel" name="label_18">
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Escrito</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="produto_escrito">
+             <item>
+              <property name="text">
+               <string>um relatório</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um artigo</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um ensaio persuasivo</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma sequência</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma carta</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma história infantil</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um poema</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma música</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um poema/música</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um elogio</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>um diário</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>uma revisão</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QRadioButton" name="radioButtonProdutos">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>20</y>
+        <width>253</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Usarei especificador de produtos</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Grupos</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>30</y>
+        <width>243</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_18">
+       <item>
+        <widget class="QLabel" name="label_19">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Números de integrantes por grupo</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spinBoxNumIntegrantesGrupo">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTextEdit" name="frase">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>90</y>
+      <width>741</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.064pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>0</y>
+      <width>243</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_24">
+     <item>
+      <widget class="QLabel" name="label_21">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Unidade</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditConteudo_2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>ESCREVA AQUI O NOME DA UNIDADE</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>0</y>
+      <width>245</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_22">
+     <item>
+      <widget class="QLabel" name="label_20">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Objeto de estudo para o unidade</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditConteudo">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>ESCREVA AQUI O OBJETO DE ESTUDO</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3"/>
+   </widget>
+   <zorder>produto_visual</zorder>
+   <zorder>frase</zorder>
+   <zorder>label_20</zorder>
+   <zorder>lineEditConteudo</zorder>
+   <zorder>label_21</zorder>
+   <zorder>label_2</zorder>
+   <zorder>nivel2Compreensao</zorder>
+   <zorder>layoutWidget_4</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1202</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOI">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionSalvar"/>
+   </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+   </widget>
+   <addaction name="menuOI"/>
+   <addaction name="menuAjuda"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionMenu">
+   <property name="text">
+    <string>aaaaaaaaaaaa</string>
+   </property>
+  </action>
+  <action name="actionAaa">
+   <property name="text">
+    <string>aaa</string>
+   </property>
+  </action>
+  <action name="actionA">
+   <property name="text">
+    <string>a</string>
+   </property>
+  </action>
+  <action name="actionAa">
+   <property name="text">
+    <string>aa</string>
+   </property>
+  </action>
+  <action name="actionA_2">
+   <property name="text">
+    <string>a</string>
+   </property>
+  </action>
+  <action name="actionA_3">
+   <property name="text">
+    <string>a</string>
+   </property>
+  </action>
+  <action name="actionSalvar">
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

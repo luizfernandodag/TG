@@ -4,25 +4,24 @@ A level-1 auxiliary file: simbolos.aux
 A level-1 auxiliary file: cap_Introducao.aux
 A level-1 auxiliary file: cap_RevisaoBibliografica.aux
 A level-1 auxiliary file: cap_Desenvolvimento.aux
-A level-1 auxiliary file: cap_Experimentos.aux
-A level-1 auxiliary file: cap_Conclusoes.aux
 The style file: abnt-num.bst
-A level-1 auxiliary file: anexo_Esquematicos.aux
-A level-1 auxiliary file: anexo_CD.aux
 Database file #1: relatorio.bib
 Warning--string name "http://www.gazetadopovo.com.br/vida-e-cidadania/alta-taxa-de-desistencia-na-universidade-causa-deficit-de-engenheiros-b715q0ivu7bm1qu70lmxhrdqm" is undefined
---line 75 of file relatorio.bib
-I was expecting a `,' or a `}'---line 325 of file relatorio.bib
+--line 82 of file relatorio.bib
+I was expecting a `,' or a `}'---line 332 of file relatorio.bib
  :  
  :  author = {Pre-College Task Force Comm. of the Educ. Board of the ACM, CORPORATE},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 A bad cross reference---entry "Parte1:artigo3"
 refers to entry "DBLP:conf/educon/2013", which doesn't exist
+A bad cross reference---entry "Parte1:artigo4"
+refers to entry "DBLP:conf/ic3/2015", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:conf/educon/2013"
+Warning--I didn't find a database entry for "DBLP:conf/ic3/2015"
 +---------------------------------------------------------+
 | Estilo bibliográfico abnt-num.bst versão 1.42.2.1           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-(There were 2 error messages)
+(There were 3 error messages)

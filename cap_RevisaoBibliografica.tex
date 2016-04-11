@@ -1,4 +1,4 @@
-%TCIDATA{LaTeXparent=0,0,relatorio.tex}
+%TCIDATA{LaTeXparent=0,0,principal_relatorio.tex}
 \chapter{Revisão Bibliográfica}\label{CapRevisaoBibliografica}
 
 %%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -30,6 +30,433 @@
 %\resumodocapitulo{Neste capítulo }
  O objetivo deste capítulo é explicitar todos conceitos relevantes deste trabalho relativos a ensino e aprendizagem de Ciências Exatas e Engenharia e a estrutura detalhada da placa Intel Galileu. Esses estudos servirão de base para a proposição um modelo de aula de programação básica para estudantes de graduação levando em conta os paradigmas de educação mais eficientes dentre os elencados.
 
+\section{Teorias Pedagógicas}
+
+Este trabalho tem como proposta a atualização dos curso de \textit{Algoritmos e Programação de Computadores} seguindo as transformações atuais que apontam para métodos de ensino focados em \textit{educação ativa}, Nesta seção, são apresentados:
+\begin{itemize}
+	\item Estudo de currículos relacionadas a  \textit{Algoritmos e Programação de Computadores}
+	\item Estudo da teoria pedagógica de aprendizagem ativa focando na teoria de \textit{aprendizagem por masterização}
+	\item Estudo da metodologia SCRUM para desenvolvimento agíl de projetos
+	
+\end{itemize}
+
+\subsection{Estudo de currículos relacionados a \textit{Algoritmos e Programação de Computadores} }
+
+Fez-se, para os estudos de currículo, uma breve pesquisa das 5 melhores universidade mundiais e as cinco melhores universidades no Brasil. Os resultados de tal estudo são mostrados na tabela \ref{tabRakingUniversidades}. A universidade de Brasília (UnB) está, atualmente, entre as 800 melhores universidades e é a quinta melhor universidade brasileira.
+
+Os índices utilizados pela instituição de pesquisa \textit{timeshighereducation} são os seguintes:
+\begin{enumerate}
+	\item Score Ensino
+	\item Score Panorama Internacional
+	\item Score Impacto na Indústria
+	\item Score Pesquisa
+	\item Score Citação
+\end{enumerate}
+
+Como dito em \cite{livroProfessorYeah}, pode-se concluir, sem perda de exatidão, que tais índices são totalmente dependentes e proporcionais à qualidade de ensino nas universidade em questão. 
+
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/tabRankingUniversidades.eps}
+	\caption{Tabela com scores de avaliação das 5 melhores universidades do mundo e das 5 melhores universidades brasileiras}
+	\label{tabRakingUniversidades}
+\end{figure}
+
+Pesquisou-se o currículo da UnB e o currículo da universidade \textit{California Institute of Tecnology} para disciplinas com ementa similar ao de \textit{Algoritmos e Programação de Computadores}. O resultado de tal pesquisa é mostrado na Figura \ref{tabRakingUniversidades2}. 
+
+Fez, também, uma pesquisa mais aprofundada do conteúdo programático de tais disciplinas. O resultado de tal pesquisa é mostrado na Figura \ref{tabRakingUniversidades3}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/t2.eps}
+	\caption{Tabela listando as disciplinas na UnB e na \textit{California Insitute of Tecnology} que possuem currículo similar a disciplina \textit{Algoritmos e Programação de Computadores}}
+	\label{tabRakingUniversidades2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/t3.eps}
+	\caption{Tabela listando parte dos conteúdos tratados pelas disciplinas na \textit{California Insitute of Tecnology} e na UnB e levantanto a questão da metodologia de ensino ser uma \textit{metodologia ativa} e se tal conteúdo pode ser ensinado usando a placa Galileo}
+	\label{tabRakingUniversidades3}
+\end{figure}
+
+
+Para cada conteúdo identificado, procurou-se saber também se ele era tratado de seguindo algum paradigma moderno de \textit{Educação Ativa} e, se pela natureza do conteúdo, seria possível utilizar a placa Galileo no processo de \textit{ensino-aprendizagem}.
+
+A proporção de conteúdos que poderiam ser ensinados com a placa Galileo é mostrada na Figura \ref{figPossivelUsarGalileo}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/PossivelUsarGalileo.eps}
+	\caption{Percentagem dos conteúdos tratados na UnB e \textit{California Insitute of Tecnology} que podem ser ensinados utilizando a placa Galileo}
+	\label{figPossivelUsarGalileo}
+\end{figure}
+
+Pode-se concluir, pelas informações colhidas nesta seção, que a mudança currícular da disciplina \textit{Algoritmos e Programação de Computadores} e disciplinas similares em outras faculdades é possível. Tal mudança curricular em direção à aprendizagem ativa, além de trazer grandes benefícios à qualidade do ensino \cite{Parte1:artigo01}\cite{Parte1:artigo4}, também pode ajudar a formação de novos profissionais alinhados com as competências mais exigidas no século XXI, como proatividade e independência \cite{Parte1:artigo1}.
+
+\subsection{Estudo da teoria pedagógica de aprendizagem ativa focando na teoria de \textit{aprendizagem por masterização} }
+
+
+
+\subsection{Estudo da metodologia SCRUM para desenvolvimento agíl de projetos }
+\label{EstudoScrum}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/scrum2.eps}
+	\caption{Fluxo da metodologia Scrum}
+	\label{scrum2}
+\end{figure}
+
+
+\subsection{Proposta de curso}
+
+Para se construir um projeto Scrum, como exposto na seção \ref{EstudoScrum}, para o contexto educacional da teoria de masterização de habilidades proposta por Bloom, os seguintes passos  são necessários:
+
+\begin{enumerate}
+	\item Realizar adaptação dos princípios e fluxo da metodologia Scrum, em conjunto com os princípios da metodlogia de \textit{masterização de habilidades} para o contexto educacional desejado.
+	\item Definir os objetivos educacionais na forma \textit{de características de produto}. utilizando a taxonomia de Bloom para criar as \textit{User Stories} e \textit{Epics}.
+	\item Criar atividades com a placa Galileo de acordo com o contéudo programático estabelecido
+	
+		 
+\end{enumerate}
+Cada uma das atividades listadas acima será tratada, neste trabalho, em uma seção em separado.
+
+
+\subsubsection{Adaptação dos princípios e fluxo metodologia Scrum à disciplina \textit{Algoritmos e Programação de Computadores}}
+
+Nesta seção é apresentada uma proposta de adaptação da metodologia Scrum para aplicação na disciplina \textit{Algoritmos e Programação de Computadores}. 
+
+A tabela \ref{tabEduScrum} mostra um resumo de todo fluxo mostrado na figura \ref{scrum2} 
+e, ao lado, a proposta de adaptação:
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[H]
+	\centering
+	\caption{Scrum aplicado à \textit{Algoritmos e Programação de Computadores}}
+	\label{tabEduScrum}
+	\begin{tabular}{@{}cll@{}}
+		\toprule
+		\textbf{}                                                                                                            & \multicolumn{1}{c}{\textbf{Scrum}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          & \multicolumn{1}{c}{\textbf{Scrum + Masterização de habilidades}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\ \midrule
+		\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Por que \\ utilizar Scrum?\end{tabular}}}                    & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}-Uso de ciclo curtos de \\ desenvolvimento e \\ revisão(Sprints)\\ -Revisão frequente dos\\  requisitos de projeto a \\ cada Sprint\\ - Melhora contínua\\ -Valor agredado acima \\ de obediciência a cronograna\\  e processos\\ - Entrega contínuade Valor\end{tabular}}                                                                                                                                                                                                                                                                                                                                                                                   & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}1)Verificação,de níveis \\ de aprendizagem frequentes\\ 2)Aumento, a cada \\ Sprint, da responsabilização\\  pessoal dos alunos com \\ relação a seus estudos\end{tabular}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+		\\ \midrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption*{}
+	%\label{}
+	\begin{tabular}{@{}cll@{}}
+		%\toprule
+		\textbf{}                                                                                                            & \multicolumn{1}{c}{\textbf{Scrum}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          & \multicolumn{1}{c}{\textbf{Scrum + Masterização de habilidades}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+		
+		%\\ \midrule
+		
+		\\ \midrule
+		\multicolumn{1}{|c|}{\textbf{Papéis}}                                                                                & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}- Product Owner\\  Representante da voz do cliente\\ -Scrum Master\\ Gerente do time Scrum\\  responsável por certificar-se\\  que os princípios Scrum estão\\  sendo seguidos pela equipe\\  e também responsável por\\  coletar os requisitos \\ de projeto junto ao\\  Product Owner\\ -Time Scrum -\textgreater Equipe \\ responsável por desenvolver\\  os requisitos de projeto\\  descritos, inclusive, \\ por meio de User Stories\end{tabular}}                                                                                                                                                                                                     & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Product Owner - Professor\\ \\ \\ Scrum Master - Professor\\ (enquanto os alunos não\\  estiverem familiarizados\\  com a metodologia Scrum\\ e prontos para auto-gerência\\  de seus,estudos)\\ \\ \\ Time Equipe Scrum - Equipe\\  de até 4 estudantes\\  responsáveis( sem contar\\  o professor) por concluir,\\ conjuntamente,  os objetivos\\  de aprendizagem\\ descritos por meio da \\ taxonomia de Bloom.\\ \\ \\ A equipe Scrum deve eleger\\  um representante novo a \\ cada Sprint para se comunicar\\ diretamente com o professor \\ (Scrum Master) e planejar \\ as atividades e meios \\ de verificação conjuntamente\end{tabular}} 
+		
+		\\ \midrule
+		                                                                               \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption*{}
+	%\label{}
+	\begin{tabular}{@{}cll@{}}
+		%\toprule
+		\textbf{}                                                                                                            & \multicolumn{1}{c}{\textbf{Scrum}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          & \multicolumn{1}{c}{\textbf{Scrum + Masterização de habilidades}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+		
+		\\ \midrule
+		
+		
+		\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fase 1 -\\  Início \\ Definição\\  de projeto\end{tabular}}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}1) Criar visão de projeto \\   2) Identificar Scrum \\ Master e Skateholders\\ 3) Formar Time Scrum                     \\   4) Desenvolver Epics\\     (Conjunto de user stories)\\ 5) Criar conjunto prioritário\\  de características do produto               \\ 6) Criar um plano de\\ desenvolvimento do produto \\ em Sprints sequenciais\end{tabular}}                                                                                                                                                                                                                                                                                               & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}1),Criar objetivos educacionais\\  com a taxonomia de Bloom\\ 2)Scrum Master = Professor\\ Stakeholders =,alunos, \\ familias, governo,etc\\ 3) Formar grupos de 3 ou \\ 4 alunos , preferencialmente\\  não amigos e com \\ características complementares\\ 4) Dividir os objetivos\\ educacionais em módulos\\ 5) Criar plano de ascenção\\  dos alunos nos níveis \\ cognitivos de bloom para os \\ conteúdos especificados\\ 6) Criar especificação de \\ Sprint com  os objetivos\\  educacionais\end{tabular}}                                                                                 
+
+		  \\ \midrule
+		  
+		  \multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fase 2 - Plano \\ de Projeto  e \\ Estimação\end{tabular}}}  & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}1)Critérios de aceitação\\  são criados (a ser feito\\  pelo Product Owner \\ juntamente com o Scrum\\  Team)          \\ 2) Scrum Master e time \\ estimam o esforço\\ necessário para desenvolver\\ as User Stories                                        \\   3)Scrum master e time\\  se comprometem\\  a desenvolver o produto\\  de acordo com as Epics\\ (Conjunto de User Stories) \\ e critérios de aceitação                             \\ 4)User Stories\\  são divididas em subtarefas \\ para criar uma Task List     \\ 5) Time Scrum se reune\\  para decidir quais tarefas\\  serão realizadas na \\ Sprint (Sprint Backlog)\end{tabular}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}1) O professor,  a cada Sprint,\\  deve deixar claro quais serão\\ os critérios de masterização\\  de habilidades preferencialmente\\ utilizandoa taxonomia \\ de Bloom\\ 2)Professor é responsável, \\ a cada Sprint, por estimar o \\ esforço necessário por parte da\\ turma para as masterizações \\ desejadas.\\  \\ A participação dos representantes\\  de equipes com relação à definição\\  de planos Sprint é crescente ao\\  longo dos Sprints.\end{tabular}}                                                                                                                                                                             
+		 \\ \bottomrule
+		  
+		                                               
+		
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption*{}
+	%\label{}
+	\begin{tabular}{@{}cll@{}}
+		%\toprule
+		\textbf{}                                                                                                            & \multicolumn{1}{c}{\textbf{Scrum}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          & \multicolumn{1}{c}{\textbf{Scrum + Masterização de habilidades}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+		
+		\\ \midrule
+		
+		
+		\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fase 3 - \\ Implementação\end{tabular}}}                     & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}1)Criar os "entregáveis"\\  do Sprint \\   2) Realizar reuniões\\  diárias rápidas de no\\  máximo 15 minutos para\\   discutir problemas\\  e progresso       \\   3) Atualizar o quadro\\  Scrum  antes de iniciar\\  o dia de trabalho\end{tabular}}                                                                                                                                                                                                                                                                                                                                                                                                      & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}1)Estudar o conteúdo especificado\\  emgrupo com a ajuda do Scrum \\ Master(Professor)\\ 2) Realizar reuniões diárias rápidas\\  de no máximo 15 minutos\\  para discutir problemas e progresso\\ 3)A equipe Scrum decide os meios\\  de aprendizagem que usarão com\\  auxílio do professor. A cada Sprint,\\  a equipe Scrum deve ficar mais\\  livre para decidir os meios mais\\  eficientes de,aprendizagem\\ 4) Atualizar o quadro Scrum de \\ ( A FAZER , FAZENDO, FEITO)\end{tabular}}                                                                                       
+		
+		\\ \midrule
+		\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Fase 4 - \\ Fim de Sprint;\\ Revisão\\  e Retrospecto\end{tabular}}}               & \multicolumn{1}{|c|}{\begin{tabular}[c]{@{}l@{}}1)Os,entregáveis são \\ mostrados aos \\ Stakeholders\\ 2) Essas reuniões são\\  feitas para garantir\\  a aprovação do produto\\  desenvolvido e fazer\\  os ajustes necessários\\  o mais rápido possível\\ 3) O Scrum Master e o\\  time Scrum se reunem\\  para discutir o que foi\\  aprendido no Sprint\\ 4) Informação é documentada\\  para futuros Sprints\end{tabular}}                                                                                                                                                                                                                                                                                                 & \multicolumn{1}{|c|}{\begin{tabular}[c]{@{}l@{}}1)A equipe Scrum desenvolve\\  testes rápidos( para serem\\  resolvidos em no máximo \\ 20 minutos) para que as outras\\  equipes resolvam do conteúdo\\  estudado no Sprint. O gabarito\\  deve ser entregue ao professor\\  antes da aplicação dos testes \\ para que este verifique-os e \\ decida quais testes\\ serão aplicados\\ 2) A equipe resolve, no tempo\\ estipulado, os testes compartilhados\\ 3) Após os testes de unidade,\\  o professor e os alunos tem\\  uma aula para revisar o que\\ foi aprendido de acordo com\\  os objetivos educacionais traçados\end{tabular}}                                                                               \\ \bottomrule
+		
+		
+	\end{tabular}
+\end{table}
+
+\subsubsection{Definição de objetivos educacionais na forma da metologogia Scrum}
+
+Para realizar a definição dos objetivos educacionais, foi utlizada a plataforma web scrumdo \textsuperscript{\textregistered} sendo cadastrados os seguintes objetivos educacionais próprios da disciplina \textit{Algoritmos e Programação de Computadores}:
+
+\begin{enumerate}
+	\item O histórico da computação
+	\item Organização básica de um computador
+	\item Fundamentos para linguagens de programação
+	\item Introdução ao conceito de algoritmo
+	\item Pseudocódigo e Fluxograma
+	\item Tipos de variáveis de memória
+	\item Operadores e expressões
+	\item Algoritmos sequenciais
+	\item Algoritmos com alternativas (simples, compostas, aninhadas e de múltipla escolha)
+	\item Algoritmos com repetição (com teste no início, com teste no fim e com variável de controle)
+	\item Algoritmos com vetores e matrizes
+	\item Subalgoritmos, passagem de parâmetros,
+	\item Ponteiros
+	\item Recursividade
+	\item Registros
+	\item Arquivos
+	\item Ordenação e busca
+	
+\end{enumerate}
+
+Aos objetivos listados, devem ser incluídos os seguintes objetivos educacionais relativos a placa Intel\textsuperscript{\textregistered} Galileo e eletrônica básica:
+
+\begin{enumerate}
+	\item Leis básicas de eletrônica( Leis de Kirschoff)
+	\item Sistema da placa Galileo
+	\item Ferramentas básicas de prototipação eletrônica
+	\item Fundamentos de programação em Galileo
+	\item Introdução a sensores
+	\item Interação com sensores
+	\item Uso de displays
+	\item Motores
+	\item Tópico mais avançado em eletrônica a ser escolhido com a Turma (Comunicação Ethernet ou Internet, Comunicação sem fio, Uso de placa SD de armazenamento de dados, uso de interrupções, Circuitos integrados periféricos, controle de altas cargas, etc)
+\end{enumerate}
+
+A Figura \ref{scrumdo1} mostra o plataforma web scrumdo \textsuperscript{\textregistered} para cadastramento de quadros scrum pertinentes.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/scrumdo1.eps}
+	\caption{Plataforma scrumdo: Formato dos quadros Scrum planejados para a disciplina \textit{Algoritmos e Programação de Computadores}}
+	\label{scrumdo1}
+\end{figure}
+
+A Figura \ref{scrumdo2} mostra os quadros \textit{Dificuldades} \textit{Algoritmos e Programação de Computadores}, \textit{Aplicação com Galileo}. A disposição dos 3 quadros deve refletir a prioridade da turma. As reuniões de Sprint devem servir para resolver questões pendentes posta no quadro \textit{Dificuldades}.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/scrumdo2.eps}
+	\caption{Plataforma scrumdo: Quadros Scrum criados e objetivos educacionais, segundo a Taxonomia de Bloom escritos \textit{Algoritmos e Programação de Computadores}}
+	\label{scrumdo2}
+\end{figure}
+
+Pode-se, por meio da plataforma, selecionar sub-objetivos. No caso deste trabalho, para cada tópico listado para as práticas com a placa Galileo, foram criados objetivos educacionais para os três primeiros níveis cognitivos identificados por Bloom( Nível de Conhecimento, Compreensão a Aplicação).
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/scrumdo3.eps}
+	\caption{Plataforma scrumdo: Definicação de sub-objetivos de um objetivo listado no \textit{Product Backlog} \textit{Algoritmos e Programação de Computadores}}
+	\label{scrumdo3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/app1.eps}
+	\caption{Uso do aplicativo desenvolvido em QT para definir os objetivo educacional para o nível \textit{Conhecimento}}
+	\label{app1}
+\end{figure}
+
+\subsubsection{Definição de objetivos educacionais para a Disciplina \textit{Algoritmos e Programação de Computadores}}
+
+Para especificar cada objetivo educacional, foi utilizado o aplicativo desenvolvido em QT, como descrito anteriomente e como mostrado na Figura \ref{app1}.
+
+A seguinte enumeração mostra uma possível especificação de cada um dos módulos de aprendizagem definidos anteriormente seguindo a \textit{Taxonomia e Bloom}:
+\begin{enumerate}
+	\item O histórico da computação
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade \textbf{histórico da computação}, os estudantes irão listar os principais acontecimentos e cientistas que criaram a computação tal qual a conhecemos hoje em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade histórico da computação, os estudantes irão explicar a relevância da computação no mundo moderno em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade histórico da computação, os estudantes irão escolher, dentre certos sistemas computacionais exposto, qual seria aquele(s) que mais se adequariam ao contexto exposto em um grupo de 4 pessoa(s).
+	\item Organização básica de um computador
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade organização básica de um computador, os estudantes irão enumerar e explicar o funcionamento de todos os sistemas que compõem um computador em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade organização básica de um computador, os estudantes irão classificar computadores quanto a parâmetros de desempenho entre outros em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade organização básica de um computador, os estudantes irão ilustrar a dinâmica de funcionamento de um computador e criarão um diagrama em um grupo de 4 pessoa(s).
+		
+	\item Fundamentos para linguagens de programação
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade fundamentos para linguagens de programação, os estudantes irão definir a noção geral sobre padrões de linguagens de programação em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade fundamentos para linguagens de programação, os estudantes irão explicar a noção geral das principais diferenças entre os diversos tipos de linguagens de programação em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade fundamentos para linguagens de programação, os estudantes irão escolher para diversas situações e sistemas diferentes, linguagens de programação mais adequadas em um grupo de 4 pessoa(s).
+	\item Introdução ao conceito de algoritmo
+		\subitem \textbf{Nível 1 Conhecimento:}
+	Na unidade introdução ao conceito de algoritmo, os estudantes irão definir conceitualmente o que são algoritmos em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade introdução ao conceito de algoritmo, os estudantes irão identificar vários tipos diferentes algoritmos em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade introdução ao conceito de algoritmo, os estudantes irão empregar um determinado tipo de algoritmo para cada situação dada em um grupo de 4 pessoa(s).
+	\item Pseudocódigo e Fluxograma
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade pseudocódigo e fluxograma, os estudantes irão duplicar por meio das ferramentas citadas, situações do cotidiano  em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade pseudocódigo e fluxograma, os estudantes irão selecionar por meio dos pseudocódigos e fluxogramas já construídos  quais são os mais eficientes para cada situação dada em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade pseudocódigo e fluxograma, os estudantes irão programar os primeiros algoritmos em um grupo de 4 pessoa(s).
+	\item Tipos de variáveis de memória
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade tipos de variáveis de memória, os estudantes irão listar todos os tipos de variáveis em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade tipos de variáveis de memória, os estudantes irão explicar as diferenças de usabilidade entre todos os tipo de variáveis em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade tipos de variáveis de memória, os estudantes irão escolher dentre todos os tipos de variável de memória, aquelas que melhor se aplicam às situações propostas e explicar o motivo em um grupo de 4 pessoa(s).
+	\item Operadores e expressões
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade operadores e expressões, os estudantes irão enumerar os vários tipos de operadores e expressões na linguagem C e demonstrar seu uso em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade operadores e expressões, os estudantes irão descrever o resultado de várias expressões escritas, explicitando os passos desenvolvidos em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade operadores e expressões, os estudantes irão desenvolver programas para solução de diversas situações propostas em um grupo de 4 pessoa(s).
+	\item Algoritmos sequenciais
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade algoritmos sequenciais, os estudantes irão definir o conceito, todas expressões e operadores utilizados em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade algoritmos sequenciais, os estudantes irão definir o resultado esperado na utilização de um algoritmo sequencial em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade algoritmos sequenciais, os estudantes irão empregar algoritmos sequencias na solução de situações diversas em um grupo de 4 pessoa(s).
+	\item Algoritmos com alternativas (simples, compostas, aninhadas e de múltipla escolha)
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade algoritmos com alternativas, os estudantes irão definir os vários de operadores condicionais utlizados em C quanto a sua dinâmica e utilização em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade algoritmos com alternativas, os estudantes irão identificar o resultado de uma série de condicionais aplicados num algoritmo sequencial em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade algoritmos com alternativas, os estudantes irão construir programas complexos com alternativa condicionais em um grupo de 4 pessoa(s).
+		
+	\item Algoritmos com repetição (com teste no início, com teste no fim e com variável de controle)
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade algoritmos com repetição, os estudantes irão lembrar a sintaxe correta de todas formas de laços de repetição em C em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade algoritmos com repetição, os estudantes irão explicar a diferença de usubilidade das formas de laços de repetição em C em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade algoritmos com repetição, os estudantes irão construir programas complexos com laços de repetição em um grupo de 4 pessoa(s).
+	\item Algoritmos com vetores e matrizes
+		\subitem \textbf{Nível 1 Conhecimento:}
+		\subitem \textbf{Nível 2 Compreensão:}
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade algoritmos com vetores e matrizes, os estudantes irão construir programas complexos com utilizando tais conceitos em um grupo de 4 pessoa(s).
+	\item Subalgoritmos e passagem de parâmetros
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade subalgoritmos e passagem de parâmetros, os estudantes irão expor por meio de exemplo e aplicações, a forma sintaticamente correta de escrita de subalgoritmos e passagem de parâmetros em um grupo de 4 pessoa(s)
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade subalgoritmos e passagem de parâmetros, os estudantes irão identificar todos parâmetros e requisitos de para correta escrita de tais rotinas computacionais em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade subalgoritmos e passagem de parâmetros, os estudantes irão construir programas complexos, construídos sob diversos subalgoritmos, em um grupo de 4 pessoa(s)
+	\item Ponteiros
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade ponteiros, os estudantes irão listar todas características que definem por completo um ponteiro em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade ponteiros, os estudantes irão identificar os resultados de diversas operações utilizando ponteiros em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade ponteiros, os estudantes irão construir programas complexos utilizando ponteiros em um grupo de 4 pessoa(s).
+	\item Recursividade
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade recursividade, os estudantes irão denominar o conceito associado, a usabilidade e aplicações de recursividade em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade recursividade, os estudantes irão reconhecer o resultado final da aplicação da recursividade em diversas situações propostas em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade recursividade, os estudantes irão construir programas complexos utilizando tal conceito em um grupo de 4 pessoa(s).
+	\item Registros
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade registros, os estudantes irão definir todos conceitos e aplicações relacionadas a registros em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade registros, os estudantes irão selecionar formas de registros mais adequadas para cada situação dada em um grupo de 4 pessoa(s).	
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade registros, os estudantes irão construir programas complexos com laços de repetição em um grupo de 4 pessoa(s).
+	\item Arquivos
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade registros, os estudantes irão definir todos conceitos e aplicações relacionadas a registros em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade registros, os estudantes irão selecionar formas de registros mais adequadas para cada situação dada em um grupo de 4 pessoa(s).	
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade registros, os estudantes irão construir programas complexos com laços de repetição em um grupo de 4 pessoa(s).
+	\item Ordenação e busca
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade ordenação e busca, os estudantes irão enumerar e definir diversas algoritmos de enumeração e busca em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade ordenação e busca, os estudantes irão descrever todos passos dos algoritmos de ordenação e busca estudados anteriomente em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade algoritmos com repetição, os estudantes irão construir programas complexos com laços de repetição em um grupo de 4 pessoa(s)
+	
+\end{enumerate}
+
+
+\subsubsection{Definição de objetivos educacionais para a Disciplina \textit{Algoritmos e Programação de Computadores} com relação às atividades práticas}
+
+Nesta seção, define-se um possível planejamento de módulos de aprendizagem relacionadas a eletrônica básica utlizando a placa Galileo em paralelo à aprendizagem de programação estruturada na linguagem C.
+
+\begin{enumerate}
+	\item Leis básicas de eletrônica (Leis de Kirschoff)
+		\subitem \textbf{Nível 1 Conhecimento:}
+		Na unidade leis básicas de eletrônica( Leis de Kirschoff), os estudantes irão enumerá-las todas e com dados exemplos e situações, escreve-lás propriamente em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 2 Compreensão:}
+		Na unidade leis básicas de eletrônica( Leis de Kirschoff), os estudantes irão reconhecer todos parâmetros das leis de Kirschoff, nos circuitos elétricos exemplificados, em um grupo de 4 pessoa(s).
+		\subitem \textbf{Nível 3 Aplicação:}
+		Na unidade leis básicas de eletrônica( Leis de Kirschoff), os estudantes irão empregar diferentes dispositivos eletrônicos em  circuitos desenvolvidos em simulações e observar as relações das lesi de Kirschoff estudadas anteriormente em um grupo de 4 pessoa(s).
+	\item Sistema da placa Galileo
+		\subitem \textbf{Nível 1 Conhecimento:}
+		\subitem \textbf{Nível 2 Compreensão:}
+		\subitem \textbf{Nível 3 Aplicação:}
+	\item Ferramentas básicas de prototipação eletrônica
+		\subitem \textbf{Nível 1 Conhecimento:}
+		\subitem \textbf{Nível 2 Compreensão:}
+		\subitem \textbf{Nível 3 Aplicação:}
+	\item Fundamentos de programação em Galileo
+		\subitem \textbf{Nível 1 Conhecimento:}
+		\subitem \textbf{Nível 2 Compreensão:}
+		\subitem \textbf{Nível 3 Aplicação:}
+	\item Introdução a sensores
+		\subitem \textbf{Nível 1 Conhecimento:}
+		\subitem \textbf{Nível 2 Compreensão:}
+		\subitem \textbf{Nível 3 Aplicação:}
+	\item Interação com sensores
+		\subitem \textbf{Nível 1 Conhecimento:}
+		\subitem \textbf{Nível 2 Compreensão:}
+		\subitem \textbf{Nível 3 Aplicação:}
+	\item Uso de displays
+		\subitem \textbf{Nível 1 Conhecimento:}
+		\subitem \textbf{Nível 2 Compreensão:}
+		\subitem \textbf{Nível 3 Aplicação:}
+	\item Motores
+		\subitem \textbf{Nível 1 Conhecimento:}
+		\subitem \textbf{Nível 2 Compreensão:}
+		\subitem \textbf{Nível 3 Aplicação:}
+	\item Tópico mais avançado em eletrônica a ser escolhido com a Turma (Comunicação Ethernet ou Internet, Comunicação sem fio, Uso de placa SD de armazenamento de dados, uso de interrupções, Circuitos integrados periféricos, controle de altas cargas, etc)
+		\subitem \textbf{Nível 1 Conhecimento:}
+		\subitem \textbf{Nível 2 Compreensão:}
+		\subitem \textbf{Nível 3 Aplicação:}
+		
+\end{enumerate}
+
 \section{Placa Intel \textsuperscript{\textregistered} Galileo}
 \label{CapGalileo}
 
@@ -58,7 +485,7 @@ Primeiramente são apresentados os pinos da placa Galileo juntamente com uma brev
 
 Os pinos da placa Galileo nas partes frontal e traseira são mostrados nas figuras \ref{FigPinosFrente} e \ref{FigPinosTras} 
 
-\begin{figure}[t]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.31\textwidth]{figs/galileoFrentePinos.eps}
 	\caption{Descrição dos pinos da placa Galileo - parte frontal\cite{DATASHEET1}}
@@ -553,6 +980,7 @@ JTAG(Joint Test Action Group) é a padronização IEEE-1149.1 usada para testes de 
 	\centering
 	\includegraphics[width=0.8\textwidth]{figs/JTAG1.eps}
 	\caption{JTAG monitorando a conexão de um CPU com uma FPGA }
+	\source{Source of the image.}
 	\label{JTAG1}
 \end{figure}
 
