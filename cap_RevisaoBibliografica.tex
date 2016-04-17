@@ -55,9 +55,6 @@ Os índices utilizados pela instituição de pesquisa \textit{timeshighereducation}
 
 Como dito em \cite{livroProfessorYeah}, pode-se concluir, sem perda de exatidão, que tais índices são totalmente dependentes e proporcionais à qualidade de ensino nas universidade em questão. 
 
-
-
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{figs/tabRankingUniversidades.eps}
@@ -91,7 +88,7 @@ A proporção de conteúdos que poderiam ser ensinados com a placa Galileo é mostra
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figs/PossivelUsarGalileo.eps}
-	\caption{Percentagem dos conteúdos tratados na UnB e \textit{California Insitute of Tecnology} que podem ser ensinados utilizando a placa Galileo}
+	\caption{Percentagem dos conteúdos tratados na UnB e \textit{California Institute of Tecnology} que podem ser ensinados utilizando a placa Galileo}
 	\label{figPossivelUsarGalileo}
 \end{figure}
 
@@ -99,20 +96,392 @@ Pode-se concluir, pelas informações colhidas nesta seção, que a mudança currícul
 
 \subsection{Estudo da teoria pedagógica de aprendizagem ativa focando na teoria de \textit{aprendizagem por masterização} }
 
+Esta seção trata do paradigma de aprendizagem por masterização e da Taxonomia de definição de objetivos educacionais propostas por Bejamim S. Bloom. Além disso, o é descrito um aplicativo, desenvolvido do ambiente de programação QT, cujo objetivo é auxiliar a definição de objetivos educacionais de forma mais clara e precisa. 
+
+\subsubsection{Taxonomia dos objetivos educacionais - Taxonomia de Bloom}
+\label{Taxonomia}
+A taxonomia dos objetivos educacionais (Taxonomia de Bloom) é um modelo de estruturação de objetivos educacionais segundo níveis hierárquicos e crescentes de níveis de aprendizagem. A taxonomia de Bloom foi planejada para três domínios distintos de aplicação \cite{bloom1}. São eles:
+
+\begin{itemize}
+	\item Domínio cognitivo, cuja abrangência é a aprendizagem intelectual.
+	\item Domínio afetivo, cuja abrangência está ligado aos aspectos de sensibilização, socialização e gradação de valores
+	\item Domínio psicomotor, cuja abrangência está ligada a habilidades de execução de tarefas que envolvem o aparelho motor. 
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/bloom1.eps}
+	\caption{Níveis de aprendizagem no domínio cognitivo}
+	\label{bloom1}
+\end{figure}
 
 
-\subsection{Estudo da metodologia SCRUM para desenvolvimento agíl de projetos }
+Cada um destes domínios tem diversos níveis de profundidade de aprendizado. Por isso a classificação de Bloom é denominada hierarquia: cada nível é mais complexo e mais específico que o anterior como mostrado na Figura \ref{bloom1}.
+
+Os níveis cognitivos de Bloom são usados para definir \textit{objetivos educacionais} de forma precisa. A Figura \ref{bloom2} mostra os verbos a serem usados para se definir objetivos educacionais para cada dos níveis citados de acordo com a Taxonomia de Bloom.
+ 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/bloom2.eps}
+	\caption{Verbos de descrição de objetivos educacionais a serem usados em cada nível cognitivo}
+	\label{bloom2}
+\end{figure}
+
+Um objetivo educacional definido segundo a taxonomia de Bloom segue o seguinte padrão: 
+	
+	"O(s) aluno(s) será(ão) capaz(es) de (\textbf{Verbo próprio do nível cognitivo considerado}) (\textbf{Conteúdo estudado}).
+
+Um exemplo de aplicação para o caso de primeiro nível cognitivo, no estudado de equações diferenciais:
+
+"O aluno será capaz de \textbf{definir} o que são \textbf{equações diferenciais}."
+
+Para este trabalho, foi criado um aplicativo na plataforma de programação QT\textsuperscript{\textregistered} para facilitar a definição de objetivos educacionais de acordo com a Taxonomia de Bloom. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/app2.eps}
+	\caption{Tela inicial do aplicativo desenvolvido em QT para definir os objetivos educaionais}
+	\label{app2}
+\end{figure}
+
+A Figura \ref{app2} mostra a tela inicial do aplicativo desenvolvido. Na região de inserção de texto Descrita por \textbf{Unidade}, deve-se escrever de qual unidade de ensino se está tratando. Na região textual central, marcada na Figura  \ref{app2_1}, é mostrado resultado do objetivo educacional definido.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/app2_1.eps}
+	\caption{Tela inicial do aplicativo desenvolvido em QT para definir os objetivos educacionais, retângulo vermelho marcando a região onde o objetivo educacional definido é mostrado}
+	\label{app2_1}
+\end{figure}
+
+A Figura \ref{app3} mostra o resultado, na região textual central , da definição do \textbf{Unidade}. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/app3.eps}
+	\caption{Definindo uma unidade de ensino}
+	\label{app3}
+\end{figure}
+
+A Figura \ref{app4} mostra o resultado, na região textual central , da definição do \textbf{Objeto de estudo} específico para a \textbf{Unidade} definida. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/app4.eps}
+	\caption{Definindo um objetivo de estudo para a unidade de estudo}
+	\label{app4}
+\end{figure}
+
+A Figura \ref{app4_1} mostra os níveis do processos cognitivos da Taxonomia de Bloom.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/app4_1.eps}
+	\caption{Retângulo amarelo destacando os níveis cognitivos}
+	\label{app4_1}
+\end{figure}
+
+Cada \textit{Combo-box} mostrado possui os verbos associados a cada nível cognitivo. Quando um verbo é selecioando, o objetivo educacional exposto na região retangular é alterado, como exposto na Figura \ref{app5_2}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figs/app5_2.eps}
+	\caption{Selecionando um verbo de um nível cognitivo}
+	\label{app5_2}
+\end{figure}
+
+Na aba \textit{Amplitude}, são selecionados modificadores para especificação do objetivo educacional. A Figura \ref{app6} mostra o uso do modificador para alterar o objetivo educacional adicionando o modificador "o objetivo geral".
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figs/app6.eps}
+	\caption{Selecionando a amplitude do estudo a ser realizado}
+	\label{app6}
+\end{figure}
+
+Na aba \textit{Recursos}, são especificados recursos com os quais os estudantes realizarão atividades em direção à masterização do conteúdo. A Figura \ref{app7} mostra o uso do especificador para alterar o objetivo educacional adicionando o recurso "livro".
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figs/app7_3.eps}
+	\caption{Selecionando o recursos a ser utilizado para alcançar o obejtivo educacional especificado}
+	\label{app7_3}
+\end{figure}
+
+Na aba \textit{Produtos}, é especificado o que os alunos desenvolverão para atingir o objetivo educacional especificado. A Figura \ref{app8} mostra o uso do especificador de produto a ser desenvolvido para alterar o objetivo educacional adicionando o objetivo de produzir um "artigo".
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figs/app8.eps}
+	\caption{Selecionando um produto a ser desenvolvido como atividade de masterização}
+	\label{app8}
+\end{figure}
+
+Finalmente, na aba \textit{Grupos}, é especificado a quantidade de alunos por grupo que realizarão, conjuntamente as atividades de masterização. A Figura \ref{app9} mostra  a alteração da quantidade de pessoas por grupo para, por exemplo, 4 pessoas.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figs/app9.eps}
+	\caption{Selecionando a quantidade de pessoas por grupo}
+	\label{app9}
+\end{figure}
+
+
+\subsubsection{ Aprendizagem por masterização}
+\textit{Aprendizagem por Masterização} é uma metodologia de ensino proposta por Benjamim S. Bloom em 1968 juntamente com uma Taxonomia  própria. Essa metodologia se baseia nas pesquisa de Bloom relacionadas aos \textit{níveis cognitivos de aprendizagem}.
+
+
+Como mostrado na seção  \ref{Taxonomia}, Os níveis cognitivos de aprendizagem são crescente  do mais simples ao mais complexo. Isso significa que, para adquirir uma nova habilidade pertencente ao próximo nível, o aluno deve ter dominado e adquirido a habilidade do nível anterior. Ao ensinar um turma sob o paradigma da masterização, a maioria dos alunos ( 80 a 90\%) deve ter masterizado a hablidade proposta para que outro conteúdo possa ser tratado.
+
+Só após conhecer um determinado assunto alguém poderá compreendê-lo e aplicá-lo. Nesse sentido, a taxonomia proposta não é apenas um esquema para classificação, mas uma possibilidade de organização hierárquica dos processos cognitivos de acordo com níveis de complexidade e objetivos do desenvolvimento cognitivo desejado e planejado.
+
+Os processos categorizados pela Taxonomia dos Objetivos Cognitivos de Bloom, além de representarem resultados de aprendizagem esperados, são cumulativos, o que caracteriza uma relação de dependência entre os níveis e são organizados em termos de complexidades dos processos mentais.
+
+ Encerrando um modo de utilização bastante prático, uma vez que permite, a partir da utilização de uma tabela Domínio Cognitivo perceber qual o verbo a utilizar / aplicar, em função do comportamento esperado, organizando os objectivos de aprendizagem em seis níveis, os quais são, por ordem crescente de complexidade os seguintes.
+ 
+ A metodologia de aprendizagem sob masterização se baseia sob 2 crenças fundamentais:
+ 
+ \begin{enumerate}
+  \item Virtualmente todos estudantes podem aprender todos conteúdos acadêmicos importantes ao nível de excelência
+  
+  \item A função primária das escolas é definir objetivos de aprendizagem e ajudar todos estudante a alcançá-los. 
+  
+ \end{enumerate}  
+
+Para que um curso baseado em masterização tenha sucesso, são seguintes características são mandatórias:
+
+\begin{itemize}
+	\item Indicar claramente objetivos e metas instrucionais.
+	\item Garantir clara ligação entre objetivos, ensino e testes.
+	\item Comunicar grandes expectativas de sucesso aos alunos.
+	\item Unidades de ensino pequenas e sequenciadas.
+	\item Manter o ciclo básico de ensino-teste-correção-teste.
+	\item Predefinir os padrões de maestria de conhecimento.
+	\item Manter registros claros e atualizados de progresso dos alunos de forma compreensível para os estudantes para fornecer feedback imediato.
+	\item Comprometimento ao desenvolvimento da equipe nas práticas de \textit{masterização}.
+\end{itemize}
+
+
+A chave para a eficácia do método de aprendizagem por masterização reside na disponibilização sistemática e uso de testes e instruções corretivas.
+corretiva. 
+
+Instrução corretiva, por sua própria natureza, deve ser direcionada a alunos pessoalmente e em portanto a problemas e dificuldades pessoais. Este processo será flexível em termos de:
+
+\begin{itemize}
+	\item a) Tempo: O tempo necessário, nas unidades iniciais, para utilização de instruções corretivas irá reduzir tal necessidade em unidades futuras e mais complexas, permitindo que a turma, possa, em sua maioria, atingir o nível de masterização.
+	
+	\item b) Estratégias de Grupo:
+	
+	As estratégias de agrupamento devem incluir a instrução grupo inteiro, aulas em grupo pequeno,tutoria entre pares, e tutoria individual. As decisões serão tomadas à luz dos testes de formação  e recursos disponíveis. O agrupamento de alunos para corretivos será	depende unicamente no feedback de teste de formação com permissição de movimento de maestria para subgrupos de não-mestria, caso seja identificada a necessidade. A associação a grupos não deve permanecer constante.
+	
+	\item c) Variedade: Os professores e instrutores devem possui uma gama diversificada de teste e instruções corretivas.
+	Estudantes que masterizaram o conteúdo no primeiro teste formativo, devem ser envolver em atividades de ampliação de conhecimento no mesmo conteúdo masterizado, preferencialmente, e em atividades de tutoria em par para estudantes que ainda não masterizarão o conteúdo.
+	
+\end{itemize}
+ 
+O fluxo da metodologia de masterização é o seguinte:
+
+\begin{enumerate}
+	\item \textbf{Definição de objetivos educacionais:}
+	Neste ponto, os objetivos educacionais são determinados pelo professor usando um currículo especificado ou não. Tanto professor quanto alunos devem compreender e focar nos objetivos especificados.
+	
+	\item \textbf{Ensino:}
+	Inicialmente, uma turma seguindo a metodologia de masterização se assemelhará com a metodologia tradicional. O material poderá ser apresentado via aulas, apresentações, demonstrações, discussões ou qualquer forma que o professor considerar mais conveniente. As duas características mais importantes de diferenciação em sala da aula da teoria de masterização em relação a teoria tradicional rapidamente devem ser evidenciados. A primeira característica é a seguinte: \textbf{O objetivo de cada aula deve ser claramente exposto}. A segunda característica é a seguinte: O deve explicitar aos estudantes que \textbf{ele acredita que todos estudantes podem aprender bem o material e espera que eles assim o façam}.
+	
+	\item \textbf{Primeiro teste formativo:}
+	
+	Depois que todo material foi passado (o que pode levar um dia ou várias semanas), o professor realiza o teste formativo para verificar a aprendizagem dos alunos. Esse teste não conta como nota para gradação final. Ele serve para que tanto professor quanto alunos saibam onde mais trabalho é necessário. Esse passo é necessário para a existência de feedback contínuo e identificaçãod e erros na dinâmica de grupo.
+	
+	\item \textbf{Alternativas de aprendizagem:}
+	
+	Após o primeiro teste formativo, é fornecido aos estudantes altenativas de aprendizagem. Aqueles que tiveram problemas no teste formativo serão reensinados de formas diferentes para corrigir os erros. Aqueles que já masterizaram o material participarão de atividades de enriquecimento e/ou ajudarão os estudantes que não masterizaram o conteúdo.
+	
+	\item \textbf{Segundo teste formativo (ou reteste):}
+	
+	Depois que as alternativas de aprendizagem foram concluídas, o professor deve realizar um segundo teste relacioando ao mesmo material. Assumindo que após isso, a maioria dos estudantes pode masterizar o material, então, a turma está pronta para o processo conteúdo e o fluxo volta para o primeiro ponto dets enumeração. 
+	\item \textbf{Teste geral:}
+	
+	Esse teste deve ser realizado após a masterização de um número predeterminado de unidades. Esse teste informará ao professor e estudantes o que foi aprendido até então 
+	
+	
+\end{enumerate} 
+
+
+\section{Estudo da metodologia \textit{Scrum} para desenvolvimento agíl de projetos }
 \label{EstudoScrum}
+
+Scrum é um metodologia ágil de densenvolvimento de projeto que surgiu no contexto de engenharia de software. O termo ágil se aplica nesse contexto para ser um contraste a metodologia em \textit{Cascata} (metodologia clássica) de desenvolvimento de projetos de software. Enquanto na metodologia \textit{Cascata}, foca-se principalmente em \textit{processos} e na obediência a eles, na metodologia Scrum, foca-se na \textit{melhora contínua} e \textit{entrega constante de valor}.
+
+Apesar de suas origens, tanto a metodologia em \textit{Cascata} com o \textit{Scrum} são amplamente utilizados no mais diversos campos.
+
+Nesta seção, descreve-se as rapidamente a metodologia de desenvolvimento de projetos \textit{Cascata}, para depois apresentar uma descrição detalhada da metodologia de desenvolvimento de projetos \textit{Scrum}, a qual é a metodologia a ser aplicada no curso \textit{Algoritmos e Programação de Computadores} proposto.
+
+\subsection{Metodologia de desenvolvimento de projetos \textit{Cascata}}
+\label{SecCascata}
+A Figura \ref{scrum4} mostra a um breve resumo das fases que devem ser obedecidas na metodologia de desenvolvimento de projetos \textit{Cascata}. São elas:
+  
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/Scrum4.eps}
+	\caption{Fluxo da metodologia de desenvolvimento de projeto \textit{Cascata}}
+	\label{scrum4}
+\end{figure}
+
+
+\begin{enumerate}
+	\item Analíse e descoberta de requisitos de negócio
+	\item Planejamento de produto (Design)
+	\item Implementação (codificação)
+	\item Testes
+	\item Entrega do produto ao cliente (instalação)
+	\item Manutenção
+\end{enumerate}	
+
+ Todas etapas mostrada nessa figura são seguenciais planejadas extensivamente pela equipe de projeto, produzindo, nesse intervalo entre etapas, um conjunto amplo de documentos.
+ 
+Muitos argumentam que a metodologia em \textit{Cascata} torna o desenvolvimento do projeto muito engessado \cite{artigoCascada}. Os pontos positivos e negativos da metodologia de desenvolvimento de projeto \textit{Cascata} são mostrados na tabela \ref{tabCascata}.
+
+\begin{table}[]
+	\centering
+	\caption{Pontos positivos e negativos da metodologia de desenvolvimento de projetos \textit{Cascata}}
+	\label{tabCascata}
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Pontos positivos}                                                                                                                                   & \textbf{Pontos negativos}                                                                                                                                        \\ \hline
+		Documentação detalhada                                                                                                                                      & Começo de projeto lento                                                                                                                                          \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Requerimentos de projeto\\ totalmente colhidos e acor-\\ dados no início do projeto\end{tabular}                                 & \begin{tabular}[c]{@{}l@{}}Requerimentos fixos e \\ dificilmente modificáveis\end{tabular}                                                                       \\ \hline
+		\begin{tabular}[c]{@{}l@{}}O projeto pode ser desenvolvi-\\ do por pessoas ainda inexperi-\\ entes.\end{tabular}                                            & \begin{tabular}[c]{@{}l@{}}Sem acompanhamento do\\ projeto pelo cliente e outros\\ stakeholders até o projeto\\ estar concluído\end{tabular}                       \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Número de defeitos reduzido\\ por meio de planejamento e \\ desenvolvimento mais rigoroso\end{tabular}                           & \begin{tabular}[c]{@{}l@{}}Pouca flexibilidade para mudar\\  a direção e modus-operandi do\\ projeto.\end{tabular}                                               \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Início e fim de cada estágio ple-\\ namente definidos, permitindo\\ acompanhamento mais eficien-\\ te do progresso.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Clientes e Stakeholders possi-\\ velmente podem alterar os requi-\\ sitos de projeto após a fase de \\ início de projeto\end{tabular} \\ \hline
+	\end{tabular}
+\end{table}
+
+O principal problema, pontuado por pesquisadores \cite{artigoCascada2}, quanto à metodologia \textit{Cascata}, é, como mostrado na tabela \ref{tabCascata} a falta de dinamicidade, especialmente quanto a definição de pre-requisitos de projeto. Uma vez que a primeira fase do projeto, colhimento de requisitos, é concluída, não mais os requisitos são revistos. Isso causa, muitos problemas de retrabalho , em especial, nas fases finais e atrasos grandes.
+
+
+\subsection{Metodologia de desenvolvimento de projetos \textit{Scrum}}
+
+A metodologia \textit{Scrum} de gerenciamento de projeto surgiu como contraste à metodologia \textit{Cascata} tratada na seção \ref{SecCascata} sendo uma metodologia ágil de desenvolvimento de projetos. 
+
+
+A metodologogia Scrum é uma metodologia a ser desenvolvida em pequenas equipes, chamadas \textit{Time ou Equipe Scrum} e umas de suas principais características são a revisão frequente dos \textbf{\textit{requisitos de projeto}}, a melhora contínua e o \textbf{\textit{acréscimo de valor direto}} acima da obediciência a cronogramas e processos (Próprios de metodologias similares a metodologia Cascata).
+
+
+
+ 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/SCRUM6.eps}
+	\caption{Papel \textit{Product Owner}, metodologia \textit{Scrum}}
+	\label{scrum6}
+\end{figure}
+
+
+Os papéis, na metodologia Scrum, são os seguintes:
+
+\begin{itemize}
+	
+	\item \textbf{\textit{Scrum Master}}: O \textit{Scrum Master} é o responsável por manter a \textit{Equipe Scrum} nas diretrizes do processo Scrum. Ele deve treinar e orientar os demais participantes. Além disso, ele é responsável por  proteger a equipe Scrum de pertubações externas alheias ao projeto incentivando tal equipe na tomada de decisões para torna-lá progressivamente mais auto-gerenciável. Com relação a todos envolvidos no projeto, além da equipe Scrum, o \textit{Scrum Master} deve zelar pela visibilidade do progresso do projeto para que a verificação e gerência sejam processos compartilhados.
+	
+	\item \textit{\textbf{Product Owner}}: O \textit{Product Owner} é representa a "voz do cliente". Como a Figura \ref{scrum6} mostra, o \textit{Product Owner}  atua como "ponte" ente a equipe desenvolvimento e os \textit{Stakeholders (Pessoa com interesse direto no produto)}. Ele deve entender as necessidades e prioridades dos \textit{Stakeholders} e passar claramente os \textit{\textbf{critérios de aceitação}} para a equipe de desenvolvimento 
+	
+	 \item \textbf{\textit{Equipe Scrum}}: 	As  equipes Scrum são auto-organizadas e multidisciplinares. Como tal, ela deve escolher a melhor forma de desenvolver seus trabalhos ao invés de serem comandadas por outros de fora da equipe. Equipes multidisciplinares possuem todas as competências necessárias para desenvolverem seus trabalhos sem dependerem de outros que não fazem parte da Equipe Scrum. O modelo da Equipe Scrum é desenvolvido para otimizar a flexibilidade, criatividade e produtividade.
+	 
+	 Equipes Scrum entregam produtos iterativamente e incrementalmente maximizando a oportunidade de feedback. Entregas incremetais de produto "pronto" garantem que uma versão do produto potencialmente utilizável está sempre disponível para uso.
+
+	
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/scrum7.eps}
+	\caption{Metodologia Scrum, intersecção entre os papéis}
+	\label{scrum7}
+\end{figure}
+
+A Figura \ref{scrum7} mostra a intersecção entre os papéis da metodologia Scrum de acordo com suas respectivas tarefas. 
+
+A Figura \ref{scrum3} mostra em resumo o fluxo a ser estabelecido na metodologia Scrum. Tal fluxo segue a seguinte enumeração:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/Scrum3.eps}
+	\caption{Fluxo da metodologia Scrum}
+	\label{scrum3}
+\end{figure}
+
+\begin{itemize}
+	\item \textbf{Fase 1  - Início}: Para a  fase inicial de um projeto Scrum, devem se desenvolvidas as seguintes passos:
+	    \subitem \textbf{1.1)Criar Visão de Projeto}:
+		Descrição da necessidade ou desejo dos clientes e as características do produto que resolvem as necessidades. Sendo elas necessidades relacionadas a:
+		    \subsubitem	\textbf{Características funcionais}:   
+				Características que descrevem uma funcionalidade direta do produto. 
+			\subsubitem \textbf{Características não funcionais}
+				Características ligadas a eficiência e eficácia do produto ao realizar uma de suas característica funcionais. 
+	
+			\subitem 1.2) Para descrever as necessidades ou desejo dos clientes, devem ser criadas \textit{User Stories} no formato:
+		"Como um (\textbf{\textit{Tipo de Usuário}}), eu quero, poder fazer (\textbf{\textit{Característica Funcional}})". 
+	
+	\item \textbf{Fase 2  - Plano de Projeto e Estimações}:
+	
+		\subitem 2.1) Critérios de aceitação são criados (a ser feito pelo Product Owner juntamente com o Scrum Team).
+		\subitem 2.2) Scrum Master e time estimam o esforço necessário para desenvolver as User Stories.
+		\subitem 2.3) Scrum master e time se comprometem a desenvolver o produto de acordo com as Epics(Conjunto de User Stories) e critérios de aceitação.
+		\subitem 2.4) User Stories são divididas em subtarefas para criar uma Task List.
+		\subitem 2.5) Time Scrum se reune para decidir quais tarefas serão realizadas na Sprint (Sprint Backlog).
+		
+	
+	\item \textbf{Fase 3  - Implementação}:
+		
+		Na fase de implementação, o trabalho é dividido em ciclos curtos de trabalho, de 1 a 4 semanas de duração, como mostrado na Figura \ref{scrum2}. Esse ciclos são chamados de \textit{Sprints}. Cada Sprint tem sua lista de tarefas( \textit{Task List}) própria.
+		
+		As responsabilidades da Equipe Scrum na Fase 3, são as seguintes: 
+	
+	\subitem 3.1) Criar os "entregáveis" do SPRINT.  
+	\subitem 3.2) Realizar reuniões diárias rápidas de no máximo 15 minutos para discutir problemas e progresso.       
+	\subitem 3.3) Atualizar o quadro Scrum de ( A FAZER , FAZENDO, FEITO) a cada dia de trabalho.
+	
+	
+	\item \textbf{Fase 4  - Revisão e Retrospecto }:
+	
+	A fase de \textit{Revisão e Retrospecto} é realizada ao final de cada Sprint. As responsabilidades da equipe Scrum na Fase 4 são"
+	
+	\subitem 4.1) Os entregáveis do Sprint são mostrados para os Stakeholders.
+	\subitem 4.2) Essas reuniões são feitas para garantir a aprovação do produto desenvolvido e fazer os ajustes necessários o mais rápido possível.                                               
+	\subitem 4.3) O Scrum Master e o time Scrum se reunem para discutir o que foi aprendido no Sprint.
+	\subitem 4.4) Informação é documentada para futuros Sprints.                                                    
+	
+\end{itemize}
+
+
+Após a conclusão dessas 4 fases, o projeto Scrum chega a sua finalização. As informações colhidas a cada Sprint são guardadas para projetos Scrum futuros.
+
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figs/scrum2.eps}
-	\caption{Fluxo da metodologia Scrum}
+	\caption{Fluxo de um Sprint dentro da metodologia Scrum}
 	\label{scrum2}
 \end{figure}
 
 
-\subsection{Proposta de curso}
+A tabela \ref{tabScrum} faz um resumo dos pontos positivos e negativos próprios de metologias ágeis de desenvolvimento de projeto, como a metodologia Scrum.
+
+\begin{table}[]
+	\centering
+	\caption{Pontos positivos e negativos da metodologia de desenvolvimento de projetos \textit{Scrum}}
+	\label{tabScrum}
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Pontos positivos}                                                                                                                                    & \textbf{Pontos negativos}                                                                                                                \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Início rápido, entrega de produto \\ realizada incrementalmente com \\ revisão de clientes e feedback fre-\\ quentes\end{tabular} & \begin{tabular}[c]{@{}l@{}}Muitas vezes, o planejamento Scrum\\ pode ser interpretado como mau-planejado e\\ indisciplinado\end{tabular} \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Verificação frequente da evolução\\ dos requerimentos do cliente\end{tabular}                                                     & \begin{tabular}[c]{@{}l@{}}Necessita de um time altamente qualificado\\ e pronto a interagir com clientes diretamente\end{tabular}       \\ \hline
+		Resposta rápida a mudanças                                                                                                                                   & \begin{tabular}[c]{@{}l@{}}É necessário um alto nível de envolvimento\\ dos clientes no projeto.\end{tabular}                            \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Menos retrabalho a ser feito, por cau-\\ sa do envolvimento do cliente, testes\\ contínuos e feedback frequente.\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Falta de planejamento de longo prazo detalha-\\ do\end{tabular}                                               \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Comunicação de tempo real entre time\\ de desenvolvimento e clientes\end{tabular}                                                 & Pouca documentação produzida                                                                                                             \\ \hline
+	\end{tabular}
+\end{table}
+
+\section{Proposta de curso}
 
 Para se construir um projeto Scrum, como exposto na seção \ref{EstudoScrum}, para o contexto educacional da teoria de masterização de habilidades proposta por Bloom, os seguintes passos  são necessários:
 
@@ -126,7 +495,7 @@ Para se construir um projeto Scrum, como exposto na seção \ref{EstudoScrum}, par
 Cada uma das atividades listadas acima será tratada, neste trabalho, em uma seção em separado.
 
 
-\subsubsection{Adaptação dos princípios e fluxo metodologia Scrum à disciplina \textit{Algoritmos e Programação de Computadores}}
+\subsection{Adaptação dos princípios e fluxo metodologia Scrum à disciplina \textit{Algoritmos e Programação de Computadores}}
 
 Nesta seção é apresentada uma proposta de adaptação da metodologia Scrum para aplicação na disciplina \textit{Algoritmos e Programação de Computadores}. 
 
@@ -285,7 +654,7 @@ Pode-se, por meio da plataforma, selecionar sub-objetivos. No caso deste trabalh
 
 Para especificar cada objetivo educacional, foi utilizado o aplicativo desenvolvido em QT, como descrito anteriomente e como mostrado na Figura \ref{app1}.
 
-A seguinte enumeração mostra uma possível especificação de cada um dos módulos de aprendizagem definidos anteriormente seguindo a \textit{Taxonomia e Bloom}:
+A seguinte enumeração mostra uma possível especificação de cada um dos módulos de aprendizagem definidos anteriormente seguindo a \textit{Taxonomia de Bloom}:
 \begin{enumerate}
 	\item O histórico da computação
 		\subitem \textbf{Nível 1 Conhecimento:}

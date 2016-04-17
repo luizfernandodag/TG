@@ -4,30 +4,46 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Tabela com scores de avaliação das 5 melhores universidades do mundo e das 5 melhores universidades brasileiras\relax }}{5}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Tabela listando as disciplinas na UnB e na \textit {California Insitute of Tecnology} que possuem currículo similar a disciplina \textit {Algoritmos e Programação de Computadores}\relax }}{6}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Tabela listando parte dos conteúdos tratados pelas disciplinas na \textit {California Insitute of Tecnology} e na UnB e levantanto a questão da metodologia de ensino ser uma \textit {metodologia ativa} e se tal conteúdo pode ser ensinado usando a placa Galileo\relax }}{7}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Percentagem dos conteúdos tratados na UnB e \textit {California Insitute of Tecnology} que podem ser ensinados utilizando a placa Galileo\relax }}{8}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Fluxo da metodologia Scrum\relax }}{8}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Plataforma scrumdo: Formato dos quadros Scrum planejados para a disciplina \textit {Algoritmos e Programação de Computadores}\relax }}{14}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Plataforma scrumdo: Quadros Scrum criados e objetivos educacionais, segundo a Taxonomia de Bloom escritos \textit {Algoritmos e Programação de Computadores}\relax }}{14}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Plataforma scrumdo: Definicação de sub-objetivos de um objetivo listado no \textit {Product Backlog} \textit {Algoritmos e Programação de Computadores}\relax }}{15}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Uso do aplicativo desenvolvido em QT para definir os objetivo educacional para o nível \textit {Conhecimento}\relax }}{15}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Descrição dos pinos da placa Galileo - parte traseira\cite {DATASHEET1}\relax }}{22}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Descrição dos pinos da placa Galileo - parte frontal\cite {DATASHEET1}\relax }}{22}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Sinal PWM\relax }}{24}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Figura esquemática do processo de conversão analógico para digital\relax }}{26}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Figura esquemática do barramento serial I2C\relax }}{27}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces I2C - Clock Stretching \relax }}{28}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Barramento SPI - Um \textit {dispositivo mestre} para \textit {dispositivos escravos} \relax }}{29}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Modelo simplificado de um dispositivo UART\relax }}{31}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Frame UART para transmissão de 1 byte \relax }}{31}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Modelo completo de um dispositivo UART\relax }}{32}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Organização da memória num sistema computacional\relax }}{33}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Estrutura da célula de memória SRAM\relax }}{34}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Estrutura da célula SRAM com dois inversores\relax }}{34}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Estrutura da célula de memória DRAM\relax }}{35}
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Estrutura da célula de memória DRAM\relax }}{37}
-\contentsline {figure}{\numberline {2.25}{\ignorespaces Exemplo: Topologia Estrela USB\relax }}{38}
-\contentsline {figure}{\numberline {2.26}{\ignorespaces Pinos USB \relax }}{38}
-\contentsline {figure}{\numberline {2.27}{\ignorespaces JTAG monitorando a conexão de um CPU com uma FPGA \relax }}{39}
-\contentsline {figure}{\numberline {2.28}{\ignorespaces Máquina de estados - JTAG\relax }}{39}
-\contentsline {figure}{\numberline {2.29}{\ignorespaces Fluxo de dados num debug JTAG\relax }}{40}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Percentagem dos conteúdos tratados na UnB e \textit {California Institute of Tecnology} que podem ser ensinados utilizando a placa Galileo\relax }}{8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Níveis de aprendizagem no domínio cognitivo\relax }}{9}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Verbos de descrição de objetivos educacionais a serem usados em cada nível cognitivo\relax }}{9}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Tela inicial do aplicativo desenvolvido em QT para definir os objetivos educaionais\relax }}{10}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Tela inicial do aplicativo desenvolvido em QT para definir os objetivos educacionais, retângulo vermelho marcando a região onde o objetivo educacional definido é mostrado\relax }}{11}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Definindo uma unidade de ensino\relax }}{11}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Definindo um objetivo de estudo para a unidade de estudo\relax }}{12}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Retângulo amarelo destacando os níveis cognitivos\relax }}{12}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Selecionando um verbo de um nível cognitivo\relax }}{13}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Selecionando a amplitude do estudo a ser realizado\relax }}{13}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Selecionando o recursos a ser utilizado para alcançar o obejtivo educacional especificado\relax }}{14}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Selecionando um produto a ser desenvolvido como atividade de masterização\relax }}{14}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Selecionando a quantidade de pessoas por grupo\relax }}{15}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Fluxo da metodologia de desenvolvimento de projeto \textit {Cascata}\relax }}{18}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Papel \textit {Product Owner}, metodologia \textit {Scrum}\relax }}{20}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Metodologia Scrum, intersecção entre os papéis\relax }}{21}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Fluxo da metodologia Scrum\relax }}{21}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Fluxo de um Sprint dentro da metodologia Scrum\relax }}{23}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Plataforma scrumdo: Formato dos quadros Scrum planejados para a disciplina \textit {Algoritmos e Programação de Computadores}\relax }}{29}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Plataforma scrumdo: Quadros Scrum criados e objetivos educacionais, segundo a Taxonomia de Bloom escritos \textit {Algoritmos e Programação de Computadores}\relax }}{29}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Plataforma scrumdo: Definicação de sub-objetivos de um objetivo listado no \textit {Product Backlog} \textit {Algoritmos e Programação de Computadores}\relax }}{30}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Uso do aplicativo desenvolvido em QT para definir os objetivo educacional para o nível \textit {Conhecimento}\relax }}{30}
+\contentsline {figure}{\numberline {2.27}{\ignorespaces Descrição dos pinos da placa Galileo - parte traseira\cite {DATASHEET1}\relax }}{37}
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Descrição dos pinos da placa Galileo - parte frontal\cite {DATASHEET1}\relax }}{37}
+\contentsline {figure}{\numberline {2.28}{\ignorespaces Sinal PWM\relax }}{39}
+\contentsline {figure}{\numberline {2.29}{\ignorespaces Figura esquemática do processo de conversão analógico para digital\relax }}{41}
+\contentsline {figure}{\numberline {2.30}{\ignorespaces Figura esquemática do barramento serial I2C\relax }}{42}
+\contentsline {figure}{\numberline {2.31}{\ignorespaces I2C - Clock Stretching \relax }}{43}
+\contentsline {figure}{\numberline {2.32}{\ignorespaces Barramento SPI - Um \textit {dispositivo mestre} para \textit {dispositivos escravos} \relax }}{44}
+\contentsline {figure}{\numberline {2.33}{\ignorespaces Modelo simplificado de um dispositivo UART\relax }}{46}
+\contentsline {figure}{\numberline {2.34}{\ignorespaces Frame UART para transmissão de 1 byte \relax }}{46}
+\contentsline {figure}{\numberline {2.35}{\ignorespaces Modelo completo de um dispositivo UART\relax }}{47}
+\contentsline {figure}{\numberline {2.36}{\ignorespaces Organização da memória num sistema computacional\relax }}{48}
+\contentsline {figure}{\numberline {2.37}{\ignorespaces Estrutura da célula de memória SRAM\relax }}{49}
+\contentsline {figure}{\numberline {2.38}{\ignorespaces Estrutura da célula SRAM com dois inversores\relax }}{49}
+\contentsline {figure}{\numberline {2.39}{\ignorespaces Estrutura da célula de memória DRAM\relax }}{50}
+\contentsline {figure}{\numberline {2.40}{\ignorespaces Estrutura da célula de memória DRAM\relax }}{52}
+\contentsline {figure}{\numberline {2.41}{\ignorespaces Exemplo: Topologia Estrela USB\relax }}{53}
+\contentsline {figure}{\numberline {2.42}{\ignorespaces Pinos USB \relax }}{53}
+\contentsline {figure}{\numberline {2.43}{\ignorespaces JTAG monitorando a conexão de um CPU com uma FPGA \relax }}{54}
+\contentsline {figure}{\numberline {2.44}{\ignorespaces Máquina de estados - JTAG\relax }}{54}
+\contentsline {figure}{\numberline {2.45}{\ignorespaces Fluxo de dados num debug JTAG\relax }}{55}
 \addvspace {10\p@ }
