@@ -4,36 +4,63 @@
 \contentsline {section}{\numberline {1.2}Apresentação do manuscrito}{3}
 \contentsline {chapter}{\numberline {2}Revisão Bibliográfica}{4}
 \contentsline {section}{\numberline {2.1}Teorias Pedagógicas}{4}
-\contentsline {subsection}{\numberline {2.1.1}Estudo de currículos relacionados a \textit {Algoritmos e Programação de Computadores} }{4}
-\contentsline {subsection}{\numberline {2.1.2}Estudo da teoria pedagógica de aprendizagem ativa focando na teoria de \textit {aprendizagem por masterização} }{8}
-\contentsline {subsubsection}{\numberline {2.1.2.1}Taxonomia dos objetivos educacionais - Taxonomia de Bloom}{8}
-\contentsline {subsubsection}{\numberline {2.1.2.2} Aprendizagem por masterização}{15}
-\contentsline {section}{\numberline {2.2}Estudo da metodologia \textit {Scrum} para desenvolvimento agíl de projetos }{18}
-\contentsline {subsection}{\numberline {2.2.1}Metodologia de desenvolvimento de projetos \textit {Cascata}}{18}
-\contentsline {subsection}{\numberline {2.2.2}Metodologia de desenvolvimento de projetos \textit {Scrum}}{19}
-\contentsline {section}{\numberline {2.3}Proposta de curso}{23}
-\contentsline {subsection}{\numberline {2.3.1}Adaptação dos princípios e fluxo metodologia Scrum à disciplina \textit {Algoritmos e Programação de Computadores}}{24}
-\contentsline {subsubsection}{\numberline {2.3.1.1}Definição de objetivos educacionais na forma da metologogia Scrum}{27}
-\contentsline {subsubsection}{\numberline {2.3.1.2}Definição de objetivos educacionais para a Disciplina \textit {Algoritmos e Programação de Computadores}}{31}
-\contentsline {subsubsection}{\numberline {2.3.1.3}Definição de objetivos educacionais para a Disciplina \textit {Algoritmos e Programação de Computadores} com relação às atividades práticas}{35}
-\contentsline {section}{\numberline {2.4}Placa Intel \textsuperscript {\textregistered } Galileo}{36}
-\contentsline {subsection}{\numberline {2.4.1}Pinagem da placa Intel \textsuperscript {\textregistered } Galileo}{36}
-\contentsline {subsection}{\numberline {2.4.2}Características Elétricas e Eletrônicas da placa Intel \textsuperscript {\textregistered } Galileo}{37}
-\contentsline {subsubsection}{\numberline {2.4.2.1}Sinal PWM}{39}
-\contentsline {subsubsection}{\numberline {2.4.2.2}Conversão analógico-digital}{40}
-\contentsline {subsubsection}{\numberline {2.4.2.3}Barramento Serial I2C}{42}
-\contentsline {subsubsection}{\numberline {2.4.2.4}Comunicação serial SPI}{44}
-\contentsline {subsubsection}{\numberline {2.4.2.5}Porta Serial UART}{45}
-\contentsline {subsubsection}{\numberline {2.4.2.6}Memória Cache}{47}
-\contentsline {subsubsection}{\numberline {2.4.2.7}Memória SRAM}{48}
-\contentsline {subsubsection}{\numberline {2.4.2.8}Memória DRAM}{50}
-\contentsline {subsubsection}{\numberline {2.4.2.9}Memória EEPROM}{51}
-\contentsline {subsubsection}{\numberline {2.4.2.10}Clock de tempo real - RTC}{51}
-\contentsline {subsubsection}{\numberline {2.4.2.11}Barramento Mini PCI-Express}{51}
-\contentsline {subsubsection}{\numberline {2.4.2.12}USB}{52}
-\contentsline {subsubsection}{\numberline {2.4.2.13}JTAG}{53}
-\contentsline {chapter}{\numberline {3}Desenvolvimento}{56}
-\contentsline {section}{\numberline {3.1}Introdução}{56}
-\contentsline {section}{\numberline {3.2}Proposta de Curso}{56}
-\contentsline {chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}{57}
-\contentsline {chapter}{{Anexos}}{59}
+\contentsline {subsection}{\numberline {2.1.1}Aprendizagem Ativa}{4}
+\contentsline {subsection}{\numberline {2.1.2}Teoria pedagógica de aprendizagem ativa focando na teoria de aprendizagem por masterização }{6}
+\contentsline {subsubsection}{\numberline {2.1.2.1} Aprendizagem por masterização}{6}
+\contentsline {subsubsection}{\numberline {2.1.2.2}Taxonomia dos objetivos educacionais - Taxonomia de Bloom}{9}
+\contentsline {subsubsection}{\numberline {2.1.2.3}Programa desenvolvido em QT para auxílio na definição de objetivos educacionais}{10}
+\contentsline {section}{\numberline {2.2}Metodologia \textit {Scrum} para desenvolvimento agíl de projetos }{15}
+\contentsline {subsection}{\numberline {2.2.1}Metodologia de desenvolvimento de projetos Cascata}{15}
+\contentsline {subsection}{\numberline {2.2.2}Metodologia de desenvolvimento de projetos Scrum}{16}
+\contentsline {section}{\numberline {2.3}Currículos relacionados a Algoritmos e Programação de Computadores}{21}
+\contentsline {section}{\numberline {2.4}Proposta de curso}{24}
+\contentsline {subsection}{\numberline {2.4.1}Aprendizagem por mastrização e Scrum adpatados ao curso de Algoritmos e Programação de Computadores}{24}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Definição de objetivos educacionais na forma da metologogia Scrum}{28}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Definição de objetivos educacionais para a Disciplina \textit {Algoritmos e Programação de Computadores}}{32}
+\contentsline {subsubsection}{\numberline {2.4.1.3}Definição de objetivos educacionais para a Disciplina \textit {Algoritmos e Programação de Computadores} com relação às atividades práticas}{35}
+\contentsline {subsection}{\numberline {2.4.2}Proposta de uso de placas de prototipagem eletrônica}{37}
+\contentsline {section}{\numberline {2.5}Placa Intel \textsuperscript {\textregistered } Galileo}{37}
+\contentsline {subsection}{\numberline {2.5.1}Pinagem da placa Intel \textsuperscript {\textregistered } Galileo}{38}
+\contentsline {subsection}{\numberline {2.5.2}Características Elétricas e Eletrônicas da placa Intel \textsuperscript {\textregistered } Galileo}{38}
+\contentsline {subsubsection}{\numberline {2.5.2.1}Sinal PWM}{40}
+\contentsline {subsubsection}{\numberline {2.5.2.2}Conversão analógico-digital}{42}
+\contentsline {subsubsection}{\numberline {2.5.2.3}Barramento Serial I2C}{43}
+\contentsline {subsubsection}{\numberline {2.5.2.4}Comunicação serial SPI}{45}
+\contentsline {subsubsection}{\numberline {2.5.2.5}Porta Serial UART}{47}
+\contentsline {subsubsection}{\numberline {2.5.2.6}Memória Cache}{49}
+\contentsline {subsubsection}{\numberline {2.5.2.7}Memória SRAM}{50}
+\contentsline {subsubsection}{\numberline {2.5.2.8}Memória DRAM}{51}
+\contentsline {subsubsection}{\numberline {2.5.2.9}Memória EEPROM}{52}
+\contentsline {subsubsection}{\numberline {2.5.2.10}Clock de tempo real - RTC}{53}
+\contentsline {subsubsection}{\numberline {2.5.2.11}Barramento Mini PCI-Express}{53}
+\contentsline {subsubsection}{\numberline {2.5.2.12}USB}{54}
+\contentsline {subsubsection}{\numberline {2.5.2.13}JTAG}{55}
+\contentsline {chapter}{\numberline {3}Laboratórios Propostos}{58}
+\contentsline {section}{\numberline {3.1}Introdução}{58}
+\contentsline {section}{\numberline {3.2}Prática 1: Começando a usar o \textit {Galileo}}{58}
+\contentsline {subsection}{\numberline {3.2.1}Procedimentos}{58}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Instalação da IDE Arduino}{58}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Instalação do Driver para a placa Intel\textsuperscript {\textregistered } Galileo}{62}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Prática 1 - Procedimentos}{65}
+\contentsline {subsection}{\numberline {3.2.2}Esquema de montagem}{66}
+\contentsline {subsection}{\numberline {3.2.3}Código fonte}{66}
+\contentsline {subsection}{\numberline {3.2.4}Comentários}{67}
+\contentsline {chapter}{\numberline {4}Embassamento teórico}{68}
+\contentsline {section}{\numberline {4.1}Introdução}{68}
+\contentsline {section}{\numberline {4.2}Embassamento teórico - Circuitos eletrônicos, Hardware}{68}
+\contentsline {subsection}{\numberline {4.2.1}Resistor}{68}
+\contentsline {subsection}{\numberline {4.2.2}Circuito - fórmulas e topologias básicas}{70}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Primeira lei de Kirchoff - Leis das Nós}{71}
+\contentsline {subsubsection}{\numberline {4.2.2.2}Segunda lei de Kirchoff - Leis das Malhas}{72}
+\contentsline {subsubsection}{\numberline {4.2.2.3}Lei de Ohm}{72}
+\contentsline {subsubsection}{\numberline {4.2.2.4}Ligação em Série}{73}
+\contentsline {subsubsection}{\numberline {4.2.2.5}Ligação em Paralelo}{74}
+\contentsline {subsubsection}{\numberline {4.2.2.6}Resumo - Ligação em série X paralelo}{75}
+\contentsline {subsection}{\numberline {4.2.3}Diodo-LED}{75}
+\contentsline {section}{\numberline {4.3}Embassamento teórico - Software}{78}
+\contentsline {subsection}{\numberline {4.3.1}Programação estruturada}{78}
+\contentsline {subsection}{\numberline {4.3.2}Programação para Arduino}{79}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Padrão de programação em Arduíno}{79}
+\contentsline {subsection}{\numberline {4.3.3}Uso de portas digitais}{80}
+\contentsline {chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}{82}
+\contentsline {chapter}{{Anexos}}{85}

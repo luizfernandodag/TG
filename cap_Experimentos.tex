@@ -1,35 +1,478 @@
 %TCIDATA{LaTeXparent=0,0,relatorio.tex}
                       
-\chapter{Resultados Experimentais}\label{CapExperimentos}
+\chapter{Embassamento teórico}\label{CapExperimentos}
 
 % Resumo opcional. Comentar se não usar.
-\resumodocapitulo{Resumo opcional.}
-
+%\resumodocapitulo{Resumo opcional.}
 \section{Introdução}
 
-Na introdução deverá ser feita uma descrição geral dos experimentos realizados. 
+Este capítulo é destinado a explicação detalhada dos conceitos teóricos que embassam as práticas propostas no capítulo \ref{CapDesenvolvimento} deste trabalho.
+\section{Embassamento teórico - Circuitos eletrônicos, Hardware}
+\label{EmbassamentoHarware}
 
-Para cada experimentação apresentada, descrever as condições de experimentação (e.g., instrumentos, ligações específicas, configurações dos programas), os resultados obtidos na forma de tabelas, curvas ou gráficos. Por fim, tão importante quando ter os resultados é a análise que se faz deles. Quando os resultados obtidos não forem como esperados, procurar justificar e/ou propor alteração na teoria de forma a justificá-los.
+Nesta seção são tratados todos conceitos relativos a circuitos eletrônicos e hardwares que embassam as práticas propostas na seção \ref{CapExperimentos}.
 
-\section{Avaliação do algoritmo de resolução da equação algébrica de Riccati}
 
-O algoritmo proposto para solução da equação algébrica de Riccati foi avaliado em diferentes máquinas. Os tempos de execução são mostrados na Tabela \ref{TabDesempenho}. Nesta tabela, os algoritmos propostos receberam a denominação $CH$ para Chandrasekhar e $CH+LYAP$ para Chandrasekhar com Lyapunov. As implementações foram feitas em linguagem \textit{script} MATLAB.
+\subsection{Resistor}
+\label{EmbassamentoHarware_Resistor}
 
-\begin{table}[tbp]
-\caption{Tempos de execução em segundos para diferentes máquinas}
-\label{TabDesempenho}
-\begin{center}
-\begin{tabular}{c|c|c|c|c}
-\hline
-\textbf{Algoritmo} & \textbf{Laptop} & \textbf{Desktop} & \textbf{Desktop} & 
-\textbf{Laptop} \\ 
-& \textbf{1.8 GHz} & \textbf{PIII 850 MHz} & \textbf{MMX 233} & \textbf{600
-MHz} \\ \hline
-Matlab ARE & 649,96 & 1.857,5 & 7.450,5 & 9.063,9 \\ 
-$CH$ & 259,44 & 606,4 & 2.436,5 & 2.588,5 \\ 
-$CH+LYAP$ & 357,86 & 952,9 & 3.689,2 & 3.875,0 \\ \hline
-\end{tabular}
-\end{center}
+Num circuito elétrico, chama-se por resistor o elemento que oferece \textit{resistência} a passagem de corrente elétrica entre seus terminais. 
+
+Resistores são elementos \textit{passivos} num circuito eletrônico. Isso significa que eles são apenas consumidores de energia. 	
+
+Com o uso de resistores e suas ligações (subseções \ref{ligacaoSerie} e \ref{ligacaoParalelo}) , é possível controlar as correntes e tensões num circuito de forma a : limitar seus valores, ajustar nível de sinais, polarizar elementos ativos, entre outras diversas aplicações.
+
+Tais funcionalidades do resistor estão sempre associadas à \textit{Lei de Ohm}, descrita com mais detalhes na seção \ref{leiOhm}.
+
+A Figura \ref{resistor1} mostra um exemplo de resistor utilizado em circuitos eletrônicos. 
+
+Há vários tipos de resistores fabricados de diversas maneiras e, como dito, para as mais diversas aplicações. O resistor mostrado na Figura \ref{resistor1} é chamado de resistor de valor fixo e geralmente é utilizado para prototipagem de circuitos eletrônicos. 
+
+Resistores de valor fixo são geralmente fabricados utilizando carbono, metal, ou películas de óxidos metálicos. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/resistor1.jpg}
+	\caption{Exemplo de resistor utilizado em circuitos eletrônicos.}
+	\label{resistor1}
+\end{figure}
+
+A simbologia para resitores num circuito elétrico é também extensa. A Figura \ref{resistor2} mostra todos os tipos de simbologia utilizado para várias aplicações.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/resistor2.png}
+	\caption{Simbolos de resistor utilizado em circuitos eletrônicos.}
+	\label{resistor2}
+	\source{www.vegyelgep.bme.hu}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/resistor3.jpg}
+	\caption{Como ler o códido de cores de um resistor.}
+	\label{resistor3}
+	\source{http://education.rec.ri.cmu.edu/content/electronics/common/resistors/1.html}
+\end{figure}
+
+Resistores de valor fixo, como o mostrado na Figura \ref{resistor3}, tem como resistência a seguinte expressão: 	
+
+\begin{equation}\label{eqResistenciaTabela}
+R = (Digito_{1} + 10*Digito_{2})*Multiplicador \pm Tolerancia \% 
+\end{equation}
+
+Os valores \textit{$Digito_{1}$ , $Digito_{2}$, Multiplicador e Tolerência} são mostrados na Tabela \ref{tabCores} para cada cor utilizada no código.
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+	\centering
+	\caption{Tabela de leitura de valor e tolerância de um resistor}
+	\label{tabCores}
+	\begin{tabular}{|c|c|c|l|c|}
+		\hline
+		Cor                             & Multiplicador                 & Dígito 1                 & Digito 2                 & {\color[HTML]{333333} Tolerância} \\ \hline
+		\rowcolor[HTML]{000000} 
+		{\color[HTML]{FFFFFF} Preto}    & {\color[HTML]{FFFFFF} $10^0$} & {\color[HTML]{FFFFFF} 0} & {\color[HTML]{FFFFFF} 0} & {\color[HTML]{333333} }           \\ \hline
+		\rowcolor[HTML]{643403} 
+		{\color[HTML]{FFFFFF} Marrom}   & {\color[HTML]{FFFFFF} $10^1$} & {\color[HTML]{FFFFFF} 1} & {\color[HTML]{FFFFFF} 1} & {\color[HTML]{FFFFFF} $\pm1\%$}   \\ \hline
+		\rowcolor[HTML]{FE0000} 
+		{\color[HTML]{FFFFFF} Vermelho} & {\color[HTML]{FFFFFF} $10^2$} & {\color[HTML]{FFFFFF} 2} & {\color[HTML]{FFFFFF} 2} & {\color[HTML]{FFFFFF} $\pm2\%$}   \\ \hline
+		\rowcolor[HTML]{F56B00} 
+		Laranja                         & $10^3$                        & 3                        & 3                        & {\color[HTML]{333333} }           \\ \hline
+		\rowcolor[HTML]{FCFF2F} 
+		{\color[HTML]{000000} Amarelo}  & {\color[HTML]{000000} $10^4$} & 4                        & 4                        & {\color[HTML]{333333} }           \\ \hline
+		\rowcolor[HTML]{34FF34} 
+		{\color[HTML]{FFFFFF} Verde}    & {\color[HTML]{FFFFFF} $10^5$} & 5                        & 5                        & {\color[HTML]{333333} }           \\ \hline
+		\rowcolor[HTML]{3531FF} 
+		{\color[HTML]{FFFFFF} Azul}     & {\color[HTML]{FFFFFF} $10^6$} & 6                        & 6                        & {\color[HTML]{333333} }           \\ \hline
+		\rowcolor[HTML]{6200C9} 
+		{\color[HTML]{FFFFFF} Violeta}  & {\color[HTML]{FFFFFF} $10^7$} & 7                        & 7                        & {\color[HTML]{333333} }           \\ \hline
+		\rowcolor[HTML]{C0C0C0} 
+		{\color[HTML]{FFFFFF} Cinza}    & {\color[HTML]{FFFFFF} $10^8$} & 8                        & 8                        & {\color[HTML]{333333} }           \\ \hline
+		Branco                          & $10^9$                        & 9                        & 9                        & {\color[HTML]{333333} }           \\ \hline
+		\rowcolor[HTML]{FFCB2F} 
+		Ouro                            &                               &                          &                          & {\color[HTML]{333333} $\pm5\%$}   \\ \hline
+		\rowcolor[HTML]{C0C0C0} 
+		Prata                           &                               &                          &                          & {\color[HTML]{333333} $\pm10\%$}  \\ \hline
+	\end{tabular}
 \end{table}
 
-Observa-se que o algoritmo $CH+LYAP$ apresenta tempos de execução superiores com relação ao algoritmo $CH$. Entretanto, era esperado que o algoritmo $CH$ fosse mais rápido. Este resultado se justifica pelo fato de o algoritmo $CH$ fazer uso de funções embutidas do MATLAB. Já o aloritmo $CH+LYAP$ faz uso também de funções \textit{script} externas, aumentando bastante seu tempo computacional.
+Cada resistor tem um limite que corrente que pode circular entre seus terminais. Geralmente esse limite é dado em relação à potência dissipada. Para saber qual potência será dissipada num resistor com resistência de valor \textit{R Ohms} deve-se aplicar a seguinte fórmula:
+
+\begin{equation}\label{eqPotencia}
+\begin{split}
+P = IU \text{(Potência dissipada num resistor de valor R)}
+\end{split}
+\end{equation}
+
+Onde \textit{P} é a potência dissipada em \textit{Watts}, I é a corrente elétrica que passa no resistor em \textit{Ampéres} e \textit{U} é a tensão elétrica entre os terminais do resistor em \textit{Volts}.
+
+
+ 
+
+
+\subsection{Circuito - fórmulas e topologias básicas}
+\label{EmbassamentoHardware_circuito}
+
+Nomea-se por circuito elétrico, um caminho fechado entre dois ou mais pontos formado por componentes eletrônicos no qual corrente elétrica pode circular. A Figura \ref{circuito1} mostra um circuito elétrico simples formado por uma bateria que fornece uma diferença de potencial (Tensão) entre seus terminais de valor \textit{\textbf{V} Volts} e um resistor com valor de resistência \textbf{\textit{R} Ohms}. 
+
+Os pontos A e B da figura mostram, respectivamente, o ponto de maior potencial elétrico ( + da bateria) e o ponto de menor potencial elétrico (- da bateria).
+
+ Para descrever o comportamento a dinâmica de tensões, correntes existem as seguintes leis:
+
+\begin{itemize}
+	\item Primeira lei de Kirchoff - Leis das Malhas
+	\item Segunda lei de Kirchoff - Leis dos Nós
+	\item Lei de Ohm
+\end{itemize}
+
+E para descrever a topologia dos circuitos, existem duas ligações básicas entre componentes a serem tradadas neste documento:
+
+\begin{itemize}
+	\item Ligação Série
+	\item Ligação Paralelo
+\end{itemize}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/circuito1.png}
+	\caption{Circuito Simples.}
+	\label{circuito1}
+\end{figure}
+
+\subsubsection{Primeira lei de Kirchoff - Leis das Nós}
+\label{lei1Kirchoff}
+A primeira lei de Kirchoff diz que a soma da correntes elétricas que entram num nó $I_{entram} $é igual a soma das correntes que saem, $ I_{saem}$, ou seja:
+\begin{equation}\label{eqKirchoof1}
+\sum I_{entram} = \sum I_{saem}
+\end{equation}
+
+Usando a Figura \ref{circuito3} como exemplo, a primeira, nesse caso, é escrita da seguinte forma:
+
+\begin{equation}\label{eqKirchoof11}
+ I_{1} + I_{3} = I_{2} + I_{4} + I_{5}
+\end{equation}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/circuito3.jpg}
+	\caption{Primeira Lei de Kirchoff.}
+	\label{circuito3}
+\end{figure}
+
+
+\subsubsection{Segunda lei de Kirchoff - Leis das Malhas}
+\label{lei2Kirchoff}
+A segunda lei de Kirchoff diz que a soma das tensões $u_{i}$ num caminho fechado, num circuito elétrico é igual a zero, ou seja:
+
+\begin{equation}\label{eqKirchoof2}
+\sum u_{i} = 0
+\end{equation}
+
+Usando a Figura \ref{circuito2} como exemplo, onde as tensão em cada componentes são descritas pela letra \textbf{\textit{u}} ,a primeira lei Kirchoff é escrita na seguinte forma
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/circuito2.png}
+	\caption{Segunda Lei Kirchhoff.}
+	\label{circuito2}
+\end{figure}
+
+\begin{equation}\label{eqKirchoof22}
+\begin{split}
+u - u_{1} - u_{2} = 0 \\
+u = u_{1} + u_{2}
+\end{split}
+\end{equation}
+
+
+\subsubsection{Lei de Ohm}
+\label{leiOhm}
+
+A lei de Ohm\cite{livro:Sedra} diz que num circuito fechado, sob um componente eletrônico que com valor resistência \textit{R} que esteja submetido a uma diferença de potencial entre seus terminais de valor \textit{V}, circulará uma corrente elétrica de \textit{I} segundo a seguinte fórmula:
+\begin{equation}
+I = \frac{V}{R}
+\end{equation}
+
+Essa expressão não depende da natureza de tal condutor: ela é válida para todos os condutores. Para um dispositivo condutor que obedeça à lei de Ohm, a diferença de potencial aplicada é proporcional à corrente elétrica, isto é, a resistência é independente da diferença de potencial e da corrente. Um dispositivo muito utilizado em aparelhos eletrônicos, como rádios, televisores e amplificadores, que obedece à essa lei é o resistor (componente descrito mais detalhadamente na seção \ref{Embassamento_resitor}) cuja função é controlar a intensidade de corrente elétrica que passa pelo aparelho.
+
+Entretanto, para alguns materiais, por exemplo os semicondutores, a resistência elétrica não é constante, mesmo que a temperatura seja, ela depende da diferença de potencial V. Estes são denominados condutores não ôhmicos. Um exemplo de componente eletrônico que não obedece à lei de Ohm é o diodo(componente descrito mais detalhadamente na seção \ref{Embassamento_LED}).
+
+\subsubsection{Ligação em Série}
+\label{ligacaoSerie}
+Quando dois ou mais componentes estão conectados num circuito, um após ao outro, diz que tais componentes estão conectados em série, como mostrado em \ref{circuito4}. 
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/circuito4.png}
+	\caption{Ligação em série de n resistores.}
+	\label{circuito4}
+\end{figure}
+
+Para elementos que se encontram em série, a mesma corrente \textit{I} os percorre, como mostrado na Figura \ref{circuito5}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/circuito5.png}
+	\caption{Mesma corrente percorrendo resistores em série.}
+	\label{circuito5}
+\end{figure}
+
+Aplicando a segunda lei de Kirchoff, apresentada na seção \ref{lei2Kirchoff}, e a lei de Ohm, apresentada na seção \ref{leiOhm}, tem-se a seguinte sequência de expressões para a demonstração da resistência equivalente de resistores em série: 
+
+
+\begin{equation}\label{eqSerie1}
+\begin{split}
+V_{+} - V_{-} = V_{R1} + V_{R2} + ... V_{Rn}   \quad \text{(Aplicando a lei de Kirchoff das malhas)}
+\end{split}
+\end{equation}
+
+
+\begin{equation}\label{eqSerie2}
+\begin{split}
+I*R_{eq} = I*(R1 + R2 + ... Rn )   \quad \text{( Aplicando a Lei de Ohm)}
+\end{split}
+\end{equation}
+
+
+\begin{equation}\label{eqSerie3}
+\begin{split}
+R_{eq} = (R1 + R2 + ... Rn )   \quad \text{( Fórmula de resistor equivalente - ligação série)}
+\end{split}
+\end{equation}
+
+A resistência equivalente de uma ligação em série de resistores pode ser vista como a "resistência enxergada" pela fonte de diferença de potencial entre os pontos V+ e V- mostrados na Figura \ref{circuito5}.
+
+
+
+\subsubsection{Ligação em Paralelo}
+\label{ligacaoParalelo}
+Numa conexão em paralelo, os componentes se encontram conectados com seus terminais conectados em comum e possuem sobre eles a mesma tensão elétrica, como mostrado na Figura \ref{circuito6}.
+
+A primeira lei de Kirchoff, como mostrado na seção \ref{lei1Kirchoff}, mostra que a soma das correntes que entram num nó é igual a soma das correntes que por ele saem. 
+
+Na Figura \ref{circuito6}, os resistores $R_{1}$, $R_{2}$,...$R_{n}$ encontram em paralelo. A soma das correntes que entram no nó A e igual a soma das correntes que dele saem, ou seja: 
+
+\begin{equation}\label{eqParalelo1}
+\begin{split}
+I = I_{1} + I_{2} + ... +I_{n}  \quad \text{(Primeira Lei de Kirchoff)}
+\end{split}
+\end{equation}
+
+Utilizando a Lei de Ohm e sabendo que, numa ligação em paralelo, todos elementos encontram-se sob a mesma Tensão elétrica, tem-se que:
+
+\begin{equation}\label{eqParalelo2}
+\begin{split}
+\frac{V_{in}}{R_{eq}} = \frac{V_{in}}{R_{1}} + \frac{V_{in}}{R_{2}} + ... \frac{V_{in}}{R_{n}}  \quad \text{(Lei de Ohm aplicada à ligação em paralelo)}
+\end{split}
+\end{equation}
+
+Disso, tem -se que:
+
+\begin{equation}\label{eqSerie3}
+\begin{split}
+\frac{1}{R_{eq}} = \frac{1}{R_{1}} + \frac{1}{R_{2}} + ... \frac{1}{R_{n}}  \quad \text{( Fórmula de resistor equivalente - ligação paralelo)}
+\end{split}
+\end{equation}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/circuito6.png}
+	\caption{Componentes conectados em paralelo.}
+	\label{circuito6}
+\end{figure}
+
+\subsubsection{Resumo - Ligação em série X paralelo}
+\label{ResumoSerieEParalelo}
+
+A tabela mostrada em \ref{tabResumoSerieParaleo} o resumo das característica da ligação em série e da ligação em paralelo entre resistores:
+
+\begin{table}[]
+	\centering
+	\caption{Resumo - Ligação em série X Ligação em paralelo}
+	\label{tabResumoSerieParaleo}
+	\begin{tabular}{l|l|l|l|}
+		\cline{2-4}
+		& \textbf{\begin{tabular}[c]{@{}l@{}}Tensão elétrica\\  nos elementos\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Corrente elétrica \\ pelos elementos\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Resistência Equivalente entre\\ N elementos conectados\end{tabular}} \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Ligação em Série}}    & Diferente                                                                         & Igual                                                                                 & $R_{eq} = R_{1} + R_{2} + ... + R_{n}$                                                                  \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Ligação em Paralelo}} & Igual                                                                             & Diferente                                                                             & $\frac{1}{R_{eq}} = \frac{1}{R_{1}} + \frac{1}{R_{2}} + ... \frac{1}{R_{n}}$                            \\ \hline
+	\end{tabular}
+\end{table}
+
+
+\subsection{Diodo-LED}
+\label{EmbassamentoHardware_LED}
+
+
+Um \textbf{Diodo Emissor de Luz} (LED) é um dispositivo semicondutor o qual, ao passar de corrente elétrica do seu \textit{Ánodo} para seu \textit{Cátodo} emite luz. A Figura \ref{LED1} mostra o símbolo de um LED.
+
+Como todo diodo, o LED bloqueia a passagem de corrente elétrica na direção do seu cátodo ao seu ánodo e permite a passagem de corrente na direção contrária.
+
+Como mostrado na Figira \ref{LED0}, diodo são construídos com duas junções de semicondutores dopados: uma junção N e uma junção P. A junção P possui falta de portadores negativos, ou seja, está positivamente dopado. A junção N possui excesso de portadores negativos, ou seja, está negativamente dopada. 
+
+A dinâmica dos portadores entre as junções N - P criem o comportamento de bloqueio e liberação da passagem de corrente no diodo. 
+
+Para um diodo com tensão positiva entre ánodo e cátodo, existe uma região chamada região de depleção a qual deve ser superada para que exista fluxo de corrente, ainda que o diodo esteja positivamente polarizado, como mostrado também no gráfico da Figura \ref{LED2}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width= 1\textwidth]{figs/LED0.png}
+	\caption{Junção N-P em um diodo.}
+	\label{LED0}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/diodo1.png}
+	\caption{Símbolo Diodo}
+	\label{LED1}
+\end{figure}
+
+A  Figura \ref{LED2} mostra a relação entre tensão aplicada entre o ánodo e o cátodo e a corrente que atravessa um diodo. Quando a diferença de tensão entre ánodo e cátodo é positiva, o diodo se encontra sob polarização direta. Nessa polarização, o diodo permite passagem de corrente entre seus terminais. A fórmula que expressa essa relação é a seguinte:
+
+
+\begin{equation}\label{eqDiodo1}
+\begin{split}
+i_{D} = I_{s}(e^{v_{d}/nkT} - 1) 
+\end{split}
+\end{equation}
+
+Onde $i_{D}$ é a corrente se passar pelo diodo, $v_{D}$ é a tensão entre ánodo e cátodo, T é a temperatura, k é a constante de Boltzmann, N é o coeficiente de não linearidade e $I_{s}$ é a corrente de saturação.
+
+Como mostrado na Figura \ref{LED2}, quando em polarização reversa, o diodo não permite passagem de corrente com intensidade apreciável. 
+
+Caso a diferença de tensão entre cátodo e ánodo seja maior que a tensão de quebra $V_{br}$, o diodo entrará na região de quebra e não mais bloqueará a passagem de corrente.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/LED2.png}
+	\caption{Relação tensão, corrente num diodo e suas regiões de operação}
+	\label{LED2}
+	\source{$http://www2.feg.unesp.br/Home/PaginasPessoais/ProfMarceloWendling/2---diodo-semicondutor.pdf$}
+\end{figure}
+
+Para aplicações simples em eletrônica, usualmente se adota um modelo simplificado para a operação do diodo mostrado na Figura \ref{LED3}. 
+
+Nesse modelo, para uma polarização direta, o diodo é substituído por um diodo ideal (sem queda de tensão) com uma bateria em série com valor de tensão de 0.7 a 0.6 de tensão significando a queda de tensão entre os terminais do diodo. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/LED3.jpg}
+	\caption{Modelo simplificado de um diodo em polarização direta.}
+	\label{LED3}
+	\source{https://digitalsignal.files.wordpress.com/2008/09/aula05.pdf}
+\end{figure}
+
+Diodo são utilizados em várias aplicações em eletrônica. Alguns exemplo de aplicações seriam:
+
+\begin{itemize}
+	\item Retificação de tensão (Transformação de um sinal AC (Corrente Alternada) para DC (Corrente Contínua))
+	\item Isolamento de sinais de fonte de potência
+	\item Referência de voltagem
+	\item Controle e limitação da amplitude de sinais
+	\item Detecção de sinais
+\end{itemize}
+
+\section{Embassamento teórico - Software}
+\label{EmbassamentoSoftware}
+
+Nesta seção são tratados todos conceitos relativos a programação que  embassam as práticas propostas na seção \ref{CapExperimentos}.
+
+\subsection{Programação estruturada}
+\label{EmbassamentoSoftware_ProgramaçãoEstruturada}
+
+Programação estruturada é um paradigma de programação cujo objetivo é claridade do código, qualidade e tempo de desenvolvimento de software e tempo de execução de algoritmo. 
+
+Para alcançar tais objetivos, linguagens de programação que se baseiam no paradigma de programação estruturada possuem as seguintes características:
+
+\begin{itemize}
+	\item \textbf{Sequência} bem definida de passos a serem seguidos utilizando:
+		\subitem Condicionais
+		\subitem Loops
+		\subitem Chamadas a funções iterativas e recursivas
+	\item \textbf{Modularização} do código, em:
+		\subitem Funções.
+		\subitem Estruturas de dados.
+		\subitem Uso de bibliotecas.
+\end{itemize}
+
+Para se resolver um determinado problema sob o paradigma de programação estruturada, deve-se subdividir tal problema em problemas menores.
+
+A solução final é a junção sequencial e lógica dos problemas menores. 
+
+A subdivisão proposta pelo paradigma estruturado oferece as seguintes vantagens:
+
+\begin{itemize}
+	\item Cada parte menor tem um código mais simples
+	\item Facilidade de entendimento do código, uma vez que os subprogramas podem ser analisados como partes independentes (legibilidade)
+	\item Códigos menores são mais facilmente modificáveis para satisfazer novos requisitos do usuário e para correção de erros (manutenibilidade)
+	\item Simplificação da documentação de sistemas
+	\item Desenvolvimento de software por equipes de programadore 
+	\item Reutilização de subprogramas através de bibliotecas de subprogramas, na linguagem C, sob a forma dos arquivos de cabeçalhos (.h)
+\end{itemize}
+
+
+
+\subsection{Programação para Arduino}
+\label{EmbassamentoSoftware_Arduino}
+Nesta sub-seção são explicados os conceitos relevantes para as práticas propostas na seção \ref{CapDesenvolvimento}.
+
+\subsubsection{Padrão de programação em Arduíno}
+\label{EmbassamentoSoftware_Arduino_Padrao}
+Todo programa escrito para Arduíno deve ter, obrigatoriamente, duas funções: função \textbf{setup} e a função \textbf{loop}.
+
+A função setup é a primeira a ser executada pela plataforma programada em Arduino. Em geral, essa função serve para realizar configurações e definições iniciais.
+
+A função loop é executa após a setup ser executada. A função loop será repetida indenfinidamente, até a placa Galileo ser desligada ou o botão \textit{reset} ser apertado. Caso o botão reset seja apertado, a execução do programa volta a seu inicío.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/Arduino13.jpeg}
+	\caption{Fluxograma de um programa escrito para Arduino.}
+	\label{Arduino13}
+\end{figure}
+
+O fluxo comum de um programa escrito para Arduino é mostra na Figura \ref{Arduino13}. Quanto ao botão reset, a Figura \ref{Arduino13} é simplificada. O botão reset pode ser apetado a qualquer momento. Ao ser apertado, o botão, é ativado uma \textit{interrupção de hardware} a qual faz com que a execução do programa volte ao ínicio.  
+
+\subsection{Uso de portas digitais}
+\label{EmbassamentoSoftware_Arduino_UsoPortasDigitais}
+Diz-se por porta digital, um pino, de entrada ou saída de tensão, que por ele podem ser lidos ou escritos apenas 0 ou 1 lógicos.
+
+Para uma placa Galileo, 0 lógico é identificado como 0 Volts(GND) e 1 lógico é identificado como 3.3 ou 5 Volts entrando ou saindo da porta digital selecionada. 
+
+Seleciona-se 3.3 ou 5 Volts como valor de referência de tensão com o pino \textit{\textbf{IOREF}}. 
+
+Deve-se tomar cuidado ao utilizar uma porta digital como entrada(\textit{input}). Caso a tensão aplicada à porta for maior que a tensão selecionada em \textit\textbf{{IOREF}}, pode-se inutilizar a porta.
+
+Para se utilizar uma porta digital, deve-se seleciona-lá na função setup. No código mostrado em \ref{EmbassamentoSoftware_prog1}, mostra-se a seleção da porta digital 13 como saída (OUTPUT) de tensão.
+
+\begin{lstlisting}[ caption = Selecionando a porta digital 13 para saída de tensão, label=EmbassamentoSoftware_prog1,]
+
+void setup() {
+// Seleciona a porta digital 13 como saida de tensao
+pinMode(13, OUTPUT);
+
+}
+\end{lstlisting}
+
+Para selecionar uma porta digital como porta de entrada de tensão, deve-se usar o comando \textit{pinMode(NumeroPorta, INPUT);}. 
+
+O exemplo a seguir, código \ref{EmbassamentoSoftware_prog2} mostra a porta digital 13 sendo selecionada para entrada de tensão: 
+
+\begin{lstlisting}[ caption = Selecionando a porta digital 13 para entrada de tensão, label=EmbassamentoSoftware_prog2,]
+
+void setup() {
+// Seleciona a porta digital 13 como entrada de tensao
+pinMode(13, INPUT);
+
+}
+\end{lstlisting}
+
+Com relação a porta digital 13, deve-ser apontado que nela já está conectado, automaticamente, um resistor de 13kOhms. Dessa forma, por nela pode ser diretamente ligado um LED, sem correr o risco de queimá-lo.
+

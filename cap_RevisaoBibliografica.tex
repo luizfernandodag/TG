@@ -28,203 +28,70 @@
 
 % Resumo opcional. Comentar se não usar.
 %\resumodocapitulo{Neste capítulo }
- O objetivo deste capítulo é explicitar todos conceitos relevantes deste trabalho relativos a ensino e aprendizagem de Ciências Exatas e Engenharia e a estrutura detalhada da placa Intel Galileu. Esses estudos servirão de base para a proposição um modelo de aula de programação básica para estudantes de graduação levando em conta os paradigmas de educação mais eficientes dentre os elencados.
+ O objetivo deste capítulo é explicitar todos conceitos relevantes deste trabalho relativos a ensino e aprendizagem de Ciências Exatas e Engenharia e a estrutura detalhada da placa Intel\textsuperscript{\textregistered} Galileu. Esses estudos servirão de base para a proposição um modelo de aula de programação básica para estudantes de graduação levando em conta os paradigmas de educação mais eficientes dentre os elencados.
 
 \section{Teorias Pedagógicas}
 
 Este trabalho tem como proposta a atualização dos curso de \textit{Algoritmos e Programação de Computadores} seguindo as transformações atuais que apontam para métodos de ensino focados em \textit{educação ativa}, Nesta seção, são apresentados:
 \begin{itemize}
-	\item Estudo de currículos relacionadas a  \textit{Algoritmos e Programação de Computadores}
+	
 	\item Estudo da teoria pedagógica de aprendizagem ativa focando na teoria de \textit{aprendizagem por masterização}
 	\item Estudo da metodologia SCRUM para desenvolvimento agíl de projetos
-	
+	\item Estudo de currículos relacionadas a  \textit{Algoritmos e Programação de Computadores}
 \end{itemize}
 
-\subsection{Estudo de currículos relacionados a \textit{Algoritmos e Programação de Computadores} }
+\subsection{Aprendizagem Ativa}
+\label{PBL}
+A aprendizagem ativa é geralmente definida como qualquer método de instrução que envolve os alunos diretamente no processo de aprendizagem. Sob o método de aprendizagem ativa, é demandado dos alunos que eles façam atividades de aprendizzgem significativas e constantemente reflitam sobre o que estão aprendendo, como estão aprendendo, dificuldades no processo e aplicações de tais conhecimentos\cite{Parte2:artigo13}.
 
-Fez-se, para os estudos de currículo, uma breve pesquisa das 5 melhores universidade mundiais e as cinco melhores universidades no Brasil. Os resultados de tal estudo são mostrados na tabela \ref{tabRakingUniversidades}. A universidade de Brasília (UnB) está, atualmente, entre as 800 melhores universidades e é a quinta melhor universidade brasileira.
+Apesar dessa definição poder incluir atividades tradicionais como a lição de casa, na prática, aprendizagem ativa se refere a  a atividades que são introduzidos na sala de aula. O principal elemento da aprendizagem ativa são a atividade dos alunos e seu envolvimento no processo de aprendizagem.
 
-Os índices utilizados pela instituição de pesquisa \textit{timeshighereducation} são os seguintes:
-\begin{enumerate}
-	\item Score Ensino
-	\item Score Panorama Internacional
-	\item Score Impacto na Indústria
-	\item Score Pesquisa
-	\item Score Citação
-\end{enumerate}
+A literatura indica que esse de modo de instrução possui efetividade similar à tradicional com relação a retenção de muitas informações fatuais a serem relembradas em curto espaço de tempo. Por outro lado, se o objetivo é facilitar a retenção de longo prazo, ajudar os estudantes a desenvolverem habilidades de raciocínio e resolução de problemas ou estimulá-los a aprender um conteúdo em específico a aprendizagem ativa é mais efetiva\cite{Parte1:artigo20}. 
 
-Como dito em \cite{livroProfessorYeah}, pode-se concluir, sem perda de exatidão, que tais índices são totalmente dependentes e proporcionais à qualidade de ensino nas universidade em questão. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{figs/tabRankingUniversidades.eps}
-	\caption{Tabela com scores de avaliação das 5 melhores universidades do mundo e das 5 melhores universidades brasileiras}
-	\label{tabRakingUniversidades}
-\end{figure}
-
-Pesquisou-se o currículo da UnB e o currículo da universidade \textit{California Institute of Tecnology} para disciplinas com ementa similar ao de \textit{Algoritmos e Programação de Computadores}. O resultado de tal pesquisa é mostrado na Figura \ref{tabRakingUniversidades2}. 
-
-Fez, também, uma pesquisa mais aprofundada do conteúdo programático de tais disciplinas. O resultado de tal pesquisa é mostrado na Figura \ref{tabRakingUniversidades3}.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figs/t2.eps}
-	\caption{Tabela listando as disciplinas na UnB e na \textit{California Insitute of Tecnology} que possuem currículo similar a disciplina \textit{Algoritmos e Programação de Computadores}}
-	\label{tabRakingUniversidades2}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figs/t3.eps}
-	\caption{Tabela listando parte dos conteúdos tratados pelas disciplinas na \textit{California Insitute of Tecnology} e na UnB e levantanto a questão da metodologia de ensino ser uma \textit{metodologia ativa} e se tal conteúdo pode ser ensinado usando a placa Galileo}
-	\label{tabRakingUniversidades3}
-\end{figure}
-
-
-Para cada conteúdo identificado, procurou-se saber também se ele era tratado de seguindo algum paradigma moderno de \textit{Educação Ativa} e, se pela natureza do conteúdo, seria possível utilizar a placa Galileo no processo de \textit{ensino-aprendizagem}.
-
-A proporção de conteúdos que poderiam ser ensinados com a placa Galileo é mostrada na Figura \ref{figPossivelUsarGalileo}.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figs/PossivelUsarGalileo.eps}
-	\caption{Percentagem dos conteúdos tratados na UnB e \textit{California Institute of Tecnology} que podem ser ensinados utilizando a placa Galileo}
-	\label{figPossivelUsarGalileo}
-\end{figure}
-
-Pode-se concluir, pelas informações colhidas nesta seção, que a mudança currícular da disciplina \textit{Algoritmos e Programação de Computadores} e disciplinas similares em outras faculdades é possível. Tal mudança curricular em direção à aprendizagem ativa, além de trazer grandes benefícios à qualidade do ensino \cite{Parte1:artigo01}\cite{Parte1:artigo4}, também pode ajudar a formação de novos profissionais alinhados com as competências mais exigidas no século XXI, como proatividade e independência \cite{Parte1:artigo1}.
-
-\subsection{Estudo da teoria pedagógica de aprendizagem ativa focando na teoria de \textit{aprendizagem por masterização} }
-
-Esta seção trata do paradigma de aprendizagem por masterização e da Taxonomia de definição de objetivos educacionais propostas por Bejamim S. Bloom. Além disso, o é descrito um aplicativo, desenvolvido do ambiente de programação QT, cujo objetivo é auxiliar a definição de objetivos educacionais de forma mais clara e precisa. 
-
-\subsubsection{Taxonomia dos objetivos educacionais - Taxonomia de Bloom}
-\label{Taxonomia}
-A taxonomia dos objetivos educacionais (Taxonomia de Bloom) é um modelo de estruturação de objetivos educacionais segundo níveis hierárquicos e crescentes de níveis de aprendizagem. A taxonomia de Bloom foi planejada para três domínios distintos de aplicação \cite{bloom1}. São eles:
+A aprendizagem ativa pode ser engredada de diversar formas, mas a mais tradicional é na forma de prática de laboratorio. Segundo \cite{Laboratorio1}, a implementação de práticas laboratorias é importante pelos seguintes quesitos:
 
 \begin{itemize}
-	\item Domínio cognitivo, cuja abrangência é a aprendizagem intelectual.
-	\item Domínio afetivo, cuja abrangência está ligado aos aspectos de sensibilização, socialização e gradação de valores
-	\item Domínio psicomotor, cuja abrangência está ligada a habilidades de execução de tarefas que envolvem o aparelho motor. 
+	\item Com práticas laboratorias, o estudante aprende a ser um investigador/experimentador.
+	\item Por meio do laboratório, o estudante pode solidificar, ampliar e até aprender conceitos além dos propostos.
+	\item O laboratório ajuda o estudante a ter discernimento da aplicação dos conceitos aprendidos no mundo real.
 \end{itemize}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figs/bloom1.eps}
-	\caption{Níveis de aprendizagem no domínio cognitivo}
-	\label{bloom1}
-\end{figure}
+Os paradigmas mais utilizando na promoção da aprendizagem ativa são os 
+seguintes:
 
-
-Cada um destes domínios tem diversos níveis de profundidade de aprendizado. Por isso a classificação de Bloom é denominada hierarquia: cada nível é mais complexo e mais específico que o anterior como mostrado na Figura \ref{bloom1}.
-
-Os níveis cognitivos de Bloom são usados para definir \textit{objetivos educacionais} de forma precisa. A Figura \ref{bloom2} mostra os verbos a serem usados para se definir objetivos educacionais para cada dos níveis citados de acordo com a Taxonomia de Bloom.
- 
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figs/bloom2.eps}
-	\caption{Verbos de descrição de objetivos educacionais a serem usados em cada nível cognitivo}
-	\label{bloom2}
-\end{figure}
-
-Um objetivo educacional definido segundo a taxonomia de Bloom segue o seguinte padrão: 
+\begin{itemize}
+	\item \textbf{Aprendizagem Baseada em Problema}
 	
-	"O(s) aluno(s) será(ão) capaz(es) de (\textbf{Verbo próprio do nível cognitivo considerado}) (\textbf{Conteúdo estudado}).
+	 A Aprendizagem Baseada em Problemas  é um método de aprendizagem
+	 no qual, inicialmente, o professor apresenta aos alunos, sem aula expositiva anterior, um problema o qual é sucedido por uma investigação em um processo de aprendizagem centrada no estudante. Junto com um ou mais professores facilitadores (tutores) para identificar e definir problemas decorrentes, desenvolver hipóteses para explicar o(s) problema(s), e explorar os conhecimentos preexistentes relevantes aos assuntos. Os estudantes estabelecem e exploram o que já conhecem e o que necessitam aprender de forma a progredir no entendimento do(s) problema(s). Os elementos chave do Aprendizagem Baseada em Problema são a formulação de questões que podem ser exploradas e respondidas através da investigação sistemática e auto-dirigida e o teste e a revisão das hipóteses, pela aplicação dos conhecimentos recentemente adquiridos. Essenciais ao processo são a discussão ativas, a análise dos problemas, das hipóteses, dos mecanismos e dos tópicos de aprendizagem, os quais capacitam os estudantes a adquirir e aplicar conhecimentos e a colocar em prática as habilidades de comunicação individual e do grupo, críticas para o ensino/aprendizagem.
+	
+	\item \textbf{Aprendizagem Baseada em Projetos}
+	
+	Aprendizagem Baseada em Projeto ou Aprendizagem por Projeto é uma abordagem pedagógica de caráter ativo que enfatiza as atividades de projeto e tem foco no desenvolvimento de competências e habilidades. Assenta-se sobre a aprendizagem colaborativa e a interdisciplinaridade.
+	
+	Pode-se dizer, pela natureza do que é um projeto, que a Aprendizagem Baseada em Projeto é um conjunto de aprendizagens interligadas realizadas por meio da Aprendizagem Baseada em Problema, citada anteriomente. Além de todas características da Aprendizagem Baseada em Problemas, a Aprendizagem Baseada em Projetos também oferece ao aluno aprendizagem mais profunda nos seguintes quesitos:
+		\subitem \textbf{Desenvolvimento de habilidades para o século 21}:
+	
+		
+		 \subitem \textbf{Desenvolvimento expírito de exploração}:
+		 
+		  
+		 \subitem \textbf{Organizar-se em torno de questões abertas}: 
+		 
+		 
+		 \subitem \textbf{Incluir processos de revisão e reflexão}:
+		 
+		 
+		 \subitem \textbf{Apresentar para o público}:
+	
+		
+\end{itemize}
 
-Um exemplo de aplicação para o caso de primeiro nível cognitivo, no estudado de equações diferenciais:
+Os resultados de se utilizar as metodologias de aprendizagem ativa são excelentes \cite{Parte1:artigo6}. Entretanto, a aplicação de tais metodologias é complexa. Alguns dos principal desafio ao se utilizar o paradigma de instrução ativa é conseguir envolver todos estudantes em atividades produtivas sem sacrificar tempo e recursos importantes no ensino dos conteúdos da disciplina em questão.  
 
-"O aluno será capaz de \textbf{definir} o que são \textbf{equações diferenciais}."
-
-Para este trabalho, foi criado um aplicativo na plataforma de programação QT\textsuperscript{\textregistered} para facilitar a definição de objetivos educacionais de acordo com a Taxonomia de Bloom. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{figs/app2.eps}
-	\caption{Tela inicial do aplicativo desenvolvido em QT para definir os objetivos educaionais}
-	\label{app2}
-\end{figure}
-
-A Figura \ref{app2} mostra a tela inicial do aplicativo desenvolvido. Na região de inserção de texto Descrita por \textbf{Unidade}, deve-se escrever de qual unidade de ensino se está tratando. Na região textual central, marcada na Figura  \ref{app2_1}, é mostrado resultado do objetivo educacional definido.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{figs/app2_1.eps}
-	\caption{Tela inicial do aplicativo desenvolvido em QT para definir os objetivos educacionais, retângulo vermelho marcando a região onde o objetivo educacional definido é mostrado}
-	\label{app2_1}
-\end{figure}
-
-A Figura \ref{app3} mostra o resultado, na região textual central , da definição do \textbf{Unidade}. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{figs/app3.eps}
-	\caption{Definindo uma unidade de ensino}
-	\label{app3}
-\end{figure}
-
-A Figura \ref{app4} mostra o resultado, na região textual central , da definição do \textbf{Objeto de estudo} específico para a \textbf{Unidade} definida. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figs/app4.eps}
-	\caption{Definindo um objetivo de estudo para a unidade de estudo}
-	\label{app4}
-\end{figure}
-
-A Figura \ref{app4_1} mostra os níveis do processos cognitivos da Taxonomia de Bloom.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{figs/app4_1.eps}
-	\caption{Retângulo amarelo destacando os níveis cognitivos}
-	\label{app4_1}
-\end{figure}
-
-Cada \textit{Combo-box} mostrado possui os verbos associados a cada nível cognitivo. Quando um verbo é selecioando, o objetivo educacional exposto na região retangular é alterado, como exposto na Figura \ref{app5_2}.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.9\textwidth]{figs/app5_2.eps}
-	\caption{Selecionando um verbo de um nível cognitivo}
-	\label{app5_2}
-\end{figure}
-
-Na aba \textit{Amplitude}, são selecionados modificadores para especificação do objetivo educacional. A Figura \ref{app6} mostra o uso do modificador para alterar o objetivo educacional adicionando o modificador "o objetivo geral".
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.9\textwidth]{figs/app6.eps}
-	\caption{Selecionando a amplitude do estudo a ser realizado}
-	\label{app6}
-\end{figure}
-
-Na aba \textit{Recursos}, são especificados recursos com os quais os estudantes realizarão atividades em direção à masterização do conteúdo. A Figura \ref{app7} mostra o uso do especificador para alterar o objetivo educacional adicionando o recurso "livro".
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.9\textwidth]{figs/app7_3.eps}
-	\caption{Selecionando o recursos a ser utilizado para alcançar o obejtivo educacional especificado}
-	\label{app7_3}
-\end{figure}
-
-Na aba \textit{Produtos}, é especificado o que os alunos desenvolverão para atingir o objetivo educacional especificado. A Figura \ref{app8} mostra o uso do especificador de produto a ser desenvolvido para alterar o objetivo educacional adicionando o objetivo de produzir um "artigo".
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.9\textwidth]{figs/app8.eps}
-	\caption{Selecionando um produto a ser desenvolvido como atividade de masterização}
-	\label{app8}
-\end{figure}
-
-Finalmente, na aba \textit{Grupos}, é especificado a quantidade de alunos por grupo que realizarão, conjuntamente as atividades de masterização. A Figura \ref{app9} mostra  a alteração da quantidade de pessoas por grupo para, por exemplo, 4 pessoas.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.9\textwidth]{figs/app9.eps}
-	\caption{Selecionando a quantidade de pessoas por grupo}
-	\label{app9}
-\end{figure}
-
+\subsection{Teoria pedagógica de aprendizagem ativa focando na teoria de aprendizagem por masterização }
+\label{Masterizacao}
+Esta seção trata do paradigma de aprendizagem por masterização e da Taxonomia de definição de objetivos educacionais propostas por Bejamim S. Bloom. Além disso, o é descrito um aplicativo, desenvolvido do ambiente de programação QT, cujo objetivo é auxiliar a definição de objetivos educacionais de forma mais clara e precisa. 
 
 \subsubsection{ Aprendizagem por masterização}
 \textit{Aprendizagem por Masterização} é uma metodologia de ensino proposta por Benjamim S. Bloom em 1968 juntamente com uma Taxonomia  própria. Essa metodologia se baseia nas pesquisa de Bloom relacionadas aos \textit{níveis cognitivos de aprendizagem}.
@@ -232,20 +99,20 @@ Finalmente, na aba \textit{Grupos}, é especificado a quantidade de alunos por gr
 
 Como mostrado na seção  \ref{Taxonomia}, Os níveis cognitivos de aprendizagem são crescente  do mais simples ao mais complexo. Isso significa que, para adquirir uma nova habilidade pertencente ao próximo nível, o aluno deve ter dominado e adquirido a habilidade do nível anterior. Ao ensinar um turma sob o paradigma da masterização, a maioria dos alunos ( 80 a 90\%) deve ter masterizado a hablidade proposta para que outro conteúdo possa ser tratado.
 
-Só após conhecer um determinado assunto alguém poderá compreendê-lo e aplicá-lo. Nesse sentido, a taxonomia proposta não é apenas um esquema para classificação, mas uma possibilidade de organização hierárquica dos processos cognitivos de acordo com níveis de complexidade e objetivos do desenvolvimento cognitivo desejado e planejado.
+Só após conhecer um determinado assunto, alguém poderá compreendê-lo e aplicá-lo. Nesse sentido, a taxonomia proposta não é apenas um esquema para classificação, mas uma possibilidade de organização hierárquica dos processos cognitivos de acordo com níveis de complexidade e objetivos do desenvolvimento cognitivo desejado e planejado.
 
 Os processos categorizados pela Taxonomia dos Objetivos Cognitivos de Bloom, além de representarem resultados de aprendizagem esperados, são cumulativos, o que caracteriza uma relação de dependência entre os níveis e são organizados em termos de complexidades dos processos mentais.
 
- Encerrando um modo de utilização bastante prático, uma vez que permite, a partir da utilização de uma tabela Domínio Cognitivo perceber qual o verbo a utilizar / aplicar, em função do comportamento esperado, organizando os objectivos de aprendizagem em seis níveis, os quais são, por ordem crescente de complexidade os seguintes.
- 
- A metodologia de aprendizagem sob masterização se baseia sob 2 crenças fundamentais:
- 
- \begin{enumerate}
-  \item Virtualmente todos estudantes podem aprender todos conteúdos acadêmicos importantes ao nível de excelência
-  
-  \item A função primária das escolas é definir objetivos de aprendizagem e ajudar todos estudante a alcançá-los. 
-  
- \end{enumerate}  
+Encerrando um modo de utilização bastante prático, uma vez que permite, a partir da utilização de uma tabela Domínio Cognitivo perceber qual o verbo a utilizar / aplicar, em função do comportamento esperado, organizando os objectivos de aprendizagem em seis níveis, os quais são, por ordem crescente de complexidade os seguintes.
+
+A metodologia de aprendizagem sob masterização se baseia sob 2 crenças fundamentais:
+
+\begin{enumerate}
+	\item Virtualmente todos estudantes podem aprender todos conteúdos acadêmicos importantes ao nível de excelência
+	
+	\item A função primária das escolas é definir objetivos de aprendizagem e ajudar todos estudante a alcançá-los. 
+	
+\end{enumerate}  
 
 Para que um curso baseado em masterização tenha sucesso, são seguintes características são mandatórias:
 
@@ -277,7 +144,7 @@ Instrução corretiva, por sua própria natureza, deve ser direcionada a alunos pes
 	Estudantes que masterizaram o conteúdo no primeiro teste formativo, devem ser envolver em atividades de ampliação de conhecimento no mesmo conteúdo masterizado, preferencialmente, e em atividades de tutoria em par para estudantes que ainda não masterizarão o conteúdo.
 	
 \end{itemize}
- 
+
 O fluxo da metodologia de masterização é o seguinte:
 
 \begin{enumerate}
@@ -306,7 +173,139 @@ O fluxo da metodologia de masterização é o seguinte:
 \end{enumerate} 
 
 
-\section{Estudo da metodologia \textit{Scrum} para desenvolvimento agíl de projetos }
+\subsubsection{Taxonomia dos objetivos educacionais - Taxonomia de Bloom}
+\label{Taxonomia}
+A taxonomia dos objetivos educacionais (Taxonomia de Bloom) é um modelo de estruturação de objetivos educacionais segundo níveis hierárquicos e crescentes de níveis de aprendizagem. A taxonomia de Bloom foi planejada para três domínios distintos de aplicação \cite{bloom1}. São eles:
+
+\begin{itemize}
+	\item Domínio cognitivo, cuja abrangência é a aprendizagem intelectual.
+	\item Domínio afetivo, cuja abrangênc{\tiny }ia está ligado aos aspectos de sensibilização, socialização e gradação de valores
+	\item Domínio psicomotor, cuja abrangência está ligada a habilidades de execução de tarefas que envolvem o aparelho motor. 
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/bloom1.png}
+	\caption{Níveis de aprendizagem no domínio cognitivo}
+	\label{bloom1}
+\end{figure}
+
+
+Cada um destes domínios tem diversos níveis de profundidade de aprendizado. Por isso a classificação de Bloom é denominada hierarquia: cada nível é mais complexo e mais específico que o anterior como mostrado na Figura \ref{bloom1}.
+
+Os níveis cognitivos de Bloom são usados para definir \textit{objetivos educacionais} de forma precisa. A Figura \ref{bloom2} mostra os verbos a serem usados para se definir objetivos educacionais para cada dos níveis citados de acordo com a Taxonomia de Bloom.
+ 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/bloom2.eps}
+	\caption{Verbos de descrição de objetivos educacionais a serem usados em cada nível cognitivo.}
+	\label{bloom2}
+\end{figure}
+
+Um objetivo educacional definido segundo a taxonomia de Bloom segue o seguinte padrão: 
+	
+	"O(s) aluno(s) será(ão) capaz(es) de (\textbf{Verbo próprio do nível cognitivo considerado}) (\textbf{Conteúdo estudado}).
+
+Um exemplo de aplicação para o caso de primeiro nível cognitivo, no estudado de equações diferenciais:
+
+"O aluno será capaz de \textbf{definir} o que são \textbf{equações diferenciais}."
+
+\subsubsection{Programa desenvolvido em QT para auxílio na definição de objetivos educacionais}
+
+Para este trabalho, foi criado um aplicativo na plataforma de programação QT\textsuperscript{\textregistered} para facilitar a definição de objetivos educacionais de acordo com a Taxonomia de Bloom. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/app2.jpg}
+	\caption{Tela inicial do aplicativo desenvolvido em QT para definir os objetivos educacionais.}
+	\label{app2}
+\end{figure}
+
+A Figura \ref{app2} mostra a tela inicial do aplicativo desenvolvido. Na região de inserção de texto Descrita por \textbf{Unidade}, deve-se escrever de qual unidade de ensino se está tratando. Na região textual central, marcada na Figura  \ref{app2_1}, é mostrado resultado do objetivo educacional definido.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/app2_1.jpg}
+	\caption{Tela inicial do aplicativo desenvolvido em QT para definir os objetivos educacionais, retângulo vermelho marcando a região onde o objetivo educacional definido é mostrado.}
+	\label{app2_1}
+\end{figure}
+
+A Figura \ref{app3} mostra o resultado, na região textual central , da definição do \textbf{Unidade}. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/app3.jpg}
+	\caption{Definindo uma unidade de ensino.}
+	\label{app3}
+\end{figure}
+
+A Figura \ref{app4} mostra o resultado, na região textual central , da definição do \textbf{Objeto de estudo} específico para a \textbf{Unidade} definida. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/app4.jpg}
+	\caption{Definindo um objetivo de estudo para a unidade de estudo.}
+	\label{app4}
+\end{figure}
+
+A Figura \ref{app4_1} mostra os níveis do processos cognitivos da Taxonomia de Bloom.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/app4_1.jpg}
+	\caption{Retângulo amarelo destacando os níveis cognitivos.}
+	\label{app4_1}
+\end{figure}
+
+Cada \textit{Combo-box} mostrado possui os verbos associados a cada nível cognitivo. Quando um verbo é selecioando, o objetivo educacional exposto na região retangular é alterado, como exposto na Figura \ref{app5_2}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figs/app5_2.jpg}
+	\caption{Selecionando um verbo de um nível cognitivo.}
+	\label{app5_2}
+\end{figure}
+
+Na aba \textit{Amplitude}, são selecionados modificadores para especificação do objetivo educacional. A Figura \ref{app6} mostra o uso do modificador para alterar o objetivo educacional adicionando o modificador "o objetivo geral".
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figs/app6.jpg}
+	\caption{Selecionando a amplitude do estudo a ser realizado.}
+	\label{app6}
+\end{figure}
+
+Na aba \textit{Recursos}, são especificados recursos com os quais os estudantes realizarão atividades em direção à masterização do conteúdo. A Figura \ref{app7} mostra o uso do especificador para alterar o objetivo educacional adicionando o recurso "livro".
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figs/app7_3.jpg}
+	\caption{Selecionando o recursos a ser utilizado para alcançar o obejtivo educacional especificado.}
+	\label{app7_3}
+\end{figure}
+
+Na aba \textit{Produtos}, é especificado o que os alunos desenvolverão para atingir o objetivo educacional especificado. A Figura \ref{app8} mostra o uso do especificador de produto a ser desenvolvido para alterar o objetivo educacional adicionando o objetivo de produzir um "artigo".
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figs/app8.jpg}
+	\caption{Selecionando um produto a ser desenvolvido como atividade de masterização.}
+	\label{app8}
+\end{figure}
+
+Finalmente, na aba \textit{Grupos}, é especificado a quantidade de alunos por grupo que realizarão, conjuntamente as atividades de masterização. A Figura \ref{app9} mostra  a alteração da quantidade de pessoas por grupo para, por exemplo, 4 pessoas.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figs/app9.jpg}
+	\caption{Selecionando a quantidade de pessoas por grupo.}
+	\label{app9}
+\end{figure}
+
+
+
+
+\section{Metodologia \textit{Scrum} para desenvolvimento agíl de projetos }
 \label{EstudoScrum}
 
 Scrum é um metodologia ágil de densenvolvimento de projeto que surgiu no contexto de engenharia de software. O termo ágil se aplica nesse contexto para ser um contraste a metodologia em \textit{Cascata} (metodologia clássica) de desenvolvimento de projetos de software. Enquanto na metodologia \textit{Cascata}, foca-se principalmente em \textit{processos} e na obediência a eles, na metodologia Scrum, foca-se na \textit{melhora contínua} e \textit{entrega constante de valor}.
@@ -315,7 +314,7 @@ Apesar de suas origens, tanto a metodologia em \textit{Cascata} com o \textit{Sc
 
 Nesta seção, descreve-se as rapidamente a metodologia de desenvolvimento de projetos \textit{Cascata}, para depois apresentar uma descrição detalhada da metodologia de desenvolvimento de projetos \textit{Scrum}, a qual é a metodologia a ser aplicada no curso \textit{Algoritmos e Programação de Computadores} proposto.
 
-\subsection{Metodologia de desenvolvimento de projetos \textit{Cascata}}
+\subsection{Metodologia de desenvolvimento de projetos Cascata}
 \label{SecCascata}
 A Figura \ref{scrum4} mostra a um breve resumo das fases que devem ser obedecidas na metodologia de desenvolvimento de projetos \textit{Cascata}. São elas:
   
@@ -358,7 +357,7 @@ Muitos argumentam que a metodologia em \textit{Cascata} torna o desenvolvimento 
 O principal problema, pontuado por pesquisadores \cite{artigoCascada2}, quanto à metodologia \textit{Cascata}, é, como mostrado na tabela \ref{tabCascata} a falta de dinamicidade, especialmente quanto a definição de pre-requisitos de projeto. Uma vez que a primeira fase do projeto, colhimento de requisitos, é concluída, não mais os requisitos são revistos. Isso causa, muitos problemas de retrabalho , em especial, nas fases finais e atrasos grandes.
 
 
-\subsection{Metodologia de desenvolvimento de projetos \textit{Scrum}}
+\subsection{Metodologia de desenvolvimento de projetos Scrum}
 
 A metodologia \textit{Scrum} de gerenciamento de projeto surgiu como contraste à metodologia \textit{Cascata} tratada na seção \ref{SecCascata} sendo uma metodologia ágil de desenvolvimento de projetos. 
 
@@ -481,13 +480,68 @@ A tabela \ref{tabScrum} faz um resumo dos pontos positivos e negativos próprios 
 	\end{tabular}
 \end{table}
 
+\section{Currículos relacionados a Algoritmos e Programação de Computadores}
+
+Fez-se, para os estudos de currículo, uma breve pesquisa das 5 melhores universidade mundiais e as cinco melhores universidades no Brasil. Os resultados de tal estudo são mostrados na tabela \ref{tabRakingUniversidades}. A universidade de Brasília (UnB) está, atualmente, entre as 800 melhores universidades e é a quinta melhor universidade brasileira.
+
+Os índices utilizados pela instituição de pesquisa \textit{timeshighereducation} são os seguintes:
+\begin{enumerate}
+	\item Score Ensino
+	\item Score Panorama Internacional
+	\item Score Impacto na Indústria
+	\item Score Pesquisa
+	\item Score Citação
+\end{enumerate}
+
+Como dito em \cite{livroProfessorYeah}, pode-se concluir, sem perda de exatidão, que tais índices são totalmente dependentes e proporcionais à qualidade de ensino nas universidade em questão. 
+
+\begin{table}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/tabRankingUniversidades.jpg}
+	\caption{Tabela com scores de avaliação das 5 melhores universidades do mundo e das 5 melhores universidades brasileiras.}
+	\label{tabRakingUniversidades}
+\end{table}
+
+Pesquisou-se o currículo da UnB e o currículo da universidade \textit{California Institute of Tecnology} para disciplinas com ementa similar ao de \textit{Algoritmos e Programação de Computadores}. O resultado de tal pesquisa é mostrado na tabela \ref{tabRakingUniversidades2}. 
+
+Fez, também, uma pesquisa mais aprofundada do conteúdo programático de tais disciplinas. O resultado de tal pesquisa é mostrado na tabela \ref{tabRakingUniversidades3}.
+
+\begin{table}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/t2.jpg}
+	\caption{Tabela listando as disciplinas na UnB e na \textit{California Insitute of Tecnology} que possuem currículo similar a disciplina \textit{Algoritmos e Programação de Computadores}.}
+	\label{tabRakingUniversidades2}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/t3.jpg}
+	\caption{Tabela listando parte dos conteúdos tratados pelas disciplinas na \textit{California Insitute of Tecnology} e na UnB e levantanto a questão da metodologia de ensino ser uma \textit{metodologia ativa} e se tal conteúdo pode ser ensinado usando a placa Galileo.}
+	\label{tabRakingUniversidades3}
+\end{table}
+
+
+Para cada conteúdo identificado, procurou-se saber também se ele era tratado de seguindo algum paradigma moderno de \textit{Educação Ativa} e, se pela natureza do conteúdo, seria possível utilizar a placa Galileo no processo de \textit{ensino-aprendizagem}.
+
+A proporção de conteúdos que poderiam ser ensinados com a placa Galileo é mostrada na Figura \ref{figPossivelUsarGalileo}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/PossivelUsarGalileo.eps}
+	\caption{Percentagem dos conteúdos tratados na UnB e \textit{California Institute of Tecnology} que podem ser ensinados utilizando a placa Galileo.}
+	\label{figPossivelUsarGalileo}
+\end{figure}
+
+Pode-se concluir, pelas informações colhidas nesta seção, que a mudança currícular da disciplina \textit{Algoritmos e Programação de Computadores} e disciplinas similares em outras faculdades é possível. Tal mudança curricular em direção à aprendizagem ativa, além de trazer grandes benefícios à qualidade do ensino \cite{Parte1:artigo01}\cite{Parte1:artigo4}, também pode ajudar a formação de novos profissionais alinhados com as competências mais exigidas no século XXI, como proatividade e independência \cite{Parte1:artigo1}.
+
+
 \section{Proposta de curso}
 
 Para se construir um projeto Scrum, como exposto na seção \ref{EstudoScrum}, para o contexto educacional da teoria de masterização de habilidades proposta por Bloom, os seguintes passos  são necessários:
 
 \begin{enumerate}
 	\item Realizar adaptação dos princípios e fluxo da metodologia Scrum, em conjunto com os princípios da metodlogia de \textit{masterização de habilidades} para o contexto educacional desejado.
-	\item Definir os objetivos educacionais na forma \textit{de características de produto}. utilizando a taxonomia de Bloom para criar as \textit{User Stories} e \textit{Epics}.
+	\item Definir os objetivos educacionais na forma \textit{de características de produto} utilizando a taxonomia de Bloom para criar as \textit{User Stories} e \textit{Epics} e definir os critérios de aprovação para cada objetivo de masterização.
 	\item Criar atividades com a placa Galileo de acordo com o contéudo programático estabelecido
 	
 		 
@@ -495,7 +549,7 @@ Para se construir um projeto Scrum, como exposto na seção \ref{EstudoScrum}, par
 Cada uma das atividades listadas acima será tratada, neste trabalho, em uma seção em separado.
 
 
-\subsection{Adaptação dos princípios e fluxo metodologia Scrum à disciplina \textit{Algoritmos e Programação de Computadores}}
+\subsection{Aprendizagem por mastrização e Scrum adpatados ao curso de Algoritmos e Programação de Computadores}
 
 Nesta seção é apresentada uma proposta de adaptação da metodologia Scrum para aplicação na disciplina \textit{Algoritmos e Programação de Computadores}. 
 
@@ -583,7 +637,6 @@ Para realizar a definição dos objetivos educacionais, foi utlizada a plataforma 
 \begin{enumerate}
 	\item O histórico da computação
 	\item Organização básica de um computador
-	\item Fundamentos para linguagens de programação
 	\item Introdução ao conceito de algoritmo
 	\item Pseudocódigo e Fluxograma
 	\item Tipos de variáveis de memória
@@ -670,15 +723,7 @@ A seguinte enumeração mostra uma possível especificação de cada um dos módulos d
 		Na unidade organização básica de um computador, os estudantes irão classificar computadores quanto a parâmetros de desempenho entre outros em um grupo de 4 pessoa(s).
 		\subitem \textbf{Nível 3 Aplicação:}
 		Na unidade organização básica de um computador, os estudantes irão ilustrar a dinâmica de funcionamento de um computador e criarão um diagrama em um grupo de 4 pessoa(s).
-		
-	\item Fundamentos para linguagens de programação
-		\subitem \textbf{Nível 1 Conhecimento:}
-		Na unidade fundamentos para linguagens de programação, os estudantes irão definir a noção geral sobre padrões de linguagens de programação em um grupo de 4 pessoa(s).
-		\subitem \textbf{Nível 2 Compreensão:}
-		Na unidade fundamentos para linguagens de programação, os estudantes irão explicar a noção geral das principais diferenças entre os diversos tipos de linguagens de programação em um grupo de 4 pessoa(s).
-		\subitem \textbf{Nível 3 Aplicação:}
-		Na unidade fundamentos para linguagens de programação, os estudantes irão escolher para diversas situações e sistemas diferentes, linguagens de programação mais adequadas em um grupo de 4 pessoa(s).
-	\item Introdução ao conceito de algoritmo
+		\item Introdução ao conceito de algoritmo
 		\subitem \textbf{Nível 1 Conhecimento:}
 	Na unidade introdução ao conceito de algoritmo, os estudantes irão definir conceitualmente o que são algoritmos em um grupo de 4 pessoa(s).
 		\subitem \textbf{Nível 2 Compreensão:}
@@ -826,6 +871,21 @@ Nesta seção, define-se um possível planejamento de módulos de aprendizagem relac
 		
 \end{enumerate}
 
+\subsection{Proposta de uso de placas de prototipagem eletrônica}
+
+O uso da metodologia de aprendizagem por masterização, seja ela pelo vies do uso da metodologia classica de ensino, pelo uso da metodologia  de Aprendizagem Baseada em Problemas ou pelo vies da Aprendizagem Baseada em Projetos citadas na seção \ref{PBL}, tem sido feito, progressivamente mais, usando placas de prototipagem eletrônica. 
+
+No caso citado em \cite{aprendizagemAtivaArduino}, os alunos estavam em início de curso e passaram por uma revisão de modelo de curso. Nessa revisão, foi incluído o uso da placa Arduino para aprendizagem de programação básica. Os alunos que estudaram sob o novo formato, comparados a turmas anteriores, tiveram níveis mais altos de aprendizagem e retenção do conhecimento.
+
+Já em \cite{Laboratorio2}, foi proposto, para alunos de ensino médio, um projeto de ensinode robótica baseado em aprendizagem ativa pelo vies da Aprendizagem Baseada em Projetos. Nesse caso citado, foram utilizadas placas Arduino, por causa da sua facilidade de programação e prototipação, o que a tem feito progressivamente mais popular. 
+
+Assim como em \cite{aprendizagemAtivaArduino}, em \cite{Laboratorio2} as práticas proposta melhoram consideravelmente os índices acadêmicos dos estudantes, assim como sua motivação a aprender e retenção do conhecimento exposto.
+    
+No caso desta proposta para a disciplina \textit{Algoritmos e Programação de Computadores}, escolheu-se o uso da Placa Intel\textsuperscript{\textregistered} Galileo. 
+
+A placa  Intel\textsuperscript{\textregistered} Galileo, além de possuir todas funcionalidades da placa Arduino supracitada, tem funcionalidades mais diversas as quais permitem a ampliação dos conteúdos tratados não só para cursos de programação básica, mas para as mais diversas disciplinas de computação. 
+
+
 \section{Placa Intel \textsuperscript{\textregistered} Galileo}
 \label{CapGalileo}
 
@@ -933,6 +993,7 @@ O sinal PWM é gerado com ondas quadradas, de périodo \textit{T} de ciclo. Durant
 	\includegraphics[width=1\textwidth]{figs/PWM.eps}
 	\caption{Sinal PWM}
 	\label{FigPWM}
+	\source{Figura adaptada de http://www.zembedded.com/avr-introduction-to-pwm-part-i/}
 \end{figure}    
 
 \begin{equation}
@@ -1016,6 +1077,7 @@ A figura \ref{ADC1} mostra uma figura esquemática para o processo de conversão a
 	\includegraphics[width=1\textwidth]{figs/ADC1.eps}
 	\caption{Figura esquemática do processo de conversão analógico para digital}
 	\label{ADC1}
+	\source{https://www.maximintegrated.com/en/app-notes/index.mvp/id/1080}
 \end{figure}
 Caso a tensão V\textsubscript{DAC} seja maior que a tensão de entrada V\textsubscript{IN}, o bit mais significativo será mantido, caso o contrário, esse bit será setado no valor 0. Depois disso, registrador SAR grava o resultado obtido no comparador no bit avaliado. O processo se repete para os N bits,sempre comparando a tensão de entrada V\textsubscript{IN} com a tensão de conversão V\textsubscript{DAC}, fazendo com que a saída da conversão se aproxime progresivamente a cada iteração\cite{livroADC}. 
 
@@ -1041,6 +1103,7 @@ O resistor \textit{pull-up} serve para ter como valor alto de tensão( lógico 1) 
 	\includegraphics[width=0.8\textwidth]{figs/I2C1.eps}
 	\caption{Figura esquemática do barramento serial I2C}
 	\label{I2C1}
+	\source{http://docplayer.com.br/7275040-Monografia-de-graduacao.html}
 \end{figure}
 
 No protocolo I2C, sempre existem os dispositivos que agem como \textit{dispositivos mestres}(Masters) e os dispositivos que agem como \textit{dispositivos escravos}(Slaves).
@@ -1056,6 +1119,7 @@ Os \textit{dispositivos mestres} sempre retem o controle do barramento de clock.
 	\includegraphics[width=0.6\textwidth]{figs/I2C2.eps}
 	\caption{I2C - Clock Stretching }
 	\label{I2C2}
+	\source{https://blog.digilentinc.com/index.php/i2c-how-does-it-work/}
 \end{figure}
 
 Para assegurar o recebimento dos dados, os \textit{dispositivo escravos} podem, possivelmente, realizar o chamado \textit{Clock Stretching},, Fig \ref{I2C2}, o qual consiste em manter o barramento de clock no nível 0, mesmo que o mestre o tenha setado para o nível. Isso é feito para, ampliar o tempo do processo de recebimento dos dados, por parte dos \textit{dispositivo escravos}, para assegurar o sucesso de tal processo.
@@ -1089,6 +1153,7 @@ No protocolo SPI, há apenas um \textit{dispositivo mestre} para vários \textit{d
 	\includegraphics[width=0.8\textwidth]{figs/SPI0.eps}
 	\caption{Barramento SPI - Um \textit{dispositivo mestre} para \textit{dispositivos escravos}  }
 	\label{SPI1}
+	\source{http://docplayer.com.br/3514866-Pratica-8-comunicacao-spi-8-1-introducao-e-objetivos-8-2-principios-basicos-do-protocolo-spi.html}
 \end{figure}
 
 O pino SS é utilizado pelo \textit{dispositivo mestre} para selecionar com qual dos \textit{dispositivos escravos} ele se comunicará (seja para receber mensagens ou enviar). Usualmente, quando um dos \textit{dispositivos escravos} é selecionado, todos outros, pela lógica \textit{tri-state} das entradas SS, assumem altas impedância de entrada - o que significa que virtualmente tais escravos estão desconectados do circuito com o \textit{dispositivo mestre}.
@@ -1126,6 +1191,7 @@ UART significa \textit{Universal Asynchronous Receiver/Transmitter} (Receptor/Tr
 	\includegraphics[width=0.7\textwidth]{figs/UART2.eps}
 	\caption{Modelo simplificado de um dispositivo UART}
 	\label{UART2}
+	\source{https://learn.sparkfun.com/tutorials/serial-communication/uarts}
 \end{figure}
 
 A Figura \ref{UART2} mostra um modelo simplicado do que consiste um dispositivo UART. Na parte esquerda da figura, são mostrados os pinos de comunicação paralela pelo barramento de dados (Data Bus). O pinos R/W é utilizado para setar entre modos de leitura e escrita (Read/Write). O pino CLK é o pino do sinal de clock. O pino INT é o pino usado para interrupção de software para avisar o sistema que há dados para serem lidos/escritos no dispositivo UART.
@@ -1134,6 +1200,7 @@ A Figura \ref{UART2} mostra um modelo simplicado do que consiste um dispositivo 
 	\includegraphics[width=0.8\textwidth]{figs/UART1.eps}
 	\caption{Frame UART para transmissão de 1 byte }
 	\label{UART1}
+	\source{http://www.mathworks.com/help/hdlverifier/examples/generate-fifo-interface-dpi-component-for-uart-receiver.html?requestedDomain=www.mathworks.com}
 \end{figure}
  
 A Figura \ref{UART1} mostra o chamado \textit{frame} de dados da placa UART. O \textit{frame} é composto de 10 bits. O primeiro bit é o bit de \textit{start} utilizado para indicar o ínicio do envio ou recebimento de um byte (8 bits) de dados. O bit \textit{stop} indica o fim do frame. 
@@ -1142,6 +1209,8 @@ A Figura \ref{UART1} mostra o chamado \textit{frame} de dados da placa UART. O \
 	\includegraphics[width=1\textwidth]{figs/UART3.eps}
 	\caption{Modelo completo de um dispositivo UART}
 	\label{UART3}
+	\source{http://users.ece.utexas.edu/valvano/Volume1/E-Book/C11\_SerialInterface}
+	
 \end{figure}
 
 Já a Figura \ref{UART3} mostra em detalhes o processo que ocorre num dispositivo UART. Na figura, \verb|UART_DR_D| é o \textit{registrador de dados (Data Register)}, o qual é preenchido pela dispositivo que deseja realizar a comunicação utilizando o dispositivo UART. FIFO é a fila de recebimento(RX) ou transmissão de dados(TX). Ambas as filas tem 16 bits de tamanho. No caso da fila de recebimento de dados, 4 dos 16 bits são bits de flags para indicar erros na transmissão.
@@ -1209,6 +1278,7 @@ A memória SRAM é construída utilizando com flip-flops com transistores MOSFETs. 
 	\includegraphics[width=0.4\textwidth]{figs/SRAM0.eps}
 	\caption{Estrutura da célula de memória SRAM}
 	\label{SRAM0}
+	\source{http://web.sfc.keio.ac.jp/~rdv/keio/sfc/teaching/architecture/architecture-2009/lec08-cache.html}
 \end{figure}
 
 Resumidamente, os transistores M1, M2, M3 e M4 são os responsáveis por guardar o bit\cite{LivroSRAM}. A estrutura do circuito formada por M1, M2, M3 e M4 realiza a realimentação do bit, sendo responsável pelo qualidade de memória estática que a SRAM possui. A Figura \ref{SRAM1} mostra como os transistores M1, M2, M3 e M4 podem ser vistos como um par de emissores. Quando um Q, na Figura \ref{SRAM1}, é igual a 1, seu oposto, $\overline{Q}$ = 0, é criado na saida do inverso e o sinal Q = 1 é realimentado pelo segundo inversor. 
@@ -1218,6 +1288,7 @@ Resumidamente, os transistores M1, M2, M3 e M4 são os responsáveis por guardar o
 	\includegraphics[width=0.4\textwidth]{figs/SRAM1.eps}
 	\caption{Estrutura da célula SRAM com dois inversores}
 	\label{SRAM1}
+	\source{http://web.sfc.keio.ac.jp/~rdv/keio/sfc/teaching/architecture/architecture-2009/lec08-cache.html}
 \end{figure}
 
 
@@ -1234,6 +1305,7 @@ Dynamic Random Access Memory (DRAM) é uma memória de acesso aleatório como a SRA
 	\includegraphics[width=0.7\textwidth]{figs/DRAM1.eps}
 	\caption{Estrutura da célula de memória DRAM}
 	\label{DRAM1}
+	\source{http://users.ece.gatech.edu/~sudha/academic/class/ece2030/Lectures/memory/}
 \end{figure}
 
 
@@ -1314,9 +1386,10 @@ Quando um novo equipamento é conectado, o sistema operacional do dispositivo cen
 
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=0.45\textwidth]{figs/USB3.eps}
+	\includegraphics[width=0.6\textwidth]{figs/USB3.eps}
 	\caption{Exemplo: Topologia Estrela USB}
 	\label{USB3}
+	\source{http://www.usblyzer.com/usb-topology.htm}
 \end{figure}
 
 Quando o dispositivo central é ligado, é definido para cada dispositivo conectado um endereço. Tal processo inicial é chamado de \textit{enumeração}. Durante a \textit{enumeração}, é também solicitado a cada equipamento o tipo de transferência de dados a ser realizado com ele:
@@ -1336,6 +1409,7 @@ Para cada uma das formas de transferência de dados supracitadas, é reservado pel
 	\includegraphics[width=0.45\textwidth]{figs/USB1.eps}
 	\caption{Pinos USB }
 	\label{USB1}
+	\source{http://www.robotizando.com.br/pinagem\_usb.php}
 \end{figure}
 
 
@@ -1349,7 +1423,7 @@ JTAG(Joint Test Action Group) é a padronização IEEE-1149.1 usada para testes de 
 	\centering
 	\includegraphics[width=0.8\textwidth]{figs/JTAG1.eps}
 	\caption{JTAG monitorando a conexão de um CPU com uma FPGA }
-	\source{Source of the image.}
+	\source{https://courses.cit.cornell.edu/ee476/FinalProjects/s2009/jgs33\_rrw32/Final20Paper/}
 	\label{JTAG1}
 \end{figure}
 
@@ -1367,6 +1441,8 @@ JTAG(Joint Test Action Group) é a padronização IEEE-1149.1 usada para testes de 
 	\includegraphics[width=0.7\textwidth]{figs/JTAG2.eps}
 	\caption{Máquina de estados - JTAG}
 	\label{JTAG2}
+	\source{https://courses.cit.cornell.edu/ee476/FinalProjects/s2009/jgs33\_rrw32/Final20Paper/}
+	
 \end{figure}
 
 Na máquina de estados mostrada em \ref{JTAG2}, geralmente a JTAG é levada para os estados \textit{Shift-DR}, em primeira instância, e, após isso, levada para o estado \textit{Shift-IR}, onde o dado é coletado. \textit{Shift-DR} e \textit{Shift-IR} tem o mesmo tamanho \textit{N} de bits. Por exemplo, se \textit{Shift-DR} e \textit{Shift-IR} tiverem 6 bits de tamanho, após 6 clock realizados no TCK, o dado que chegou no \textit{Shift-IR} chega no \textit{Shift-DR}.
@@ -1378,6 +1454,7 @@ A figura \ref{JTAG3} mostra fluxo de dados de ida e volta num debug JTAG: JTAG -
 	\includegraphics[width=0.8\textwidth]{figs/JTAG3.eps}
 	\caption{Fluxo de dados num debug JTAG}
 	\label{JTAG3}
+	\source{http://www.fpga4fun.com/JTAG.html}
 \end{figure}
 
 A verificação de entrada e saída, incluíndo o tempo de tais eventos, com testes JTAG tornou possível testes complexos em circuitos integrados.

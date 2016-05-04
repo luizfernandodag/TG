@@ -1,7 +1,7 @@
 %TCIDATA{LaTeXparent=0,0,relatorio.tex}
                       
 
-\chapter{Desenvolvimento}\label{CapDesenvolvimento}
+\chapter{Laboratórios Propostos}\label{CapDesenvolvimento}
 
 % Resumo opcional. Comentar se não usar.
 \resumodocapitulo{}
@@ -10,10 +10,173 @@
 
 \section{Introdução}
 
-Neste capítulo, é apresentado um modelo de curso prático para a disciplina \textit{Algoritmos e Programação de Computadores} tendo como base a teoria de aprendizagem por masterização de habilidades e como base metodológica a metodologia ágil de desenvolvimento de projetos \textit{Scrum}.
+Neste capítulo,  são apresentadas as propostas de prática com a placa de desenvolvimento Intel\textsuperscript{\textregistered} Galileo. As práticas serão proposta seguindo o modelo apresentado na seção \ref{Masterizacao}.
+
+\section{Prática 1: Começando  a usar o \textit{Galileo}}
+
+Esta é a primeira prática com a placa Intel\textsuperscript{\textregistered} Galileo. Nela são descritas os passos iniciais para o desenvolvimento e implementação de soluções.
+
+
+\begin{table}[]
+	\centering
+	\label{Pratica1}
+	\caption{Prática 1: Começando  a usar o \textit{Galileo}}
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Nome da prática}                                                                                  & Prática 1: Começando a usar a placa Intel Galileo                                                                                                                                                        \\ \hline
+		\textbf{Objetivos}                                                                                        & \begin{tabular}[c]{@{}l@{}}1)Instalar do driver para uso da placa placa Galileo\\ 2)Instalar IDE do Arduino\\ 3)Realizar a primeira prática utilizando a placa Galileo\end{tabular}                      \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Pré-requisitos/ \\ Habilidades masterizadas  necessárias\end{tabular}} & Nenhum                                                                                                                                                                                                   \\ \hline
+		\textbf{Revisão Téorica - Hardware}                                                                       & \begin{tabular}[c]{@{}l@{}}Circuito - seção \ref{EmbassamentoHardware_circuito}\\ Resistor - seção \ref{EmbassamentoHarware_Resistor}\\ LED - seção \ref{EmbassamentoHardware_LED}\end{tabular} \\ \hline
+		\textbf{Revisão Téorica - Software}                                                                       & Programação Arduino - seção \ref{EmbassamentoSoftware_Arduino_Padrao}                                                                                                                                \\ \hline
+		\textbf{Material necessário}                                                                              & \begin{tabular}[c]{@{}l@{}}- 1 Placa Galileo\\ - 1 Transformador 220/120 V -\textgreater 12 V\\ - 1 cabo USB-Micro-USB \\ - 1 LED\end{tabular}                                                           \\ \hline
+		\textbf{Bibliografia}                                                                                     & \begin{tabular}[c]{@{}l@{}}-Manual de instalação Galileo\\ -Livro ou Website com guia para programação\\ em Arduino(sugestão Getting Started With Galileo)\end{tabular}                                  \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Habilidades a serem masterizadas\\ com essa prática\end{tabular}}      & \begin{tabular}[c]{@{}l@{}}1) O aluno é capaz de instalar a placa Galileo no\\  sistema operacional Windows 8\\ 2) O aluno é capaz de escrever um programa \\ simples para Galileo\end{tabular}          \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsection{Procedimentos}
+
+Para realizar a primeira prática com Intel\textsuperscript{\textregistered} Galileo, é necessário realizar sequencialmente os seguintes procedimentos descritos nas 
+sub-seções seguintes \ref{Pratica1subsectionDriver} \ref{Pratica1subsectionIDEArduino} e \ref{Pratica1subsectionPrimeiraPrática}. 
+\subsubsection{Instalação da IDE Arduino}
+\label{Pratica1subsectionIDEArduino}
+
+O primeiro passo para o uso da placa Galileo é realizar o download da IDE de programação Arduino no website \textit{https://www.arduino.cc/en/Main/Software} como mostrado na Figura \ref{arduino1}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/arduino1.eps}
+	\caption{Site para baixar a IDE do Arduino para programação em Galileo.}
+	\label{arduino1}
+\end{figure}
+
+Após realizar o download da IDE do Arduino, é necessário realizar o download do \textit{Firmware} do Galileo para realizar a programação para a placa. 
+
+Primeiramente é necessário clicar em \textit{Boards Manager} no gerenciador de placas da IDE do Arduino como mostrado na Figura \ref{arduino2} 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/arduino2.eps}
+	\caption{Adicionando o Firmware para programar a placa Galileo.}
+	\label{arduino2}
+\end{figure}
+
+Na janela \textit{Boards Manager}, digite galileo e realize o download do pacote \textbf{\textit{Intel\textsuperscript{\textregistered} i586 Boards}} como mostrado na Figura \ref{arduino3}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/arduino3.eps}
+	\caption{Realizando o download do Firmware para programação da placa Galileo.}
+	\label{arduino3}
+\end{figure}
+
+Após o download ter sido realizado, a opção de programação para a placa Galileo é mostrada na janela \textit{Tools/Board}. Selecione a opção Intel \textsuperscript{\textregistered} Galileo Gen 2 como mostrado na Figura \ref{arduino4}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/arduino4.eps}
+	\caption{Selecionando a placa Galileo.}
+	\label{arduino4}
+\end{figure}
+
+
+\subsubsection{Instalação do Driver para a placa Intel\textsuperscript{\textregistered} Galileo}
+\label{Pratica1subsectionDriver}
+Após realizar os passos descritos na sub-seção \ref{Pratica1subsectionIDEArduino}, é necessário realizar o download é instalação do \textit{Driver} para a placa Intel\textsuperscript{\textregistered} Galileo.
+
+Ao se entrar no \textit{Device Manager} com a placa Galileo ligada e conectada a uma porta USB do computador, é mostrada uma janela similar à Figura \ref{arduino5}. É mostrado que o driver \textit{Gadget Serial v2.4} não se encontra instalado.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/arduino5.eps}
+	\caption{Serial Galileo: Gadget Serial v2.4}
+	\label{arduino5}
+\end{figure}
+
+É necessário fazer o download do drive no website da Intel\textsuperscript{\textregistered}: \textit{https://downloadcenter.intel.com/downloads/eula/24748/Intel-Galileo-Firmware-and-Drivers-1-0-4} como mostrao na Figura \ref{arduino6}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/arduino6.eps}
+	\caption{Site para download do Serial da placa \textit{Galileo}}
+	\label{arduino6}
+\end{figure}
+
+Após realizar o download do Serial, clique como o botão esquerdo do mouse no \textit{Gadget Serial v2.4} mostrado em \textit{Device Manager} mostrado na Figura \ref{arduino7}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/arduino7.eps}
+	\caption{Atualizando o Driver para a placa Galileo}
+	\label{arduino7}
+\end{figure}
+
+Clique na opção marcada com o retângulo vermelho da Figura \ref{arduino8}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/arduino8.eps}
+	\caption{Selecionando o Driver baixado para atualização.}
+	\label{arduino8}
+\end{figure}
+
+Selecione o local do computador onde o driver foi baixado. \ref{arduino9}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/arduino9.eps}
+	\caption{Selecionando a pasta onde se encontra o driver baixado.}
+	\label{arduino9}
+\end{figure}
+
+Após o driver ter sido instalado, a janela do \textit{Device Manager} será similar à Figura \ref{arduino10}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/arduino10.eps}
+	\caption{Driver atualizado.}
+	\label{arduino10}
+\end{figure}
+
+Volte ao IDE do Arduino e selecione a porta COM disponilizada para a placa Galileo, como mostrado na Figura \ref{arduino11}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/arduino11.eps}
+	\caption{Selecionando a porta COM apropriada}
+	\label{arduino11}
+\end{figure}
 
 
 
 
-\section{Proposta de Curso}
+\subsubsection{Prática 1 - Procedimentos}
+\label{Pratica1subsectionPrimeiraPrática}
+
+Para a primeira prática, é feito um programa em Arduino para fazer um LED piscar. Como citado na seção \ref{Embassamento_LED}, para se acender um LED, é necessário submeter o seu ánodo ao nível alto de tensão e seu cátodo à um nível baixo de tensão. 
+
+Nessa primeira prática, o circuito mostrado na Figura \ref{LED1} é construído como mostrado na Figura \ref{arduino12}.
+
+Os passos a serem seguidos são os seguintes: 
+\begin{enumerate}
+	\item Conecte o ánodo do LED (perna grande do LED) na porta 13 do galileo. 
+	\item Conecte o cátodo do LED (perna pequena do LED) na porta GND.
+	\item Escreva o código na IDE do Arduino para piscar LED segundo mostrado em \ref{Pratica1Codigo}. 
+\end{enumerate}
+
+
+\subsection{Esquema de montagem}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{figs/arduino12.eps}
+	\caption{Circuito da prática 1.}
+	\label{arduino12}
+\end{figure}
+
+\subsection{Código fonte}
+\label{Pratica1Codigo}
+\lstinputlisting[label = Pratica1, caption = Código Prática 1]{Praticas/Pratica1/blink/blink.ino}
+
+\subsection{Comentários}
+
+
 

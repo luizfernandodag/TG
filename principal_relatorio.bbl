@@ -66,6 +66,54 @@ Dispon{\'\i}vel em: $<$http://doi.acm.org/10.1145/1151954.1067453$>$.}
 ISBN 978-84-616-3822-2.
 ISSN 2340-1117.}
 
+\bibitem{Parte2:artigo13}
+\abntrefinfo{Prince}{PRINCE}{2004}
+{PRINCE, M. Does active learning work? a review of the research.
+\emph{Journal of Engineering Education}, Blackwell Publishing Ltd, v.~93, n.~3,
+  p. 223--231, 2004.
+ISSN 2168-9830.
+Dispon{\'\i}vel em:
+  $<$http://dx.doi.org/10.1002/j.2168-9830.2004.tb00809.x$>$.}
+
+\bibitem{Parte1:artigo20}
+\abntrefinfo{M.Felder Donald~R.Woods}{M.FELDER DONALD~R.WOODS}{2000}
+{M.FELDER DONALD~R.WOODS, J. E. A.~R. R. The future of engineering education
+  ii.teaching methods that work.
+\emph{Chem. Engr Education}, v.~1, n.~34, p. 26--39, September 2000.}
+
+\bibitem{Laboratorio1}
+\abntrefinfo{Feisel e Rosa}{FEISEL; ROSA}{2005}
+{FEISEL, L.~D.; ROSA, A.~J. The role of the laboratory in undergraduate
+  engineering education.
+\emph{Journal of Engineering Education}, v.~94, p. 121--130, 2005.}
+
+\bibitem{Parte1:artigo6}
+\abntrefinfo{Lye e Koh}{LYE; KOH}{2014}
+{LYE, S.~Y.; KOH, J. H.~L. Review on teaching and learning of computational
+  thinking through programming: What is next for k-12?
+\emph{Computers in Human Behavior}, v.~41, p. 51 -- 61, 2014.
+ISSN 0747-5632.
+Dispon{\'\i}vel em:
+  $<$http://www.sciencedirect.com/science/article/pii/S0747563214004634$>$.}
+
+\bibitem{bloom1}
+\abntrefinfo{Huitt}{HUITT}{2004}
+{HUITT, W. Bloom et al.'s taxonomy of the cognitive domain.
+\emph{Educational psychology interactive}, v.~22, 2004.}
+
+\bibitem{artigoCascada}
+\abntrefinfo{Kalish, Mahajan e Muller}{KALISH; MAHAJAN; MULLER}{1995}
+{KALISH, S.; MAHAJAN, V.; MULLER, E. Waterfall and sprinkler new-product
+  strategies in competitive global markets.
+\emph{international Journal of research in Marketing}, Elsevier, v.~12, n.~2,
+  p. 105--119, 1995.}
+
+\bibitem{artigoCascada2}
+\abntrefinfo{Melnik}{MELNIK}{2008}
+{MELNIK, G. \emph{Agile 2008 August 4-8, 2008, Toronto, Ontario, Canada}. Los
+  Alamitos, Calif: IEEE.Compurter Society, 2008.
+ISBN 978-0-7695-3321-6.}
+
 \bibitem{livroProfessorYeah}
 \abntrefinfo{Tucker}{TUCKER}{2005}
 {TUCKER, P. \emph{Linking teacher evaluation and student learning}. Alexandria,
@@ -91,23 +139,19 @@ ISBN 1-4166-0032-9.}
 \emph{Revista Pesquisa e Debate em Educação}, v.~4, n.~2, p. 15--30, August
   2014.}
 
-\bibitem{bloom1}
-\abntrefinfo{Huitt}{HUITT}{2004}
-{HUITT, W. Bloom et al.'s taxonomy of the cognitive domain.
-\emph{Educational psychology interactive}, v.~22, 2004.}
+\bibitem{aprendizagemAtivaArduino}
+\abntrefinfo{Recktenwald e Hall}{RECKTENWALD; HALL}{2011}
+{RECKTENWALD, G.~W.; HALL, D.~E. Using arduino as a platform for programming,
+  design and measurement in a freshman engineering course. In:  \emph{2011
+  Annual Conference \& Exposition}. Vancouver, BC: ASEE Conferences, 2011.
+  Https://peer.asee.org/18720.}
 
-\bibitem{artigoCascada}
-\abntrefinfo{Kalish, Mahajan e Muller}{KALISH; MAHAJAN; MULLER}{1995}
-{KALISH, S.; MAHAJAN, V.; MULLER, E. Waterfall and sprinkler new-product
-  strategies in competitive global markets.
-\emph{international Journal of research in Marketing}, Elsevier, v.~12, n.~2,
-  p. 105--119, 1995.}
-
-\bibitem{artigoCascada2}
-\abntrefinfo{Melnik}{MELNIK}{2008}
-{MELNIK, G. \emph{Agile 2008 August 4-8, 2008, Toronto, Ontario, Canada}. Los
-  Alamitos, Calif: IEEE.Compurter Society, 2008.
-ISBN 978-0-7695-3321-6.}
+\bibitem{Laboratorio2}
+\abntrefinfo{Souza e Duarte}{SOUZA; DUARTE}{2015}
+{SOUZA, M. A.~M.; DUARTE, J. R.~R. Low-cost educational robotics applied to
+  physics teaching in brazil.
+\emph{Physics Education}, v.~50, n.~4, p.~482, 2015.
+Dispon{\'\i}vel em: $<$http://stacks.iop.org/0031-9120/50/i=4/a=482$>$.}
 
 \bibitem{DATASHEET0}
 \abntrefinfo{Intel}{INTEL}{2014}

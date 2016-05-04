@@ -1,8 +1,15 @@
 \select@language {portuguese}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Pontos positivos e negativos da metodologia de desenvolvimento de projetos \textit {Cascata}\relax }}{19}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Pontos positivos e negativos da metodologia de desenvolvimento de projetos \textit {Scrum}\relax }}{23}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Scrum aplicado à \textit {Algoritmos e Programação de Computadores}\relax }}{24}
-\contentsline {table}{\numberline {2.4}{\ignorespaces Pinos Galileo\cite {DATASHEET1}\relax }}{38}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Pontos positivos e negativos da metodologia de desenvolvimento de projetos \textit {Cascata}\relax }}{17}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Pontos positivos e negativos da metodologia de desenvolvimento de projetos \textit {Scrum}\relax }}{21}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Tabela com scores de avaliação das 5 melhores universidades do mundo e das 5 melhores universidades brasileiras.\relax }}{22}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Tabela listando as disciplinas na UnB e na \textit {California Insitute of Tecnology} que possuem currículo similar a disciplina \textit {Algoritmos e Programação de Computadores}.\relax }}{22}
+\contentsline {table}{\numberline {2.5}{\ignorespaces Tabela listando parte dos conteúdos tratados pelas disciplinas na \textit {California Insitute of Tecnology} e na UnB e levantanto a questão da metodologia de ensino ser uma \textit {metodologia ativa} e se tal conteúdo pode ser ensinado usando a placa Galileo.\relax }}{23}
+\contentsline {table}{\numberline {2.6}{\ignorespaces Scrum aplicado à \textit {Algoritmos e Programação de Computadores}\relax }}{25}
+\contentsline {table}{\numberline {2.7}{\ignorespaces Pinos Galileo\cite {DATASHEET1}\relax }}{39}
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Prática 1: Começando a usar o \textit {Galileo}\relax }}{59}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Tabela de leitura de valor e tolerância de um resistor\relax }}{70}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Resumo - Ligação em série X Ligação em paralelo\relax }}{75}

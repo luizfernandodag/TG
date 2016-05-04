@@ -1,13 +1,28 @@
-ï»¿"CURSO_UNIVERSIDADE Name","CURSO FK","UNIVERSIDADE FK"
-"CalTech - Applied + Computacional Mathematics","MatemÃ¡tica Computacional Aplicada","California Institute of Technology",
-"CalTech - Computer Science ","CiÃªncia Da ComputaÃ§Ã£o","California Institute of Technology",
-"UnB - Engenharia MecatrÃ´nica","Engenharia MecatrÃ´nica","Universidade de Brasilia",
-"UnB - Engenharia de ComputaÃ§Ã£o","Engenharia de ComputaÃ§Ã£o","Universidade de Brasilia",
-"UnB - Engenharia de ProduÃ§Ã£o","Engenharia de ProduÃ§Ã£o ","Universidade de Brasilia",
-"UnB - CiÃªncia Da ComputaÃ§Ã£o","CiÃªncia Da ComputaÃ§Ã£o","Universidade de Brasilia",
-"UnB - Engenharia Engenharia de Redes","Engenharia de Redes ","Universidade de Brasilia",
-"UnB - Engenharia EletrÃ´nica","Engenharia EletrÃ´nica","Universidade de Brasilia",
-"UnB - Engenharia de Software","Engenharia de Software","Universidade de Brasilia",
-"UnB - Engenharia AeroEspacial","Engenharia Aeroespacial","Universidade de Brasilia",
-"UnB - Engenharia Automotiva ","Engenharia Automotiva","Universidade de Brasilia",
-"UnB - Engenharia de Energia ","Engenharia de Energia","Universidade de Brasilia",
+CURSO_UNIVERSIDADE Name	CURSO FK	UNIVERSIDADE FK	
+CalTech - Applied + Computacional Mathematics	Matemática Computacional Aplicada	California Institute of Technology	Algoritmos e Programação de Computadores - UnB
+CalTech - Computer Science 	Ciência Da Computação	California Institute of Technology	Algoritmos e Programação de Computadores - UnB
+UnB - Engenharia Mecatrônica	Engenharia Mecatrônica	Universidade de Brasilia	Algoritmos e Programação de Computadores - UnB
+UnB - Engenharia de Computação	Engenharia de Computação	Universidade de Brasilia	Algoritmos e Programação de Computadores - UnB
+UnB - Engenharia de Produção	Engenharia de Produção 	Universidade de Brasilia	Algoritmos e Programação de Computadores - UnB
+UnB - Ciência Da Computação	Ciência Da Computação	Universidade de Brasilia	Computação para Engenharia - UnB
+UnB - Engenharia Engenharia de Redes	Engenharia de Redes 	Universidade de Brasilia	Algoritmos e Programação de Computadores - UnB
+UnB - Engenharia Eletrônica	Engenharia Eletrônica	Universidade de Brasilia	Algoritmos e Programação de Computadores - UnB
+UnB - Engenharia de Software	Engenharia de Software	Universidade de Brasilia	Algoritmos e Programação de Computadores - UnB
+UnB - Engenharia AeroEspacial	Engenharia Aeroespacial	Universidade de Brasilia	Algoritmos e Programação de Computadores - UnB
+UnB - Engenharia Automotiva 	Engenharia Automotiva	Universidade de Brasilia	
+UnB - Engenharia de Energia 	Engenharia de Energia	Universidade de Brasilia	
+			
+			
+	Universidade - Curso	Disciplina	
+	CalTech - Applied + Computacional Mathematics	Introduction to Matlab and Mathematica	
+	CalTech - Computer Science 	Introduction to Computer Programming	
+	UnB - Engenharia Mecatrônica	Algoritmos e Programação de Computadores 	
+	UnB - Engenharia de Computação	Algoritmos e Programação de Computadores 	
+	UnB - Engenharia de Produção	Algoritmos e Programação de Computadores 	
+	UnB - Ciência Da Computação	Algoritmos e Programação de Computadores 	
+	UnB - Engenharia Eletrônica	Algoritmos e Programação de Computadores 	
+	UnB - Engenharia de Software	Algoritmos e Programação de Computadores 	
+	UnB - Engenharia AeroEspacial	Algoritmos e Programação de Computadores 	
+	UnB - Engenharia Automotiva 	Algoritmos e Programação de Computadores 	
+	UnB - Engenharia de Energia 	Algoritmos e Programação de Computadores 	
+	UnB - Engenharia Engenharia de Redes	Computação para Engenharia 	

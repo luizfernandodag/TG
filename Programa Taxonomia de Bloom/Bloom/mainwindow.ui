@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Bloom</class>
+ <widget class="QMainWindow" name="Bloom">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -55,7 +55,7 @@
        <string>Dimensões do processo cognitivo</string>
       </property>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -490,26 +490,17 @@ p, li { white-space: pre-wrap; }
        </item>
       </layout>
      </widget>
-     <zorder>label_7</zorder>
-     <zorder>layoutWidget</zorder>
-     <zorder></zorder>
-     <zorder>plainTextEdit</zorder>
-     <zorder>textBrowser_3</zorder>
-     <zorder>textBrowser_4</zorder>
-     <zorder>textBrowser_5</zorder>
-     <zorder>textBrowser_6</zorder>
-     <zorder></zorder>
     </widget>
     <widget class="QWidget" name="tabConteudo">
      <attribute name="title">
       <string>Amplitude</string>
      </attribute>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>80</x>
         <y>100</y>
-        <width>198</width>
+        <width>217</width>
         <height>57</height>
        </rect>
       </property>
@@ -568,12 +559,12 @@ p, li { white-space: pre-wrap; }
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>300</x>
         <y>100</y>
-        <width>221</width>
+        <width>225</width>
         <height>61</height>
        </rect>
       </property>
@@ -612,7 +603,7 @@ p, li { white-space: pre-wrap; }
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>370</x>
@@ -634,7 +625,7 @@ p, li { white-space: pre-wrap; }
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>540</x>
@@ -869,9 +860,6 @@ p, li { white-space: pre-wrap; }
        </item>
       </layout>
      </widget>
-     <zorder></zorder>
-     <zorder>radioButtonRecursos</zorder>
-     <zorder>layoutWidget_2</zorder>
     </widget>
     <widget class="QWidget" name="tabProdutos">
      <attribute name="title">
@@ -882,7 +870,7 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>90</x>
         <y>80</y>
-        <width>929</width>
+        <width>1083</width>
         <height>111</height>
        </rect>
       </property>
@@ -1345,7 +1333,7 @@ p, li { white-space: pre-wrap; }
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>530</x>
@@ -1379,7 +1367,7 @@ p, li { white-space: pre-wrap; }
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -1390,13 +1378,10 @@ p, li { white-space: pre-wrap; }
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3"/>
    </widget>
+   <zorder>layoutWidget</zorder>
+   <zorder>layoutWidget</zorder>
    <zorder>produto_visual</zorder>
    <zorder>frase</zorder>
-   <zorder>label_20</zorder>
-   <zorder>lineEditConteudo</zorder>
-   <zorder>label_21</zorder>
-   <zorder>label_2</zorder>
-   <zorder>nivel2Compreensao</zorder>
    <zorder>layoutWidget_4</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
