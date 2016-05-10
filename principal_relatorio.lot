@@ -10,6 +10,9 @@
 \contentsline {table}{\numberline {2.7}{\ignorespaces Pinos Galileo\cite {DATASHEET1}\relax }}{39}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Prática 1: Começando a usar o \textit {Galileo}\relax }}{59}
+\contentsline {table}{\numberline {3.2}{\ignorespaces My caption\relax }}{68}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Tabela de leitura de valor e tolerância de um resistor\relax }}{70}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Resumo - Ligação em série X Ligação em paralelo\relax }}{75}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Tabela de leitura de valor e tolerância de um resistor\relax }}{74}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Resumo - Ligação em série X Ligação em paralelo\relax }}{79}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Tamanho e faixa de uso para os tipos básicos váriaveis\relax }}{98}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Todos os Tipos de dados definidos pelo Padrão ANSI C, seus tamanhos em bytes e suas faixa de valores.\relax }}{99}

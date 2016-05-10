@@ -333,7 +333,7 @@ Para um diodo com tensão positiva entre ánodo e cátodo, existe uma região chamad
 	\label{LED1}
 \end{figure}
 
-A  Figura \ref{LED2} mostra a relação entre tensão aplicada entre o ánodo e o cátodo e a corrente que atravessa um diodo. Quando a diferença de tensão entre ánodo e cátodo é positiva, o diodo se encontra sob polarização direta. Nessa polarização, o diodo permite passagem de corrente entre seus terminais. A fórmula que expressa essa relação é a seguinte:
+A  Figura \ref{LED2} mostra a relação entre tensão aplicada entre o ánodo e o cátodo e a corrente que atravessa um diodo. Quando a diferença de tensão entre ânodo e cátodo é positiva, o diodo se encontra sob polarização direta. Nessa polarização, o diodo permite passagem de corrente entre seus terminais. A fórmula que expressa essa relação é a seguinte:
 
 
 \begin{equation}\label{eqDiodo1}
@@ -342,11 +342,11 @@ i_{D} = I_{s}(e^{v_{d}/nkT} - 1)
 \end{split}
 \end{equation}
 
-Onde $i_{D}$ é a corrente se passar pelo diodo, $v_{D}$ é a tensão entre ánodo e cátodo, T é a temperatura, k é a constante de Boltzmann, N é o coeficiente de não linearidade e $I_{s}$ é a corrente de saturação.
+Onde $i_{D}$ é a corrente se passar pelo diodo, $v_{D}$ é a tensão entre ânodo e cátodo, T é a temperatura, k é a constante de Boltzmann, N é o coeficiente de não linearidade e $I_{s}$ é a corrente de saturação.
 
 Como mostrado na Figura \ref{LED2}, quando em polarização reversa, o diodo não permite passagem de corrente com intensidade apreciável. 
 
-Caso a diferença de tensão entre cátodo e ánodo seja maior que a tensão de quebra $V_{br}$, o diodo entrará na região de quebra e não mais bloqueará a passagem de corrente.
+Caso a diferença de tensão entre cátodo e ânodo seja maior que a tensão de quebra $V_{br}$, o diodo entrará na região de quebra e não mais bloqueará a passagem de corrente.
 
 
 \begin{figure}[H]
@@ -378,6 +378,216 @@ Diodo são utilizados em várias aplicações em eletrônica. Alguns exemplo de aplic
 	\item Controle e limitação da amplitude de sinais
 	\item Detecção de sinais
 \end{itemize}
+
+\subsection{Protoboard}
+\label{EmbassamentoHardware_Protoboard}
+
+Protoboard ou \textit{BreadBoard} é um componente essencial na prototipação de circuitos eletrônicos. Com uma protoboard, é possível criar circuitos temporários, sem necessidade de realizar soldagem. 
+
+As protoboards foram criadas para simplificar a prototipação e testes de circuitos eletrônicos anteriormente a sua efetiva produção por meio em máquinas de circuitos impress
+Em geral, as protoboards apresentam a estrutura mostrada na Figura \ref{protoboard1}. As trilhas verticais + e - marcadas na Figura são trilhas contínuas de alumínio. Usualmente, mas não obrigatoriamente, as trilhas + e - são usadas como para os polos positivo e negativo da bateria. A região central, com as trilhas na horizontal, geramente é utilizada para a construção do circuito desejado.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/protoboard1.jpg}
+	\caption{Protoboard.}
+	\label{protoboard1}
+	\source{https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard}
+\end{figure}
+
+A Figura \ref{protoboard3} mostra o esquemático de circuito simples formado por uma fonte de 9V, uma resistor de 1k ohm e um LED e sua construção numa protoboard.
+
+Na parte direita da Figura \ref{protoboard3}, é mostrado os polos positivo e negativos da bateria de 9V conectado à trilha contínua e a região central foi usada para conectar tais polos ao LED e resistor em série. Além disso, a parte direita da Figura mostra o sentido convencional da corrente elétrica. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/protoboard3.jpg}
+	\caption{Esquemático de um circuito e sua construção numa protoboard.}
+	\label{protoboard3}
+\end{figure}
+
+
+
+
+\subsection{Divisor de tensão}
+\label{EmbassamentoHardware_DivisorTesao}
+
+Em eletrônica, chama-se divisor de tensão um circuito com estrutura similar ao mostrada na Figura \ref{divisorTensao1}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/divisor1.png}
+	\caption{Modelo de um circuito divisor de tensão}
+	\label{divisorTensao1}
+\end{figure}
+
+Pela segunda lei de Kirchoff (seção \ref{lei2Kirchoff}) tem-se a seguinte expressão:
+
+\begin{equation}\label{eqDivisorTensao1}
+\begin{split}
+V_{in} - V_{R1} - V_{R2} = 0
+\end{split}
+\end{equation}
+
+
+
+A corrente que circulará nesse circuito é igual a: 
+
+\begin{equation}\label{eqDivisorTensao2}
+\begin{split}
+I = \frac{V_{in}}{(R1 + R2)}
+\end{split}
+\end{equation}
+
+Calculando o valor da tensão de saída, tem-se:
+
+\begin{equation}\label{eqDivisorTensao3}
+\begin{split}
+V_{out} = V_{in} - I*R1
+\end{split}
+\end{equation}
+
+Portanto, a tensão de saída será igual a:
+
+
+\begin{equation}\label{eqDivisorTensao4}
+\begin{split}
+V_{out} = \frac{R2}{R1 + R2} * V_{in} 
+\end{split}
+\end{equation}
+
+
+O fator $\frac{R2}{R1 + R2}$ é o fator da divisão de tensão, no circuito exemplificado pela Figura \ref{divisorTensao1}.
+
+Divisores de tensão tem várias aplicações em eletrônica, dentre elas, destacam-se as seguintes:
+
+\begin{itemize}
+	\item \textbf{Medição de sensores}: Um divisor de tensão pode ser usado como forma de medição para sensores resistivos ( Sensores que alteram sua resistência de acordo com o fator de sensitividade). 
+	
+	\item \textbf{Medição de altas tensões}: Um divisor de tensão pode ser usado para utilizar voltímetros para tensões além de sua respectivas escala de medição.
+	
+	\item \textbf{Mudança de escala de sinais}: Um divisor de tensão pode ser usado para adeguar a escala de um sinal para sinais que podem ser lidos e processados por um microprocessador em suas faixa operação própria.
+
+\end{itemize}
+
+\subsection{Potenciômetro}
+\label{EmbassamentoHardware_Potenciometro}
+Um potenciômetro é um componente de circuitos elétricos que possui resistência elétrica ajustável mecanicamente. Num esquemático de um circuito, o símbolo usado para potenciômetro é mostrado na Figura \ref{potenciometro1}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/potenciometro1.png}
+	\caption{Símbolo de um potenciômetro.}
+	\label{potenciometro1}
+\end{figure}
+
+Potenciômetros são muito usados para controlar / alterar as características de entrada / saída de aparelhos eletrônicos, como volume, balanço, graves, brilho, contraste, cor, tempo de funcionamento (em tv's, dvd's, monitores, relógios, ... ).São também conhecidos como resistores variáveis, ou ainda, reostatos.
+
+Para criar tal característica de variação de resistência, os potênciometros possuem internamente uma trilha resistiva (de níquel-cromo ou de carbono), sobre a qual desliza um  cursor , que altera a resistência elétrica entre seu conector central e um dos dois laterais(normalmente são três conectores).
+
+Os potenciômetros podem ser classificados em duas categorias: quanto a forma de deslocamento do curso e quanto a forma de variação da resistências entre seus terminais.
+
+Em relação a forma de deslizamento do curso, os potenciômetros podem ser angulares, Figura \ref{potenciometro2}, e lineares, Figura \ref{potenciometro4}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/potenciometro2.png}
+	\caption{Estrutura de um potenciômetro angular.}
+	\label{potenciometro2}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/potenciometro4.jpg}
+	\caption{Potenciômetro linear.}
+	\label{potenciometro4}
+\end{figure}
+
+Em relação a a forma de variação da resistência entre seus terminais, os potênciometros podem ter variação linear ou variação logarítimica. A Figura \ref{potenciometro5} mostra tais formas de variação.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/potenciometro5.jpg}
+	\caption{Formas de variação da resistência em um potênciometro.}
+	\label{potenciometro5}
+\end{figure}
+
+Assumindo que a resistência entreos terminais externos do potêncioemtro da Figura \ref{potenciometro3} é fixa e igual a 10 k ohms tem-se as seguintes formas de uso dos terminais:
+
+\begin{itemize}
+	\item \textbf{Ponteciômetro 1}: está com os terminais 1 e 2 ligados, neste caso ele varia sua resistência entre 0 ohm e 10 k ohms, nessa ligação quando o eixo é girado para a esquerda ele diminui a sua resistência e quando ele é girado  para a direita aumenta a sua resistência.
+	\item \textbf{Ponteciômetro 2}: Nesse caso,os terminais 2 e 3 encontram-se ligados, ele varia sua resistência entre 0 ohm e 10 k ohms, nessa ligação quando o eixo é girado para a esquerda ele aumenta a sua resistência e quando é girado para a direita diminui a sua resistência.
+	\item \textbf{Ponteciômetro 3}: a resistência é fixa, no caso 10 k ohms. Girar o curso não alterará a resistência observada.
+	 
+\end{itemize}
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/potenciometro3.png}
+	\caption{Formas de uso de um potênciometro angular. }
+	\label{potenciometro3}
+\end{figure}
+
+
+
+\subsection{LDR}
+\label{EmbassamentoHardware_LDR}
+
+Um foto-resistor ou LDR (Light Dependent Resistor) é um resistor cuja resitência é dependente da luz que incide sobre ele. A Figura \ref{ldr1} mostra um LDR simples, muito utilizado em circuitos eletrônicos e a Figura \ref{ldr2} mostra a símbolo para o LDR usado em esquemáticos.  
+
+Resistores dependentes de luz podem ser de diferentes tipos. Eles variam em material sensível à luz usada. Um resistor dependente da luz no espectro visívelé feita através de sulfureto de cádmio (CdS) ou seleneto de cádmio (CdSe). Este material é sensível ao comprimento de onda de 400 nm - 850 nm. Por perto faixa do infravermelho (1 \si\micro m - 3 \si\micro m), existem PBS ou materiais PBSE usado. 
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/ldr1.png}
+	\caption{LDR}
+	\label{ldr1}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figs/ldr3.jpg}
+	\caption{Símbolo do LDR}
+	\source{www.electrical4u.com}
+	\label{ldr2}
+\end{figure}
+
+Um LDR pode de dezenas de Megaohms (Escuro) para algumas centenas de ohms (claro) dependendo da intensidade da luz incidente, como mostrado no gráfico da Figura \ref{ldr3}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/ldr2.jpg}
+	\caption{Gráfico LDR : Resistência X Luminância}
+	\source{www.electrical4u.com}
+	\label{ldr3}
+\end{figure}
+
+
+Como dito na seção \ref{EmbassamentoHardware_DivisorTesao}, um divisor de tensão pode ser usado em conjunto com sensores resistivos como o LDR. A Figura \ref{ldr4} mostra um sensor de luz implementado com um circuito formado por uma fonte DC, um resistor fixo de 10k ohms e um LDR.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/ldr4.jpg}
+	\caption{Possível circuito a ser utilizado num sensor de luz}
+	\label{ldr4}
+\end{figure}
+
+ A tensão de saída \textit{Vout} é dada segundo a seguinte expressão: 
+ 
+ \begin{equation}\label{eqLDR}
+ \begin{split}
+ V_{out} = \frac{10k}{10k + R_{LDR}} * 5 
+ \end{split}
+ \end{equation}
+ 
+ Onde $R_{LDR}$ obedeceao gráfico mostrado na Figura \ref{ldr3}.
 
 \section{Embassamento teórico - Software}
 \label{EmbassamentoSoftware}
@@ -476,3 +686,258 @@ pinMode(13, INPUT);
 
 Com relação a porta digital 13, deve-ser apontado que nela já está conectado, automaticamente, um resistor de 13kOhms. Dessa forma, por nela pode ser diretamente ligado um LED, sem correr o risco de queimá-lo.
 
+\subsection{Processo de Compilação}
+\label{EmbassamentoSoftware_Compilacao}
+
+Todo programa de computador, escrito em passa de uma tradução de uma linguagem compreensível por um ser humano para uma linguagem compreensível para um sistema computacional, ou seja, uma série de bits.
+
+A Figura \ref{compilacao1} mostra os passos realizados nesse processo. Para fins deste trabalho e desta seção será focado apenas nos passos pré-compilação e nos passos de análise léxica, sintática e semântica de um código. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.2\textwidth]{figs/compilador1.png}
+	\caption{Fluxograma de um programa escrito para Arduino.}
+	\label{compilacao1}
+\end{figure}
+
+As etapas a serem tratadas nesta seção são, portanto, os seguintes, como mostrado na Figura \ref{compilacao2} :
+
+\begin{enumerate}
+	\item Pré-processamento
+	\item Análise Léxica
+	\item Análise Sintática 
+	\item Análise Semântica
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/compilador3.jpg}
+	\caption{Etapas de interesse para a disciplina \textit{Algoritmos e Programação de computadores}}
+	\label{compilacao2}
+\end{figure}
+
+
+\subsubsection{Pré-processamento}
+\label{preProcessamento}
+Na etapa de pré-processamento, as diretivas de compilação são resolvidas como mostrado no exemplo da Figura \ref{compilacao4}. Tudo aquilo que foi definido usando a diretiva \textbf{\#define} é substituído, no texto do código fonte, por aquilo que definido no \#define.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/compilador4.jpg}
+	\caption{Exemplo do processo de pré-processamento}
+	\label{compilacao4}
+\end{figure}
+
+Além disso, no pré-processamento são removidos comentários e também substituídos no código fonte as macros definidas, como mostrado na Figura \ref{compilacao5}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figs/compilador5.jpg}
+	\caption{Exemplo de substituição de macro no pré-processamento.}
+	\label{compilacao5}
+\end{figure}
+
+
+
+\subsubsection{Análise Léxica}
+
+Após a fase de pré-processamento, o compilador realiza a análise léxica do código fonte. 
+
+A análise léxica é feita por módulo chamado \textit{analisador léxico} ou scanner. Nessa fase, o programa é lido da esquerda para a direita agrupando so caracteres de maneira a forma \textit{tokens}. Os tokens são sequências de caracteres que em conjunto possuem um significado, como palavras numa linguagem humana. 
+
+Na análise léxica, cada \textit{token} identificado é analisado de acordo com as regras da linguagem de programação. Na linguagem de programação C, não é permitido a nenhum token ser iniciado com um número e tão pouco podem os tokens possuir caracteres especiais como \$ , \%, \#, etc. 
+
+\subsubsection{Análise Sintática}
+
+Após a análise léxica, onde os tokens identificados são validados, é realizada a análise sintática do código fonte.
+
+A análise sintática resume-se na análise das expressões construídas com os tokens. Um exemplo de erro sintático é mostrado no código \ref{analiseSintatica1}. Nesse exemplo é mostrado o uso do operador $+$ feito incorretamente.
+
+\begin{lstlisting}[ caption = Erro sintático no uso do operador +, label=analiseSintatica1,]
+int numero;
+
+numero = 1 + ; //erro sintatico, o operador + espera dois termos, mas o segundo
+              // nao explicitado
+\end{lstlisting}
+
+\subsubsection{Análise Semântica}
+
+Após a análise léxica, é feita a análise semântica. A análise semântica pode ser resumida como a "analíse do relacionamento entre todas as partes do código". O exemplo  mostra erros semânticos de referência indefinidas no código.    
+
+
+
+\begin{lstlisting}[ caption = Erro referência indefinida, label=analiseSemantica1,]
+void setup()
+{
+int a = funcao1(); // erro semantico, refencia indefinida a funcao1()
+   
+}
+
+void loop()
+{ 
+int num;
+
+num = num + k; //erro semantico, referencia indefinida a k
+}
+
+\end{lstlisting}
+
+
+\subsection{Diretivas de Compilação}
+\label{EmbassamentoSoftware_DireitivasCompilacao}
+
+Como mencionado na seção \ref{EmbassamentoSoftware_Compilacao}, o processo de compilação é iniciado pelo pré-processamento. No pré-processamento, as diretivas de compilação são resolvidas.
+
+As diretivas de compilação mais comuns são  \# include, \# define, \# ifdef, \# else e \# endif .
+
+\begin{itemize}
+	
+	\item \textbf{\#include}: A diretiva \#include é utilizada para adicionar códigos fontes externos ao código fonte no qual se está trabalhando. As formas de uso da diretiva são as seguintes:
+		\subitem \#include <bibliotecaDoSistema.h> : Nessa forma se adiciona uma biblioteca já nativa do sistema, como por exemplo a stdlib.h. A inclusão de tal biblioteca se daria pelo seguinte comando \#include <stdlib.h>
+		
+		\subitem \#include "bibliotecaDoDesenvolvedor.h" : Nessa forma se adiciona uma biblioteca já desenvolvida pelo programador ou equipe relacionada. Caso o arquivo não se encontre na mesma pasta que o programa que o está adicionando, deve ser fornecido o caminho para ele no include. Por exemplo:
+		\#include "/pasta1/pasta2/bibliotecaDoDesenvolvedor.h"
+	\item \textbf{\# define}: A diretiva \# define é usada para informar ao compilador quais token serão substituidos por determinadas expressões no processo de pré-processamento, como mostrado na seção \ref{preProcessamento} ou para criar tokens com o status de \textbf{defined} que influenciaram a definição de diretivas posteriores.
+	
+	\item \textbf{\# ifdef, \# else e \#endif}: A diretivas \# ifdef, \# else e \#endif são usadas em conjunto para realizar definições de diretivas e macros condicionalmente. Um exemplo disso é mostrado no código \ref{diretivas1}, onde o valor da diretiva \textit{constante} é definida de acordo a com definição da diretiva \textit{teste}.    	
+\end{itemize}
+
+Um uso muito comum do padrão de diretivas mostrados no código \ref{diretivas1}, é mostrado no código \ref{diretivas2}. Na primeira vez que o compilador ver o arquivo de cabeçalho \textbf{bibliotecaExemplo.h}, a diretiva  \textbf{BIBLIOTECAEXEMPLO} será definida e as funções definidas nesse arquivo passaram a ser reconhecidas pelo compilador. Após essa definição e reconhecimento de funções, não haverá mais erros de redefinição de funções (erro semântico), pois as diretivas \# ifdef  BIBLIOTECAEXEMPLO \# define BIBLIOTECAEXEMPLO  impedirão isso.
+
+
+\begin{lstlisting}[ caption = Uso de diretivas condicionais, label=diretivas1,]
+#define teste  // define a token teste
+
+#ifdef teste // executa a acao dfinida dentro deste #ifdef, pois teste estah //definido
+	#define constante 3 // define diretiva constante com o valor 3
+#else  // nao entra nesta secao pois teste estah definifo
+	#define constante 4 // // define diretiva constante com o valor 4
+#endif     
+\end{lstlisting}
+
+\begin{lstlisting}[ caption = Uso de diretivas para evitar erro de compilação de repetição de inclução de arquivos, label=diretivas2,]
+
+#ifdef  BIBLIOTECAEXEMPLO
+#define BIBLIOTECAEXEMPLO  // define a token teste
+
+void funcao1()
+{
+}
+
+void funcao2()
+{
+}
+
+.
+.
+.
+void funcaoN()
+{
+}
+
+#endif     
+\end{lstlisting}
+
+\subsection{Tipos básicos de variáveis}
+\label{EmbassamentoSoftware_TiposVariaveis}
+
+Variáveis são os elementos básicos que um programa manipula. Uma variável é um espaço reservado na memória do computador para armazenar um tipo de dado determinado. Variáveis devem receber nomes para poderem ser referenciadas e modificadas quando necessário. Muitas linguagens de programação exigem que os programas contenham declarações que especifiquem de que tipo são as variáveis que ele utilizará e as vezes um valor inicial. Tipos podem ser por exemplo: inteiros, reais, caracteres, etc. As expressões combinam variáveis e constantes para calcular novos valores. 
+
+Os tipos básicos de variáveis são os seguintes:
+
+\begin{itemize}
+
+\item char: Caracter: O valor armazenado é um caractere. Caracateres geralmente são armazenados em códigos (usualmente o código ASCII).
+\item int: Número inteiro é o tipo padrão e o tamanho do conjunto que pode ser representado normalmente depende da máquina em que o programa está rodando.
+\item float: Número em ponto flutuante de precisão simples. São conhecidos normalmente como números reais.
+\item double: Número em ponto flutuante de precisão dupla
+\item void: Este tipo serve para indicar que um resultado não tem um tipo definido. Uma das aplicações deste tipo em C é criar um tipo vazio que pode posteriormente ser modificado para um dos tipos anteriores.
+
+\end{itemize}
+
+Cada um desses tipos é codificado diferentemente para cada arquitetura computacional para a qual o programa será compilado. A tabela \ref{tabVariaveis1} mostra o uso de espaço de memória normalmente empregado nas arquiteturas computacionais.
+
+\begin{table}[H]
+	\centering
+	\caption{Tamanho e faixa de uso para os tipos básicos váriaveis}
+	\label{tabVariaveis1}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Tipo}   & \textbf{Tamanho em Bytes} & \textbf{Faixa Mínima}          \\ \hline
+		\textbf{char}   & 1                         & -127 a 127                     \\ \hline
+		\textbf{int}    & 4                         & -2.147.483.648 a 2.147.483.647 \\ \hline
+		\textbf{float}  & 4                         & Seis digitos de precisão       \\ \hline
+		\textbf{double} & 8                         & Dez digitos de precisão        \\ \hline
+	\end{tabular}
+\end{table}
+
+Muitas vezes, as faixas para os tipos de variáveis mostradas na tabela \ref{tabVariaveis1} não são suficientes ou adequadas para o algoritmo emd desenvolvimento. Para resolver tais problemas, podem ser utilizados \textit{modificadores} para ampliar, reduzir ou adequar a faixa de valores que a variável pode guardar no endereço de memória reservado.
+
+Os modificadores de variáveis e seus respectivos efeitos sobre a faixa de valores de cada tipo são mostrado na tabela 
+
+\begin{table}[H]
+	\centering
+	\caption{Todos os Tipos de dados definidos pelo Padrão ANSI C, seus tamanhos em bytes e suas faixa de valores.}
+	\label{tabVariaveis2}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{figs/tabVariaveis2.jpg}
+		\caption*{}
+		\label*{}
+	\end{figure}
+	
+\end{table}
+
+
+
+
+\subsection{Conversão entre tipos de variáveis}
+\label{EmbassamentoSoftware_ConversaoEntreVariaveis}
+
+Conforme explicado na seções anteriores, variáveis vêm em diferentes tipos. O tipo determina o tipo de dados que uma variável pode conter. Uma variável Integer pode conter somente dados numéricos sem pontos decimais. Uma variável char pode conter somente uma letra ou símbolo contido na tabela ASCII.
+
+
+Muitas vezes, faz-se necessário ou mais conveniente realizar a conversão de um tipo de variável para outro mais conveniente. Para realizar a conversão, deve-se utilizar o comando escrever, ao lado da variável que será convertida a seguinte expressão (NOVOTIPO) variável. O código  \ref{conversao1} mostra duas situações onde uma variável inteira é convertida para um char. 
+
+Na primeira, não se perde informação, pois o conteúdo da variável \textit{num} pode ser expresso em 1 byte. Na segunda situação, no entanto, se perde informação, pois 10000 (conteúdo da variável num2) não pode ser expresso em 1 byte.
+
+\begin{lstlisting}[ caption = Convertendo int para char, label=conversao1,]
+int num = 1;//variavel ocupando 32 bits(4 bytes)
+
+char a = (char)num; // conversao para variavel contendo 8 bits (1 byte)
+                    // conversao sem perda de informacao
+
+int num2 = 100000; 
+
+char b = (char) num2; // conversao com perda de informacao
+                      // uma variavel char so pode guardar ateh 127
+\end{lstlisting}
+
+
+
+\subsection{Leitura Analógica - Conversão Analógico/Digital}
+\label{EmbassamentoSoftware_ConversaoAnalogicoDigital}
+
+Para ler o sinal de tensão analógico num dos 6 pinos destinados a conversão Analógico/Digital deve ser utilizada a função \textit{analogRead()}. O código \ref{analogRead1} mostra um exemplo da utilização da função \textit{analogRead()}, conversão de int para float, e ajuste de escala. 
+
+A função \textit{analogRead} tem como argumento de entrada o número do pino que será lido. O tempo de leitura é aproximadamente 100 \si\micro s. O retorno dessa função estará entre 0 e 1023, devido ao tamanho do registrador de conversão A/D mencionado na sub-seção \ref{ConversaoAD}.
+
+Para calcular o valor da tensão no pino de entrada na faixa de 0 a 5V é necessário realizar a conversão de variável citada na seção \ref{EmbassamentoSoftware_ConversaoEntreVariaveis}.
+
+
+
+\begin{lstlisting}[ caption = Uso da funcao analogRead, label=analogRead1,]
+void setup()
+{
+}
+
+int sensor;
+float valorReal
+void loop()
+{
+sensor = analogRead(A0); //  0<= sensor <=1023
+
+ValorReal = (float)(5*sensor)/1023 // conversão de tipo de variável e conversão //   		                          //de escala usando uma regra de 3
+
+}
+\end{lstlisting}

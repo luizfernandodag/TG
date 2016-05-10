@@ -13,11 +13,19 @@
 Neste capítulo,  são apresentadas as propostas de prática com a placa de desenvolvimento Intel\textsuperscript{\textregistered} Galileo. As práticas serão proposta seguindo o modelo apresentado na seção \ref{Masterizacao}.
 
 \section{Prática 1: Começando  a usar o \textit{Galileo}}
+\label{pratica1}
+Esta é a primeira prática com a placa Intel\textsuperscript{\textregistered} Galileo. Nela são descritas os passos iniciais para o desenvolvimento e implementação de soluções. 
 
-Esta é a primeira prática com a placa Intel\textsuperscript{\textregistered} Galileo. Nela são descritas os passos iniciais para o desenvolvimento e implementação de soluções.
+Os objetivos desta prática são 
+
+\begin{itemize}
+	\item Realizar com sucesso a instalação do driver e da interface de programação para Arduíno
+	\item Criar um programa para a placa Galileo capaz de fazer um LED piscar
+\end{itemize}
+ 
 
 
-\begin{table}[]
+\begin{table}[H]
 	\centering
 	\label{Pratica1}
 	\caption{Prática 1: Começando  a usar o \textit{Galileo}}
@@ -178,5 +186,99 @@ Os passos a serem seguidos são os seguintes:
 
 \subsection{Comentários}
 
+Com relação a esta prática, os procedimentos de instalação do driver da placa Intel\textsuperscript{\textregistered} Galileo podem ser feitos anteriomente à execução da prática laboratorial, de forma a economizar tempo para outros tópicos.
 
+
+
+\section{Prática 2: Introdução a leitura de sensores e tipos de variáveis}
+\label{pratica2}
+
+Esta prática é destinada, com relação aos tópicos de programação a introduzir os conceitos de diretivas de compilação e tipos de dados.
+
+Os objetivos desta prática são 
+
+\begin{itemize}
+	\item Aprender a utilizar uma protoboard.
+	\item Aprender a utilizar um potênciometro.
+	\item Aprender a utilizar um sensor de luz LDR.
+	\item Criar um circuito de um sensor de luz utilizando LDR, potênciometro, protoboard e a placa Galileo.
+	\item Aprender os tipos básicos de variáveis de forma a implementar um sensor de luz.
+\end{itemize}
+ 
+
+\begin{table}[H]
+	\centering
+	\caption{My caption}
+	\label{my-label}
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Nome da prática}                                                                                  & Prática 2: Introdução a leitura de sensores e tipos de variáveis                                                                                                                                                                                                                                                               \\ \hline
+		\textbf{Objetivos}                                                                                        & \begin{tabular}[c]{@{}l@{}}1)Aprender o básico sobre\\ diretivas de programação\\ 2)Aprender os diferentes\\ tipos de variáveis e suas\\ respectivas utilidades\\ 3)Aprender a ler o valor\\ numa porta analógica na \\ placa Galileo\\ 4)Aprender a utilizar um divisor\\ de tensão para regular um\\ sensor\end{tabular}             \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Pré-requisitos/ \\ Habilidades masterizadas  necessárias\end{tabular}} & Pratica 1 - seção \ref{pratica1}                                                                                                                                                                                                                                                                                                    \\ \hline
+		\textbf{Revisão Téorica - Hardware}                                                                       & \begin{tabular}[c]{@{}l@{}}Protoboard - seção \ref{EmbassamentoHardware_Protoboard}\\Divisor de tensão - seção \ref{EmbassamentoHardware_DivisorTesao}\\ Potênciometro - seção \ref{EmbassamentoHardware_Potenciometro}\\ LDR - seção \ref{EmbassamentoHardware_LDR} \end{tabular}                                                                                                                                                                  \\ \hline
+		\textbf{Revisão Téorica - Software}                                                                       & \begin{tabular}[c]{@{}l@{}}Processo de compilação - seção \ref{EmbassamentoSoftware_Compilacao} \\ Diretivas de compilação - seção \ref{EmbassamentoSoftware_DireitivasCompilacao}\\ Tipos básico de variáveis - seção \ref{EmbassamentoSoftware_TiposVariaveis}\\ Conversão entre tipos de variáveis - seção \ref{EmbassamentoSoftware_ConversaoEntreVariaveis}\\  Leitura Analógica - \\Conversão Analógico Digital -seção \ref{EmbassamentoSoftware_ConversaoAnalogicoDigital}\end{tabular}                               \\ \hline
+		\textbf{Material necessário}                                                                              & \begin{tabular}[c]{@{}l@{}}- 1 Placa Galileo\\ - 1 Transformador 220/120 V -\textgreater 12 V\\ - 1 cabo USB-Micro-USB \\ - 1 LED\\ - 1 Potênciometro de 10k ohm\\ - 1 LDR\\ - 1 Protoboard\\- 5 fios jumper\end{tabular}                                                                                                                       \\ \hline
+		\textbf{Bibliografia}                                                                                     & \begin{tabular}[c]{@{}l@{}}- Eletrônica básica \cite{livroEletronica}\\ - A linguagem de programação C \cite{livroProgramacaoC}\end{tabular}                                                                                                                                                                                                               \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Habilidades a serem masterizadas\\ com essa prática\end{tabular}}      & \begin{tabular}[c]{@{}l@{}}1) O aluno é capaz de construir\\ um circuito simples na protoboard\\ 2) O aluno sabe como utilizar\\ um potênciometro\\ 3) O aluno entende o funcionamento\\ de sensores resistivos\\ 4) O aluno sabe identificar\\ e utilizar aos tipo variáveis básicas em \\programação para a linguagem C\end{tabular} \\ \hline
+	\end{tabular}
+\end{table}
+
+
+
+\subsection{Procedimentos}
+
+Os passos a serem seguidos nessa prática são os seguintes:
+
+\begin{itemize}
+	\item Construção do circuito de um sensor de luz.
+	\item Codificação para leitura de valores de tensão em tal circuito.
+\end{itemize}
+
+\subsection{Esquema de montagem}
+
+Para esta prática, um circuito de acordo com o esquemático mostrado na Figura \ref{pratica2_1}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.65\textwidth]{figs/pratica2_1.jpg}
+	\caption{Esquemático do circuito da prática 2.}
+	\label{pratica2_1}
+\end{figure}
+
+A construção do circuito na protoboard é mostrada na Figura \ref{pratica2_2}.
+
+Os passos para a construção do circuito na protoboard são os seguintes
+
+\begin{enumerate}
+	\item Coloque o pino de 5V na trilha + da protoboard.
+	\item Coloque o pino de GND na trilha - da protoboard.
+	\item Coloque as pernas do LDR em trilhas separadas na região central da protoboard.
+	\item Conecte em uma das pernas do LDR a trilha + da protoboard utilizando um dos jumpers
+	\item Conecte na trilha onde se encontra a outra perna do LDR o pino central do potênciometro.
+	\item Conecte o pino mais afastado do LDR à trilha - utilizando um jumper.
+	\item Conecte a trilha onde se encontra o pino central do potênciometro à entrada analógico A0 da placa galileo
+	\item Conecte o LED nos pinos digital 13 e GND, como mostrado na figura \ref{pratica2_2}.
+	
+	
+		
+\end{enumerate}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.65\textwidth]{figs/pratica2_2.jpg}
+	\caption{Circuito da prática 2 construído numa protoboard.}
+	\label{pratica2_2}
+\end{figure}
+
+\subsection{Código fonte}
+\label{Pratica2Codigo}
+
+%\Praticas\Pratica 2\pratica2Arduino.ino
+
+\lstinputlisting[label = Pratica2, caption = Código Prática 2]{Praticas/Pratica2/pratica2Arduino.ino}
+
+\subsection{Comentários}
+
+No código fonte desta prática, são utilizados diretivas de programação, e todos tipos básicos de variável. É utilizado também uma variável de tipo char *. Tal tipo será estudado numa prática de vetores e alocação dinâmica de memória a ser mostrada posteriormente.
 

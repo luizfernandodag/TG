@@ -1,0 +1,333 @@
+% Classe default, de acordo com o modelo:
+\documentclass[11pt,a4paper,openright,titlepage,oneside]{book}
+
+% Classe alternativa, apropriada para impressão frente-verso. Inclui páginas em branco
+% de forma que capítulos sempre tenham início na página à direita:
+% \documentclass[11pt,a4paper,openright,titlepage]{book}
+
+% Pacotes
+
+\usepackage{epsfig}
+\usepackage{epsf}
+\usepackage{epstopdf}
+\usepackage{pst-eps}
+\usepackage{graphicx}
+\usepackage{graphics}
+%\usepackage[table,xcdraw]{xcolor}
+\usepackage{tabu}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian, portuguese]{babel}
+\usepackage{epsfig}
+\usepackage{verbatim}
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[thmmarks,amsmath]{ntheorem}%\usepackage{amsthm}
+\usepackage{boxedminipage}
+\usepackage{geometry}
+\usepackage{theorem}
+\usepackage{fancybox}
+\usepackage{fancyhdr}
+\usepackage{ifthen}
+\usepackage{url}
+\usepackage{afterpage}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{rotating}
+\usepackage{makeidx}
+\usepackage{indentfirst}
+\usepackage{epstopdf}
+\usepackage{listingsutf8}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage{typearea}
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Code}
+\captionsetup[lstlisting]{font={small,tt}} 
+%%%%Umlaute äöü für dieses Paket definieren
+\lstset{basicstyle=\ttfamily}
+\lstset{literate=%
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+	{ß}{{\ss}}2
+	{ü}{{\"u}}1
+	{ä}{{\"a}}1
+	{ö}{{\"o}}1
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
+\usepackage{etoolbox}    
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.47,0.47,0.33}
+\definecolor{myorange}{rgb}{0.8,0.4,0}
+\definecolor{mywhite}{rgb}{0.98,0.98,0.98}
+\definecolor{myblue}{rgb}{0.01,0.61,0.98}
+
+\newcommand*{\FormatDigit}[1]{\ttfamily\textcolor{mygreen}{#1}}
+%% http://tex.stackexchange.com/questions/32174/listings-package-how-can-i-format-all-numbers
+\lstdefinestyle{FormattedNumber}{%
+	literate=*{0}{{\FormatDigit{0}}}{1}%
+	{1}{{\FormatDigit{1}}}{1}%
+	{2}{{\FormatDigit{2}}}{1}%
+	{3}{{\FormatDigit{3}}}{1}%
+	{4}{{\FormatDigit{4}}}{1}%
+	{5}{{\FormatDigit{5}}}{1}%
+	{6}{{\FormatDigit{6}}}{1}%
+	{7}{{\FormatDigit{7}}}{1}%
+	{8}{{\FormatDigit{8}}}{1}%
+	{9}{{\FormatDigit{9}}}{1}%
+	{.0}{{\FormatDigit{.0}}}{2}% Following is to ensure that only periods
+	{.1}{{\FormatDigit{.1}}}{2}% followed by a digit are changed.
+	{.2}{{\FormatDigit{.2}}}{2}%
+	{.3}{{\FormatDigit{.3}}}{2}%
+	{.4}{{\FormatDigit{.4}}}{2}%
+	{.5}{{\FormatDigit{.5}}}{2}%
+	{.6}{{\FormatDigit{.6}}}{2}%
+	{.7}{{\FormatDigit{.7}}}{2}%
+	{.8}{{\FormatDigit{.8}}}{2}%
+	{.9}{{\FormatDigit{.9}}}{2}%
+	%{,}{{\FormatDigit{,}}{1}% depends if you want the "," in color
+	{\ }{{ }}{1}% handle the space
+	,%
+}
+
+
+\lstset{%
+	backgroundcolor=\color{mywhite},   
+	basicstyle=\footnotesize,       
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                   
+	commentstyle=\color{red},    
+	deletekeywords={...},           
+	escapeinside={\%*}{*)},          
+	extendedchars=true,              
+	%frame=shadowbox,                    
+	keepspaces=true,                 
+	keywordstyle=\color{myorange},       
+	language=C,                
+	morekeywords={*,...},            
+	numbers=left,                    
+	numbersep=5pt,                   
+	numberstyle=\bfseries\tiny\color{mygray}, 
+	rulecolor=\color{black},         
+	%rulesepcolor=\color{myblue},
+	showspaces=false,                
+	showstringspaces=false,          
+	showtabs=false,                  
+	stepnumber=1,                    
+	stringstyle=\color{myorange},    
+	tabsize=2,                       
+	title=\lstname,
+	emphstyle=\bfseries\color{blue},%  style for emph={} 
+}    
+
+%% language specific settings:
+\lstdefinestyle{Arduino}{%
+	style=FormattedNumber,
+	keywords={void},%                 define keywords
+	morecomment=[l]{//},%             treat // as comments
+	morecomment=[s]{/*}{*/},%         define /* ... */ comments
+	emph={HIGH, OUTPUT, LOW},%        keywords to emphasize
+}
+
+\newtoggle{InString}{}% Keep track of if we are within a string
+\togglefalse{InString}%
+
+
+% Escolher um dos seguintes formatos:
+%\usepackage{ft1unb} % segue padrão de fonte Times
+\usepackage{ft2unb} % segue padrão de fontes do Latex
+
+\makeindex
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compilações parciais: com o comando abaixo, selecione apenas os capitulos
+% que deseja compilar. Por exemplo, veja o que acontece se descomentar a
+% linha abaixo:
+%\includeonly{resumos,cap_Experimentos}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Documento principal
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\setcounter{secnumdepth}{3} % numeração de seções até nível 3
+\setcounter{tocdepth}{2} % numeração de seções no sumário até nível 2
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Capa e contra-capa
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Grau pretendido e o tipo de monografia. Alguns exemplos seguem abaixo. Se o seu for algum deles, descomente-o. Em geral, o grau e o tipo de monografia associado estão na mesma linha.
+%\grau{Doutor em Engenharia Elétrica} \tipodemonografia{TESE DE DOUTORADO}
+%\grau{Mestre em Engenharia Elétrica} \tipodemonografia{DISSERTAÇÃO DE MESTRADO}
+\grau{Engenheiro Mecatrônico} \tipodemonografia{TRABALHO DE GRADUAÇÃO}
+
+% Os comandos a seguir servem para definir o título do trabalho. Para evitar 
+% que o latex defina automaticamente a quebra de linha, foram definidos um comando por linha. 
+% Desta forma o autor define como quer que o título seja dividio em várias linhas. 
+% O exemplo abaixo é para um título que ocupa três linhas. Observe que mesmo com a linha
+% 4 não sendo utilizada, o comando \titulolinhaiv é chamado.
+\titulolinhai{Proposta de Curso Prático em Algoritmos e Programação}
+\titulolinhaii{Computadores Utilizando Placa Intel \textsuperscript{\textregistered} Galileo }
+\titulolinhaiii{}
+\titulolinhaiv{}
+
+% Os nomes dos autores são definidos pelos comandos \autori (autor 1) e \autorii (autor 2).
+% Para trabalhos com apenas um autor, deve-se usar \autorii{} para que não apareça 
+% um nome para segundo autor.
+\autori{Luiz Fernando de Andrade Gadêlha}
+%\autorii{Nome do Autor 2}
+\autorii{} % descomente esta linha se não houver segundo autor.
+%\autoriii{Nome do Autor 3}
+\autoriii{} % descomente esta linha se não houver terceiro autor.
+
+% Os nomes dos membros da banca são definidos a seguir. Pode-se ter até 5 membros da banca, 
+% numerados de i a v (algarismos romanos).
+% Para trabalhos com apenas um autor, deve-se usar \autorii{} para que não apareça 
+% um nome para segundo autor. É incubência do usuário definir no argumento dos comandos a 
+% afiliação do membro da banca, assim como sua posição (se for orientador ou co-orientador). 
+% Os nomes definidos pelos comandos abaixo aparecem na ordem de i a v.
+\membrodabancai{Prof. Alexandre Zaghetto, CIC/UnB}
+\membrodabancaifuncao{Orientador}
+\membrodabancaii{}
+\membrodabancaiifuncao{}
+\membrodabancaiii{}
+\membrodabancaiiifuncao{}
+\membrodabancaiv{}
+\membrodabancaivfuncao{}
+\membrodabancav{}
+\membrodabancavfuncao{}
+
+% data de defesa: mês e ano.
+\mes{março}
+\ano{2016}
+
+% Comandos para criar a capa e a página de assinaturas.
+%\capaprincipal
+\capaassinaturas
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dedicatória 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+
+% Texto de dedicatória do primeiro autor
+\dedicatoriaautori{Dedico este trabalho em primeiro lugar a Deus, por todas bençãos que me fizeram continuar e todas dificuldades que me fizeram crescer. Dedico este trabalho também à minha família, que esteve comigo em todos momentos da minha formação.}
+
+% Texto de dedicatória do segundo autor. Caso não tenha um segundo autor, este texto não 
+% será mostrado
+\dedicatoriaautorii{Dedicatória do autor 2}
+
+% Texto de dedicatória do terceiro autor. Caso não tenha um segundo autor, este texto não 
+% será mostrado
+\dedicatoriaautoriii{Dedicatória do autor 3}
+
+% Comando para criar a página de dedicatória
+\dedicatoria
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Agradecimentos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Texto de agradecimentos do primeiro autor
+\agradecimentosautori{ Agradeço a meus colegas de curso, projetos e ao meu professor orientador por este trabalho }
+
+% Texto de agradecimentos do segundo autor. Caso não tenha um segundo autor, este texto não 
+% será mostrado
+\agradecimentosautorii{A inclusão desta seção de agradecimentos é opcional e fica à critério do(s) autor(es), que caso deseje(em) inclui-la deverá(ao) utilizar este espaço, seguindo está formatação.}
+
+% Texto de agradecimentos do segundo autor. Caso não tenha um terceiro autor, este texto não 
+% será mostrado
+\agradecimentosautoriii{A inclusão desta seção de agradecimentos é opcional e fica à critério do(s) autor(es), que caso deseje(em) inclui-la deverá(ao) utilizar este espaço, seguindo está formatação.}
+
+% Comando para criar a página de agradecimentos
+\agradecimentos
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Resumo: arquivo resumo.tex editável no Scientific Word
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{resumos}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Listas de conteúdo, figuras e tabelas.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sumario
+\listadefiguras
+\listadetabelas
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lista de simbolos.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{simbolos}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Corpo principal
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+\setcounter{page}{1} \pagenumbering{arabic} \pagestyle{plain}
+
+% *** Introducao ***
+
+\include{cap_Introducao}
+
+% *** Revisao Bibliografica ***
+% *** Proposta de Formato de Curso
+%\include{cap_PropostaCurso}
+\include{cap_RevisaoBibliografica}
+% *** Desenvolvimento ***
+\include{cap_Desenvolvimento}
+
+% *** Resultados Experimentais ***
+
+\include{cap_Experimentos}
+
+% *** Conclusões
+%\include{cap_Conclusoes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Referências bibliográficas
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{abnt-num} % use este estilo para ABNT numérico
+%\bibliographystyle{abnt-alf} % use este estilo para ABNT alfa-numérico
+\renewcommand{\bibname}{REFERÊNCIAS BIBLIOGRÁFICAS}
+\addcontentsline{toc}{chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}
+\bibliography{relatorio}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Anexos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\anexos
+\makeatletter % não retirar estes comandos
+\renewcommand{\@makechapterhead}[1]{%
+  {\parindent \z@ \raggedleft \setfontarial\bfseries 
+        \LARGE \thechapter. \space\space 
+    \uppercase{#1}\par
+    \vskip 40\p@
+  }
+}
+\makeatother
+
+% *** Anexo I: Diagramas esquemáticos ***
+%\include{anexo_Esquematicos}
+%\refstepcounter{noAnexo}
+
+% *** Anexo II: Descrição do CD ***
+%\include{anexo_CD}
+%\refstepcounter{noAnexo}
+
+% Acrescente mais anexos conforme julgar necessário.
+\end{document}
+
