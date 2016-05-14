@@ -16,7 +16,6 @@ void setup()
 }
 
 int cont = 1;
-int 
 
 void loop()
 {

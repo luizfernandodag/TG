@@ -28,7 +28,7 @@ Os objetivos desta prática são
 \begin{table}[H]
 	\centering
 	\label{Pratica1}
-	\caption{Prática 1: Começando  a usar o \textit{Galileo}}
+	\caption{Prática 1 - Tabela de descrição.}
 	\begin{tabular}{|l|l|}
 		\hline
 		\textbf{Nome da prática}                                                                                  & Prática 1: Começando a usar a placa Intel Galileo                                                                                                                                                        \\ \hline
@@ -208,8 +208,8 @@ Os objetivos desta prática são
 
 \begin{table}[H]
 	\centering
-	\caption{My caption}
-	\label{my-label}
+	\caption{Prática 2 - Tabela de descrição.}
+	\label{tabPratica2}
 	\begin{tabular}{|l|l|}
 		\hline
 		\textbf{Nome da prática}                                                                                  & Prática 2: Introdução a leitura de sensores e tipos de variáveis                                                                                                                                                                                                                                                               \\ \hline
@@ -247,22 +247,6 @@ Para esta prática, um circuito de acordo com o esquemático mostrado na Figura \r
 
 A construção do circuito na protoboard é mostrada na Figura \ref{pratica2_2}.
 
-Os passos para a construção do circuito na protoboard são os seguintes
-
-\begin{enumerate}
-	\item Coloque o pino de 5V na trilha + da protoboard.
-	\item Coloque o pino de GND na trilha - da protoboard.
-	\item Coloque as pernas do LDR em trilhas separadas na região central da protoboard.
-	\item Conecte em uma das pernas do LDR a trilha + da protoboard utilizando um dos jumpers
-	\item Conecte na trilha onde se encontra a outra perna do LDR o pino central do potênciometro.
-	\item Conecte o pino mais afastado do LDR à trilha - utilizando um jumper.
-	\item Conecte a trilha onde se encontra o pino central do potênciometro à entrada analógico A0 da placa galileo
-	\item Conecte o LED nos pinos digital 13 e GND, como mostrado na figura \ref{pratica2_2}.
-	
-	
-		
-\end{enumerate}
-
 
 \begin{figure}[H]
 	\centering
@@ -282,3 +266,165 @@ Os passos para a construção do circuito na protoboard são os seguintes
 
 No código fonte desta prática, são utilizados diretivas de programação, e todos tipos básicos de variável. É utilizado também uma variável de tipo char *. Tal tipo será estudado numa prática de vetores e alocação dinâmica de memória a ser mostrada posteriormente.
 
+\section{Prática 3: Uso de chaves/botões e controladores de fluxo(Condicionais)}
+\label{pratica3}
+
+Esta prática é destinada, com relação aos tópicos de programação, a introduzir condicionais.
+
+Os objetivos desta prática são: 
+
+\begin{itemize}
+	\item Aprender a utilizar botões para enviar sinais digitais para a placa Galileo.
+	\item Aprender o uso de condicionais para controlar um programa.
+	\item Criar um circuito juntamente com a placa Galileo capaz de acender 4 LED's utilizando um botão para enviar um sinal para a placa de forma que o seguinte padrão seja seguido:
+		\subitem No começo da execução do código, os 4 LEDs estarão piscando conjuntamente.
+		\subitem Ao se apertar o botão, apenas o primeiro LED piscará, enquanto os outros estarão apagados.
+		\subitem Após isso, caso o botão seja apertado, apenas o segundo LED piscará, enquanto os outros estarão apagados.
+		\subitem O mesmo padrão seguirá até apenas o quarto LED piscar.
+		\subitem Caso, enquanto o último LED estiver piscando, o botão seja apertado, todos os LED voltam a piscar conjuntamente.
+		\subitem Caso o botão seja apertado, o padrão supracitado se repetirá.
+\end{itemize}
+
+
+
+
+
+\begin{table}[]
+	\centering
+	\caption{Prática 3 - Tabela de descrição.}
+	\label{tabPratica3}
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Nome da prática}                                                                                  & \begin{tabular}[c]{@{}l@{}}Prática 3: Uso de chaves/botões \\ e controladores de fluxo(Condicionais)\end{tabular}                                                                                                                                                                                                        \\ \hline
+		\textbf{Objetivos}                                                                                        & \begin{tabular}[c]{@{}l@{}}1)Aprender a utilizar botões para enviar sinais\\  digitais para a placa Galileo.\\ 2) Aprender o uso de condicionais para controlar\\  um programa.\\ 3)Construir um circuito juntamente com um\\  programa que realize o padrão citado no início\\  da descrição desta prática\end{tabular} \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Pré-requisitos/ \\ Habilidades masterizadas  necessárias\end{tabular}} & Práticas 1 seção \ref{pratica1} e 2 - seção \ref{pratica2}                                                                                                                                                                                                                                                                             \\ \hline
+		\textbf{Revisão Téorica - Hardware}                                                                       & Interruptores - seção \ref{interruptores}                                                                                                                                                                                                                                                                                            \\ \hline
+		\textbf{Revisão Téorica - Software}                                                                       & Estruturas Condicionais - seção \ref{EmbassamentoSoftware_EstruturasCondicionais}                        \\ \hline
+		\textbf{Material necessário}                                                                              & \begin{tabular}[c]{@{}l@{}}- 1 Placa Galileo\\ - 1 Transformador 220/120 V -\textgreater 12 V\\ - 1 cabo USB-Micro-USB \\ - 4 LEDs\\ - 4 resistores 220 ohm\\ - 1 resistor 10k\\ - 1 botao de pressão 4 pinos\\ - 14 fios jumper\end{tabular}                                                                            \\ \hline
+		\textbf{Bibliografia}                                                                                     & \begin{tabular}[c]{@{}l@{}}- Eletrônica básica \cite{livroEletronica}\\ - A linguagem de programação C \cite{livroProgramacaoC}\end{tabular}                                                                                                                                                                           \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Habilidades a serem masterizadas\\ com essa prática\end{tabular}}      & \begin{tabular}[c]{@{}l@{}}1) O aluno é capaz de utilizar botões para \\ enviar sinais digitais para a placa Galileo\\ 2) O aluno é capaz de escrever trabalhar com\\ condicioanais\end{tabular}                                                                                                                         \\ \hline
+	\end{tabular}
+\end{table}
+
+
+\subsection{Procedimentos}
+
+Os passos a serem seguidos nessa prática são os seguintes:
+
+\begin{itemize}
+	\item Construção do circuito com 4 LEDs, cujo piscar será controlador por um botão.
+	\item Codificação da placa Galileo para criar o padrão proposto no início desta descrição de prática. 
+\end{itemize}
+
+
+\subsection{Esquema de montagem}
+
+Para esta prática, um circuito de acordo com o esquemático mostrado na Figura \ref{pratica3_1}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.65\textwidth]{figs/pratica3_1.jpg}
+	\caption{Esquemático do circuito da prática 3.}
+	\label{pratica3_1}
+\end{figure}
+
+A construção do circuito na protoboard é mostrada na Figura \ref{pratica3_2}.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.65\textwidth]{figs/pratica3_2.jpg}
+	\caption{Circuito da prática 3 construído numa protoboard.}
+	\label{pratica3_2}
+\end{figure}
+
+\subsection{Código fonte}
+\label{Pratica3Codigo}
+
+%\Praticas\Pratica 2\pratica2Arduino.ino
+
+\lstinputlisting[label = Pratica3, caption = Código Prática 3]{Praticas/Pratica3/pratica3code.ino}
+
+\subsection{Comentários}
+
+No código fonte desta prática, é utilizador uma variável inteira como contador de forma a controlar os LED por meio do botão.
+
+
+\section{Prática 4: Uso de laços de repetição}
+
+
+Esta prática é destinada, com relação aos tópicos de programação, ao uso de laços de repetição.
+
+Os objetivos desta prática são: 
+
+\begin{itemize}
+	\item Criar um circuito juntamente com a placa Galileo com 4 LED's um botão e um potenciômetro.
+	\item Utilizando os componentes supracitados, devem-se ser criados 3 comportamentos distintos no acender e apagar dos LEDs.
+	\item Usar o potenciômetro como divisor de tensão( conectar o 5V da placa na pino da direita do potenciômetro, GND na pino da esquerda e a pino centra na entrada analógica A0)
+	\item Utilizar o botão para selecionar o comportamento a ser executado.
+	\item \textbf{Comportamento 1}: Piscar 1 e apenas um dos 4 LEDs ao depender do valor de tensão lido na porta A0. Os outros 3 LEDs devem permanecer apagado.
+	\item \textbf{Comportamento 2}: Piscar os LEDs sequencialmente( pisca LED 1, outros apagados; pisca LED 2, outros apagados; pisca LED3, outros apagados), com velocidade de piscar dependente do valor lido no potenciômetro.
+	\item \textbf{Comportamento 3}: Comportamento a ser escolhido pelo grupo. Esse comportamento deve, obrigatoriamente, ser distinto dos dois primeiros comportamentos citados e diferente dos comportamentos criados por outros grupos.
+	
+\end{itemize}
+
+
+\begin{table}[]
+	\centering
+	\caption{Prática 4 - Tabela de Descrição}
+	\label{tabPratica4}
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Nome da prática}                                                                                  & Prática 4: Uso de laços de repetição                                                                                                                                                                                                                               \\ \hline
+		\textbf{Objetivos}                                                                                        & \begin{tabular}[c]{@{}l@{}}1) Aprender a utilizar os diferentes tipos de laço de \\ repetição juntamente com estruturas condicionais apropriada\end{tabular}                                                                                                       \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Pré-requisitos/ \\ Habilidades masterizadas  necessárias\end{tabular}} & Prática 3 - seção ref                                                                                                                                                                                                                                              \\ \hline
+		\textbf{Revisão Téorica - Hardware}                                                                       & \begin{tabular}[c]{@{}l@{}}Potenciômetro - seção ref\\ Interruptores - seção \ref{interruptores} \end{tabular}                                                                                                                                                                      \\ \hline
+		\textbf{Revisão Téorica - Software}                                                                       & Laços de repetição - seção \ref{EmbassamentoSoftware_Lacos}                                                                                                                                                                                                                                     \\ \hline
+		\textbf{Material necessário}                                                                              & \begin{tabular}[c]{@{}l@{}}- 1 Placa Galileo\\ - 1 Transformador 220/120 V -\textgreater 12 V\\ - 1 cabo USB-Micro-USB \\ - 4 LEDs\\ - 4 resistores 220 ohm\\ - 1 resistor 10k\\ - 1 potênciometro \\ - 1 botão de pressão 4 pinos\\ - 17 fios jumper\end{tabular} \\ \hline
+		\textbf{Bibliografia}                                                                                     & \begin{tabular}[c]{@{}l@{}}-Eletrônica básica \cite{livroEletronica}\\ -A linguagem de programação C \cite{livroProgramacaoC}\end{tabular}                                                                                                                     \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Habilidades a serem masterizadas\\ com essa prática\end{tabular}}      & \begin{tabular}[c]{@{}l@{}}1) O aluno é capaz de usar laços de repetição \\ \\ 2) O aluno é capaz de construir algoritmos apropriados\\ para a execução de tarefas determinas utilizando condicionais\\ e laços de repetição\end{tabular}                          \\ \hline
+	\end{tabular}
+\end{table}
+
+
+\subsection{Procedimentos}
+
+Os passos a serem seguidos nessa prática são os seguintes:
+
+\begin{itemize}
+	\item Construção do circuito com 4 LEDs, cujo piscar será controlador por um botão e um potenciômetro.
+	\item Codificação da placa Galileo para criar os algoritmos proposto no início desta descrição de prática. 
+\end{itemize}
+
+
+\subsection{Esquema de montagem}
+
+Para esta prática, um circuito de acordo com o esquemático mostrado na Figura \ref{pratica4_1}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.65\textwidth]{figs/pratica4_1.jpg}
+	\caption{Esquemático do circuito da prática 4.}
+	\label{pratica4_1}
+\end{figure}
+
+A construção do circuito na protoboard é mostrada na Figura \ref{pratica4_2}.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.65\textwidth]{figs/pratica4_2.jpg}
+	\caption{Circuito da prática 4 construído numa protoboard.}
+	\label{pratica4_2}
+\end{figure}
+
+\subsection{Código fonte}
+\label{Pratica3Codigo}
+
+%\Praticas\Pratica 2\pratica2Arduino.ino
+
+\lstinputlisting[label = Pratica4, caption = Código Prática 4]{Praticas/Pratica4/pratica4code.ino}
+
+\subsection{Comentários}
+
+No código fonte desta prática, o comportamento 3 foi escolhido apenas como um exemplo. Talvez seja interessante, dependendo do nível de aprendizagem da turma, fazer uma pequena disputa entre equipes na criação do comportamento mais diverto.

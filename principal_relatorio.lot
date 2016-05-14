@@ -9,10 +9,17 @@
 \contentsline {table}{\numberline {2.6}{\ignorespaces Scrum aplicado à \textit {Algoritmos e Programação de Computadores}\relax }}{25}
 \contentsline {table}{\numberline {2.7}{\ignorespaces Pinos Galileo\cite {DATASHEET1}\relax }}{39}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Prática 1: Começando a usar o \textit {Galileo}\relax }}{59}
-\contentsline {table}{\numberline {3.2}{\ignorespaces My caption\relax }}{68}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Prática 1 - Tabela de descrição.\relax }}{59}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Prática 2 - Tabela de descrição.\relax }}{68}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Prática 3 - Tabela de descrição.\relax }}{72}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Prática 4 - Tabela de Descrição\relax }}{76}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Tabela de leitura de valor e tolerância de um resistor\relax }}{74}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Resumo - Ligação em série X Ligação em paralelo\relax }}{79}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Tamanho e faixa de uso para os tipos básicos váriaveis\relax }}{98}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Todos os Tipos de dados definidos pelo Padrão ANSI C, seus tamanhos em bytes e suas faixa de valores.\relax }}{99}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Tabela de leitura de valor e tolerância de um resistor\relax }}{84}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Resumo - Ligação em série X Ligação em paralelo\relax }}{89}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Tamanho e faixa de uso para os tipos básicos váriaveis\relax }}{111}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Todos os Tipos de dados definidos pelo Padrão ANSI C, seus tamanhos em bytes e suas faixa de valores.\relax }}{112}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Operadores relacionais\relax }}{114}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Operadores \textbf {E}, \textbf {OU} e \textbf {Negação}\relax }}{115}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Tabela verdade do operador ||.\relax }}{115}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Tabela verdade do operador \&\& .\relax }}{116}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Tabela verdade do operador ! .\relax }}{116}

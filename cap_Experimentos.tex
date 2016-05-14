@@ -587,7 +587,85 @@ Como dito na seção \ref{EmbassamentoHardware_DivisorTesao}, um divisor de tensão
  \end{split}
  \end{equation}
  
- Onde $R_{LDR}$ obedeceao gráfico mostrado na Figura \ref{ldr3}.
+ Onde $R_{LDR}$ obedece ao gráfico mostrado na Figura \ref{ldr3}.
+
+\subsection{Interruptores}
+\label{interruptores}
+Ao se desenvolver circuitos eletrônicos, existem duas expressões muita comuns: circuito aberto e circuito fechado. 
+
+Um circuito aberto é mostrado na Figura \ref{interruptor1}. Nesse circuito, corrente alguma sai da fonte e passa pela lâmpada.
+
+ Pode-se dizer que a região entre A e B é uma resistor com resistência que tende ao infinito. Usando essa suposição, ao se calcular a corrente que circula numa região de circuito aberto tem-se o seguinte:
+
+\begin{equation}\label{eqCircuitoAberto}
+ \begin{split}
+ I = \lim_{R_{AB}\to\infty} \frac{V_{bateria}}{R_{lampada} + R_{AB}} = 0 A 
+ \end{split}
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/interruptor1.jpg}
+	\caption{Circuito aberto.}
+	\label{interruptor1}
+\end{figure}
+
+
+Um circuito fechado, é um circuito que se encontra caminho efetivo, para passagem de corrente elétrica. Na Figura \ref{interruptor2} é mostrado o mesmo circuito da Figura \ref{interruptor1} fechado.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/interruptor2.jpg}
+	\caption{Circuito fechado.}
+	\label{interruptor2}
+\end{figure}
+
+
+Abrir ou fechar uma região de um circuito ou ele por completo pode-ser feito utilizando interruptores ou chaves.
+
+Interruptores ou chaves tem por propósito abrir ou fechar um circuito ou certa região de um circuito de acordo com a vontade de um agente externo. A Figura \ref{interruptor3} mostra o símbolo de um interruptor num circuito elétrico.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/interruptor3.jpg}
+	\caption{Símbolo de um interruptor.}
+	\label{interruptor3}
+\end{figure}
+
+Um tipo especial de interruptor é o botão. A Figura \ref{interruptor4} mostra a imagem e esquemático de mini botões. 
+
+Os Mini Push Buttons são também chamados de interruptores tendenciosos ou momentâneos, porque após precionados, eles retornam ao estado de origem (aberto ou fechado).
+
+Existem 2 tipos de Mini Botões de Pressão quanto ao seu estado:
+
+\begin{itemize}
+	\item NO (abreviação de Normally Open), esse interruptor momentâneo fica normalmente aberto (desligado), mas quando pressionado e segurado o botão, o interruptor fecha (liga). Ao soltar o botão, o interruptor abre novamente. Utilizado em teclados de computadores, calculadoras, etc.
+
+\item NC (abreviação de Normally Closed), esse interruptor momentâneo fica normalmente fechado (ligado), mas quando apertado e segurado o botão, o interruptor abre (desliga). Ao soltar o botão, o interruptor fecha novamente. Utilizado na iluminação interna das geladeiras, veículos, etc. (ao abrir a porta, o interruptor é acionado, fechando o circuito). 
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/interruptor4.jpg}
+	\caption{Mini botões de pressão, de 2 e 4 pinos.}
+	\label{interruptor4}
+	\source{$http://www.dreaminc.com.br/sala_de_aula/9b-interruptores-mini-botao-de-pressao/$}
+\end{figure}
+
+O mini botão de 4 pinos de contato é muitas vezes utilizado para oferecer tensão alta (HIGH) e baixa (LOW) para uma porta de uma placa como a placa Galileo.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/interruptor5.jpg}
+	\caption{Circuito simples utilizando um botão de 4 pinos de contato .}
+	\label{interruptor5}
+\end{figure}
+
+A Figura \ref{interruptor5} mostra um exemplo de um circuito construído em conjunto com a placa Galileo. Nesse circuito, a porta digital 2 pode ler um nível de tensão alta (HIGH) ou baixa(LOW) dependendo do botão estar pressionado ou não. Como mostrado no esquemático, quando o botão é pressionado, os ponto A e B se encostam e na porta digital passa a existir a tensão alta.
+
+As aplicações para botões em eletrônica são diversas. Neste trabalho, muitas práticas usarão botões no seu desenvolvimento.
 
 \section{Embassamento teórico - Software}
 \label{EmbassamentoSoftware}
@@ -941,3 +1019,637 @@ ValorReal = (float)(5*sensor)/1023 // conversão de tipo de variável e conversão 
 
 }
 \end{lstlisting}
+
+
+
+
+
+\subsection{Estruturas Condicionais}
+\label{EmbassamentoSoftware_EstruturasCondicionais}
+
+Chama-se de estrutura condicional as instruções para testar se uma condição é verdadeira ou falsa.
+
+ Para expressar uma condição, deve-se utilizar operadores relacionais e, se necessário operadores lógicos. 
+ 
+ \subsubsection{Operadores Relacionais}
+ A tabela \ref{tabCond1} mostra todos operadores relacionais possíveis. É mostrado, na coluna exemplo, que as expressões entre os operadores podem ser quaisquer, desde que não incorreram em erros léxicos, sintáticos ou semânticos.
+ 
+ \begin{table}[H]
+ 	\centering
+ 	\caption{Operadores relacionais}
+ 	\label{tabCond1}
+ 	\begin{tabular}{|c|c|c|}
+ 		\hline
+ 		\textbf{Operador relacional} & \multicolumn{1}{l|}{\textbf{Exemplo de aplicação}} & \textbf{Explicação do exemplo}                                                                 \\ \hline
+ 		==                           & a == b                                             & verifica se a é igual a b                                                                      \\ \hline
+ 		!=                           & a != b * 3                                         & \begin{tabular}[c]{@{}c@{}}verifica se a é diferente de b\\ \\ multiplicado por 3\end{tabular} \\ \hline
+ 		\textgreater                 & a \textgreater (b + a)                             & \begin{tabular}[c]{@{}c@{}}verifica se a é maior do que \\ b + a\end{tabular}                  \\ \hline
+ 		\textgreater=                & (a - b + 5) \textgreater= (b /2)                   & \begin{tabular}[c]{@{}c@{}}verifica se (a - b + 5) é maior ou \\ igual a b/2\end{tabular}      \\ \hline
+ 		\textless                    & a \textless b                                      & verifica se a é menor do que b                                                                 \\ \hline
+ 		\textless=                   & a \textless= b                                     & verifica se a é menor ou igual a b                                                             \\ \hline
+ 	\end{tabular}
+ \end{table}
+ 
+ Toda vez que uma operação lógica é aplicada, é retornado TRUE ou FALSE. Os sistemas computacionais identificam FALSE com o valor zero e TRUE como qualquer valor diferente de zero (inclusive valores negativos).
+ 
+ \subsubsection{Operadores Lógicos}
+ Operadores lógicos são usados para combinar 2 ou mais operações relacionais. A tabela  \ref{tabCond2} mostra os operadores lógicos, exemplo e explicação de tais exemplos.
+ 
+ \begin{table}[H]
+ 	\centering
+ 	\caption{Operadores \textbf{E}, \textbf{OU} e \textbf{Negação}}
+ 	\label{tabCond2}
+ 	\begin{tabular}{|c|c|c|}
+ 		\hline
+ 		\textbf{Operador lógico}                                       & \multicolumn{1}{l|}{\textbf{Exemplo de aplicação}} & \textbf{Explicação do exemplo}                                                                                                                                                                                           \\ \hline
+ 		\begin{tabular}[c]{@{}c@{}}(Operador E)\\ \&\&\end{tabular}    & ((a == b)\&\&( a \textgreater 0))                  & \begin{tabular}[c]{@{}c@{}}verifica se a é igual b \\ E\\ verifica se a é maior que 0\\ se as duas expressões forem verdadeiras,\\ retorna-se TRUE nessa operação lógica\\ do contrário, retorna FALSE\end{tabular}      \\ \hline
+ 		\begin{tabular}[c]{@{}c@{}}(Operador OU)\\ ||\end{tabular}     & (a \textgreater b )|| ( b \textgreater 3)          & \begin{tabular}[c]{@{}c@{}}verifica se a é maior do que b \\ OU\\ se b é maior que 3\\ se qualquer uma das expressões for verdadeira\\ ,retorna-se TRUE\\ Se a duas expressões forem FALSE,\\ retorna FALSE\end{tabular} \\ \hline
+ 		\begin{tabular}[c]{@{}c@{}}(Operador negação)\\ !\end{tabular} & !(a \textgreater b)                                & \begin{tabular}[c]{@{}c@{}}verifica se a é maior do que b.\\ Caso isso seja verdadeiro,\\ retorna FALSE\\ Caso a expressão lógica seja falsa,\\ retorna TRUE\end{tabular}                                                 \\ \hline
+ 	\end{tabular}
+ \end{table}
+ 
+ As tabelas verdades das tabelas \ref{tabCond3}, \ref{tabCond4} e \ref{tabCond5} mostram as mesmas relações exemplificadas na tabela \ref{tabCond2}.
+ 
+ \begin{table}[H]
+ 	\centering
+ 	\caption{Tabela verdade do operador ||.}
+ 	\label{tabCond3}
+ 	\begin{figure}[H]
+ 		\centering
+ 		\includegraphics[width=0.6\textwidth]{figs/condicional2.jpg}
+ 		\caption*{}
+ 		\label*{}
+ 	\end{figure}
+ 	
+ \end{table}
+ 
+ 
+ 
+ \begin{table}[H]
+ 	\centering
+ 	\caption{Tabela verdade do operador \&\& .}
+ 	\label{tabCond4}
+ 	\begin{figure}[H]
+ 		\centering
+ 		\includegraphics[width=0.6\textwidth]{figs/condicional3.jpg}
+ 		\caption*{}
+ 		\label*{}
+ 	\end{figure}
+ 	
+ \end{table}
+
+
+\begin{table}[H]
+	\centering
+	\caption{Tabela verdade do operador ! .}
+	\label{tabCond5}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\textwidth]{figs/condicional4.jpg}
+		\caption*{}
+		\label*{}
+	\end{figure}
+	
+\end{table}
+
+
+\subsubsection{Controle de fluxo de execução de um programa (Condicionais)}
+
+Os operações lógicas construídas juntamente a operadores relacionais são a base para o controle do fluxo com os seguintes operadores:
+
+\begin{itemize}
+	\item if
+	\item if - else 
+	\item if - (else if) - else (if-else aninhados)
+	\item switch - case
+	\item operador \textbf{?} (ternário)
+\end{itemize} 
+
+A Figura \ref{cond5} mostra o resumo do que acontece ao se utilizar qualquer dos operadores de controle de fluxo supracitado. Se certa condição lógica é verdadeira (TRUE) se executa uma série de instruções específicas, senão se executa as intruções específicadas para o caso adverso e então se contínua o fluxo normal do programa.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/condicional5.jpg}
+	\caption{Resumo do controle de fluxo de um programa}
+	\label{cond5}
+\end{figure}
+
+O operador \textbf{if} possui a sintaxe mostrada no código \ref{cond6}. Caso a condição lógica especificada por \textit{condicao1} seja verdadeira, ou seja, caso tal condição retorne verdadeiro (TRUE), os procedimentos dentro das chaves (\{ \}) devem ser executados.  
+
+\begin{lstlisting}[ caption =  Sintaxe do if, label=cond6,]
+if(condicao1)//verifica se as condições lógicas especificadas em condicao1 sao 
+{            // verdadeira(TRUE). Caso sejam, executa os procedimentos dentro
+			// da chave
+	condicao1Procedimento1;
+	condicao1Procedimento2;
+	.
+	.	
+	.
+	condicao1ProcedimentoN;
+}.
+\end{lstlisting}
+O código \ref{cond6_2} mostra um exemplo de uso do if. Supondo que exista uma certa variável chamada \textit{sensor}, caso ela seja maior que 300, a placa Galileo deve escrever na porta digital 2 um valor alto (HIGH) de tensão.
+
+\begin{lstlisting}[ caption =  Exemplo de uso do if, label=cond6_2,]
+if(sensor > 300)
+{            
+  digitalWrite(2,HIGH);
+}
+\end{lstlisting}
+
+
+O operador if - else segue o mesmo padrão mostrado nos códigos \ref{cond6} e \ref{cond6_2}.A diferenção, nesse caso, é a adição do else (senão) ao bloco. Caso a condição especificada no if não seja verdadeira, o programa deve executar a série de instruções especificadas dentro do bloco do else. O código \ref{cond7} mostra a sintaxe de uso do bloco if - else e o código \ref{cond7_2} mostra um exemplo de aplicação do bloco if - else.
+
+\begin{lstlisting}[ caption =  Sintaxe do bloco if - else, label=cond7,]
+if(condicao1)
+{
+	condicao1Procedimento1;
+	condicao1Procedimento2;
+	.
+	.			
+	.
+	condicao1ProcedimentoN;
+}.
+else// caso a condição especificada por condicao1 seja falsa (FALSE), deve se
+{   // executar a série de instruções especificadas dentro do else
+	elseCondicao1Procedimento1;
+	elseCondicao1Procedimento2;
+	.
+	.	
+	.
+	elseCondicao1ProcedimentoM;
+}
+\end{lstlisting}
+
+
+\begin{lstlisting}[ caption =  Exemplo de uso do bloco if - else, label=cond7_2,]
+if(sensor > 300)
+{            
+digitalWrite(2,HIGH);
+}
+else
+{
+digitalWrite(2,HIGH);
+contador = contador + 1;
+
+}
+\end{lstlisting}
+
+
+O bloco if-else pode ser extendido indefinidamente com condições intermediárias entre o if e o else final. Como mostrado no código \ref{cond7}, o programa continuará verificando as condições especificadas dentro dos if's enquanto não for encontrada uma condição verdadeira. Se nenhuma condição verdadeira for encontrada, executar-se-ão os procedimentos dentro do else, caso este tenham sido especificado (pode-se escrever uma série de else -if's sem um else final). 
+
+\begin{lstlisting}[ caption =  Sintaxe do bloco if - (else if) - else (if-else aninhados), label=cond7,]
+if(condicao1)
+{
+	procedimentos1;
+}
+else if(condicao2)// verifica a condicao2 se a condicao1 eh falsa
+{   
+	procedimentoElse1;
+}
+else if(condicao3) // verifica a condicao3 se as condicoes 1 e 2 sao falsas
+{
+	procedimentosElse2;
+}
+.
+.
+.
+else if(condicaoN)//verifica a condicaoN se as condicoes 1,2...N-1 sao falsas
+{
+	procedimentosElseN
+}
+else // executa os procedimento especificados se todos condicoes 1, 2, ... N 
+{    // sao falsas
+  
+   procedimentosElse;
+}
+\end{lstlisting}
+
+
+O código \ref{cond7_2} mostra um exemplo de uso do bloco if - (else if) - else (if-else aninhados).
+
+\begin{lstlisting}[ caption =  Exemplo de uso do bloco if - (else if) - else, label=cond7_2,]
+if(sensor > 300)
+{            
+digitalWrite(2,HIGH);
+}
+else if(sensor2 > 300)
+{
+digitalWrite(3,HIGH);
+contador2 = contador + 1;
+}
+else
+{
+digitalWrite(2,LOW);
+digitalWrite(3,LOW);
+contador = 0;
+contador2 =0;
+}
+\end{lstlisting}
+
+
+Pode-se usar blocos condicionais dentro de blocos condicionais. O código \ref{cond7_3} mostra um exemplo disso:
+
+\begin{lstlisting}[ caption =  Exemplo de uso do bloco if - (else if) - else, label=cond7_3,]
+if(sensor > 300)
+{            
+	digitalWrite(2,HIGH);
+	if(sensor2 > 100)
+	{ 
+		if(sensor3 > 100)//executa essa verificao apenas se a verificao
+		{				 // (sensor2 > 100) for verdadeira
+			digitalWrite(3,HIGH);
+		}
+		else
+		{
+			digitalWrite(3,LOW);
+		}
+	}
+}
+else if(sensor2 > 300)// executa essa verificacao se a condicao (sensor > 300)
+{					  // for falsa	
+digitalWrite(3,HIGH);
+contador2 = contador + 1;
+}
+\end{lstlisting}
+
+
+
+O operador switch - case opera segundo a sintaxe mostrada no código \ref{cond8}. O bloco switch - case realiza a verificação da igualdade da variável especificada dentro dos parênteses do switch com relação aos valores especificados nos case's. 
+
+Quando uma das verificações propostas nos case's se mostra verdadeira, os procedimentos especificados. Após a execução de tais procedimentos, encontra-se o procedimento \textbf{break;}. O procedimento break faz com que o programa pule para fora do bloco switch, ignorando todos os outros case's não verificados.
+
+Caso nenhum dos case's seja verdadeiro, executa-se os procedimentos especificados no bloco \textit{default:}.
+
+\begin{lstlisting}[ caption =  Sintaxe do switch - case, label=cond8,]
+switch (var) { // seleciona a variavel var para ser comparada em todos os
+				 // case's até achar um que seja verdadeiro, caso nenhum seja  
+				// achado, executa-se os procedimentos default
+case Valor1 :// if (var == Valor1)
+
+procedimentos1;
+
+break;
+
+case Valor2 : // if (var == Valor2)
+
+procedimentos2;
+
+break;
+
+.
+.
+.
+
+case ValorN :// if (var == ValorN)
+
+procedimentosN;
+
+break;
+
+default: 
+
+procedimentosDefault;
+}
+\end{lstlisting}
+
+
+
+O código \ref{cond8_2} mostra um exemplo de aplicação do bloco switch - case.
+
+
+\begin{lstlisting}[ caption =  Exemplo de uso do bloco switch - case, label=cond8_2,]
+
+int botao = digitalRead(4); // ler o pino digital 3
+switch (botao) { // seleciona a variavel botao para ser comparada em todos os
+// case's até achar um que seja verdadeiro, caso nenhum seja  
+// achado, executa-se os procedimentos default
+case  HIGH:
+
+digitalWrite(2, HIGH);
+digitalWrite(3, LOW);
+
+break;
+
+case LOW:
+
+digitalWrite(2, LOW);
+digitalWrite(3, HIGH);
+
+break;
+
+default: 
+
+digitalWrite(2, LOW);
+digitalWrite(3, LOW);
+} 
+\end{lstlisting}
+
+
+O operador \textbf{?} ou \textit{ternário} possui a sintaxe mostrada no código \ref{cond9}. Caso a condição especificada for verdadeira, o valor ou variável especificada à esquerda dos dois pontos (:) é escolhida para ser atribuída a variável \textit{var}. Caso a condição especificada for falsa, o valor ou variável especificada à direita dos dois pontos (:) é escolhida para ser atribuída a variável \textit{var}.
+
+
+
+\begin{lstlisting}[ caption =  Sintaxe de utilização do operador \textbf{?}, label=cond9,]
+var = (condicao) ? selecionaSeCondicaoVerdadeira : selecionaSeCondicaoFalsa;
+
+//O ternário acima é equivalente a
+
+if(condicao)
+{
+	var = selecioaSeCondicaoVerdadeira;
+}
+else
+{
+	var = selecionaSeCondicaoFalsa;
+}
+ 
+\end{lstlisting}
+
+Um exemplo da aplicação do operador \textbf{:} é mostrado no código \ref{cond9_2}.
+
+\begin{lstlisting}[ caption =  Exemplo de uso do operador \textbf{?}, label=cond9_2,]
+int i = 2;
+int var;
+var = (i > 1) ? 100 : 200;
+
+//O ternário acima é equivalente a
+
+if( i > 1)
+{
+	var = 100;
+}
+else
+{
+	var = 200;
+}
+ 
+\end{lstlisting}
+
+\subsection{Laços de repetição}
+\label{EmbassamentoSoftware_Lacos}
+
+No codificação de muitos algoritmos, é usual existir a necessidade de repetir certos comandos um determinado número de vezes ou até que certa condição seja atingida. 
+
+Uma solução rápida para conseguir realizar certos comandos um número determinado de vezes seria repetir o código o número de vezes desejado, simplesmente copiado as linahs de código desejadas, como mostrado no código \ref{codLoop1}.
+  
+  
+ \begin{lstlisting}[ caption =  Uma possível solução para repetir um comando um número determinado de vezes, label=codLoop1,]
+ 
+ // REPETINDOS OS COMANDO1 até COMANDON 3 VEZES
+ // COPIANDO E COLANDO AS LINHAS DESEJADAS
+ 
+ comando1;
+ comando2;
+ .
+ .
+ .
+ comandoN;
+ 
+ comando1;
+ comando2;
+ .
+ .
+ .
+ comandoN;
+ 
+ comando1;
+ comando2;
+ .
+ .
+ .
+ comandoN;
+ 
+ \end{lstlisting}
+ 
+ Isso tipo de solução para o problema da necessidade de repetição de código, além de poder trazer diversas erros na produção do código, deixa o código grande e limitado.
+ 
+ Para facilitar a codificação de trechos de códigos que devem ser repetidos certo números de vezes ou até que certa condição seja atingida, existem os \textit{laços de repetição}.
+ 
+ Na linguagem de programação C, existem os seguintes estruturas para criar laços:
+ 
+ \begin{enumerate}
+ 	\item Laço for
+ 	\item Laço while
+ 	\item Laço do-while
+ \end{enumerate}
+ 
+ Nesta seção, essas 3 estruturas serão apresentadas.
+ 
+ \subsubsection{Laço for}
+ 
+ O laço \textit{for} serve, primariamente, para repetir certos comando um determinado número de vezes. A Figura \ref{loop1} mostra a sintaxe para o uso do operador for. Primeiramente, deve-se escrever a palavra \textbf{loop} e abrir parênteses. 
+ 
+ A região na Figura \ref{loop1} indicada por \textbf{Inicialização de contador} será usada, como dito, para atribuir à variável responsável por contar quantas vezes o loop já foi executado com alguma valor.  
+ 
+  A região na Figura \ref{loop1} indicada por \textbf{atualização de contador} será usada, como dito, para , de alguma maneira desejada, atualizar a variável responsável por contar quantas vezes o loop já foi executado. Usualmente se executa $contador = contador + 1$ nessa região a cada vez que o loop é executado.
+  
+  A região na Figura \ref{loop1} indicada por \textbf{teste de condição de fim de loop} será usada, como dito, para verificar se o loop deve continuar a ser executado ou não. Caso a verificação lógica executada nessa região resulte em FALSE, o loop será encerrado e o programa continuará a executar as instruções abaixo do loop .   
+  
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=0.7\textwidth]{figs/loop1.jpg}
+ \caption{Sintaxe de uso do loop for.}
+ \label{loop1}
+ \end{figure}
+ 
+ 
+ Um exemplo de uso de um loop for é mostrado na Figura \ref{loop2}. Nesse exemplo, uma inteira variável chamada \textit{cont}, foi inicializada com o valor 0, na região indicada por \textbf{inicialização de contador} na Figura  \ref{loop1}. 
+ 
+ Num primeiro instante, a verificação lógica da região descrita por \textbf{teste de condição de fim de loop} $cont < 10$ será executada. Ou seja, a verificação $0 < 10$ será verificada. Tal verificação lógica resultará em TRUE, portanto o loop continuará. 
+ 
+ Dentro do loop, existe a instrução $digitalWrite(cont, HIGH);$. Como ovalor atual de cont é 0, a instrução é equivalente, nesse instante a $digitalWrite(0, HIGH);$, ou seja, a porta digital 0 apresentará um valor alto de tensão após isso.
+ 
+ Após todas instruções internas ao loop serem executadas, será executada a instrução relativa a região \textbf{atualização contador}. No exemplo mostrado, a atualização do contador é a seguinte $cont = cont + 1$, ou seja, $ cont = 0(antigo valor de cont) + 1 -> cont = 1$.
+ 
+ Esse mesmo padrão se repetirá, fazendo com que as porta 0 até 9 sejam setadas com valor alto de tensão. 
+ 
+ Quando a variável cont chegar ao valor 10, a verificação lógica $ cont < 10$ não mais será verdadeira, e o laço será finalizado.
+
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=0.7\textwidth]{figs/loop2.jpg}
+ 	\caption{Exemplo de uso do loop for.}
+ 	\label{loop2}
+ \end{figure}
+ 
+ Um aspecto importante a ser destacado para todas estruturas de repetição na linguagem C é que todas variáveis usadas nas regiões que definem a estrutura do loop devem ser declaradas anteriomente ao loop.
+ 
+ As variáveis declarada interiormente ao loop não poderão fazer parte das regiões que definem o loop.
+ 
+ O código \ref{loop3} mostra alguns erros comuns na utilização do loop for 
+ 
+ \begin{lstlisting}[ caption =  Alguns erros comuns a utilizar loops em C, label=loop3,]
+ 
+ for(i = 0; i < 10; i = i -1)
+ {
+    int soma;
+	soma = soma + i;
+     
+     //ERRO 1: variavel i não declarada antes do loop
+     //ERRO 2: Esse erro possivelmente não será detectado pelo
+     // pelo compilador. Ao executar esse loop, a condição de fim
+     // de loop nunca será falsa, devido a forma de atualização 
+     // contador
+     //ERRO 3: A variavel definida no interior do loop é somada
+     // consigo mesma e com o contador, entretanto, a variável 
+     // soma não possui valor inicial, causando um possível erro
+     // em tempo de execução 
+ }
+ 
+ soma = soma + 10;
+ // ERRO 4: A variável soma é definida apenas interiomente ao //loop referênciá-la fora do loop não é possível
+ 
+ 
+ \end{lstlisting}
+ 
+Já o código \ref{loop4} mostra o mesmo código mostrado em \ref{loop3} corrigido.
+\begin{lstlisting}[ caption = Código sem erros, label=loop4,]
+
+//DEFININDO CONTADOR E VARIAVEL A SER USADA FORA DO
+//LOOP ANTES DO LOOP
+int soma = 0;
+int i;
+
+for(i = 0; i < 10; i = i +1)// USANDO UMA APROPRIADA DE ATUALIZA
+{							//-CAO DE CONTADOR
+soma = soma + i;
+}
+
+soma = soma + 10;
+
+
+\end{lstlisting}
+  
+
+\subsubsection{Laço while}
+
+O laço \textit{while} serve, primariamente, para repetir certos comando enquanto certa condição não for atingida. A Figura \ref{} mostra a sintaxe comum de utilização do laço \textit{while}.
+
+  
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=0.7\textwidth]{figs/loop5.jpg}
+ 	\caption{Sintaxe comum de uso do loop while.}
+ 	\label{loop5}
+ \end{figure}
+  
+  
+  A região na Figura \ref{loop5} indicada por \textbf{Inicialização de contador ou variável para verificação de quebra de fim loop} será usada, como dito, para atribuir à variável responsável por contar quantas vezes o loop já foi executado com alguma valor ou inicializar a variável que a cada loop irá servir para verificar se a condição de fim de loop já foi atinginda.  
+  
+  A região na Figura \ref{loop5} indicada por \textbf{teste de condição de fim de loop} será usada, como dito, para verificar se o loop deve continuar a ser executado ou não. Caso a verificação lógica executada nessa região resulte em FALSE, o loop será encerrado e o programa continuará a executar as instruções abaixo do loop .   
+  
+  A região na Figura \ref{loop5} indicada por \textbf{atualização de contador} será usada, como dito, para , de alguma maneira desejada, atualizar a variável responsável por indicar que o loop chegou ao fim. 
+  
+  
+  O código \ref{loop6} mostra um exemplo de uso do while.
+  
+\begin{lstlisting}[ caption = Exemplo de uso do laço while, label=loop6,]
+  //Inicialização de contador ou variável para verificação de //quebra de fim loop
+  int soma = 0;
+  int i = 0;
+  
+  while (i < 100) //teste de condição de fim de loop
+  {
+     soma = soma + 1 // procedimento1
+     
+     i = i + 1; //Atualizacao de contador ou variavel de         
+				// verificacao
+  }
+  
+\end{lstlisting}
+
+
+Ao iniciar o loop \textit{while}, a primeira coisa que acontece é a verificação da condição de fim de loop. 
+
+No exemplo mostrado no código \ref{loop6}, a variável usada como contador é a variável \textbf{i}. Ela é inicializada com o valor 0. O teste de fim de loop, no primeiro instante, é, portanto, o seguinte: ( 0 < 100 ). Essa verificação lógica terá como resultado TRUE, daí, o loop será executado. 
+
+A cada iteração do loop while citado, a variável \textbf{i} terá seu valor incrementado  por uma unidade. 
+
+Quando \textbf{i} for igual a 100, o loop while será finalizado.
+
+Um dos usos muito comuns para o loop while, é a verificação do estado de certa variável de software ou de hardware. O código  \ref{loop7} mostra essa aplicação para o loop while num programa feito para a placa Galileo.
+
+\begin{lstlisting}[ caption = Exemplo de uso do laço while para a placa Galileo, label=loop7,]
+
+#define botao1 2
+#define led 3
+void setup()
+{
+pinMode(botao1, INPUT);
+pinMode(led, OUTPUT);
+}
+
+void loop()
+{
+	delay(100);
+	digitalWrite(led, LOW);
+     
+    //Enquanto o botao conectado a porta digital 2
+    //nao for apertado
+    //repete o loop while sem fazer coisa alguma
+    //alem de verificar o estado do botao
+	while(digitalRead(botao1) != HIGH)
+	{
+	}
+	
+	
+	//botao apertado, pisca LED
+	digitalWrite(led, HIGH);
+
+}
+
+\end{lstlisting}
+
+
+
+\subsubsection{Laço do-while}
+
+O laço \textit{do-while} possui o mesmo comportamento do laço while. A única diferença é que, ao usar o \textit{do-while} é garantido que as instruções internas ao loop serão executadas pelo menos uma vez. Isso deve ao fato de que a verificação de fim de loop só ocorre ao final do loop.
+
+A sintaxe do \textit{do-while} é como mostrado na Figura \ref{loop8}
+
+
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=0.7\textwidth]{figs/loop8.jpg}
+ 	\caption{Sintaxe comum de uso do loop do-while.}
+ 	\label{loop5}
+ \end{figure}
+ 
+ Um exemplo de uso do \textit{do-while} é mostrado no código \ref{loop9}:
+
+
+\begin{lstlisting}[ caption = Exemplo de uso do laço while para a placa Galileo, label=loop7,]
+
+#define botao1 2
+#define led 3
+void setup()
+{
+pinMode(botao1, INPUT);
+pinMode(led, OUTPUT);
+}
+
+int flag = 0;
+void loop()
+{ 
+	if(flag == 0)
+	{
+		do{
+		
+			delay(100);
+			digitalWrite(led, LOW);
+			delay(100);
+			digitalWrite(led, HIGH);			
+		
+		}while(digitalRead(botao1) != HIGH);
+	}
+	
+	flag = 1;
+}
+
+\end{lstlisting}
+
+
+Esse exemplo possui o comportamento contrário ao comportamento do código \ref{loop7}. Nesse exemplo, o LED piscará continuamente atéque o botão seja apertado. Quando o botão for apertado, o programa saíra do loop e a variável \textit{flag} será setada com o valor 1. Ao fazer isso, não mais o programa executará o laço do-while, por causa da verificação \textit{if( flag == 0)}.

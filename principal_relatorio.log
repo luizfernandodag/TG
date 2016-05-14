@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.5)  9 MAY 2016 22:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.5)  14 MAY 2016 17:02
 entering extended mode
 **./principal_relatorio.tex
 (principal_relatorio.tex
@@ -1069,9 +1069,33 @@ LaTeX Warning: Label `DRAM1' multiply defined.
 
 LaTeX Warning: Label `Pratica1' multiply defined.
 
+
+LaTeX Warning: Label `Pratica3Codigo' multiply defined.
+
 ) (cap_Experimentos.aux
 
 LaTeX Warning: Label `eqSerie3' multiply defined.
+
+
+LaTeX Warning: Label `*' multiply defined.
+
+
+LaTeX Warning: Label `*' multiply defined.
+
+
+LaTeX Warning: Label `*' multiply defined.
+
+
+LaTeX Warning: Label `cond7' multiply defined.
+
+
+LaTeX Warning: Label `cond7_2' multiply defined.
+
+
+LaTeX Warning: Label `loop5' multiply defined.
+
+
+LaTeX Warning: Label `loop7' multiply defined.
 
 ))
 \openout1 = `principal_relatorio.aux'.
@@ -1222,12 +1246,17 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/sc' in size <8> not available
  [2
 
 
-])
+]
+Overfull \hbox (24.42665pt too wide) in paragraph at lines 53--53
+ [][] []\T1/cmr/m/sc/10.95 Prática 3: Uso de cha-ves/-bo-tões e con-tro-la-do-r
+es de fluxo(Condicionais) [][]  
+ []
+
+)
 \tf@toc=\write7
 \openout7 = `principal_relatorio.toc'.
 
- [3]
-(principal_relatorio.lof [4
+ [3] (principal_relatorio.lof [4
 
 ] [5])
 \tf@lof=\write8
@@ -2492,36 +2521,85 @@ File: figs/pratica2_1.jpg Graphic file (type jpg)
 <use figs/pratica2_1.jpg>
 Package pdftex.def Info: figs/pratica2_1.jpg used on input line 243.
 (pdftex.def)             Requested size: 301.82413pt x 274.30112pt.
- [69 <./figs/pratica2_1.jpg>]
-<figs/pratica2_2.jpg, id=478, 1551.7975pt x 766.865pt>
+
+<figs/pratica2_2.jpg, id=475, 1551.7975pt x 766.865pt>
 File: figs/pratica2_2.jpg Graphic file (type jpg)
 
 <use figs/pratica2_2.jpg>
-Package pdftex.def Info: figs/pratica2_2.jpg used on input line 269.
+Package pdftex.def Info: figs/pratica2_2.jpg used on input line 253.
 (pdftex.def)             Requested size: 301.82413pt x 149.14607pt.
- (Praticas/Pratica2/pratica2Arduino.ino [70 <./figs/pratica2_2.jpg>])) [71]
+ [69 <./figs/pratica2_1.jpg>]
+(Praticas/Pratica2/pratica2Arduino.ino) [70 <./figs/pratica2_2.jpg>]
+Overfull \hbox (55.29643pt too wide) in paragraph at lines 269--269
+[]\T1/cmr/bx/n/14.4 Prática 3: Uso de cha-ves/-bo-tões e con-tro-la-do-res de f
+luxo(Condicionais) 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 292.
+
+<figs/pratica3_1.jpg, id=482, 944.52875pt x 827.09pt>
+File: figs/pratica3_1.jpg Graphic file (type jpg)
+
+<use figs/pratica3_1.jpg>
+Package pdftex.def Info: figs/pratica3_1.jpg used on input line 326.
+(pdftex.def)             Requested size: 301.82413pt x 264.2956pt.
+ [71] [72]
+<figs/pratica3_2.jpg, id=489, 1498.59875pt x 811.03pt>
+File: figs/pratica3_2.jpg Graphic file (type jpg)
+
+<use figs/pratica3_2.jpg>
+Package pdftex.def Info: figs/pratica3_2.jpg used on input line 336.
+(pdftex.def)             Requested size: 301.82413pt x 163.34164pt.
+ (Praticas/Pratica3/pratica3code.ino [73 <./figs/pratica3_1.jpg> <./figs/pratic
+a3_2.jpg>] [74])
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 372.
+
+
+Overfull \hbox (56.37813pt too wide) in paragraph at lines 376--387
+ [][] 
+ []
+
+<figs/pratica4_1.jpg, id=497, 783.92876pt x 672.5125pt>
+File: figs/pratica4_1.jpg Graphic file (type jpg)
+
+<use figs/pratica4_1.jpg>
+Package pdftex.def Info: figs/pratica4_1.jpg used on input line 406.
+(pdftex.def)             Requested size: 301.82413pt x 258.9335pt.
+ [75] [76]
+<figs/pratica4_2.jpg, id=504, 1494.58376pt x 800.9925pt>
+File: figs/pratica4_2.jpg Graphic file (type jpg)
+
+<use figs/pratica4_2.jpg>
+Package pdftex.def Info: figs/pratica4_2.jpg used on input line 416.
+(pdftex.def)             Requested size: 301.82413pt x 161.74786pt.
+ (Praticas/Pratica4/pratica4code.ino [77 <./figs/pratica4_1.jpg> <./figs/pratic
+a4_2.jpg>] [78] [79] [80])) [81]
 \openout2 = `cap_Experimentos.aux'.
 
  (cap_Experimentos.tex
 Cap\'{\i }tulo 4.
-<figs/resistor1.jpg, id=485, 225.84375pt x 225.84375pt>
+<figs/resistor1.jpg, id=521, 225.84375pt x 225.84375pt>
 File: figs/resistor1.jpg Graphic file (type jpg)
 
 <use figs/resistor1.jpg>
 Package pdftex.def Info: figs/resistor1.jpg used on input line 35.
 (pdftex.def)             Requested size: 232.17459pt x 232.18744pt.
- [72
+ [82
 
 
 
 ]
-<figs/resistor2.png, id=489, 409.53pt x 224.037pt>
+<figs/resistor2.png, id=525, 409.53pt x 224.037pt>
 File: figs/resistor2.png Graphic file (type png)
  <use figs/resistor2.png>
 Package pdftex.def Info: figs/resistor2.png used on input line 44.
 (pdftex.def)             Requested size: 278.61234pt x 152.42517pt.
 
-<figs/resistor3.jpg, id=490, 525.965pt x 205.76875pt>
+<figs/resistor3.jpg, id=526, 525.965pt x 205.76875pt>
 File: figs/resistor3.jpg Graphic file (type jpg)
  <use figs/resistor3.jpg>
 Package pdftex.def Info: figs/resistor3.jpg used on input line 52.
@@ -2534,14 +2612,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 68.
 
-[73 <./figs/resistor1.jpg> <./figs/resistor2.png>] [74 <./figs/resistor3.jpg>]
-<figs/circuito1.png, id=499, 99.44353pt x 93.66193pt>
+[83 <./figs/resistor1.jpg> <./figs/resistor2.png>] [84 <./figs/resistor3.jpg>]
+<figs/circuito1.png, id=534, 99.44353pt x 93.66193pt>
 File: figs/circuito1.png Graphic file (type png)
  <use figs/circuito1.png>
 Package pdftex.def Info: figs/circuito1.png used on input line 140.
 (pdftex.def)             Requested size: 232.17459pt x 218.68779pt.
 
-<figs/circuito3.jpg, id=500, 159.59625pt x 136.51pt>
+<figs/circuito3.jpg, id=535, 159.59625pt x 136.51pt>
 File: figs/circuito3.jpg Graphic file (type jpg)
  <use figs/circuito3.jpg>
 Package pdftex.def Info: figs/circuito3.jpg used on input line 160.
@@ -2550,8 +2628,8 @@ Package pdftex.def Info: figs/circuito3.jpg used on input line 160.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[75 <./figs/circuito1.png>]
-<figs/circuito2.png, id=505, 122.56992pt x 138.7584pt>
+[85 <./figs/circuito1.png>]
+<figs/circuito2.png, id=541, 122.56992pt x 138.7584pt>
 File: figs/circuito2.png Graphic file (type png)
 
 <use figs/circuito2.png>
@@ -2562,21 +2640,21 @@ Package pdftex.def Info: figs/circuito2.png used on input line 178.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `Embassamento_resitor' on page 76 undefined on input l
+LaTeX Warning: Reference `Embassamento_resitor' on page 86 undefined on input l
 ine 199.
 
 
-LaTeX Warning: Reference `Embassamento_LED' on page 76 undefined on input line 
+LaTeX Warning: Reference `Embassamento_LED' on page 86 undefined on input line 
 201.
 
-[76 <./figs/circuito3.jpg>]
-<figs/circuito4.png, id=509, 354.32375pt x 96.36pt>
+[86 <./figs/circuito3.jpg>]
+<figs/circuito4.png, id=545, 354.32375pt x 96.36pt>
 File: figs/circuito4.png Graphic file (type png)
  <use figs/circuito4.png>
 Package pdftex.def Info: figs/circuito4.png used on input line 210.
 (pdftex.def)             Requested size: 232.17459pt x 63.14197pt.
 
-<figs/circuito5.png, id=510, 206.40312pt x 58.39417pt>
+<figs/circuito5.png, id=546, 206.40312pt x 58.39417pt>
 File: figs/circuito5.png Graphic file (type png)
 
 <use figs/circuito5.png>
@@ -2586,14 +2664,14 @@ Package pdftex.def Info: figs/circuito5.png used on input line 219.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[77 <./figs/circuito2.png> <./figs/circuito4.png>]
-<figs/circuito6.png, id=516, 174.02615pt x 102.33432pt>
+[87 <./figs/circuito2.png> <./figs/circuito4.png>]
+<figs/circuito6.png, id=552, 174.02615pt x 102.33432pt>
 File: figs/circuito6.png Graphic file (type png)
 
 <use figs/circuito6.png>
 Package pdftex.def Info: figs/circuito6.png used on input line 284.
 (pdftex.def)             Requested size: 232.17459pt x 136.53545pt.
- [78 <./figs/circuito5.png>]
+ [88 <./figs/circuito5.png>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 294.
@@ -2603,80 +2681,80 @@ Overfull \hbox (31.21214pt too wide) in paragraph at lines 298--304
  [][] 
  []
 
-[79 <./figs/circuito6.png>] <figs/LED0.png, id=528, 337.26pt x 70.2625pt>
+[89 <./figs/circuito6.png>] <figs/LED0.png, id=563, 337.26pt x 70.2625pt>
 File: figs/LED0.png Graphic file (type png)
 
 <use figs/LED0.png>
 Package pdftex.def Info: figs/LED0.png used on input line 323.
 (pdftex.def)             Requested size: 464.34918pt x 96.74147pt.
- <figs/diodo1.png, id=529, 348.30125pt x 145.54375pt>
+ <figs/diodo1.png, id=564, 348.30125pt x 145.54375pt>
 File: figs/diodo1.png Graphic file (type png)
 
 <use figs/diodo1.png>
 Package pdftex.def Info: figs/diodo1.png used on input line 331.
 (pdftex.def)             Requested size: 232.17459pt x 97.01855pt.
- <figs/LED2.png, id=530, 501.875pt x 301.125pt>
+ <figs/LED2.png, id=565, 501.875pt x 301.125pt>
 File: figs/LED2.png Graphic file (type png)
 
 <use figs/LED2.png>
 Package pdftex.def Info: figs/LED2.png used on input line 354.
 (pdftex.def)             Requested size: 464.34918pt x 278.62355pt.
- [80 <./figs/LED0.png> <./figs/diodo1.png>]
-<figs/LED3.jpg, id=536, 636.3775pt x 312.16624pt>
+ [90 <./figs/LED0.png> <./figs/diodo1.png>]
+<figs/LED3.jpg, id=571, 636.3775pt x 312.16624pt>
 File: figs/LED3.jpg Graphic file (type jpg)
  <use figs/LED3.jpg>
 Package pdftex.def Info: figs/LED3.jpg used on input line 366.
 (pdftex.def)             Requested size: 464.34918pt x 227.77943pt.
- [81 <./figs/LED2.png>] <figs/protoboard1.jpg, id=541, 662.475pt x 483.8075pt>
+ [91 <./figs/LED2.png>] <figs/protoboard1.jpg, id=577, 662.475pt x 483.8075pt>
 File: figs/protoboard1.jpg Graphic file (type jpg)
 
 <use figs/protoboard1.jpg>
 Package pdftex.def Info: figs/protoboard1.jpg used on input line 392.
 (pdftex.def)             Requested size: 232.17459pt x 169.55663pt.
- [82 <./figs/LED3.jpg>]
-<figs/protoboard3.jpg, id=545, 714.0276pt x 290.81448pt>
+ [92 <./figs/LED3.jpg>]
+<figs/protoboard3.jpg, id=581, 714.0276pt x 290.81448pt>
 File: figs/protoboard3.jpg Graphic file (type jpg)
 
 <use figs/protoboard3.jpg>
 Package pdftex.def Info: figs/protoboard3.jpg used on input line 404.
 (pdftex.def)             Requested size: 464.34918pt x 189.12923pt.
 
-<figs/divisor1.png, id=546, 126.4725pt x 160.1985pt>
+<figs/divisor1.png, id=582, 126.4725pt x 160.1985pt>
 File: figs/divisor1.png Graphic file (type png)
  <use figs/divisor1.png>
 Package pdftex.def Info: figs/divisor1.png used on input line 419.
 (pdftex.def)             Requested size: 232.17459pt x 294.09415pt.
 
-[83 <./figs/protoboard1.jpg> <./figs/protoboard3.jpg>] [84 <./figs/divisor1.png
->] <figs/potenciometro1.png, id=554, 324.21124pt x 235.88126pt>
+[93 <./figs/protoboard1.jpg> <./figs/protoboard3.jpg>] [94 <./figs/divisor1.png
+>] <figs/potenciometro1.png, id=590, 324.21124pt x 235.88126pt>
 File: figs/potenciometro1.png Graphic file (type png)
 
 <use figs/potenciometro1.png>
 Package pdftex.def Info: figs/potenciometro1.png used on input line 479.
 (pdftex.def)             Requested size: 232.17459pt x 168.92015pt.
 
-<figs/potenciometro2.png, id=555, 391.4625pt x 270.25969pt>
+<figs/potenciometro2.png, id=591, 391.4625pt x 270.25969pt>
 File: figs/potenciometro2.png Graphic file (type png)
 
 <use figs/potenciometro2.png>
 Package pdftex.def Info: figs/potenciometro2.png used on input line 494.
 (pdftex.def)             Requested size: 232.17459pt x 160.29309pt.
- [85 <./figs/potenciometro1.png>]
-<figs/potenciometro4.jpg, id=560, 501.875pt x 501.875pt>
+ [95 <./figs/potenciometro1.png>]
+<figs/potenciometro4.jpg, id=595, 501.875pt x 501.875pt>
 File: figs/potenciometro4.jpg Graphic file (type jpg)
 
 <use figs/potenciometro4.jpg>
 Package pdftex.def Info: figs/potenciometro4.jpg used on input line 502.
 (pdftex.def)             Requested size: 232.17459pt x 232.1748pt.
 
-<figs/potenciometro5.jpg, id=561, 120.85284pt x 77.82922pt>
+<figs/potenciometro5.jpg, id=596, 120.85284pt x 77.82922pt>
 File: figs/potenciometro5.jpg Graphic file (type jpg)
 
 <use figs/potenciometro5.jpg>
 Package pdftex.def Info: figs/potenciometro5.jpg used on input line 512.
 (pdftex.def)             Requested size: 232.17459pt x 149.53012pt.
- [86 <./figs/potenciometro2.png> <./figs/potenciometro4.jpg>] <figs/potenciomet
-ro3.png, id=565, 147.21666pt x 65.57834pt>
+ [96 <./figs/potenciometro2.png> <./figs/potenciometro4.jpg>] <figs/potenciomet
+ro3.png, id=600, 147.21666pt x 65.57834pt>
 File: figs/potenciometro3.png Graphic file (type png)
 
 <use figs/potenciometro3.png>
@@ -2688,74 +2766,180 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line 542.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<figs/ldr1.png, id=566, 602.25pt x 501.875pt>
+<figs/ldr1.png, id=601, 602.25pt x 501.875pt>
 File: figs/ldr1.png Graphic file (type png)
  <use figs/ldr1.png>
 Package pdftex.def Info: figs/ldr1.png used on input line 547.
 (pdftex.def)             Requested size: 232.17459pt x 193.479pt.
- [87 <./figs/potenciometro5.jpg> <./figs/potenciometro3.png>]
-<figs/ldr3.jpg, id=570, 147.55125pt x 110.4125pt>
+ [97 <./figs/potenciometro5.jpg> <./figs/potenciometro3.png>]
+<figs/ldr3.jpg, id=606, 147.55125pt x 110.4125pt>
 File: figs/ldr3.jpg Graphic file (type jpg)
  <use figs/ldr3.jpg>
 Package pdftex.def Info: figs/ldr3.jpg used on input line 555.
 (pdftex.def)             Requested size: 185.73683pt x 138.98906pt.
 
-<figs/ldr2.jpg, id=571, 580.1675pt x 422.57875pt>
+<figs/ldr2.jpg, id=607, 580.1675pt x 422.57875pt>
 File: figs/ldr2.jpg Graphic file (type jpg)
  <use figs/ldr2.jpg>
 Package pdftex.def Info: figs/ldr2.jpg used on input line 565.
 (pdftex.def)             Requested size: 232.17459pt x 169.11232pt.
- [88 <./figs/ldr1.png (PNG copy)> <./figs/ldr3.jpg>]
-<figs/ldr4.jpg, id=576, 128.73094pt x 198.7425pt>
+ [98 <./figs/ldr1.png (PNG copy)> <./figs/ldr3.jpg>]
+<figs/ldr4.jpg, id=612, 128.73094pt x 198.7425pt>
 File: figs/ldr4.jpg Graphic file (type jpg)
  <use figs/ldr4.jpg>
 Package pdftex.def Info: figs/ldr4.jpg used on input line 577.
 (pdftex.def)             Requested size: 232.17459pt x 358.47615pt.
- [89 <./figs/ldr2.jpg> <./figs/ldr4.jpg>] [90]
-<figs/Arduino13.jpeg, id=583, 597.58257pt x 516.7305pt>
+ [99 <./figs/ldr2.jpg> <./figs/ldr4.jpg>]
+<figs/interruptor1.jpg, id=616, 217.38815pt x 137.60208pt>
+File: figs/interruptor1.jpg Graphic file (type jpg)
+
+<use figs/interruptor1.jpg>
+Package pdftex.def Info: figs/interruptor1.jpg used on input line 608.
+(pdftex.def)             Requested size: 232.17459pt x 146.9682pt.
+
+<figs/interruptor2.jpg, id=617, 215.65369pt x 116.21016pt>
+File: figs/interruptor2.jpg Graphic file (type jpg)
+
+<use figs/interruptor2.jpg>
+Package pdftex.def Info: figs/interruptor2.jpg used on input line 619.
+(pdftex.def)             Requested size: 232.17459pt x 125.11853pt.
+ [100 <./figs/interruptor1.jpg>]
+<figs/interruptor3.jpg, id=621, 401.5pt x 120.45pt>
+File: figs/interruptor3.jpg Graphic file (type jpg)
+
+<use figs/interruptor3.jpg>
+Package pdftex.def Info: figs/interruptor3.jpg used on input line 632.
+(pdftex.def)             Requested size: 232.17459pt x 69.65335pt.
+
+<figs/interruptor4.jpg, id=622, 673.51625pt x 369.38pt>
+File: figs/interruptor4.jpg Graphic file (type jpg)
+
+<use figs/interruptor4.jpg>
+Package pdftex.def Info: figs/interruptor4.jpg used on input line 651.
+(pdftex.def)             Requested size: 371.48076pt x 203.73451pt.
+ [101 <./figs/interruptor2.jpg> <./figs/interruptor3.jpg>] <figs/interruptor5.j
+pg, id=627, 1520.5608pt x 455.59007pt>
+File: figs/interruptor5.jpg Graphic file (type jpg)
+
+<use figs/interruptor5.jpg>
+Package pdftex.def Info: figs/interruptor5.jpg used on input line 661.
+(pdftex.def)             Requested size: 371.48076pt x 111.30423pt.
+ [102 <./figs/interruptor4.jpg> <./figs/interruptor5.jpg>] [103] <figs/Arduino1
+3.jpeg, id=635, 597.58257pt x 516.7305pt>
 File: figs/Arduino13.jpeg Graphic file (type jpg)
 
 <use figs/Arduino13.jpeg>
-Package pdftex.def Info: figs/Arduino13.jpeg used on input line 646.
+Package pdftex.def Info: figs/Arduino13.jpeg used on input line 724.
 (pdftex.def)             Requested size: 325.043pt x 281.07243pt.
- [91 <./figs/Arduino13.jpeg>] [92]
-<figs/compilador1.png, id=591, 120.45pt x 410.53375pt>
+ [104 <./figs/Arduino13.jpeg>]
+<figs/compilador1.png, id=639, 120.45pt x 410.53375pt>
 File: figs/compilador1.png Graphic file (type png)
 
 <use figs/compilador1.png>
-Package pdftex.def Info: figs/compilador1.png used on input line 698.
+Package pdftex.def Info: figs/compilador1.png used on input line 776.
 (pdftex.def)             Requested size: 92.86841pt x 316.53793pt.
-
-<figs/compilador3.jpg, id=592, 351.52129pt x 271.7352pt>
+ [105]
+<figs/compilador3.jpg, id=643, 351.52129pt x 271.7352pt>
 File: figs/compilador3.jpg Graphic file (type jpg)
 
 <use figs/compilador3.jpg>
-Package pdftex.def Info: figs/compilador3.jpg used on input line 714.
+Package pdftex.def Info: figs/compilador3.jpg used on input line 792.
 (pdftex.def)             Requested size: 232.17459pt x 179.47845pt.
- [93 <./figs/compilador1.png>]
-<figs/compilador4.jpg, id=597, 762.59303pt x 346.896pt>
+ [106 <./figs/compilador1.png>]
+<figs/compilador4.jpg, id=648, 762.59303pt x 346.896pt>
 File: figs/compilador4.jpg Graphic file (type jpg)
 
 <use figs/compilador4.jpg>
-Package pdftex.def Info: figs/compilador4.jpg used on input line 726.
+Package pdftex.def Info: figs/compilador4.jpg used on input line 804.
 (pdftex.def)             Requested size: 464.34918pt x 211.23572pt.
 
-<figs/compilador5.jpg, id=598, 533.06352pt x 155.52504pt>
+<figs/compilador5.jpg, id=649, 533.06352pt x 155.52504pt>
 File: figs/compilador5.jpg Graphic file (type jpg)
 
 <use figs/compilador5.jpg>
-Package pdftex.def Info: figs/compilador5.jpg used on input line 735.
+Package pdftex.def Info: figs/compilador5.jpg used on input line 813.
 (pdftex.def)             Requested size: 464.34918pt x 135.48366pt.
- [94 <./figs/compilador3.jpg> <./figs/compilador4.jpg>] [95 <./figs/compilador5
-.jpg>] [96] [97]
-<figs/tabVariaveis2.jpg, id=612, 630.355pt x 499.8675pt>
+ [107 <./figs/compilador3.jpg> <./figs/compilador4.jpg>] [108 <./figs/compilado
+r5.jpg>] [109] [110]
+<figs/tabVariaveis2.jpg, id=663, 630.355pt x 499.8675pt>
 File: figs/tabVariaveis2.jpg Graphic file (type jpg)
 
 <use figs/tabVariaveis2.jpg>
-Package pdftex.def Info: figs/tabVariaveis2.jpg used on input line 884.
+Package pdftex.def Info: figs/tabVariaveis2.jpg used on input line 962.
 (pdftex.def)             Requested size: 464.34918pt x 368.22577pt.
- [98] [99 <./figs/tabVariaveis2.jpg>]) [100]
-(principal_relatorio.bbl [101
+ [111] [112 <./figs/tabVariaveis2.jpg>] [113]
+Overfull \hbox (6.2742pt too wide) in paragraph at lines 1062--1069
+ [][] 
+ []
+
+[114] <figs/condicional2.jpg, id=676, 279.0425pt x 144.54pt>
+File: figs/condicional2.jpg Graphic file (type jpg)
+
+<use figs/condicional2.jpg>
+Package pdftex.def Info: figs/condicional2.jpg used on input line 1079.
+(pdftex.def)             Requested size: 278.61234pt x 144.32127pt.
+
+<figs/condicional3.jpg, id=677, 276.03125pt x 137.51375pt>
+File: figs/condicional3.jpg Graphic file (type jpg)
+
+<use figs/condicional3.jpg>
+Package pdftex.def Info: figs/condicional3.jpg used on input line 1094.
+(pdftex.def)             Requested size: 278.61234pt x 138.81435pt.
+ [115 <./figs/condicional2.jpg>]
+<figs/condicional4.jpg, id=682, 104.64696pt x 46.2528pt>
+File: figs/condicional4.jpg Graphic file (type jpg)
+
+<use figs/condicional4.jpg>
+Package pdftex.def Info: figs/condicional4.jpg used on input line 1108.
+(pdftex.def)             Requested size: 278.61234pt x 123.16852pt.
+ [116 <./figs/condicional3.jpg> <./figs/condicional4.jpg>] <figs/condicional5.j
+pg, id=686, 355.3275pt x 328.22626pt>
+File: figs/condicional5.jpg Graphic file (type jpg)
+
+<use figs/condicional5.jpg>
+Package pdftex.def Info: figs/condicional5.jpg used on input line 1133.
+(pdftex.def)             Requested size: 278.61234pt x 257.36769pt.
+ [117 <./figs/condicional5.jpg>] [118] [119]
+[120] [121]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1368.
+ [122] <figs/loop1.jpg, id=706, 896.34875pt x 444.66125pt>
+File: figs/loop1.jpg Graphic file (type jpg)
+
+<use figs/loop1.jpg>
+Package pdftex.def Info: figs/loop1.jpg used on input line 1452.
+(pdftex.def)             Requested size: 325.043pt x 161.24493pt.
+ [123] <figs/loop2.jpg, id=710, 769.87625pt x 249.93375pt>
+File: figs/loop2.jpg Graphic file (type jpg)
+
+<use figs/loop2.jpg>
+Package pdftex.def Info: figs/loop2.jpg used on input line 1472.
+(pdftex.def)             Requested size: 325.043pt x 105.52443pt.
+ [124 <./figs/loop1.jpg> <./figs/loop2.jpg>]
+
+LaTeX Warning: Reference `' on page 125 undefined on input line 1528.
+
+<figs/loop5.jpg, id=714, 725.71124pt x 460.72125pt>
+File: figs/loop5.jpg Graphic file (type jpg)
+ <use figs/loop5.jpg>
+Package pdftex.def Info: figs/loop5.jpg used on input line 1533.
+(pdftex.def)             Requested size: 325.043pt x 206.35953pt.
+
+[125] [126 <./figs/loop5.jpg>]
+
+LaTeX Warning: Reference `loop8' on page 127 undefined on input line 1611.
+
+<figs/loop8.jpg, id=721, 744.7825pt x 486.81876pt>
+File: figs/loop8.jpg Graphic file (type jpg)
+ <use figs/loop8.jpg>
+Package pdftex.def Info: figs/loop8.jpg used on input line 1616.
+(pdftex.def)             Requested size: 325.043pt x 212.4627pt.
+
+[127]
+
+LaTeX Warning: Reference `loop9' on page 128 undefined on input line 1621.
+
+) [128 <./figs/loop8.jpg>] [129] (principal_relatorio.bbl [130
 
 
 ]
@@ -2782,12 +2966,12 @@ Underfull \hbox (badness 1142) in paragraph at lines 146--150
 a-tion\T1/cmr/m/n/10.95 , v. 50, n. 4, p. 482, 2015. Dis-po-ní-vel em:
  []
 
-[102]) [103]
+[131]) [132]
 \c@noAnexo=\count292
 \tf@thm=\write10
 \openout10 = `principal_relatorio.thm'.
 
- [104
+ [133
 
 ] (principal_relatorio.aux (resumos.aux) (simbolos.aux)
 (cap_Introducao.aux) (cap_RevisaoBibliografica.aux) (cap_Desenvolvimento.aux)
@@ -2800,13 +2984,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26600 strings out of 493634
- 493789 string characters out of 3143748
- 656259 words of memory out of 3000000
- 29413 multiletter control sequences out of 15000+200000
+ 26871 strings out of 493634
+ 498662 string characters out of 3143748
+ 704259 words of memory out of 3000000
+ 29659 multiletter control sequences out of 15000+200000
  42581 words of font info for 112 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 53i,17n,92p,10389b,1555s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,17n,92p,10389b,1556s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{C:/Pr
 ogram Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Program Files/MiKT
@@ -2840,9 +3024,9 @@ onts/type1/public/cm-super/sfti1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/
 sftt1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1095.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1095.pfb>
-Output written on principal_relatorio.pdf (116 pages, 6552205 bytes).
+Output written on principal_relatorio.pdf (145 pages, 7879927 bytes).
 PDF statistics:
- 749 PDF objects out of 1000 (max. 8388607)
+ 860 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 451 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 536 words of extra memory for PDF output out of 10000 (max. 10000000)
 

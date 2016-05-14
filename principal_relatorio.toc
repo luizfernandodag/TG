@@ -50,35 +50,54 @@
 \contentsline {subsection}{\numberline {3.3.2}Esquema de montagem}{69}
 \contentsline {subsection}{\numberline {3.3.3}Código fonte}{70}
 \contentsline {subsection}{\numberline {3.3.4}Comentários}{71}
-\contentsline {chapter}{\numberline {4}Embassamento teórico}{72}
-\contentsline {section}{\numberline {4.1}Introdução}{72}
-\contentsline {section}{\numberline {4.2}Embassamento teórico - Circuitos eletrônicos, Hardware}{72}
-\contentsline {subsection}{\numberline {4.2.1}Resistor}{72}
-\contentsline {subsection}{\numberline {4.2.2}Circuito - fórmulas e topologias básicas}{74}
-\contentsline {subsubsection}{\numberline {4.2.2.1}Primeira lei de Kirchoff - Leis das Nós}{75}
-\contentsline {subsubsection}{\numberline {4.2.2.2}Segunda lei de Kirchoff - Leis das Malhas}{76}
-\contentsline {subsubsection}{\numberline {4.2.2.3}Lei de Ohm}{76}
-\contentsline {subsubsection}{\numberline {4.2.2.4}Ligação em Série}{77}
-\contentsline {subsubsection}{\numberline {4.2.2.5}Ligação em Paralelo}{78}
-\contentsline {subsubsection}{\numberline {4.2.2.6}Resumo - Ligação em série X paralelo}{79}
-\contentsline {subsection}{\numberline {4.2.3}Diodo-LED}{79}
-\contentsline {subsection}{\numberline {4.2.4}Protoboard}{82}
-\contentsline {subsection}{\numberline {4.2.5}Divisor de tensão}{83}
-\contentsline {subsection}{\numberline {4.2.6}Potenciômetro}{85}
-\contentsline {subsection}{\numberline {4.2.7}LDR}{87}
-\contentsline {section}{\numberline {4.3}Embassamento teórico - Software}{90}
-\contentsline {subsection}{\numberline {4.3.1}Programação estruturada}{90}
-\contentsline {subsection}{\numberline {4.3.2}Programação para Arduino}{91}
-\contentsline {subsubsection}{\numberline {4.3.2.1}Padrão de programação em Arduíno}{91}
-\contentsline {subsection}{\numberline {4.3.3}Uso de portas digitais}{92}
-\contentsline {subsection}{\numberline {4.3.4}Processo de Compilação}{93}
-\contentsline {subsubsection}{\numberline {4.3.4.1}Pré-processamento}{94}
-\contentsline {subsubsection}{\numberline {4.3.4.2}Análise Léxica}{95}
-\contentsline {subsubsection}{\numberline {4.3.4.3}Análise Sintática}{95}
-\contentsline {subsubsection}{\numberline {4.3.4.4}Análise Semântica}{95}
-\contentsline {subsection}{\numberline {4.3.5}Diretivas de Compilação}{96}
-\contentsline {subsection}{\numberline {4.3.6}Tipos básicos de variáveis}{97}
-\contentsline {subsection}{\numberline {4.3.7}Conversão entre tipos de variáveis}{99}
-\contentsline {subsection}{\numberline {4.3.8}Leitura Analógica - Conversão Analógico/Digital}{100}
-\contentsline {chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}{101}
-\contentsline {chapter}{{Anexos}}{104}
+\contentsline {section}{\numberline {3.4}Prática 3: Uso de chaves/botões e controladores de fluxo(Condicionais)}{71}
+\contentsline {subsection}{\numberline {3.4.1}Procedimentos}{71}
+\contentsline {subsection}{\numberline {3.4.2}Esquema de montagem}{73}
+\contentsline {subsection}{\numberline {3.4.3}Código fonte}{73}
+\contentsline {subsection}{\numberline {3.4.4}Comentários}{75}
+\contentsline {section}{\numberline {3.5}Prática 4: Uso de laços de repetição}{75}
+\contentsline {subsection}{\numberline {3.5.1}Procedimentos}{75}
+\contentsline {subsection}{\numberline {3.5.2}Esquema de montagem}{77}
+\contentsline {subsection}{\numberline {3.5.3}Código fonte}{77}
+\contentsline {subsection}{\numberline {3.5.4}Comentários}{81}
+\contentsline {chapter}{\numberline {4}Embassamento teórico}{82}
+\contentsline {section}{\numberline {4.1}Introdução}{82}
+\contentsline {section}{\numberline {4.2}Embassamento teórico - Circuitos eletrônicos, Hardware}{82}
+\contentsline {subsection}{\numberline {4.2.1}Resistor}{82}
+\contentsline {subsection}{\numberline {4.2.2}Circuito - fórmulas e topologias básicas}{84}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Primeira lei de Kirchoff - Leis das Nós}{85}
+\contentsline {subsubsection}{\numberline {4.2.2.2}Segunda lei de Kirchoff - Leis das Malhas}{86}
+\contentsline {subsubsection}{\numberline {4.2.2.3}Lei de Ohm}{86}
+\contentsline {subsubsection}{\numberline {4.2.2.4}Ligação em Série}{87}
+\contentsline {subsubsection}{\numberline {4.2.2.5}Ligação em Paralelo}{88}
+\contentsline {subsubsection}{\numberline {4.2.2.6}Resumo - Ligação em série X paralelo}{89}
+\contentsline {subsection}{\numberline {4.2.3}Diodo-LED}{89}
+\contentsline {subsection}{\numberline {4.2.4}Protoboard}{92}
+\contentsline {subsection}{\numberline {4.2.5}Divisor de tensão}{93}
+\contentsline {subsection}{\numberline {4.2.6}Potenciômetro}{95}
+\contentsline {subsection}{\numberline {4.2.7}LDR}{97}
+\contentsline {subsection}{\numberline {4.2.8}Interruptores}{100}
+\contentsline {section}{\numberline {4.3}Embassamento teórico - Software}{102}
+\contentsline {subsection}{\numberline {4.3.1}Programação estruturada}{103}
+\contentsline {subsection}{\numberline {4.3.2}Programação para Arduino}{103}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Padrão de programação em Arduíno}{104}
+\contentsline {subsection}{\numberline {4.3.3}Uso de portas digitais}{104}
+\contentsline {subsection}{\numberline {4.3.4}Processo de Compilação}{105}
+\contentsline {subsubsection}{\numberline {4.3.4.1}Pré-processamento}{107}
+\contentsline {subsubsection}{\numberline {4.3.4.2}Análise Léxica}{108}
+\contentsline {subsubsection}{\numberline {4.3.4.3}Análise Sintática}{108}
+\contentsline {subsubsection}{\numberline {4.3.4.4}Análise Semântica}{108}
+\contentsline {subsection}{\numberline {4.3.5}Diretivas de Compilação}{109}
+\contentsline {subsection}{\numberline {4.3.6}Tipos básicos de variáveis}{110}
+\contentsline {subsection}{\numberline {4.3.7}Conversão entre tipos de variáveis}{112}
+\contentsline {subsection}{\numberline {4.3.8}Leitura Analógica - Conversão Analógico/Digital}{113}
+\contentsline {subsection}{\numberline {4.3.9}Estruturas Condicionais}{113}
+\contentsline {subsubsection}{\numberline {4.3.9.1}Operadores Relacionais}{114}
+\contentsline {subsubsection}{\numberline {4.3.9.2}Operadores Lógicos}{114}
+\contentsline {subsubsection}{\numberline {4.3.9.3}Controle de fluxo de execução de um programa (Condicionais)}{116}
+\contentsline {subsection}{\numberline {4.3.10}Laços de repetição}{122}
+\contentsline {subsubsection}{\numberline {4.3.10.1}Laço for}{123}
+\contentsline {subsubsection}{\numberline {4.3.10.2}Laço while}{126}
+\contentsline {subsubsection}{\numberline {4.3.10.3}Laço do-while}{127}
+\contentsline {chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}{130}
+\contentsline {chapter}{{Anexos}}{133}
