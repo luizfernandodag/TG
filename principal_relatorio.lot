@@ -13,13 +13,16 @@
 \contentsline {table}{\numberline {3.2}{\ignorespaces Prática 2 - Tabela de descrição.\relax }}{68}
 \contentsline {table}{\numberline {3.3}{\ignorespaces Prática 3 - Tabela de descrição.\relax }}{72}
 \contentsline {table}{\numberline {3.4}{\ignorespaces Prática 4 - Tabela de Descrição\relax }}{76}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Prática 5 - Tabela de Descrição\relax }}{82}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Prática 6 - Tabela de Descrição\relax }}{87}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Tabela de leitura de valor e tolerância de um resistor\relax }}{84}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Resumo - Ligação em série X Ligação em paralelo\relax }}{89}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Tamanho e faixa de uso para os tipos básicos váriaveis\relax }}{111}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Todos os Tipos de dados definidos pelo Padrão ANSI C, seus tamanhos em bytes e suas faixa de valores.\relax }}{112}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Operadores relacionais\relax }}{114}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Operadores \textbf {E}, \textbf {OU} e \textbf {Negação}\relax }}{115}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Tabela verdade do operador ||.\relax }}{115}
-\contentsline {table}{\numberline {4.8}{\ignorespaces Tabela verdade do operador \&\& .\relax }}{116}
-\contentsline {table}{\numberline {4.9}{\ignorespaces Tabela verdade do operador ! .\relax }}{116}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Tabela de leitura de valor e tolerância de um resistor\relax }}{94}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Resumo - Ligação em série X Ligação em paralelo\relax }}{99}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Tamanho e faixa de uso para os tipos básicos váriaveis\relax }}{126}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Todos os Tipos de dados definidos pelo Padrão ANSI C, seus tamanhos em bytes e suas faixa de valores.\relax }}{127}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Operadores relacionais\relax }}{129}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Operadores \textbf {E}, \textbf {OU} e \textbf {Negação}\relax }}{130}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Tabela verdade do operador ||.\relax }}{130}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Tabela verdade do operador \&\& .\relax }}{131}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Tabela verdade do operador ! .\relax }}{131}
+\contentsline {table}{\numberline {4.10}{\ignorespaces Tipos básicos e avançados ( destacados em vermelho) de variáveis.\relax }}{148}

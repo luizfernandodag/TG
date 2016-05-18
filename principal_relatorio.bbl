@@ -5,6 +5,11 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.42.2.1 }
 
+\bibitem{DATASHEET1}
+\abntrefinfo{S. Burfoot~J.}{S. BURFOOT~J.}{2015}
+{S. BURFOOT~J., G. D. e. H.~C. B. \emph{A Teacher's Guide to Intel Galileo}.
+Buildind C5B, Macquarie University, North Ryde, NSW, 2109, 2015.}
+
 \bibitem{Parte1:artigo10}
 \abntrefinfo{Sovic, Jagust e Sersic}{SOVIC; JAGUST; SERSIC}{2014}
 {SOVIC, A.; JAGUST, T.; SERSIC, D. How to teach basic university-level
@@ -153,11 +158,6 @@ Dispon{\'\i}vel em: $<$http://stacks.iop.org/0031-9120/50/i=4/a=482$>$.}
 {INTEL. \emph{DataSheet Intel Galileo Gen 2 Development Board}.
 [S.l.], 2014.}
 
-\bibitem{DATASHEET1}
-\abntrefinfo{S. Burfoot~J.}{S. BURFOOT~J.}{2015}
-{S. BURFOOT~J., G. D. e. H.~C. B. \emph{A Teacher's Guide to Intel Galileo}.
-Buildind C5B, Macquarie University, North Ryde, NSW, 2109, 2015.}
-
 \bibitem{livro:Sedra}
 \abntrefinfo{Sedra. e Smith}{SEDRA.; SMITH}{2004}
 {SEDRA., A.~S.; SMITH, K.~C. \emph{Microeletronics Cicuits}. [S.l.]: Oxford
@@ -214,5 +214,15 @@ ISBN 978-0486210766.}
 {KERNIGHAN, B. \emph{The C programming language}. Englewood Cliffs, N.J:
   Prentice Hall, 1988.
 ISBN 978-0131103627.}
+
+\bibitem{DATASHEET3}
+\abntrefinfo{DEVICES}{DEVICES}{2011}
+{DEVICES, A. \emph{DATASHEET 74HC595}.
+One Technology Way, P.O. Box 9106, Norwood, MA 02062-9106, U.S.A., 2011.}
+
+\bibitem{DATASHEET4}
+\abntrefinfo{DEVICES}{DEVICES}{209}
+{DEVICES, A. \emph{DATASHEET LM35}.
+One Technology Way, P.O. Box 9106, Norwood, MA 02062-9106, U.S.A., 209.}
 
 \end{thebibliography}

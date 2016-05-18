@@ -667,6 +667,118 @@ A Figura \ref{interruptor5} mostra um exemplo de um circuito construído em conju
 
 As aplicações para botões em eletrônica são diversas. Neste trabalho, muitas práticas usarão botões no seu desenvolvimento.
 
+\subsection{Registrador de deslocamento (Shift Register)}
+\label{shift}
+Registadores de deslocamento são muito utilizados na conversão entre interfaces seriais para interfaces paralelas. A Figura \ref{shift1} mostra um resumo do funcionamento de um registrador de deslocamento. 
+
+\begin{figure}[H]
+		\centering
+	\includegraphics[width=0.8\textwidth]{figs/shift1.jpg}
+	\caption{Esquema resumido: Série para Paralelo com um registrador de deslocamento.}
+	\label{shift1}
+	\source{Adaptado de http://electriciantraining.tpub.com/14185/css/Serial-And-Parallel-Transfers-And-Conversion-Continued-151.htm}
+\end{figure}
+
+Cada bit que chega no registrador de deslocamento é escrito nas portas paralelas seguencialmente. 
+
+Tal comportamento é realizado por meio de uma cascata de \textit{flip-flops}. Um flip-flop é um dispositivo que armazena ou reseta um bit de acordo com sinais nas suas portas. 
+
+A figura \ref{shift2} mostra a estrutura interna de um registrador de deslocamento com mais detalhes. Cada vez que um salto alto é posto no pino de Clock, um novo bit que entra no pino \textit{Data in} e os que estavam armazenados nos \textit{flip-flops} são levados para os flip-flops da frente.
+
+Os pinos Q1, Q2, Q3,...,QN são os pinos a serem utilizados para leitura paralela. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/shift2.png}
+	\caption{Cascata de \textit{flip-flops} num registrador de deslocamento.}
+	\label{shift2}
+\end{figure}
+
+Uma arquitetura similar pode ser usada para realizar a conversão entre comunicação paralela para serial.
+
+Registradores de deslocamento são muito utilizada para controlar diversas entradas e saídas para além das entradas e saídas disponibilizadas por um microcontrolador. 
+
+Geralmente, os registradores de deslocamento tratam apenas de valores digitais($V_{cc} ou GND$) em seus pinos.
+
+Para os propósitos deste trabalho, será usado o registrador de deslocamento 74HC595 \cite{DATASHEET3}. A Figura \ref{shift3} mostra a pinagem desse circuito integrado:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/shift3.jpg}
+	\caption{Pinagem Registrador de Deslocamento 74HC595.}
+	\label{shift3}
+\end{figure}
+
+A descrição dos pinos é a seguinte:
+
+\begin{itemize}
+	\item\textbf{Pino 14}: Pino para entrada de dados seriais.
+	\item \textbf{Pino 16}: Pino de alimentação VCC.
+	\item \textbf{Pino 8}: Pino de referência GND.
+	\item\textbf{Pinos 1 a 7 e 15 (Q1 a Q7 e Q0)}:
+	\item \textbf{Pino 10:} O pino 10 é chamado de \textit{Master Reset (MR)}. Quando um valor baixo de tensão é identificado nesse pino, o registrador de deslocamento é resetado e todos dados que ainda estiverem nele são perdidos.
+	\item \textbf{Pino 11}: O pino 11 é destinado para o sinal do clock do sistema, que determinará qual será a frequência com que os bits são deslocados pelo registrador.
+	\item \textbf{Pino 12}: O pino 12 é o \textit{Latch Pin}. Quando este pino está no estado de LOW, o registrador de deslocamento está pronto para receber dados na sua pino de entrada. Quando este pino está no estado de HIGH, o registrador de deslocamento é configurado para escrever os dados lidos no pinos Q1 a Q7 e Q0.
+	\item \textbf{Pino 13}: O pino 13 é o pino responsável por permitir ou bloquear a transmissão dos dados para as portas de saída. Quando o pino está no estado LOW (GND), a transmissão está permitida, quando está em estado HIGH, a transmissão está bloqueada.
+	 
+\end{itemize}
+
+
+Os bits que entram no pino 14 de forma serial e saem, como dito, sequencialmente nos pinos Q0, Q1, Q2, Q3, Q4, Q5, Q6 e Q7. 
+
+\subsection{Sensor de Temperatura - LM35}
+\label{sensorTemperatura}
+
+Sensores de temperatura são dispositivos os quais possuem alguma propriedade mensurável alterada pela alteração de temperatura.
+
+Sensores são extremamente importantes para sistemas de automação, em qualquer escala ou ambiente.
+
+Em industrias, onde há processos de produção automatizados, temos muitos tipos de sensores medindo as mais diversas variáveis do processo: temperatura, pressão, peso, pH, dentre muitos outros. Devido a importância da leitura dessas variáveis, existe uma área responsável por instrumentos de medição, a Instrumentação Industrial.
+
+Em ambientes comerciais, sensores de temperatura são muito utilizados para controle de ar-condicionados e verificação de incêndios. Sensores de presença são importantes para segurança. 
+
+Com relação a sensores de temperatura, um dos mais usados e baratos é o sensor LM35. O sensor LM35 possui as seguintes características:
+
+\begin{itemize}
+	\item Entrada temperatura, saída Tensão elétrica: Alguns sensores de temperatura são sensores resistivos. Se esse fosse o caso, seria necessário a construção de um tipo de divisor de tensão (seção - \ref{EmbassamentoHardware_DivisorTesao}) para tratar com os dados do sensor na forma de tensão de forma a ter uma variável processável pela placa Galileo.
+	\item Sem necessidade de calibração da escala Kelvin para Celsious: Muitas vezes, os sensores possuem respostas calibradas para a escala Kelvin, mas o LM35 já é calibrado para Celsious. \textbf{A sensibilidade do LM35 é 10mV/$^{\circ}$C}
+	\item O LM35 consome apenas 60  uA na faixa de 4 a 20 V de alimentação, portanto, pouca influência na leitura ocorre por auto-aquecimento\cite{DATASHEET4}.
+\end{itemize} 	
+
+A Figura \ref{lm35_0} mostra o LM35 e a Figura \ref{lm35_2} mostra sua pinagem.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figs/lm35.jpg}
+	\caption{Sensor de Temperatura LM35.}
+	\label{lm35_0}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figs/lm35_2.jpg}
+	\caption{Pinagem LM35.}
+	\label{lm35_2}
+\end{figure}
+
+Na Figura \ref{lm35_2}, os pinos indicam o seguinte:
+
+\begin{itemize}
+	\item \textbf{+Vs}: Pino de alimentação. Para aplicações com a placa Galileo, a alimentação 5V já é adequada.
+	\item \textbf{GND}: Pino para se conectado ao terra.
+	\item \textbf{Vout}: Pino de saída da leitura realizada.
+\end{itemize}
+
+A Figura \ref{lm35_3} mostra a forma adequada de se conectar o LM35 à placa Galileo.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/lm35_3.jpg}
+	\caption{Circuito sensor de temperatura feito com LM35 e com a placa Galileo.}
+	\label{lm35_3}
+\end{figure}
+
+Nesse circuito, a temperatura é lida no pino analógico A0.
+
+
+
 \section{Embassamento teórico - Software}
 \label{EmbassamentoSoftware}
 
@@ -967,8 +1079,6 @@ Os modificadores de variáveis e seus respectivos efeitos sobre a faixa de valore
 \end{table}
 
 
-
-
 \subsection{Conversão entre tipos de variáveis}
 \label{EmbassamentoSoftware_ConversaoEntreVariaveis}
 
@@ -1138,9 +1248,10 @@ A Figura \ref{cond5} mostra o resumo do que acontece ao se utilizar qualquer dos
 O operador \textbf{if} possui a sintaxe mostrada no código \ref{cond6}. Caso a condição lógica especificada por \textit{condicao1} seja verdadeira, ou seja, caso tal condição retorne verdadeiro (TRUE), os procedimentos dentro das chaves (\{ \}) devem ser executados.  
 
 \begin{lstlisting}[ caption =  Sintaxe do if, label=cond6,]
-if(condicao1)//verifica se as condições lógicas especificadas em condicao1 sao 
-{            // verdadeira(TRUE). Caso sejam, executa os procedimentos dentro
-			// da chave
+if(condicao1)//verifica se as condições lógicas especificadas em 
+{			//condicao1 sao 
+            // verdadeira(TRUE). Caso sejam, executa os 
+			//  procedimentos dentro da chave
 	condicao1Procedimento1;
 	condicao1Procedimento2;
 	.
@@ -1653,3 +1764,723 @@ void loop()
 
 
 Esse exemplo possui o comportamento contrário ao comportamento do código \ref{loop7}. Nesse exemplo, o LED piscará continuamente atéque o botão seja apertado. Quando o botão for apertado, o programa saíra do loop e a variável \textit{flag} será setada com o valor 1. Ao fazer isso, não mais o programa executará o laço do-while, por causa da verificação \textit{if( flag == 0)}.
+
+
+
+\subsection{Vetores e Matrizes}
+\label{EmbassamentoSoftware_VetoresMatrizes}
+
+Vetores, também chamados de arrays, e matrizes são conjunto de dados de mesmo tipo. São usadas para tratar grandes quantidades de dados sem a necessidade de declaração de muitas variáveis.
+
+ Nesta seção, serão tratados os conceitos de vetores e matrizes alocadas estaticamente na memória(antes da execução do programa) de forma detalhada. Na seção \ref{EmbassamentoSoftware_TiposAvancados} serão tratadas, além de outros tipos mais avançados de variáveis, vetores e matrizes alocadas dinamicamente, ou seja, durante o tempo de execução do programa. 
+
+\subsubsection{Vetores}
+
+Vetores são conjuntos de dados para serem tratados em apenas uma dimensão de indexação. A Figura \ref{fig_vetor1} mostra a alocação para \textit{N} espaços de memória para um vetor.  
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/fig_vetor1.jpg}
+	\caption{Alocação de memória para um vetor declarado para N espaços de memória.}
+	\label{fig_vetor1}
+	\source{Adaptado de http://www.tiexpert.net/programacao/c/vetores.php}
+\end{figure}
+
+
+ O código \ref{vetor1} mostra a sintaxe de declaração de um vetor em C.
+
+
+\begin{lstlisting}[ caption = Sintaxe de declaração de um vetor em C, label=vetor1,]
+tipo nome_da_variavel [quantidade_de_elementos];
+\end{lstlisting}
+
+Exemplo de declaração de vetores de vários tipos de dados são mostrados no código \ref{vetor2}.
+
+\begin{lstlisting}[ caption = Exemplos de declaração de um vetor em C, label=vetor3,]
+
+//DECLARACAO DE VETORES DE VARIOS TIPOS DE VARIAVEIS
+
+int v_int [100]; //declara um vetor de 100 inteiros 
+char v_char[100];//declara um vetor de 100 caracteres
+
+float v_float[100];//declara um vetor de 100 numero racionais
+
+\end{lstlisting}
+
+
+Nos exemplos de declaração do código \ref{vector2}, são declarados conjuntos de dados sequenciais. 
+
+Para acessar, atribuir ou modificar os elementos de um vetor, a sintaxe do código \ref{vector3} é usada.
+
+\begin{lstlisting}[ caption = Sintaxe de atribuição de um valor a certo índice num vetor, label=vetor3,]
+tipo nome_da_variavel [quantidade_de_elementos];
+
+nome_da_variavel[indice] = valor;
+
+\end{lstlisting}
+
+
+Exemplos de atribuição de valor a certos índices em vetores são mostrados no código \ref{vetor4}.
+
+
+\begin{lstlisting}[ caption = Exemplos de declaração de um vetor em C, label=vetor4,]
+
+int v_int [100]; //declara um vetor de 100 inteiros 
+int vetor_digitos [10];//declara um vetor de 10 inteiros
+char v_char[100];//declara um vetor de 100 caracteres
+float v_float[100];//declara um vetor de 100 numero racionais
+
+v_int[0] = 1;// atribuicao do valor 1 ao primeiro elemento do
+			 // do vetor v_int
+
+vetor_contagem = {0,1,2,3,4,5,6,7,8,9}; // atribuicao de um 
+										// bloco completo de 
+										// dados ao vetor
+		
+v_char[0] = 'd'; // atribuicao do char 'd' no primeiro espaco de 
+				 // memoria reservado para a variavel v_char
+				 
+v_int{9} = 234567;// atribuicao do valor 234567 ao espaco de 
+				  // memoria 10 da variavel v_int
+				  
+v_float[49] = 0.52// atribuicao do valor 0.52 ao espaco 50 
+				  // do vetor v_float
+\end{lstlisting} 
+
+
+Um fato extremamente importante a ser pontuado com relação à indexação de vetores e matrizes é que a contagem sempre começa pelo valor 0. O código acima mostra vários exemplos nos quais tal fato foi pontuado nos comentários.
+
+Vetores e matrizes são muitas vezes utilizados em conjuntos com laços de repetição.
+
+O exemplo do código \ref{vetor5} mostra a utilização de um laço for em conjunto com o um vetor de 10 números inteiros.
+
+\begin{lstlisting}[ caption = Exemplos de uso de um for com um vetor, label=vetor5,]
+
+//SUPONDO QUE EXISTE UM VETOR De INTEIROS int vetor[10]
+//JAH COM VALORES SETADOS EM TODOS INDICES
+
+int i;
+int soma = 0;
+for(i = 0; i < 10; i++)
+{
+	soma += vetor[i];
+}
+
+//A VARIAVEL soma TEM AGORA A SOMA DE TODOS FATORES 
+
+\end{lstlisting} 
+
+O exemplo acima também mostra o acesso de cada índice do vetor.
+
+\subsubsection{Matrizes}
+
+Pode-se dizer que matrizes são vetores bidimensionais. Há 2 ou mais dimensões de indexação numa matriz.
+
+\begin{lstlisting}[ caption = Sintaxe de declaração de uma matriz em C, label=matriz1,]
+tipo nome_da_variavel [quantidade_de_elementos_dimensao1][quantidade_de_elementos_dimensao2]...[quantidade_de_elementos_dimensaoN];
+\end{lstlisting}
+
+
+O código \ref{matriz2} mostra um exemplo de declaração e  iniciação de uma matriz 5x3. Nessa matriz há 15 números inteiros organizados em 5 linhas e 3 colunas.
+
+
+\begin{lstlisting}[ caption =  Exemplo de declaração e iniciação de uma matriz de inteiros em C, label=matriz2,]
+int alunos_notas [5][3] = {  9,7,9;
+							  10,8,6;
+							  5,4,5;
+							  6,6,6;
+							  7,9,8;
+							};
+\end{lstlisting}
+
+A primeira atribuição do exemplo \ref{matriz2} (número 9)  é destinada ao elemento (0,0), ou seja, $alunos\_notas [0][0] = 9$.Cada virgula simboliza atribuição à próxima coluna, na linha atual, ou seja, $alunos_notas [0][1] = 7$. Todo ponto e vírgula simboliza "pulo de linha". Após o primeiro ponto e vírgula, tem-se a atribuição do número 10, ou seja, $alunos\_notas [1][] = 10$.
+
+O exemplo \ref{matriz3} usa a mesma matriz declarada e iniciada no código \ref{matriz2}, para calcular a média de 5 alunos em 3 provas e atribuir tal média a um vetor de floats chamado $medias$. 
+
+
+\begin{lstlisting}[ caption =  Exemplo de usod e matriz bidimensional, label=matriz3,]
+
+int alunos_notas [5][3] = {  9,7,9;
+10,8,6;
+5,4,5;
+6,6,6;
+7,9,8;
+}; //Declaracao e atribuicao de valores de notas de 3 provas a 5 //alunos
+
+float medias [5];//media dos 5 alunos a serem calculadas
+int i,j;// variaveis a serem usadas como contadores de lacos
+		// e indices de matriz
+		
+for(i = 0; i < 5; i++)
+{
+	for(j = 0; < 3;j++)
+	{	
+		// Calculando a media do aluno i
+		// notar a conversao de variavel
+	   medias[i] = (float)alunos_notas[i][j]/3; 
+	}
+}		
+		
+\end{lstlisting}
+
+
+No exemplo, é executado o comando $ medias[i] = (float)alunos\_notas[i][j]/3$. A conversão para float, como explicado na seção \ref{EmbassamentoSoftware_ConversaoEntreVariaveis}, é necessária. A primeira razão é que a variável $medias$ é uma matriz de floats. Em geral, os compiladores já fazem essa compilação automaticamente. A segunda, e mais relevante para este exemplo, é que a operação $alunos\_notas[i][j]/3$ resultaria , sem a conversão, num número inteiro, não num número racional, causando erros no cálculo.
+
+
+
+
+
+\subsection{Tipos avançados de tipos de variáveis}
+\label{EmbassamentoSoftware_TiposAvancados}
+
+Além dos tipos básicos de variáveis ( seção \ref{EmbassamentoSoftware_TiposVariaveis}), existem tipos mais complexos e com usabilidade muitas vezes mais úteis na codificação de programas. 
+
+Para a plataforma de programação utilizada com Arduino e Galileo são utilizados os tipos mostrados na tabela \ref{avancado1}. Os tipos destacados em vermelho são os tipos mais avançados a serem tratados nesta seção.
+\begin{table}[H]
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/tiposAvancados1.jpg}
+\end{figure}
+\caption{Tipos básicos e avançados ( destacados em vermelho) de variáveis.}
+\label{avancado1}
+\source{Adaptado de http://playground.arduino.cc/Code/DatatypePractices}
+\end{table}
+
+\subsubsection{boolean}
+
+O tipo boolean é um tipo muito simples de dado utilizado para programação em Arduino. 
+
+Muitas vezes, se deseja saber do estado atual de algo e para isso se pode manipular variáveis do tipo \textit{boolean}.
+
+Variáveis do tipo boolean podem armazenar apenas dois valores: \textit{true ou false}.
+
+Como a unidade mínima de endereços de variáveis nas arquiteturas atuais é o byte, o qual possui 8 bits, portanto, o boolean, como mostrado na tabela \ref{avancado1} ocupa 1 byte de memória e não apenas 1 bit, como esperado.
+
+O código \ref{boolean1} mostra um exemplo de uso de uma variável boolean.
+
+\begin{lstlisting}[ caption =  Exemplo de uso de uma variável boolean em Arduino, label=boolean1,]
+#define pinoBotao 2
+boolean botaoApertado = false;
+
+if(digitalRead(pinoBotao) == HIGH)
+{
+	botaoApertado = true;
+}
+
+\end{lstlisting}
+
+
+\subsubsection{Ponteiros}
+\label{Ponteiros}
+
+Ponteiros, são, como qualquer variável em C, variáveis que armazenam no espaço de memória a ela reservado uma série de bits com algum significado determinado.
+
+A diferença de um ponteiro para uma variável normal é que ele tem como conteúdo, não um número qualquer ou caractere, mas um \textbf{endereço de memória}. 
+
+A sintaxe para declaração de um ponteiro é mostrado no código \ref{pont1}.
+
+\begin{lstlisting}[ caption = Sintaxe de declaração de um ponteiro em C, label=pont1,]
+tipo *nome_do_ponteiro;
+\end{lstlisting}
+
+Exemplos de ponteiros para vários tipos de memória s'ao mostrados no código \ref{pont2}.
+
+
+\begin{lstlisting}[ caption = Exemplos de declaração de um ponteiro em C, label=pont3,]
+int * ptrInt; // ponteiro para armazenar o endereço de um int
+char * ptrChar; // ponteiro para armazenar o endereço de um char
+float *ptrFloat;// ponteiro para armazenar o endereço de um float
+double *ptrDouble;// ponteiro para armazenar o endereço de um 
+				  // double
+\end{lstlisting}
+
+
+\begin{lstlisting}[ caption = Exemplos de atribuição de endereços de variáveis a ponteiros, label=pont4,]
+int * ptrInt; // ponteiro para armazenar o endereço de um int
+char * ptrChar; // ponteiro para armazenar o endereço de um char
+float *ptrFloat;// ponteiro para armazenar o endereço de um float
+double *ptrDouble;// ponteiro para armazenar o endereço de um
+				  // double
+
+
+char c = 'f';
+prtChar = &c; // no ponteiro ptrChar tem agora o endereco da 
+			  // variavel c
+			  
+int v[10] = {5,10,15,3,10,76,5,13,33,45};
+prtInt = &v; //prtInt APONTA para o endereco 
+	         // inicial do vetor v, cujo 
+			// conteudo eh igual a 5
+			
+			
+ 
+
+\end{lstlisting}
+
+
+No código\ref{pont4}, o ponteiro \textit{ptrChar} recebe o endereço de memória da variável \textit{c} e o ponteiro \textit{ptrInt} recebe o endereço do primeiro inteiro do vetor de inteiros \textit{v}.
+
+ A Figura \ref{pont3} a alocação de memória para o vetor \textit{v} supondo que o endereço de memória atribuído para v se deu a partir de 108. 
+ 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/pont3.jpg}
+	\caption{Endereço de memória e conteúdo de um vetor \textit{v} de 8 espaços.}
+	\label{pont3}
+\end{figure}
+
+Após o comando $ ptrInt = \&v$ se executado, o ponteiro \textit{ptrInt} passou a apontar para o endereço da primeira variável do vetor \textit{v} como mostrado na Figura \ref{pont4}. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{figs/pont4.jpg}
+	\caption{Após a atribuição do endereço do vetor ao ponteiro ptrInt.}
+	\label{pont4}
+\end{figure}
+
+
+
+Ponteiros permitem que você se referem ao mesmo espaço na memória de vários locais no programa. Isso significa que se pode atualizar a memória em um local e a mudança pode ser vista em outros escopos. 
+
+Ponteiros também podem ser interessantes para economizar espaço por possibilitar o compartilhamento de componentes em estruturas de dados.
+
+Ponteiros também podem ser usados para navegar em matrizes e vetores. Usando o mesmo exemplo do código \ref{pont3} no código \ref{pont5}, ao ser executar o laço mostrado, o conteúdo do vetor seria ${7,12,17,5,12,78,7,15,35,47}$. O operado $*ptrInt$ refere-se ao conteúdo armazenado no endereço de inteiro apontado por $ptrInt$, assim como $*(ptrInt +1)$, se refere do próximo endereço de ponteiro apontado por $ptrInt.$
+
+
+\begin{lstlisting}[ caption = Exemplos de atribuição de endereços de variáveis a ponteiros, label=pont4,]
+int * ptrInt; // ponteiro para armazenar o endereço de um int
+char * ptrChar; // ponteiro para armazenar o endereço de um char
+float *ptrFloat;// ponteiro para armazenar o endereço de um float
+double *ptrDouble;// ponteiro para armazenar o endereço de um
+				  // double
+
+char c = 'f';
+prtChar = &c; // no ponteiro ptrChar tem agora o endereco da 
+// variavel c
+
+int v[10] = {5,10,15,3,10,76,5,13,33,45};
+prtInt = &v; //prtInt APONTA para o endereco 
+// inicial do vetor v, cujo 
+// conteudo eh igual a 5
+
+int i;
+
+for(i = 0; i < 10; i++)
+{
+   *(ptrInt + i) = *(ptrInt + i) + 2; //adiciona 2 ao i-esimo
+									   // conteudo do vetor v
+	
+	//comando com efeito igual ao comando anterior
+	//ptrInt[i] += 2;								    
+									   
+}
+
+
+\end{lstlisting}
+
+\subsubsection{String e Arrays}
+
+String e array são nada mais do que vetores de caracteres ou vetores de qualquer tipo de variável (visto que array se define para qualquer tipo de variável).
+
+Esta subseção está escrita após a subseção relativa a ponteiros ( subseção \ref{Ponteiros}) devido ao fato de que o comando relativo a alocação dinâmica de memória ( alocação quando o programa já passou a ser executado) necessitar de conceito de atribuição de endereço de blocos de memória.
+
+
+String em C são tratadas com o tipo $char *$, ou seja, um ponteiro de char.
+
+O código \ref{string1} mostra uma alocação estática de uma string. O conjunto de caracteres "MINHASTRING" é alocado em certo espaço do heap de memória pelo compilador e o ponteiro string aponta para o primeiro caractere do conjunto de caracteres.  
+
+\begin{lstlisting}[ caption = Exemplos de uma alocação estática de uma string em C, label=string1,]
+
+char * string = "MINHASTRING";
+
+//          +-+-+-+-+-+-+-+-+-+-+-+
+//string -> |M|I|N|H|A|S|T|R|I|N|G|  ponteiro string aponta para
+//          +-+-+-+-+-+-+-+-+-+-+-+  esse bloco de memoria 
+									// no heap de memoria
+\end{lstlisting}
+
+
+O código \ref{string2} mostra uma alocação dinâmica de uma string. Para se alocar dinamicamente um bloco de memória deve-se utilizar o comando \textit{malloc(NUMBYTES)}. O comando malloc reserva, em tempo de execução, a quantidade de bytes especificados como argumento de entrada e atribui o endereço inicial do bloco ao ponteiro especificado.
+
+
+\begin{lstlisting}[ caption = Exemplos de uma alocação dinâmica de uma string em C, label=string2,]
+
+char * string = (char *)malloc(11);
+
+//          +-+-+-+-+-+-+-+-+-+-+-+
+//string -> |X|X|X|X|X|X|X|X|X|X|X|  ponteiro string aponta para
+//          +-+-+-+-+-+-+-+-+-+-+-+  esse bloco de memoria 
+								  // reservado para 11 bytes
+								  
+//          +-+-+-+-+-+-+-+-+-+-+-+
+//		    |X|X|X|X|X|X|X|X|X|X|X| 
+//          +-+-+-+-+-+-+-+-+-+-+-+ 
+//
+//          +-+-+-+-+-+-+-+-+-+-+-+
+//string -> |M|I|N|H|A|S|T|R|I|N|G|  ponteiro string aponta para
+//          +-+-+-+-+-+-+-+-+-+-+-+  esse bloco de memoria, nao
+									// o reservado acima 
+ 
+								  
+\end{lstlisting}
+
+O conjunto de caracteres "MINHASTRING", caso atribuído à variável string ($string ="MINHASTRING"$) não será atribuído aos 11 bytes alocados, mas para outro bloco, não reservado. É possível que ao tentar acessar o conteúdo da string após o comando $string ="MINHASTRING"$ cause um erro em tempo de execução.
+
+A forma correta de atribuição uma string para um ponteiro de char é mostrado  \ref{string3}.
+
+
+\begin{lstlisting}[ caption = Atribuição de string a um ponteiro de char alocado dinamicamente, label=string3,]
+
+char * string = (char *)malloc(11);
+
+//          +-+-+-+-+-+-+-+-+-+-+-+
+//string -> |X|X|X|X|X|X|X|X|X|X|X|  ponteiro string aponta para
+//          +-+-+-+-+-+-+-+-+-+-+-+  esse bloco de memoria 
+// reservado para 11 bytes
+
+strcpy(string,"MINHASTRING");
+//          +-+-+-+-+-+-+-+-+-+-+-+
+//string -> |M|I|N|H|A|S|T|R|I|N|G|  
+//          +-+-+-+-+-+-+-+-+-+-+-+  
+
+
+
+\end{lstlisting}
+
+Como dito, arrays alocados dinamicamente podem ser criados, utilizando o comando malloc, para qualquer tipo de variável.
+
+O código \ref{string4} mostra a alocação dinâmica de um array de 11 floats. O comando sizeof(TIPO) retorna a quantidade de bytes que o tipo de variável especificado por \textit{TIPO} possui.
+No caso do exemplo, uma variável float ocupa 4 bytes, portanto, serão reservados 44 bytes de memória e o endereço de tal bloco atribuído ao ponteiro arrayFloats. 
+
+\begin{lstlisting}[ caption = Alocação dinâmica de um array de 11 floats, label=string4,]
+int numFloats = 11ç
+float * arrayFloats = (float *)malloc(11*sizeof(float));
+
+//          	+-+-+-+-+-+-+-+-+-+-+-+-+-+
+//arrayFloats -> |X|X|X|X|X|X|X|X|X|X|X|  
+//               +-+-+-+-+-+-+-+-+-+-+-+  esse bloco de memoria 
+// reservado para 11 espaços ocupados por floats(4*11 bytes)
+
+
+\end{lstlisting}
+
+Para se acessar os elementos de um array, pode-se utilizar qualquer uma das sintaxes mostrada no exemplo \ref{string5}. Caso a operação $arrayFloats++;$ seja executada, o ponteiro arrayFloats passará a apontar não mais para o primeiro endereço alocado, mas para o segundo. A letra N no comentário mostrado após o comando $arrayFloats++;$ simboliza um espaço de memória não alocado com o comando malloc. 
+
+Abaixo do comando $arrayFloats++;$ é mostrado uma série de comandos que podem causar erros em tempo de execução por causa da tentativa de acesso a espaço de memória não reservados.
+
+
+\begin{lstlisting}[ caption = Alocação dinâmica de um array de 11 floats, label=string4,]
+int numFloats = 11;
+float * arrayFloats = (float *)malloc(numFloats*sizeof(float));
+
+arrayFloats[2] = 7.8;
+*(arrayFloats + 1) = 0.5;
+
+//          	+--+-+--+---+---+-+-+-+-+-+-+-+-+
+//arrayFloats -> |X|0.5|7.8|X|X|X|X|X|X|X|X|  
+//               +-+-+-+-+-+-+-+-+-+-+-+-+-+  esse bloco de //                                           //memoria 
+// reservado para 11 espaços ocupados por floats(4*11 bytes)
+
+arrayFloats++;
+
+//          	 +---+---+---+-+-+-+-+-+-+-+
+//arrayFloats -> |0.5|7.8|X|X|X|X|X|X|X|X|N| // arrayFloats
+//               +-+-+-+-+-+-+-+-+-+-+-+-+-+//passa a apontar 
+											// para o endereco do
+											//0.5
+
+if(arrayFloats[10] == 0.0)//possível erro em tempo de execucao
+   arrayFloats[10] = 1.0; // 
+
+\end{lstlisting}
+
+
+Para alocar dinamicamente uma matriz, deve-se usar ponteiro de ponteiros e laços de repetição, como mostrado no código \ref{string5}. Pode-se ver um $int **$ (ou um ponteiro de ponteiro de qualquer tipo de variável) como um array de ponteiros de int. Cada um desses ponteiros nesse array deve-se ter seu espaço de memória alocado, como mostrado no código.
+
+\begin{lstlisting}[ caption = Alocação dinâmica de uma matriz 2X2 de inteiros, label=string5,]
+
+int **matriz = (int **)malloc(2*sizeof(int *));
+int i,j;
+
+for(i = 0; i <2;i++)
+{
+	matriz[i] = (int *)malloc(2*sizeof(int));
+}
+
+//    	   +-+-+		
+//matriz ->|X|X|
+//		   +-+-+
+//		   |X|X|
+//         +-+-+
+
+for(i = 0; i <2;i++)
+{
+	for(j = 0; j <2;j++)
+	{
+		matriz[i][j] = i + j;
+	}
+}
+
+//    	   +-+-+		
+//matriz ->|0|1|
+//		   +-+-+
+//		   |1|2|
+//         +-+-+
+	
+
+
+\end{lstlisting}
+
+
+\subsubsection{Enum}
+
+\subsubsection{Struct}
+
+\subsection{Conversão Código Binário para Decimal e vice-versa}
+\label{CodigoBinario}
+Todo número segue uma base numérica para representação de números.Toda base numérica é um conjunto de símbolos (ou algarismo). 
+
+Representando por C, o número de símbolos da base B (por exemplo, na base hexadecimais, o número é 16) e por \textit{$alg_{n}$} o enésimo algarismo de um número representado na base B, tem-se que todo número, em qualquer base, pode ser convertido da base B para a base decimal seguindo a seguinte fórmula, sendo n o número de expoentes necessários para representar a parte inteira do número e k o número de expoentes necessários para representar a parte fracionária do número:
+
+\begin{equation}\label{eqBaseNumerica}
+\begin{split}
+Numero_{base Bpara base decimal} = alg_{n}*(C)^{n} + alg_{n-1}*(C)^{n-1} + ...+ alg_{0}*(C)^{0} + ...+ alg_{-k}*(C)^{-k} 
+\end{split}
+\end{equation}
+
+
+A base numérica corriqueiramente usada é a base decimal. A base decimal é formada pelo símbolos 0,1,2,3,4,5,6,7,8,9 e a partir deles podem ser representados todos números. O número de símbolos dessa base é 10, portanto, qualquer número, na base decimal, também segue a mesma lógica apresentada na equação \ref{eqBaseNumerica}.  
+
+
+\begin{equation}\label{eqBaseNumerica2}
+\begin{split}
+Numero_{base decimal para base decimal} = alg_{n}*10^{n} + alg_{n-1}*10^{n-1} + ...+ alg_{0}*10^{0} + ...+ alg_{-k}*10^{-k} 
+\end{split}
+\end{equation}
+
+Por exemplo, o número 35,67 na base decimal é igual a :
+
+
+\begin{equation}\label{eqBaseNumerica3}
+\begin{split}
+35,67 = 3*10^{1} + 5*10^{0} +6*10^{-1} + 7*10^{-2} 
+\end{split}
+\end{equation}
+
+A base binária é formada por dois símbolos: 0 e 1. Uma forma usual de se representar um número sem sinal na base binária segue a mesma lógica das expressões mostradas anteriormente:
+
+\begin{equation}\label{eqBaseNumerica4}
+\begin{split}
+Numero_{base binária para base decimal} = alg_{n}*2^{n} + alg_{n-1}*2^{n-1} + ...+ alg_{0}*2^{0} + ...+ alg_{-k}*2^{-k} 
+\end{split}
+\end{equation}
+
+
+Em sistemas digitais, a base binária é sempre utilizada para representar qualquer número de uma forma compreensível para o sistema.
+
+Para converter um número sem sinal representado na base binária para a base decimal (a qual, usualmente, é mais facilmente compreendida por um ser humano) para a base decimal, basta aplicar a expressão mostrada em \ref{eqBaseNumerica4}.
+
+Um exemplo seria converter um byte (8 bits), cujo conteúdo é igual B11000010 para decimal:
+
+\begin{equation}\label{eqBaseNumerica5}
+\begin{split}
+Numero_{B11000010 para base decimal} = 1*2^{7} + 1*2^{6} + 1*2^{1} =  193
+\end{split}
+\end{equation}
+
+Para converter um número na base decimal para a base binária, é necessário realizar a técnica das divisões sucessivas por 2.
+
+Nessa técnica, os dígitos do número binário são obtidos realizando sucessivas divisões por 2 ao número na base decimal. A cada vez que a divisão é realizada, deve-se registrar qual foi o resto da divisão. O processo de divisão por 2 e registro do resto continuará até que a parte inteira da divisão seja igual a 0. 
+
+O número binário resultante da conversão será igual ao restos da divisão tomados na ordem inversa, ou seja, o último resto é igual ao dígito mais significativo e o primeiro será igual ao dígito menos significativo.
+
+A Figura \ref{bin1} mostra um de conversão da base decimal para a base binária. Nesse exemplo, o número 156 é convertido para binário. O resultado da conversão é o número $10011100_{2}$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{figs/bin1.jpg}
+	\caption{Exemplo de aplicação da técnica de divisões sucessivas. }
+	\label{bin1}
+\end{figure}
+
+
+\subsection{Subalgoritmos (Funções)}
+\label{EmbassamentoSoftware_Funcoes}
+
+Funções são um conjunto de instruções definidas por um nome, argumentos de entrada e argumentos de saída as quais podem ser chamadas e executadas num código apenas escrevendo seu nome junto com seus respectivos argumentos de entrada. 
+
+A sintaxe para definição de uma função é mostrada no código \ref{funcao1}: 
+
+\begin{lstlisting}[ caption =  Sintaxe de definição de uma função, label=funcao1,]
+
+TIPO_SAIDA NOME_FUNCAO(TIPOARG1 NOMEARG1,...,TIPOARGN NOMEARGN)
+{
+    procedimento1;
+    .
+    .
+    .
+    procediemntoN;
+
+	return varivel//( Do tipo TIPO_SAIDA)
+
+}
+\end{lstlisting}
+
+Funções são criadas e usadas, principalmente, pelos seguintes motivos:
+
+\begin{itemize}
+
+\item Para permitir o reaproveitamento de código já construído.
+
+\item Para evitar que um trecho de código que seja repetido várias vezes dentro de um mesmo programa.
+
+\item Para permitir a alteração de um trecho de código de uma forma mais rápida. Com o uso de uma função é preciso alterar apenas dentro dela o que se deseja.
+
+\item Para que os blocos do programa não fiquem grandes demais e, por consequência, mais difíceis de entender.
+
+\item Para facilitar a leitura do programa-fonte de uma forma mais fácil.
+
+\item E, principalmente, no paradigma de programação estruturada: para separar o programa em partes(blocos) que possam ser logicamente compreendidos de forma isolada.
+
+
+\end{itemize}
+
+Um primeiro exemplo de definição de uma função é mostrado no código \ref{funcao2}. Nesse exemplo é definida a função \textit{fatorial}, cujo argumento de entrada é um número inteiro
+maior ou igual a 0 e saída é o fatorial do argumento de entrada.
+
+\begin{lstlisting}[ caption =  Exemplo de definição de uma função, label=funcao2,]
+
+/*
+funcao fatorial
+Objetivo: Calcular o fatorial de um numero inteiro n
+Argumentos de entrada - int n 
+Argumento de saida - fatorial do numero n
+*/
+
+int fatorial(int n)
+{	int i;
+	int fatorial = 1;
+	
+	if(n < 0 )
+	{	Serial.println("Argumento de entrada inválido")
+	return -1;
+	}
+	else if(n == 0)
+	{
+		return 1;
+	}
+	for(i = 1; i<=n;i++)
+	{
+		fatorial = fatorial * i;
+	}
+
+	return fatorial;
+}
+
+\end{lstlisting}
+
+
+
+A qualquer momento, durante a execução de uma função, que o comando \textit{return} for encontrado, a função será finalizada e o argumento usado juntamente com o \textit{return} será entregue no contexto que a função foi chamada.
+
+O exemplo mostrado no código \ref{funcao2} mostra 3 situações no qual um comando \textit{return} pode vir a ser executado: No primeiro caso, se entrada n for menor que 0, o fatorial não pode ser calculado, então, antes de sair da função é feito um print para avisar no terminal que tal coisa ocorreu. O segundo caso é a possibilidade de a entrada ser igual a 0. Com essa entrada, não se pode fazer o cálculo normal de um fatorial, entretanto a entrada é válida e o resultado é 1. 
+
+Caso a entrada seja positiva e maior que 0, o cálculo normal do fatorial é executado e retornado para onde tal função foi executada.
+
+Um primeiro exemplo de definição de uma função a ser aplicada ns codificação de uma placa como a placa Galileo é mostrado no código \ref{funcao3}. Nesse exemplo 5 aspectos devem ser pontuados:
+
+\begin{enumerate}
+	\item \textbf{Prototipos de funções:} A rigor, toda função deve ser declarada antes de poder ser usada, da mesma forma que qualquer variável. Em C, é possível declarar uma função, na forma de protótipo e só definir o seus corpo em um segmento posterior do código. No exemplo \ref{funcao3}, a função lerSensor é prototipada, definindo seu nome, argumentos de entrada e tipo de argumento de saída. Após isso, na função loop, ele é chamada e só no final do código ela é definida.
+	\item \textbf{Definição de protótipos de funções:} Toda função prototipada, deve ter seu corpo definido em alguma parte do código.  No exemplo \ref{funcao3}, a função lerSensor é definida no final do código.
+	\item \textbf{Escopo de uma variável:}
+	 Por escopo de uma variável entende-se o bloco de código onde esta variável é válida. Fora do bloco de código onde a variável foi definida, ela não pode ser acessada. Em C, defini-se um escopo por abrir e fechar chaves ( { } ).	
+	\item \textbf{Variáveis locais:}
+		Variáveis globais são variáveis visíveis apenas no escopo onde ela foi definida. No exemplo do código \ref{funcao3}, a variável $int sensor$ definida dentro da função lerSensor é visível apenas dentro dessa função.
+	\item \textbf{Variáveis globais:}
+	Variáveis globais são visíveis por todas funções definidas num código. A variável $int sensor$ definida na linha 2 do código \ref{funcao3} é, ao contrário da variável $int sensor$ definida dentro da função lerSensor, uma variável global, ou seja, ela é visível em todos escopos do programa.
+\end{enumerate}
+
+O uso de variáveis globais em C deve ser evitado por que isso quebra a modularização do código, trazendo a possibilidade do funcionamento de uma função interferir no funcionamento de outra. É necessário que o programador tenha exata noção do que está fazendo caso escolha usar variáveis globais.
+
+No caso de programação para micro-controladores como a placa Galileo, o uso de variáveis globais não é tão desaconselhável como para uma programa normal em C. Isso se deve ao fato da existência da função loop.
+
+Um programa escrito para um micro-controlador é feito para atividade contínua. Caso, por exemplo, a variável $int sensor$ fosse definida na linha 11 ( dentro da função loop), a cada ciclo do loop, a variável sensor seria descartada e redefinida, gastando um tempo considerável para aplicações com grandes restrições de tempo de execução. 
+
+\begin{lstlisting}[ caption =  Exemplo de definição de uma função, label=funcao2,]
+
+int lerSensor(int porta);//Prototipo da funcao lerSensor
+int sensor//Variavel global: pode ser vista, acessada e editada
+          // em qualquer contexto
+
+void setup{
+
+}
+
+void loop{
+   //executada a funcao lerSensor com o argumento int porta = 0
+   
+   sensor = lerSensor(0);// atribui a saida dessa funcao
+                         // a variavel global sensor
+}
+
+//definicao da funcao lerSensor
+int lerSensor(int porta)
+{   int sensor;//variavel local, visivel apenas no contexto
+				// da funcao lerSensor
+				
+	sensor = analogRead(porta); 
+	return sensor;
+}
+\end{lstlisting}
+
+
+
+\subsection{Funções Avançadas - Arduino}
+\label{EmbassamentoSoftware_FuncoesArduino}
+
+\subsubsection{Função shiftOut}
+\label{shiftOut}
+
+A função shiftOut tem a seguinte sintaxe:
+
+$shiftOut(dataPin, clockPin, bitOrder, value);$
+
+Ela é destinada a transmitir uma série de bits (variável \textbf{value}), numa porta selecionada (variável \textbf{dataPin}), um bit de cada vez seguindo os pulsos de clock (variável \textbf{clockPin}). 
+
+A transmissão ocorre em bytes,bit a bit. Tal transmissão pode ocorrer a partir do bit mais significativo ou a partir do bit menos significativo. Para escolher qual das duas opções será escolhida deve-se usar \textbf{MSBFISRT} ou \textbf{LSBFIRST}, no argumento \textit{bitOrder}, respectivamente.   
+
+O código \ref{shiftOut1} mostra um exemplo de uso da função shiftOut.
+
+\begin{lstlisting}[ caption = Exemplo de uso da função shiftOut, label=shiftOut1,]
+#define pinoClock  7
+#define pinoLatch  6
+#define pinoData  5
+
+byte numeroOut = 154;// byte = 8 bits
+
+
+void setup() {
+pinMode(pinoLatch, OUTPUT);
+pinMode(pinoClock, OUTPUT);
+pinMode(pinoData, OUTPUT);
+}
+
+void loop() {
+
+digitalWrite(pinoLatch, LOW);
+
+// envia dados nos pinos de saida a partir do bit menos significa
+//tivo da variavel numeroOut no pinoData
+
+shiftOut(pinoData, pinoClock, LSBFIRST, numeroOut);  
+
+
+digitalWrite(pinoLatch, HIGH);
+}
+
+\end{lstlisting}
+
+

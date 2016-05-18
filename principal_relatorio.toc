@@ -60,44 +60,69 @@
 \contentsline {subsection}{\numberline {3.5.2}Esquema de montagem}{77}
 \contentsline {subsection}{\numberline {3.5.3}Código fonte}{77}
 \contentsline {subsection}{\numberline {3.5.4}Comentários}{81}
-\contentsline {chapter}{\numberline {4}Embassamento teórico}{82}
-\contentsline {section}{\numberline {4.1}Introdução}{82}
-\contentsline {section}{\numberline {4.2}Embassamento teórico - Circuitos eletrônicos, Hardware}{82}
-\contentsline {subsection}{\numberline {4.2.1}Resistor}{82}
-\contentsline {subsection}{\numberline {4.2.2}Circuito - fórmulas e topologias básicas}{84}
-\contentsline {subsubsection}{\numberline {4.2.2.1}Primeira lei de Kirchoff - Leis das Nós}{85}
-\contentsline {subsubsection}{\numberline {4.2.2.2}Segunda lei de Kirchoff - Leis das Malhas}{86}
-\contentsline {subsubsection}{\numberline {4.2.2.3}Lei de Ohm}{86}
-\contentsline {subsubsection}{\numberline {4.2.2.4}Ligação em Série}{87}
-\contentsline {subsubsection}{\numberline {4.2.2.5}Ligação em Paralelo}{88}
-\contentsline {subsubsection}{\numberline {4.2.2.6}Resumo - Ligação em série X paralelo}{89}
-\contentsline {subsection}{\numberline {4.2.3}Diodo-LED}{89}
-\contentsline {subsection}{\numberline {4.2.4}Protoboard}{92}
-\contentsline {subsection}{\numberline {4.2.5}Divisor de tensão}{93}
-\contentsline {subsection}{\numberline {4.2.6}Potenciômetro}{95}
-\contentsline {subsection}{\numberline {4.2.7}LDR}{97}
-\contentsline {subsection}{\numberline {4.2.8}Interruptores}{100}
-\contentsline {section}{\numberline {4.3}Embassamento teórico - Software}{102}
-\contentsline {subsection}{\numberline {4.3.1}Programação estruturada}{103}
-\contentsline {subsection}{\numberline {4.3.2}Programação para Arduino}{103}
-\contentsline {subsubsection}{\numberline {4.3.2.1}Padrão de programação em Arduíno}{104}
-\contentsline {subsection}{\numberline {4.3.3}Uso de portas digitais}{104}
-\contentsline {subsection}{\numberline {4.3.4}Processo de Compilação}{105}
-\contentsline {subsubsection}{\numberline {4.3.4.1}Pré-processamento}{107}
-\contentsline {subsubsection}{\numberline {4.3.4.2}Análise Léxica}{108}
-\contentsline {subsubsection}{\numberline {4.3.4.3}Análise Sintática}{108}
-\contentsline {subsubsection}{\numberline {4.3.4.4}Análise Semântica}{108}
-\contentsline {subsection}{\numberline {4.3.5}Diretivas de Compilação}{109}
-\contentsline {subsection}{\numberline {4.3.6}Tipos básicos de variáveis}{110}
-\contentsline {subsection}{\numberline {4.3.7}Conversão entre tipos de variáveis}{112}
-\contentsline {subsection}{\numberline {4.3.8}Leitura Analógica - Conversão Analógico/Digital}{113}
-\contentsline {subsection}{\numberline {4.3.9}Estruturas Condicionais}{113}
-\contentsline {subsubsection}{\numberline {4.3.9.1}Operadores Relacionais}{114}
-\contentsline {subsubsection}{\numberline {4.3.9.2}Operadores Lógicos}{114}
-\contentsline {subsubsection}{\numberline {4.3.9.3}Controle de fluxo de execução de um programa (Condicionais)}{116}
-\contentsline {subsection}{\numberline {4.3.10}Laços de repetição}{122}
-\contentsline {subsubsection}{\numberline {4.3.10.1}Laço for}{123}
-\contentsline {subsubsection}{\numberline {4.3.10.2}Laço while}{126}
-\contentsline {subsubsection}{\numberline {4.3.10.3}Laço do-while}{127}
-\contentsline {chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}{130}
-\contentsline {chapter}{{Anexos}}{133}
+\contentsline {section}{\numberline {3.6}Prática 5: Uso de vetores, shift register e tipos variados de dados}{81}
+\contentsline {subsection}{\numberline {3.6.1}Procedimentos}{83}
+\contentsline {subsection}{\numberline {3.6.2}Esquema de montagem}{83}
+\contentsline {subsection}{\numberline {3.6.3}Código fonte}{84}
+\contentsline {subsection}{\numberline {3.6.4}Comentários}{86}
+\contentsline {section}{\numberline {3.7}Prática 6: Uso de funções e sensor de temperatura}{86}
+\contentsline {subsection}{\numberline {3.7.1}Procedimentos}{87}
+\contentsline {subsection}{\numberline {3.7.2}Esquema de montagem}{88}
+\contentsline {subsection}{\numberline {3.7.3}Código fonte}{89}
+\contentsline {subsection}{\numberline {3.7.4}Comentários}{91}
+\contentsline {chapter}{\numberline {4}Embassamento teórico}{92}
+\contentsline {section}{\numberline {4.1}Introdução}{92}
+\contentsline {section}{\numberline {4.2}Embassamento teórico - Circuitos eletrônicos, Hardware}{92}
+\contentsline {subsection}{\numberline {4.2.1}Resistor}{92}
+\contentsline {subsection}{\numberline {4.2.2}Circuito - fórmulas e topologias básicas}{94}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Primeira lei de Kirchoff - Leis das Nós}{95}
+\contentsline {subsubsection}{\numberline {4.2.2.2}Segunda lei de Kirchoff - Leis das Malhas}{96}
+\contentsline {subsubsection}{\numberline {4.2.2.3}Lei de Ohm}{96}
+\contentsline {subsubsection}{\numberline {4.2.2.4}Ligação em Série}{97}
+\contentsline {subsubsection}{\numberline {4.2.2.5}Ligação em Paralelo}{98}
+\contentsline {subsubsection}{\numberline {4.2.2.6}Resumo - Ligação em série X paralelo}{99}
+\contentsline {subsection}{\numberline {4.2.3}Diodo-LED}{99}
+\contentsline {subsection}{\numberline {4.2.4}Protoboard}{102}
+\contentsline {subsection}{\numberline {4.2.5}Divisor de tensão}{103}
+\contentsline {subsection}{\numberline {4.2.6}Potenciômetro}{105}
+\contentsline {subsection}{\numberline {4.2.7}LDR}{107}
+\contentsline {subsection}{\numberline {4.2.8}Interruptores}{110}
+\contentsline {subsection}{\numberline {4.2.9}Registrador de deslocamento (Shift Register)}{112}
+\contentsline {subsection}{\numberline {4.2.10}Sensor de Temperatura - LM35}{115}
+\contentsline {section}{\numberline {4.3}Embassamento teórico - Software}{117}
+\contentsline {subsection}{\numberline {4.3.1}Programação estruturada}{117}
+\contentsline {subsection}{\numberline {4.3.2}Programação para Arduino}{118}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Padrão de programação em Arduíno}{118}
+\contentsline {subsection}{\numberline {4.3.3}Uso de portas digitais}{119}
+\contentsline {subsection}{\numberline {4.3.4}Processo de Compilação}{120}
+\contentsline {subsubsection}{\numberline {4.3.4.1}Pré-processamento}{122}
+\contentsline {subsubsection}{\numberline {4.3.4.2}Análise Léxica}{123}
+\contentsline {subsubsection}{\numberline {4.3.4.3}Análise Sintática}{123}
+\contentsline {subsubsection}{\numberline {4.3.4.4}Análise Semântica}{123}
+\contentsline {subsection}{\numberline {4.3.5}Diretivas de Compilação}{124}
+\contentsline {subsection}{\numberline {4.3.6}Tipos básicos de variáveis}{125}
+\contentsline {subsection}{\numberline {4.3.7}Conversão entre tipos de variáveis}{127}
+\contentsline {subsection}{\numberline {4.3.8}Leitura Analógica - Conversão Analógico/Digital}{128}
+\contentsline {subsection}{\numberline {4.3.9}Estruturas Condicionais}{128}
+\contentsline {subsubsection}{\numberline {4.3.9.1}Operadores Relacionais}{129}
+\contentsline {subsubsection}{\numberline {4.3.9.2}Operadores Lógicos}{129}
+\contentsline {subsubsection}{\numberline {4.3.9.3}Controle de fluxo de execução de um programa (Condicionais)}{131}
+\contentsline {subsection}{\numberline {4.3.10}Laços de repetição}{137}
+\contentsline {subsubsection}{\numberline {4.3.10.1}Laço for}{138}
+\contentsline {subsubsection}{\numberline {4.3.10.2}Laço while}{141}
+\contentsline {subsubsection}{\numberline {4.3.10.3}Laço do-while}{142}
+\contentsline {subsection}{\numberline {4.3.11}Vetores e Matrizes}{144}
+\contentsline {subsubsection}{\numberline {4.3.11.1}Vetores}{144}
+\contentsline {subsubsection}{\numberline {4.3.11.2}Matrizes}{146}
+\contentsline {subsection}{\numberline {4.3.12}Tipos avançados de tipos de variáveis}{147}
+\contentsline {subsubsection}{\numberline {4.3.12.1}boolean}{148}
+\contentsline {subsubsection}{\numberline {4.3.12.2}Ponteiros}{149}
+\contentsline {subsubsection}{\numberline {4.3.12.3}String e Arrays}{151}
+\contentsline {subsubsection}{\numberline {4.3.12.4}Enum}{154}
+\contentsline {subsubsection}{\numberline {4.3.12.5}Struct}{154}
+\contentsline {subsection}{\numberline {4.3.13}Conversão Código Binário para Decimal e vice-versa}{154}
+\contentsline {subsection}{\numberline {4.3.14}Subalgoritmos (Funções)}{156}
+\contentsline {subsection}{\numberline {4.3.15}Funções Avançadas - Arduino}{159}
+\contentsline {subsubsection}{\numberline {4.3.15.1}Função shiftOut}{159}
+\contentsline {chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}{161}
+\contentsline {chapter}{{Anexos}}{164}

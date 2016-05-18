@@ -351,7 +351,7 @@ No código fonte desta prática, é utilizador uma variável inteira como contador d
 
 
 \section{Prática 4: Uso de laços de repetição}
-
+\label{pratica4}
 
 Esta prática é destinada, com relação aos tópicos de programação, ao uso de laços de repetição.
 
@@ -428,3 +428,172 @@ A construção do circuito na protoboard é mostrada na Figura \ref{pratica4_2}.
 \subsection{Comentários}
 
 No código fonte desta prática, o comportamento 3 foi escolhido apenas como um exemplo. Talvez seja interessante, dependendo do nível de aprendizagem da turma, fazer uma pequena disputa entre equipes na criação do comportamento mais diverto.
+
+
+\section{Prática 5: Uso de vetores, shift register e tipos variados de dados}
+\label{pratica5}
+
+Esta prática é destinada, com relação aos tópicos de programação, ao uso de vetores.
+
+Os objetivos desta prática são: 
+\textbf{Objetivo 1:}
+
+\begin{itemize}
+	\item Criar um circuito juntamente com a placa Galileo com 8 LED's, 8 resitores e um registrador de deslocamento (Shift Register).
+	\item Utilizando apenas 3 pinos digitais, o circuito deve ser capaz de acender os 8 LED's.
+	\item Para tanto, deve ser utilizado um registrador de deslocamento com pinos propriamente conectados.
+	\item Deve ser utilizado um vetor de 8 inteiros para simbolizar um byte que será transmitido pelo registrador de deslocamento. O número simbolizado pelo vetor representa, na forma binaria, quais LED's estarão acessos e quais estarão apagados. O número binário resultante do vetor deve ser convertido num número decimal para se propriamente transmitido pela função shiftOut.
+	\item Quais LEDs estarão acessos ou apagados será uma escolha da equipe, entretanto não será permitido a escolha de todos acessos ou todos apagados.  
+\end{itemize}
+
+\textbf{Objetivo 2:}
+
+\begin{itemize}
+	\item Utilizando o mesmo circuito criado para o objetivo 1, faça um código com o qual os LEDs realizem uma contagem binária. No começo da contagem, todos LEDs estarão apagados, e, no final da contagem que se dará no número 255 ($ 255 = 2^{8} - 1$), todos os LEDs estarão acessos.
+	\item Todos os números da contagem devem ser mostrado no monitor serial, na base decimal e na base binária. 
+\end{itemize}
+	
+	\begin{table}[]
+		\centering
+		\caption{Prática 5 - Tabela de Descrição}
+		\label{tabPratica5}
+		\begin{tabular}{|l|l|}
+			\hline
+			\textbf{Nome da prática}                                                                                  & \begin{tabular}[c]{@{}l@{}}Prática 5: Uso de vetores, loops, e registradores\\ de deslocamento\\                 (Conversão série-paralelo)\end{tabular}                                                                                                                            \\ \hline
+			\textbf{Objetivos}                                                                                        & \begin{tabular}[c]{@{}l@{}}1) Aprender a utilizar regustradores de deslocamento\\ 2) Aprender a manipular vetores\\ 3) Aprender a converter um número binário sem sinal\\  para decimal\end{tabular}                                                                              \\ \hline
+			\textbf{\begin{tabular}[c]{@{}l@{}}Pré-requisitos/ \\ Habilidades masterizadas  necessárias\end{tabular}} & Prática 4 - seção \ref{pratica4}                                                                                                                                                                                                                                                             \\ \hline
+			\textbf{Revisão Téorica - Hardware}                                                                       & Registrador de deslocamento - seção \ref{shift}                                                                                                                                                                                                                                           \\ \hline
+			\textbf{Revisão Téorica - Software}                                                                       & \begin{tabular}[c]{@{}l@{}}Laços de repetição - seção \ref{EmbassamentoSoftware_Lacos}\\ Vetores - seção \ref{EmbassamentoSoftware_VetoresMatrizes}\\ Função Especial - shiftOut - seção \ref{shiftOut}\end{tabular}                                                                                                                                             \\ \hline
+			\textbf{Material necessário}                                                                              & \begin{tabular}[c]{@{}l@{}}- 1 Placa Galileo\\ - 1 Transformador 220/120 V -\textgreater 12 V\\ - 1 cabo USB-Micro-USB \\ - 8 LEDs\\ - 8 resistores 220 ohm\\ - 1 Registrador de Deslocamento 74HC595\\ - 25 Jumpers\end{tabular}                                                 \\ \hline			\textbf{Bibliografia}                                                                                     & \begin{tabular}[c]{@{}l@{}}-Eletrônica básica \cite{livroEletronica}\\ -A linguagem de programação C \cite{livroProgramacaoC}\end{tabular}                                                                                                                                    \\ \hline
+			\textbf{\begin{tabular}[c]{@{}l@{}}Habilidades a serem masterizadas\\ com essa prática\end{tabular}}      & \begin{tabular}[c]{@{}l@{}}1) O aluno e capaz de usar vetores em conjunto com laços\\ de repetição de forma apropriada \\ \\ 2) O aluno é capaz de construir circuitos mais complexos\\ utilizando registradores de deslocamento para conversão\\ serial - paralelo.\end{tabular} \\ \hline
+		\end{tabular}
+	\end{table}
+
+
+\subsection{Procedimentos}
+
+Os passos a serem seguidos nessa prática são os seguintes:
+
+\begin{itemize}
+	\item Conectar o registrador de deslocamento 78HC545 às portas 5,6 7 do Galileo. 
+	\item Conectar 8 conjuntos LED + resistor às portas de saída do registrador de deslocamento.
+	\item Escrever um código usando loop e a função shiftOut para realizar os objetivos definidos.
+\end{itemize}
+
+
+\subsection{Esquema de montagem}
+
+Para esta prática, um circuito de acordo com o esquemático mostrado na Figura \ref{pratica5_1}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.65\textwidth]{figs/pratica5_1.jpg}
+	\caption{Esquemático do circuito da prática 5.}
+	\label{pratica5_1}
+\end{figure}
+
+A construção do circuito na protoboard é mostrada na Figura \ref{pratica5_2}.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/pratica5_2.jpg}
+	\caption{Circuito da prática 5 construído numa protoboard.}
+	\label{pratica5_2}
+\end{figure}
+
+\subsection{Código fonte}
+\label{Pratica5Codigo}
+\textbf{Objetivo 1}:
+%\Praticas\Pratica 2\pratica2Arduino.ino
+
+\lstinputlisting[label = Pratica51, caption = Código Prática 5 - Objetivo 1.]{Praticas/Pratica5/pratica5code.ino}
+
+\textbf{Objetivo 2}:
+
+\lstinputlisting[label = Pratica52, caption = Código Prática 5 - Objetivo 2.]{Praticas/Pratica5/pratica5code2.ino}
+
+
+\subsection{Comentários}
+
+Como comentado no código do objetivo 1, está prática não precisa, necessariamente, do uso de vetor para simbolizar os LED's acessos ou apagado. O número B1100101 (base binária) também seria aceito pelo compilador, assim como seria aceito um número na base hexadecimal.
+
+O objetivo 2 demanda saber criar um algoritmo para fazer a conversão decimal-binário de um número no intervalo de 0 a 255 (8 bits).
+
+\section{Prática 6: Uso de funções e sensor de temperatura}
+\label{pratica6}
+
+Esta prática é destinada, com relação aos tópicos de programação, ao uso de funções.
+
+Os objetivos desta prática são: 
+
+\begin{itemize}
+	\item Criar um circuito juntamente com a placa Galileo com 3 LED's e 1 sensor de temperatura LM35.
+	\item Deverão ser definidas 3 regiões de temperatura: Tempetura Normal, Temperatura Alta e Temperatura Baixa.
+	\item Em cada uma dessas regiões, um LED em específico deve estar acesso.
+	\item A tempertura lida deve ser mostrada continuamente no monitor serial.
+	\item Nas funções setup e loop, deve haver apenas chamadas a funções que cumprem todos esses requisitos. 
+\end{itemize}
+
+
+\begin{table}[H]
+	\centering
+	\caption{Prática 6 - Tabela de Descrição}
+	\label{tabPratica6}
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Nome da prática}                                                                                  & Prática 5: Uso de funções e sensor de temperatura                                                                                                                                                                                                                                                           \\ \hline
+		\textbf{Objetivos}                                                                                        & \begin{tabular}[c]{@{}l@{}}1) Aprender a modularizar uma situação problema\\ 2) Criar funções que responsáveis por resolver os proble-\\ mas identificados\\ 3) Calcular propriamente a temperatura utilizando \\ o sensor LM35\end{tabular}                                                                \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Pré-requisitos/ \\ Habilidades masterizadas  necessárias\end{tabular}} & Prática 5 - seção \ref{pratica5}                                                                                                                                                                                                                                                                          \\ \hline
+		\textbf{Revisão Téorica - Hardware}                                                                       & Sensor de Temperatura LM35 - seção \ref{sensorTemperatura}                                                                                                                                                                                                                                                \\ \hline
+		\textbf{Revisão Téorica - Software}                                                                       & Subalgoritmos (Funções) - seção \ref{EmbassamentoSoftware_Funcoes}                                                                                                                                                                                                                                       \\ \hline
+		\textbf{Material necessário}                                                                              & \begin{tabular}[c]{@{}l@{}}- 1 Placa Galileo\\ - 1 Transformador 220/120 V -\textgreater 12 V\\ - 1 cabo USB-Micro-USB \\ - 3 LEDs\\ - 3 resistores 220 ohm\\ - 1 LM35\\ - 8 Jumpers\end{tabular}                                                                                                          \\ \hline
+		\textbf{Bibliografia}                                                                                     & \begin{tabular}[c]{@{}l@{}}-Eletrônica básica \cite{livroEletronica}\\ -A linguagem de programação C \cite{livroProgramacaoC}\end{tabular}                                                                                                                                                              \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Habilidades a serem masterizadas\\ com essa prática\end{tabular}}      & \begin{tabular}[c]{@{}l@{}}1) O aluno é capaz de identificar um situação \\ problema e dividi-lá em módulos.\\ 2) O aluno é capaz de criar funções \\ 3) O aluno é capaz de construir um circuito sensor\\ de temperatura, processando apropriadamente o sinal\\ de tensão enviado pelo sensor\end{tabular} \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsection{Procedimentos}
+
+Os passos a serem seguidos nessa prática são os seguintes:
+
+\begin{itemize}
+	\item Conectar 3 conjuntos LED + resistor às portas digitais 2,3 e 4 da placa Galileo.
+	\item Conectar o LM35 à porta analógica A0 apropriadamente, como mostrado na seção \ref{sensorTemperatura}.
+	\item Escrever um código para cumprir o algoritmo descrito para essa prática.
+\end{itemize}
+
+
+\subsection{Esquema de montagem}
+
+Para esta prática, um circuito de acordo com o esquemático mostrado na Figura \ref{pratica6_1}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.65\textwidth]{figs/pratica6_1.jpg}
+	\caption{Esquemático do circuito da prática 6.}
+	\label{pratica6_1}
+\end{figure}
+
+A construção do circuito na protoboard é mostrada na Figura \ref{pratica6_2}.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/pratica6_2.jpg}
+	\caption{Circuito da prática 5 construído numa protoboard.}
+	\label{pratica6_2}
+\end{figure}
+
+\subsection{Código fonte}
+\label{Pratica6Codigo}
+
+%\Praticas\Pratica 2\pratica2Arduino.ino
+
+\lstinputlisting[label = Pratica6, caption = Código Prática 6.]{Praticas/Pratica6/pratica6code.ino}
+
+
+\subsection{Comentários}
+
+
+Pode-se dizer que a quantidade de funções definidas para esta prática foi além do necessário, entretanto, é realmente preciso que o aluno saiba identificar e dividir o problema, não apenas como uma habilidade para desenvolvimento de programas, mas como uma habilidade a ser usada em todas áreas da vida.
