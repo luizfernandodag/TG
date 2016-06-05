@@ -1,13 +1,13 @@
 %TCIDATA{LaTeXparent=0,0,relatorio.tex}
                       
-\chapter{Embassamento teórico}\label{CapExperimentos}
+\chapter{Elementos de Circuitos e Programação}\label{CapExperimentos}
 
 % Resumo opcional. Comentar se não usar.
 %\resumodocapitulo{Resumo opcional.}
 \section{Introdução}
 
 Este capítulo é destinado a explicação detalhada dos conceitos teóricos que embassam as práticas propostas no capítulo \ref{CapDesenvolvimento} deste trabalho.
-\section{Embassamento teórico - Circuitos eletrônicos, Hardware}
+\section{Circuitos eletrônicos}
 \label{EmbassamentoHarware}
 
 Nesta seção são tratados todos conceitos relativos a circuitos eletrônicos e hardwares que embassam as práticas propostas na seção \ref{CapExperimentos}.
@@ -777,12 +777,131 @@ A Figura \ref{lm35_3} mostra a forma adequada de se conectar o LM35 à placa Gali
 
 Nesse circuito, a temperatura é lida no pino analógico A0.
 
+\subsection{Capacitores}
+
+Capacitores, ao contrário dos resistores que apenas dissipam energia, são dispositivos ativos num circuito elétrico, ou seja, eles armazenam energia. Tal armazenagem é realizada pelo mantimento de cargas elétricas num campo elétrico.
+
+Tipicamente, os capacitores consistem em dois eletrodos ou placas que armazenam cargas de polaridades opostas e um dielétrico isolando tais placas. A Figura \ref{cap1} mostra a estrutura de um capacitor formados por duas placas.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/capacitor1.jpg}
+	\caption{Estrutura básica de um capacitor}
+	\label{cap1}
+\end{figure}
+
+Para calcular a capacitância de um capacitor semelhante ao da Figura \ref{cap1}, usa-se a seguinte expressão:
+
+\begin{equation}\label{eqCap1}
+C = \epsilon_{o}\epsilon_{r}\frac{A}{d}
+\end{equation}
+
+Onde C é a capacitância dada em \textit{Farad}, $\epsilon_{o}$ é a permissividade eletrostática do meio e $\epsilon_{r}$ é a constante dielétrica do isolante.
+
+A Figura \ref{cap2} mostra um circuito com uma fonte de tensão, um resistor e um capacitor. A placa do capacitor mais próxima do potencial elétrico mais elevado, será  carregada com cargas positivas e a outra placa será carregada com cargas negativas.
+
+A tensão entre os terminais do capacitor é dada pela seguinte expressão:
+
+\begin{equation}\label{eqCap2}
+V = \frac{q}{C} 
+\end{equation}
+
+Onde q é a carga acumulada entre os terminais e C é a capacitância do capacitor.
+
+A energia elétrica acumulada num capacitor é dada pela seguinte expressão:
+
+\begin{equation}\label{eqCap3}
+U = \frac{1}{2} CV^2 
+\end{equation}
+
+Onde U é a energia acumulada, C é a capacitância e V é a tensão entre os terminais do capacitor.
+
+Capacitores são comumente usados em fontes de energia onde elas suavizam a saída de uma onda retificada completa ou meia onda.
+
+As aplicação dos capacitores para transmissão de energia elétrica são comumente relacionadas a correção de fator de potência. Fator de potência é um indicador do quando da energia produzida é efetivamente transmitida. Também podem ser usados em circuitos como filtro passa-baixa, passa-alta ou passa-banda, dependendo da configuração. 
+
+Neste trabalho, será explicado o filtro passa-baixa o qual tem aplicações diretas de processamento de sinais para circuitos como os utilizados em micro-controladores como a placa Galileo.
 
 
-\section{Embassamento teórico - Software}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/capacitor3.jpg}
+	\caption{Circuito com um capacitor}
+	\label{cap2}
+\end{figure}
+
+
+\subsection{Filtro RC}
+
+
+Um circuito formato com um resistor e um capacitor (filtro RC) é um dos mais simples filtros de sinais elétricos.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/capacitor4.jpg}
+	\caption{Filtro RC.}
+	\label{cap4}
+\end{figure}
+
+Utilizando a fórmula da tensão entre os terminais de um capacitor (equação \ref{eqCap2} ) e a lei das tensões numa malha fechada (equação \ref{eqKirchoof2}) para o circuito mostrado da Figura \ref{cap4}, tem -se a seguinte expressão:
+
+\begin{equation}\label{eqCap5}
+V_{s} - V_{R} -  V_{C} = 0
+\end{equation}
+
+\begin{equation}\label{eqCap6}
+V_{s} = \frac{q}{C} + I*R
+\end{equation}
+
+Muitas vezes, a fórmula da tensão elétrica  apresentada na equação essa mesma expressão é tomada em função da corrente elétrica. Daí, tem-se a seguinte expressão
+
+\begin{equation}\label{eqCap7}
+V_{s} = \frac{\int I dt}{C} + I*R
+\end{equation}
+
+Tomando-se a derivada da equação \ref{eqCap7}, assumindo que $V_{s}$ é uma tensão constante, tem-se:
+
+
+\begin{equation}\label{eqCap71}
+ 0 =  \frac{I}{C} +  \frac{dI}{dt}*R
+\end{equation}
+
+A solução dessa equação para a tensão sobre o capacitor, assumindo condições iniciais de tensão e corrente nulas, é a seguinte:
+
+\begin{equation}\label{eqCap8}
+V_{c} = V_{s}(1 - e^{\frac{t}{RC}})
+\end{equation}
+
+
+
+
+A expressão \textit{RC} da equação \ref{eqCap8} indica quanto tempo o capacitor leva para carregar. Quando o tempo tende para o infinito, o capacitor num circuito RC tende a se comportar como um circuito aberto. A tensão sobre o capacitor tende a tensão de alimentação e a corrente tende a zero, ou seja, 
+
+\begin{equation}\label{eqCap9}
+\lim_{t\to\infty} V_{c} = V_{s}
+\end{equation}
+
+
+
+Com relação a sinais AC, circuitos RC são muito utilizados como filtros passa-baixa, como mostrado no diagrama de bode da Figura \ref{cap5}. Para frequências acima da frequência de corte $ \frac{1}{2 \pi RC}$ a amplitude do sinal é atenuada. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/capacitor5.jpg}
+	\caption{Diagrama de bode de um filtro RC.}
+	\label{cap5}
+\end{figure}
+
+Para os propósitos deste trabalho, o filtro RC será utilizado para atenuar ruídos de alta frequência e realização a estabilização de sinais enviados à placa Galileo por meio de interruptores.
+
+	
+
+
+\section{Software}
 \label{EmbassamentoSoftware}
 
-Nesta seção são tratados todos conceitos relativos a programação que  embassam as práticas propostas na seção \ref{CapExperimentos}.
+Nesta seção são tratados todos conceitos relativos a programação que embasam as práticas propostas na seção \ref{CapExperimentos}.
 
 \subsection{Programação estruturada}
 \label{EmbassamentoSoftware_ProgramaçãoEstruturada}
@@ -1930,7 +2049,7 @@ No exemplo, é executado o comando $ medias[i] = (float)alunos\_notas[i][j]/3$. A
 
 
 
-\subsection{Tipos avançados de tipos de variáveis}
+\subsection{Tipos avançados de variáveis}
 \label{EmbassamentoSoftware_TiposAvancados}
 
 Além dos tipos básicos de variáveis ( seção \ref{EmbassamentoSoftware_TiposVariaveis}), existem tipos mais complexos e com usabilidade muitas vezes mais úteis na codificação de programas. 
@@ -2235,9 +2354,196 @@ for(i = 0; i <2;i++)
 \end{lstlisting}
 
 
-\subsubsection{Enum}
 
-\subsubsection{Struct}
+
+\subsubsection{Registros - Struct}
+\label{Struct}
+
+Em C, registros são nomeados por \textit{structs}. Chama-se por registro um conjunto de variáveis de tipos quaisquer. Cada variável em um registro é chamado de \textit{campo}. 
+
+O exemplo \ref{struct1} mostra a sintaxe de uma struct em C.
+
+\begin{lstlisting}[ caption =  Sintaxe de definição de uma struct, label=struct1,]
+//Definicao de uma struct
+typedef struct  {
+TIPO1 VAR1;
+TIPO2 VAR2;
+.
+.
+.
+TIPON VARN;
+} NOME_STRUCT;
+
+//variavel do tipo NOME_STRUCT 
+NOME_STRUCT struct1;
+
+void setup()
+{
+struct1.VAR1 = ...;
+struct1.VAR2 = ...;
+.
+.
+.
+struct1.VARN = ...;
+} 
+
+void loop()
+{
+struct1.VAR1 = ....
+if(struct1.VAR2....)
+.
+.
+.
+//Outros procedimentos
+}
+\end{lstlisting}
+
+
+O uso dos símbolos \textit{typedef} não é obrigatório para definição e uso de struct, entretanto, ao utilizá-lo, pode-se declarar uma varíavel do tipo da estrutura como um novo tipo de dados semelhantes aos tipos básicos (int, char, etc).
+
+O código \ref{struct2} mostra um exemplo de uma struct que acumula variáveis relevantes para um programa que lide com dados de estudantes, por exemplo.
+
+
+\begin{lstlisting}[ caption =  Exemplo de definição e uso de uma struct, label=struct2,]
+//Definicao de uma struct com dados relevantes a um estudante
+typedef struct  {
+char * nome;
+int turma;
+float notaTrabalho1;
+float notaProva1;
+float media;
+
+} estudante;
+
+//variavel do tipo NOME_STRUCT 
+estudante aluno1;
+
+float calculaMedia(estudante est)
+{
+  return (est.notaTrabalho1 + est.notaProva1)/2;
+}
+
+void setup()
+{
+aluno1.nome = "Luiz"; // setando a variavel nome (cuidado com //possivel erro de memoria nessa setagem de ponteiro de char )
+
+aluno1.turma = 25;
+
+aluno1.notaTrabalho1 = 10;
+aluno1.notaProva1 = 0;
+aluno1.media = calculaMedia(aluno1);//chama funcao calculaMedia
+									// para setar o campo media	
+									
+Serial.begin(9600);									
+} 
+
+void loop()
+{
+Serial.print("Nome Estudante : " );
+Serial.println(aluno1.nome);
+Serial.print("Nota Trabalho 1 : " );
+Serial.println(aluno1.notaTrabalho1);
+Serial.print("Nota Prova 1 : " );
+Serial.println(aluno1.notaProva1);
+Serial.print("Media : " );
+Serial.println(aluno1.media);
+
+if(aluno1.media >= 5.0)
+{
+	Serial.println("Aprovado");	
+}
+else
+{
+	Serial.println("Reprovado");
+}
+
+
+}
+\end{lstlisting}
+
+Nesse, foi definida uma struct para guardar os dados de um estudante. Os dados são os seguintes : 
+\begin{itemize}
+	\item Nome
+	\item Turma
+	\item Nota do trabalho 1
+	\item Nota da prova 1
+\end{itemize}
+
+Os campos da struct são acessado, como mostrado, usando um ponto, após o nome da variável.
+
+Como os campos da struct são do tipos básicos de variáveis (int, char, etc) eles podem ser tratadas normalmente como tal. 
+
+Struct também podem ser argumentos de entrada ou saída de funções como mostrado no exemplo da função \textit{calculaMedia} do código \ref{struct2}. 
+
+Usando a mesma \textit{struct} do código \ref{struct2}, o código \ref{struct3} mostra como alocar espaço de memória dinamicamente para um ponteiro de struct.
+
+
+\begin{lstlisting}[ caption =  Exemplo de definição e uso de uma struct, label=struct3,]
+//Definicao de uma struct com dados relevantes a um estudante
+typedef struct  {
+char * nome;
+int turma;
+float notaTrabalho1;
+float notaProva1;
+float media;
+
+} estudante;
+
+//variavel do tipo NOME_STRUCT 
+estudante * alunos;
+
+float calculaMedia(estudante * est, int numEstudante)
+{
+return (est[numEstudante]->notaTrabalho1 + est[numEstudante]->notaProva1)/2;
+}
+
+void setup()
+{
+
+alunos = (estudante *)malloc(2*sizeof(estudante));
+
+aluno[0]->nome = "Luiz"; // setando a variavel nome (cuidado com //possivel erro de memoria nessa setagem de ponteiro de char )
+
+aluno[0]->turma = 25;
+
+aluno[0]->notaTrabalho1 = 10;
+aluno[0]->notaProva1 = 0;
+aluno[0]->media = calculaMedia(aluno[0]);//chama funcao calculaMedia
+// para setar o campo media	
+
+Serial.begin(9600);									
+} 
+
+void loop()
+{
+Serial.print("Nome Estudante : " );
+Serial.println(aluno[0]->nome);
+Serial.print("Nota Trabalho 1 : " );
+Serial.println(aluno[0]->notaTrabalho1);
+Serial.print("Nota Prova 1 : " );
+Serial.println(aluno[0]->notaProva1);
+Serial.print("Media : " );
+Serial.println(aluno[0]->media);
+
+if(aluno[0]->media >= 5.0)
+{
+Serial.println("Aprovado");	
+}
+else
+{
+Serial.println("Reprovado");
+}
+
+
+}
+\end{lstlisting}
+
+
+No código \ref{struct3}, é reservado, para o ponteiro da struct, um espaço para duas variáveis do tipo \textit{estudante} por meio do comando \textit{malloc}. 
+
+Para acessar os membros da struct, nesse caso, não se usa ponto, mas o conjunto de caracteres \textit{->}. 
+
+
 
 \subsection{Conversão Código Binário para Decimal e vice-versa}
 \label{CodigoBinario}
@@ -2483,4 +2789,226 @@ digitalWrite(pinoLatch, HIGH);
 
 \end{lstlisting}
 
+
+\subsection{Interrupção}
+\label{EmbassamentoSoftware_Interrupcao}
+
+O fluxo normal de um programa feito para uma plataforma de um microcontrolador é mostrado na Figura \ref{Arduino13}. Como pode ser visto em tal Figura, o programa é iniciado, realiza-se o pré-processamento substituindo as diretivas de compilação, após isso, executa-se a função setup e então a função loop indefinidamente.
+
+Muitas vezes, o fluxo comum de execução de um programa não é capaz de responder a eventos assíncronos externos, causados pelos usuários, ou internos, causados pelo funcionamento do software,  rápido o suficiente.
+
+Para resolver parte desses problemas, existem em computação o que se chama de \textit{interrupção de software} e \textit{interrupção de hardware}. As interrupções são sinal, internos ou externos ao processador, que indicam que o processo corrente deve ser posto em espera e outra tarefa (rotina de interrupção), deve ser executada o mais rápido possível.
+
+A Figura \ref{interrupcao0} resume o processo relacionado a uma interrupção.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width= 0.7\textwidth]{figs/interrupcao0.jpg}
+	\caption{Fluxo normal de um programa com uma interrupção.}
+	\label{interrupcao0}
+	\source{Adaptado de https://www.contec.com/products/daq/analog/basic.php}
+\end{figure}
+
+A parte relacionada a \textbf{Salto} é tarefa do sistema operacional ou do micro-controlador. Tendo sido identificada a ocorrência de uma interrupção, o endereço de retorno ao fluxo normal é salvo na pilha de execução e as próximas instruções a serem executadas serão as especificadas na rotina de interrupção.
+
+Após a rotina de interrupção ter sido executada, o endereço de retorno é recolhido da pilha e a execução do programa volta ao fluxo normal.
+
+\subsubsection{Interrupção de Hardware}
+
+Uma interrupção de hardware ocorre por um evento assíncrono. Geralmente, tal interrupção é na forma de algum tipo de uma mudança numa entrada analógica ou digital.
+
+As principais formas de interrupção de hardware são as seguintes:
+
+\begin{itemize}
+	\item \textbf{Interrupção de rampa de subida}: A interrupção de rampa de subida é identificada pela mudança do estado lido num pino de 0 Volts (GND ou zero lógico) para 5 Volts (Vcc ou 1 lógico). A Figura \ref{interrupcao3} mostra um circuito capaz de oferecer uma rampa de subida à um pino. Quando a chave é fechada, a tensão lida no pino passa de 0 para 5 V.
+	\item \textbf{Interrupção de rampa de descida}: A interrupção de rampa de descida é identificada pela mudança do estado lido num pino de 5 Volts (Vcc ou 1 lógico) para 0 Volts (GND ou zero lógico). A Figura \ref{interrupcao2} mostra um circuito capaz de oferecer uma rampa de descida à um pino. Quando a chave é fechada, a tensão lida no pino passa de 5 para 0 V.
+	 
+	 
+\end{itemize}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width= 0.7\textwidth]{figs/interrupcao1.jpg}
+	\caption{Interrupções de rampa de subida e descida.}
+	\label{interrupcao1}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width= 0.6\textwidth]{figs/interrupcao3.jpg}
+	\caption{Circuito associado à interrupção de rampa de subida.}
+	\label{interrupcao3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width= 0.6\textwidth]{figs/interrupcao2.png}
+	\caption{Circuito associado à interrupção de rampa de descida.}
+	\label{interrupcao2}
+\end{figure}
+
+Além das interrupções de rampa de descida e subida, a plataforma Arduino oferece a identificação de interrupções de estado de  qualquer mudança na leitura (CHANGE).
+
+Para a placa Galileo Gen2, apenas as porta digital 2 e 3 podem ser habilitadas para interrupções. 
+
+O código \ref{intecod} mostra, na plataforma Arduino, a sintaxe de definição de uma interrupção de harware. 
+
+\begin{lstlisting}[ caption = Sintaxe para interrupção de hardware,label = intecod0]
+
+
+void setup()
+{
+attachInterrupt(NUM_PINO, ROTINA_INT, TIPO_INT);
+
+}
+
+
+TIPO_RETORNO ROTINA_INT (argumentos de entrada)
+{
+	//intruções da rotina de interrupção;
+}
+
+
+\end{lstlisting}
+
+
+Como mostrado no exemplo do código \ref{intecod}, devem ser fornecidas as seguintes informações para definição da interrupção:
+
+\begin{itemize}
+	\item \textbf{NUM\_PINO}: Número do pino digital onde a interrupção é lida
+	 \subitem 
+	 Caso seja a porta digital 2, escrever  attachInterrupt(0, ROTINA\_INT, TIPO\_INT);
+	\subitem
+	 Caso seja a porta digital 3, escreverattachInterrupt(1, ROTINA\_INT, TIPO\_INT);
+	
+	\item \textbf{ROTINA\_INT}: Função a ser executada quando a interrução for identifica.
+	
+	\item \textbf{TIPO\_INT:}
+	\subitem RAMPA DE SUBIDA : escrever "RISING".
+	\subitem RAMPA DE DESCIDA : escrever "FALLING".
+	\subitem Qualquer mudança: escrever "CHANGE".
+\end{itemize}    
+
+O código \ref{intecod2} mostra, na plataforma Arduino, um exemplo de uma interrupção de hardware identificada na porta digital 2:
+
+ 
+\begin{lstlisting}[ caption = Sintaxe para interrupção de hardware,label = intecod0]
+
+int pino = 13;
+int estado = LOW;
+int estado1 = LOW;
+void setup()
+{
+pinMode(pino, OUTPUT);
+attachInterrupt(0, piscaLed, FALLING);
+}
+                                                               
+void loop()
+{
+digitalWrite(pino, estado);
+
+}
+
+//FUNCAO A SER EXECUTADA AO SER IDENTIFICADA UMA RAMPA DE //DESCIDA NA PORTA DIGITAL 2(2 -> 0)
+void piscaLed()
+{
+if(estado==estado1)
+{
+estado = !estado1;
+//DELAY NECESSARIO PARA EVITAR RUIDOS NA PORTA DIGITAL 2
+delay(10);
+}
+else
+{
+//DELAY NECESSARIO PARA EVITAR RUIDOS NA PORTA DIGITAL 2
+delay(10);
+estado= estado1; 
+}
+}
+\end{lstlisting}
+
+
+
+\subsubsection{Interrupção de Software - Timer}
+
+Interrupção de Software são interrupções disparadas por eventos que ocorrem no software em execução.
+
+Um Timer obedece o mesmo padrão mostrado na Figura \ref{interrupcao0}, entretanto, o evento que disparará a interrupção não será um evento de harware, mas a contagem de pulsos de clock.
+
+\textit{Timers} são contadores de tempo. A cada intervalo prefixado, os \textit{Timers} tem seu contador incrementado, indicando, desde o início da contagem, quantos pulsos de clock foram lidos desde então. Quando o número de pulsos de clock limite for atingido, a rotina de interrupção (\textit{Interruption Service Routine - ISR}) deve ser executada e o contador do Timer será reinicializado.
+
+Para uso de interrupções na plataforma Arduino, é necessário realizar o download da biblioteca \textit{Timer1.h}
+
+Para realizar o download, visite o website \textit{http://playground.arduino.cc/Code/Timer1} como mostrado na Figura \ref{timer2}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width= 0.7\textwidth]{figs/timer2.jpg}
+	\caption{Website - http://playground.arduino.cc/Code/Timer1 .}
+	\label{timer2}
+\end{figure}
+
+Clique no link para downloads mostrado na Figura \ref{timer3} e siga as seguintes instruções:
+
+\begin{itemize}
+	\item Descompacte os arquivos do arquivo.zip
+	\item Crie a pasta Arduino/hardware/libraries/Timer1		
+	\item Copies os arquivos descompactados para a pasta criada
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width= 0.9\textwidth]{figs/timer3.jpg}
+	\caption{Download e instruções para instalação da biblioteca Timer1.}
+	\label{timer3}
+\end{figure}
+
+Tendo instalado propriamente a biblioteca \textit{Timer1.h}. Para uso de interrupção de timers em Arduino, os seguintes passos devem ser seguidos:
+
+\begin{enumerate}
+	\item Definição do período no qual o timer disparará uma interrupção, executando uma ISR -> função \textit{initialize}
+	\item Definição da ISR que será executada a cada período especificado 
+	\item Vinculação da ISR ao Timer -> função \textit{attachInterrupt}
+\end{enumerate}
+
+O código \ref{timer10} mostra um exemplo de como utilizar a biblioteca \textit{Timer1}
+
+\begin{lstlisting}[ caption = Sintaxe para interrupção de hardware,label = timer10]
+
+#include <TimerOne.h> //Inclusao da biblioteca
+
+void setup() 
+{
+pinMode(13, OUTPUT); //Inicializando o pino 13 como saida
+
+Timer1.initialize(100000); // seta o timer para o periodo
+							// 100000 microsegundos (0.1 s - // //10Hz) => a ISR serah executada 10 //vezes por segundo 
+
+Timer1.attachInterrupt( ISR_EXEMPLO ); //Vincula a ISR
+										// ISR_EXEMPLO ao timer
+										// de 0.1 segundos
+}
+
+void loop()
+{
+//Fluxo normal do programa( sem ser a interrupcao de timer)
+}
+
+void ISR_EXEMPLO()
+{
+// Pisca LED
+// o operado ^ eh o XOR, a cada execucao desta ISR, o estado do // LED (acesso ou apagado) eh invertifo
+digitalWrite( 13, digitalRead( 13 ) ^ 1 );
+}
+
+\end{lstlisting}
+
+
+As funções da biblioteca \textit{Timer1.h} tomam os parâmetros de tempo em microsegundos, como mostrado no exemplo \ref{timer10}.
+
+
+
+Nesse exemplo, a cada 100000 microsegundos, ou 0.1 segundos, a função ISR\_EXEMPLO, que foi vinculada ao timer por meio da função \textit{attachInterrupt()}, é executada, independentemente do que estiver ocorrendo no fluxo normal da função loop.
 

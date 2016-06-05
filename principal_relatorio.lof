@@ -19,101 +19,111 @@
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Fluxo da metodologia Scrum\relax }}{19}
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Fluxo de um Sprint dentro da metodologia Scrum\relax }}{20}
 \contentsline {figure}{\numberline {2.18}{\ignorespaces Percentagem dos conteúdos tratados na UnB e \textit {California Institute of Tecnology} que podem ser ensinados utilizando a placa Galileo.\relax }}{23}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Plataforma scrumdo: Formato dos quadros Scrum planejados para a disciplina \textit {Algoritmos e Programação de Computadores}\relax }}{30}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Plataforma scrumdo: Quadros Scrum criados e objetivos educacionais, segundo a Taxonomia de Bloom escritos \textit {Algoritmos e Programação de Computadores}\relax }}{30}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Plataforma scrumdo: Definicação de sub-objetivos de um objetivo listado no \textit {Product Backlog} \textit {Algoritmos e Programação de Computadores}\relax }}{31}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Uso do aplicativo desenvolvido em QT para definir os objetivo educacional para o nível \textit {Conhecimento}\relax }}{31}
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Descrição dos pinos da placa Galileo - parte traseira\cite {DATASHEET1}\relax }}{38}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Descrição dos pinos da placa Galileo - parte frontal\cite {DATASHEET1}\relax }}{38}
-\contentsline {figure}{\numberline {2.25}{\ignorespaces Sinal PWM\relax }}{41}
-\contentsline {figure}{\numberline {2.26}{\ignorespaces Figura esquemática do processo de conversão analógico para digital\relax }}{43}
-\contentsline {figure}{\numberline {2.27}{\ignorespaces Figura esquemática do barramento serial I2C\relax }}{44}
-\contentsline {figure}{\numberline {2.28}{\ignorespaces I2C - Clock Stretching \relax }}{44}
-\contentsline {figure}{\numberline {2.29}{\ignorespaces Barramento SPI - Um \textit {dispositivo mestre} para \textit {dispositivos escravos} \relax }}{46}
-\contentsline {figure}{\numberline {2.30}{\ignorespaces Modelo simplificado de um dispositivo UART\relax }}{47}
-\contentsline {figure}{\numberline {2.31}{\ignorespaces Frame UART para transmissão de 1 byte \relax }}{48}
-\contentsline {figure}{\numberline {2.32}{\ignorespaces Modelo completo de um dispositivo UART\relax }}{48}
-\contentsline {figure}{\numberline {2.33}{\ignorespaces Organização da memória num sistema computacional\relax }}{50}
-\contentsline {figure}{\numberline {2.34}{\ignorespaces Estrutura da célula de memória SRAM\relax }}{50}
-\contentsline {figure}{\numberline {2.35}{\ignorespaces Estrutura da célula SRAM com dois inversores\relax }}{51}
-\contentsline {figure}{\numberline {2.36}{\ignorespaces Estrutura da célula de memória DRAM\relax }}{52}
-\contentsline {figure}{\numberline {2.37}{\ignorespaces Estrutura da célula de memória DRAM\relax }}{53}
-\contentsline {figure}{\numberline {2.38}{\ignorespaces Exemplo: Topologia Estrela USB\relax }}{54}
-\contentsline {figure}{\numberline {2.39}{\ignorespaces Pinos USB \relax }}{55}
-\contentsline {figure}{\numberline {2.40}{\ignorespaces JTAG monitorando a conexão de um CPU com uma FPGA \relax }}{56}
-\contentsline {figure}{\numberline {2.41}{\ignorespaces Máquina de estados - JTAG\relax }}{56}
-\contentsline {figure}{\numberline {2.42}{\ignorespaces Fluxo de dados num debug JTAG\relax }}{57}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Descrição dos pinos da placa Galileo - parte traseira\cite {DATASHEET1}\relax }}{24}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Descrição dos pinos da placa Galileo - parte frontal\cite {DATASHEET1}\relax }}{24}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Sinal PWM\relax }}{27}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Figura esquemática do processo de conversão analógico para digital\relax }}{29}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Figura esquemática do barramento serial I2C\relax }}{30}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces I2C - Clock Stretching \relax }}{31}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Barramento SPI - Um \textit {dispositivo mestre} para \textit {dispositivos escravos} \relax }}{32}
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Modelo simplificado de um dispositivo UART\relax }}{34}
+\contentsline {figure}{\numberline {2.27}{\ignorespaces Frame UART para transmissão de 1 byte \relax }}{34}
+\contentsline {figure}{\numberline {2.28}{\ignorespaces Modelo completo de um dispositivo UART\relax }}{35}
+\contentsline {figure}{\numberline {2.29}{\ignorespaces Organização da memória num sistema computacional\relax }}{36}
+\contentsline {figure}{\numberline {2.30}{\ignorespaces Estrutura da célula de memória SRAM\relax }}{37}
+\contentsline {figure}{\numberline {2.31}{\ignorespaces Estrutura da célula SRAM com dois inversores\relax }}{37}
+\contentsline {figure}{\numberline {2.32}{\ignorespaces Estrutura da célula de memória DRAM\relax }}{38}
+\contentsline {figure}{\numberline {2.33}{\ignorespaces Estrutura da célula de memória DRAM\relax }}{40}
+\contentsline {figure}{\numberline {2.34}{\ignorespaces Exemplo: Topologia Estrela USB\relax }}{41}
+\contentsline {figure}{\numberline {2.35}{\ignorespaces Pinos USB \relax }}{42}
+\contentsline {figure}{\numberline {2.36}{\ignorespaces JTAG monitorando a conexão de um CPU com uma FPGA \relax }}{42}
+\contentsline {figure}{\numberline {2.37}{\ignorespaces Máquina de estados - JTAG\relax }}{43}
+\contentsline {figure}{\numberline {2.38}{\ignorespaces Fluxo de dados num debug JTAG\relax }}{43}
+\contentsline {figure}{\numberline {2.39}{\ignorespaces Plataforma scrumdo: Formato dos quadros Scrum planejados para a disciplina \textit {Algoritmos e Programação de Computadores}\relax }}{51}
+\contentsline {figure}{\numberline {2.40}{\ignorespaces Plataforma scrumdo: Quadros Scrum criados e objetivos educacionais, segundo a Taxonomia de Bloom escritos \textit {Algoritmos e Programação de Computadores}\relax }}{51}
+\contentsline {figure}{\numberline {2.41}{\ignorespaces Plataforma scrumdo: Definicação de sub-objetivos de um objetivo listado no \textit {Product Backlog} \textit {Algoritmos e Programação de Computadores}\relax }}{52}
+\contentsline {figure}{\numberline {2.42}{\ignorespaces Uso do aplicativo desenvolvido em QT para definir os objetivo educacional para o nível \textit {Conhecimento}\relax }}{52}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Site para baixar a IDE do Arduino para programação em Galileo.\relax }}{60}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Adicionando o Firmware para programar a placa Galileo.\relax }}{60}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Realizando o download do Firmware para programação da placa Galileo.\relax }}{61}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Selecionando a placa Galileo.\relax }}{61}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Serial Galileo: Gadget Serial v2.4\relax }}{62}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Site para download do Serial da placa \textit {Galileo}\relax }}{62}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Atualizando o Driver para a placa Galileo\relax }}{63}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Selecionando o Driver baixado para atualização.\relax }}{63}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Selecionando a pasta onde se encontra o driver baixado.\relax }}{64}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Driver atualizado.\relax }}{64}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Selecionando a porta COM apropriada\relax }}{65}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Circuito da prática 1.\relax }}{66}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Esquemático do circuito da prática 2.\relax }}{69}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Circuito da prática 2 construído numa protoboard.\relax }}{70}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Esquemático do circuito da prática 3.\relax }}{73}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Circuito da prática 3 construído numa protoboard.\relax }}{73}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Esquemático do circuito da prática 4.\relax }}{77}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Circuito da prática 4 construído numa protoboard.\relax }}{77}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Esquemático do circuito da prática 5.\relax }}{83}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Circuito da prática 5 construído numa protoboard.\relax }}{84}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Esquemático do circuito da prática 6.\relax }}{88}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Circuito da prática 5 construído numa protoboard.\relax }}{89}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Exemplo de resistor utilizado em circuitos eletrônicos.\relax }}{61}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Simbolos de resistor utilizado em circuitos eletrônicos.\relax }}{61}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Como ler o códido de cores de um resistor.\relax }}{62}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Circuito Simples.\relax }}{63}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Primeira Lei de Kirchoff.\relax }}{64}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Segunda Lei Kirchhoff.\relax }}{65}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Ligação em série de n resistores.\relax }}{65}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Mesma corrente percorrendo resistores em série.\relax }}{66}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Componentes conectados em paralelo.\relax }}{67}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Junção N-P em um diodo.\relax }}{68}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Símbolo Diodo\relax }}{68}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Relação tensão, corrente num diodo e suas regiões de operação\relax }}{69}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Modelo simplificado de um diodo em polarização direta.\relax }}{70}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Protoboard.\relax }}{71}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Esquemático de um circuito e sua construção numa protoboard.\relax }}{71}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Modelo de um circuito divisor de tensão\relax }}{72}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Símbolo de um potenciômetro.\relax }}{73}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Estrutura de um potenciômetro angular.\relax }}{74}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Potenciômetro linear.\relax }}{74}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Formas de variação da resistência em um potênciometro.\relax }}{75}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Formas de uso de um potênciometro angular. \relax }}{75}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces LDR\relax }}{76}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Símbolo do LDR\relax }}{76}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Gráfico LDR : Resistência X Luminância\relax }}{77}
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Possível circuito a ser utilizado num sensor de luz\relax }}{77}
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Circuito aberto.\relax }}{78}
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Circuito fechado.\relax }}{79}
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Símbolo de um interruptor.\relax }}{79}
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Mini botões de pressão, de 2 e 4 pinos.\relax }}{80}
+\contentsline {figure}{\numberline {3.30}{\ignorespaces Circuito simples utilizando um botão de 4 pinos de contato .\relax }}{80}
+\contentsline {figure}{\numberline {3.31}{\ignorespaces Esquema resumido: Série para Paralelo com um registrador de deslocamento.\relax }}{81}
+\contentsline {figure}{\numberline {3.32}{\ignorespaces Cascata de \textit {flip-flops} num registrador de deslocamento.\relax }}{81}
+\contentsline {figure}{\numberline {3.33}{\ignorespaces Pinagem Registrador de Deslocamento 74HC595.\relax }}{82}
+\contentsline {figure}{\numberline {3.34}{\ignorespaces Sensor de Temperatura LM35.\relax }}{84}
+\contentsline {figure}{\numberline {3.35}{\ignorespaces Pinagem LM35.\relax }}{84}
+\contentsline {figure}{\numberline {3.36}{\ignorespaces Circuito sensor de temperatura feito com LM35 e com a placa Galileo.\relax }}{85}
+\contentsline {figure}{\numberline {3.37}{\ignorespaces Estrutura básica de um capacitor\relax }}{85}
+\contentsline {figure}{\numberline {3.38}{\ignorespaces Circuito com um capacitor\relax }}{86}
+\contentsline {figure}{\numberline {3.39}{\ignorespaces Filtro RC.\relax }}{87}
+\contentsline {figure}{\numberline {3.40}{\ignorespaces Diagrama de bode de um filtro RC.\relax }}{88}
+\contentsline {figure}{\numberline {3.41}{\ignorespaces Fluxograma de um programa escrito para Arduino.\relax }}{90}
+\contentsline {figure}{\numberline {3.42}{\ignorespaces Fluxograma de um programa escrito para Arduino.\relax }}{92}
+\contentsline {figure}{\numberline {3.43}{\ignorespaces Etapas de interesse para a disciplina \textit {Algoritmos e Programação de computadores}\relax }}{93}
+\contentsline {figure}{\numberline {3.44}{\ignorespaces Exemplo do processo de pré-processamento\relax }}{93}
+\contentsline {figure}{\numberline {3.45}{\ignorespaces Exemplo de substituição de macro no pré-processamento.\relax }}{94}
+\contentsline {figure}{\numberline {3.46}{\ignorespaces Resumo do controle de fluxo de um programa\relax }}{103}
+\contentsline {figure}{\numberline {3.47}{\ignorespaces Sintaxe de uso do loop for.\relax }}{110}
+\contentsline {figure}{\numberline {3.48}{\ignorespaces Exemplo de uso do loop for.\relax }}{110}
+\contentsline {figure}{\numberline {3.49}{\ignorespaces Sintaxe comum de uso do loop while.\relax }}{112}
+\contentsline {figure}{\numberline {3.50}{\ignorespaces Sintaxe comum de uso do loop do-while.\relax }}{114}
+\contentsline {figure}{\numberline {3.51}{\ignorespaces Alocação de memória para um vetor declarado para N espaços de memória.\relax }}{115}
+\contentsline {figure}{\numberline {3.52}{\ignorespaces Endereço de memória e conteúdo de um vetor \textit {v} de 8 espaços.\relax }}{121}
+\contentsline {figure}{\numberline {3.53}{\ignorespaces Após a atribuição do endereço do vetor ao ponteiro ptrInt.\relax }}{121}
+\contentsline {figure}{\numberline {3.54}{\ignorespaces Exemplo de aplicação da técnica de divisões sucessivas. \relax }}{131}
+\contentsline {figure}{\numberline {3.55}{\ignorespaces Fluxo normal de um programa com uma interrupção.\relax }}{136}
+\contentsline {figure}{\numberline {3.56}{\ignorespaces Interrupções de rampa de subida e descida.\relax }}{137}
+\contentsline {figure}{\numberline {3.57}{\ignorespaces Circuito associado à interrupção de rampa de subida.\relax }}{137}
+\contentsline {figure}{\numberline {3.58}{\ignorespaces Circuito associado à interrupção de rampa de descida.\relax }}{138}
+\contentsline {figure}{\numberline {3.59}{\ignorespaces Website - http://playground.arduino.cc/Code/Timer1 .\relax }}{140}
+\contentsline {figure}{\numberline {3.60}{\ignorespaces Download e instruções para instalação da biblioteca Timer1.\relax }}{140}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Exemplo de resistor utilizado em circuitos eletrônicos.\relax }}{93}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Simbolos de resistor utilizado em circuitos eletrônicos.\relax }}{93}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Como ler o códido de cores de um resistor.\relax }}{94}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Circuito Simples.\relax }}{95}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Primeira Lei de Kirchoff.\relax }}{96}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Segunda Lei Kirchhoff.\relax }}{97}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Ligação em série de n resistores.\relax }}{97}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Mesma corrente percorrendo resistores em série.\relax }}{98}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Componentes conectados em paralelo.\relax }}{99}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Junção N-P em um diodo.\relax }}{100}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Símbolo Diodo\relax }}{100}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Relação tensão, corrente num diodo e suas regiões de operação\relax }}{101}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Modelo simplificado de um diodo em polarização direta.\relax }}{102}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Protoboard.\relax }}{103}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Esquemático de um circuito e sua construção numa protoboard.\relax }}{103}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Modelo de um circuito divisor de tensão\relax }}{104}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Símbolo de um potenciômetro.\relax }}{105}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Estrutura de um potenciômetro angular.\relax }}{106}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Potenciômetro linear.\relax }}{106}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Formas de variação da resistência em um potênciometro.\relax }}{107}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Formas de uso de um potênciometro angular. \relax }}{107}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces LDR\relax }}{108}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Símbolo do LDR\relax }}{108}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Gráfico LDR : Resistência X Luminância\relax }}{109}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Possível circuito a ser utilizado num sensor de luz\relax }}{109}
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Circuito aberto.\relax }}{110}
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Circuito fechado.\relax }}{111}
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Símbolo de um interruptor.\relax }}{111}
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Mini botões de pressão, de 2 e 4 pinos.\relax }}{112}
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Circuito simples utilizando um botão de 4 pinos de contato .\relax }}{112}
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Esquema resumido: Série para Paralelo com um registrador de deslocamento.\relax }}{113}
-\contentsline {figure}{\numberline {4.32}{\ignorespaces Cascata de \textit {flip-flops} num registrador de deslocamento.\relax }}{113}
-\contentsline {figure}{\numberline {4.33}{\ignorespaces Pinagem Registrador de Deslocamento 74HC595.\relax }}{114}
-\contentsline {figure}{\numberline {4.34}{\ignorespaces Sensor de Temperatura LM35.\relax }}{116}
-\contentsline {figure}{\numberline {4.35}{\ignorespaces Pinagem LM35.\relax }}{116}
-\contentsline {figure}{\numberline {4.36}{\ignorespaces Circuito sensor de temperatura feito com LM35 e com a placa Galileo.\relax }}{117}
-\contentsline {figure}{\numberline {4.37}{\ignorespaces Fluxograma de um programa escrito para Arduino.\relax }}{119}
-\contentsline {figure}{\numberline {4.38}{\ignorespaces Fluxograma de um programa escrito para Arduino.\relax }}{121}
-\contentsline {figure}{\numberline {4.39}{\ignorespaces Etapas de interesse para a disciplina \textit {Algoritmos e Programação de computadores}\relax }}{122}
-\contentsline {figure}{\numberline {4.40}{\ignorespaces Exemplo do processo de pré-processamento\relax }}{122}
-\contentsline {figure}{\numberline {4.41}{\ignorespaces Exemplo de substituição de macro no pré-processamento.\relax }}{123}
-\contentsline {figure}{\numberline {4.42}{\ignorespaces Resumo do controle de fluxo de um programa\relax }}{132}
-\contentsline {figure}{\numberline {4.43}{\ignorespaces Sintaxe de uso do loop for.\relax }}{139}
-\contentsline {figure}{\numberline {4.44}{\ignorespaces Exemplo de uso do loop for.\relax }}{139}
-\contentsline {figure}{\numberline {4.45}{\ignorespaces Sintaxe comum de uso do loop while.\relax }}{141}
-\contentsline {figure}{\numberline {4.46}{\ignorespaces Sintaxe comum de uso do loop do-while.\relax }}{143}
-\contentsline {figure}{\numberline {4.47}{\ignorespaces Alocação de memória para um vetor declarado para N espaços de memória.\relax }}{144}
-\contentsline {figure}{\numberline {4.48}{\ignorespaces Endereço de memória e conteúdo de um vetor \textit {v} de 8 espaços.\relax }}{150}
-\contentsline {figure}{\numberline {4.49}{\ignorespaces Após a atribuição do endereço do vetor ao ponteiro ptrInt.\relax }}{150}
-\contentsline {figure}{\numberline {4.50}{\ignorespaces Exemplo de aplicação da técnica de divisões sucessivas. \relax }}{156}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Site para baixar a IDE do Arduino para programação em Galileo.\relax }}{144}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Adicionando o Firmware para programar a placa Galileo.\relax }}{144}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Realizando o download do Firmware para programação da placa Galileo.\relax }}{145}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Selecionando a placa Galileo.\relax }}{145}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Serial Galileo: Gadget Serial v2.4\relax }}{146}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Site para download do Serial da placa \textit {Galileo}\relax }}{146}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Atualizando o Driver para a placa Galileo\relax }}{147}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Selecionando o Driver baixado para atualização.\relax }}{147}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Selecionando a pasta onde se encontra o driver baixado.\relax }}{148}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Driver atualizado.\relax }}{148}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Selecionando a porta COM apropriada\relax }}{149}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Circuito da prática 1.\relax }}{150}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Esquemático do circuito da prática 2.\relax }}{153}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Circuito da prática 2 construído numa protoboard.\relax }}{154}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Esquemático do circuito da prática 3.\relax }}{157}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Circuito da prática 3 construído numa protoboard.\relax }}{157}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Esquemático do circuito da prática 4.\relax }}{161}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Circuito da prática 4 construído numa protoboard.\relax }}{161}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Esquemático do circuito da prática 5.\relax }}{167}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Circuito da prática 5 construído numa protoboard.\relax }}{168}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Esquemático do circuito da prática 6.\relax }}{172}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Circuito da prática 5 construído numa protoboard.\relax }}{173}

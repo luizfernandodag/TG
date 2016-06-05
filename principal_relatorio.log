@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.5)  17 MAY 2016 23:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.5)  5 JUN 2016 17:27
 entering extended mode
 **./principal_relatorio.tex
 (principal_relatorio.tex
@@ -21,6 +21,9 @@ File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\import\import.sty"
+Package: import 2009/03/23  v 5.1
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\was\gensymb.sty"
 Package: gensymb 2003/07/02 v1.0 (WaS)
@@ -1068,13 +1071,6 @@ Writing index file principal_relatorio.idx
 
 LaTeX Warning: Label `DRAM1' multiply defined.
 
-) (cap_Desenvolvimento.aux
-
-LaTeX Warning: Label `Pratica1' multiply defined.
-
-
-LaTeX Warning: Label `Pratica3Codigo' multiply defined.
-
 ) (cap_Experimentos.aux
 
 LaTeX Warning: Label `eqSerie3' multiply defined.
@@ -1118,30 +1114,40 @@ LaTeX Warning: Label `string4' multiply defined.
 
 LaTeX Warning: Label `funcao2' multiply defined.
 
+
+LaTeX Warning: Label `intecod0' multiply defined.
+
+) (cap_Desenvolvimento.aux
+
+LaTeX Warning: Label `Pratica1' multiply defined.
+
+
+LaTeX Warning: Label `Pratica3Codigo' multiply defined.
+
 ))
 \openout1 = `principal_relatorio.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Info: Redefining \celsius on input line 166.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 166
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Info: Redefining \celsius on input line 167.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 167
 .
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 166.
-Package gensymb Info: Using \Omega for \ohm on input line 166.
+LaTeX Info: Redefining \ohm on input line 167.
+Package gensymb Info: Using \Omega for \ohm on input line 167.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1220,25 +1226,17 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 )
 \AtBeginShipoutBox=\box73
 \c__siunitx_mathsf_int=\count290
-LaTeX Font Info:    Try loading font information for U+msa on input line 166.
+LaTeX Font Info:    Try loading font information for U+msa on input line 167.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 166.
+LaTeX Font Info:    Try loading font information for U+msb on input line 167.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count291
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 222.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 222.
  [1
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1249,6 +1247,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+
 
 {C:/Users/Sony/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
 
@@ -1262,53 +1261,55 @@ x/config/pdftex.map): invalid entry for `\def\fileversion{1.2}': both ps_name a
 nd font file missing
 }] [1
 
-
-] [1
-
 ]
 \openout2 = `resumos.aux'.
 
  (resumos.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 3.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3.
-) [1
+)
+[1
 
 ] (principal_relatorio.toc
 LaTeX Font Info:    Font shape `OMS/cmr/m/sc' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
  [2
 
 
-]
-Overfull \hbox (24.42665pt too wide) in paragraph at lines 53--53
+] [3] [4]
+Overfull \hbox (24.42665pt too wide) in paragraph at lines 114--114
  [][] []\T1/cmr/m/sc/10.95 Prática 3: Uso de cha-ves/-bo-tões e con-tro-la-do-r
 es de fluxo(Condicionais) [][]  
  []
 
-[3])
+)
 \tf@toc=\write7
 \openout7 = `principal_relatorio.toc'.
 
- [4] (principal_relatorio.lof [5
+ [5] (principal_relatorio.lof [6
 
-] [6] [7])
+] [7] [8])
 \tf@lof=\write8
 \openout8 = `principal_relatorio.lof'.
 
- [8] (principal_relatorio.lot)
+ [9] (principal_relatorio.lot)
 \tf@lot=\write9
 \openout9 = `principal_relatorio.lot'.
 
 
-[9
+[10
 
 ]
 \openout2 = `simbolos.aux'.
 
- (simbolos.tex) [10
+ (simbolos.tex) [11
 
 
-] [11]
+] [12]
 \openout2 = `cap_Introducao.aux'.
 
  (cap_Introducao.tex
@@ -1332,11 +1333,11 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
 
 
-] [5] [6] [7] [8] <figs/bloom1.png, id=93, 316.25352pt x 111.58488pt>
+] [5] [6] [7] [8] <figs/bloom1.png, id=86, 316.25352pt x 111.58488pt>
 File: figs/bloom1.png Graphic file (type png)
 
 <use figs/bloom1.png>
-Package pdftex.def Info: figs/bloom1.png used on input line 188.
+Package pdftex.def Info: figs/bloom1.png used on input line 193.
 (pdftex.def)             Requested size: 325.043pt x 114.68681pt.
 Package epstopdf Info: Source file: <figs/bloom2.eps>
 (epstopdf)                    date: 2016-04-16 09:26:20
@@ -1346,7 +1347,7 @@ Package epstopdf Info: Source file: <figs/bloom2.eps>
 (epstopdf)                    size: 60265 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/bloom2-eps-converted-t
 o.pdf figs/bloom2.eps>
-(epstopdf)             \includegraphics on input line 201.
+(epstopdf)             \includegraphics on input line 206.
 runsystem(epstopdf --outfile=figs/bloom2-eps-converted-to.pdf figs/bloom2.eps).
 ..disabled (restricted).
 
@@ -1357,80 +1358,80 @@ Package epstopdf Info: Result file: <figs/bloom2-eps-converted-to.pdf>
 
 pdfTeX warning: pdflatex.exe (file ./figs/bloom2-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/bloom2-eps-converted-to.pdf, id=95, 1292.93034pt x 515.62639pt>
+<figs/bloom2-eps-converted-to.pdf, id=88, 1292.93034pt x 515.62639pt>
 File: figs/bloom2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/bloom2-eps-converted-to.pdf>
 Package pdftex.def Info: figs/bloom2-eps-converted-to.pdf used on input line 20
-1.
+6.
 (pdftex.def)             Requested size: 325.043pt x 129.63011pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/app2.jpg, id=96, 613.3314pt x 355.5684pt>
+<figs/app2.jpg, id=89, 613.3314pt x 355.5684pt>
 File: figs/app2.jpg Graphic file (type jpg)
  <use figs/app2.jpg>
-Package pdftex.def Info: figs/app2.jpg used on input line 220.
+Package pdftex.def Info: figs/app2.jpg used on input line 225.
 (pdftex.def)             Requested size: 464.34918pt x 269.20393pt.
- [9 <./figs/bloom1.png>] <figs/app2_1.jpg, id=101, 587.796pt x 341.5962pt>
+ [9 <./figs/bloom1.png>] <figs/app2_1.jpg, id=94, 587.796pt x 341.5962pt>
 File: figs/app2_1.jpg Graphic file (type jpg)
 
 <use figs/app2_1.jpg>
-Package pdftex.def Info: figs/app2_1.jpg used on input line 229.
+Package pdftex.def Info: figs/app2_1.jpg used on input line 234.
 (pdftex.def)             Requested size: 464.34918pt x 269.85803pt.
  [10 <./figs/bloom2-eps-converted-to.pdf> <./figs/app2.jpg>] <figs/app3.jpg, id
-=108, 610.9224pt x 355.5684pt>
+=101, 610.9224pt x 355.5684pt>
 File: figs/app3.jpg Graphic file (type jpg)
  <use figs/app3.jpg>
-Package pdftex.def Info: figs/app3.jpg used on input line 238.
+Package pdftex.def Info: figs/app3.jpg used on input line 243.
 (pdftex.def)             Requested size: 464.34918pt x 270.2619pt.
 
 [11 <./figs/app2_1.jpg> <./figs/app3.jpg>]
-<figs/app4.jpg, id=113, 612.3678pt x 355.5684pt>
+<figs/app4.jpg, id=106, 612.3678pt x 355.5684pt>
 File: figs/app4.jpg Graphic file (type jpg)
  <use figs/app4.jpg>
-Package pdftex.def Info: figs/app4.jpg used on input line 247.
+Package pdftex.def Info: figs/app4.jpg used on input line 252.
 (pdftex.def)             Requested size: 325.043pt x 188.7379pt.
 
-<figs/app4_1.jpg, id=114, 589.7232pt x 342.5598pt>
+<figs/app4_1.jpg, id=107, 589.7232pt x 342.5598pt>
 File: figs/app4_1.jpg Graphic file (type jpg)
  <use figs/app4_1.jpg>
-Package pdftex.def Info: figs/app4_1.jpg used on input line 255.
+Package pdftex.def Info: figs/app4_1.jpg used on input line 260.
 (pdftex.def)             Requested size: 464.34918pt x 269.73067pt.
 
-<figs/app5_2.jpg, id=115, 611.886pt x 354.123pt>
+<figs/app5_2.jpg, id=108, 611.886pt x 354.123pt>
 File: figs/app5_2.jpg Graphic file (type jpg)
  <use figs/app5_2.jpg>
-Package pdftex.def Info: figs/app5_2.jpg used on input line 264.
+Package pdftex.def Info: figs/app5_2.jpg used on input line 269.
 (pdftex.def)             Requested size: 417.91142pt x 241.86493pt.
  [12 <./figs/app4.jpg> <./figs/app4_1.jpg>]
-<figs/app6.jpg, id=119, 604.659pt x 347.3778pt>
+<figs/app6.jpg, id=112, 604.659pt x 347.3778pt>
 File: figs/app6.jpg Graphic file (type jpg)
  <use figs/app6.jpg>
-Package pdftex.def Info: figs/app6.jpg used on input line 273.
+Package pdftex.def Info: figs/app6.jpg used on input line 278.
 (pdftex.def)             Requested size: 417.91142pt x 240.08849pt.
 
 
-LaTeX Warning: Reference `app7' on page 13 undefined on input line 278.
+LaTeX Warning: Reference `app7' on page 13 undefined on input line 283.
 
-<figs/app7_3.jpg, id=120, 603.6954pt x 345.9324pt>
+<figs/app7_3.jpg, id=113, 603.6954pt x 345.9324pt>
 File: figs/app7_3.jpg Graphic file (type jpg)
  <use figs/app7_3.jpg>
-Package pdftex.def Info: figs/app7_3.jpg used on input line 282.
+Package pdftex.def Info: figs/app7_3.jpg used on input line 287.
 (pdftex.def)             Requested size: 417.91142pt x 239.47482pt.
 
 [13 <./figs/app5_2.jpg> <./figs/app6.jpg>]
-<figs/app8.jpg, id=124, 608.0316pt x 352.1958pt>
+<figs/app8.jpg, id=117, 608.0316pt x 352.1958pt>
 File: figs/app8.jpg Graphic file (type jpg)
  <use figs/app8.jpg>
-Package pdftex.def Info: figs/app8.jpg used on input line 292.
+Package pdftex.def Info: figs/app8.jpg used on input line 297.
 (pdftex.def)             Requested size: 417.91142pt x 242.08028pt.
 
-<figs/app9.jpg, id=125, 613.3314pt x 358.4592pt>
+<figs/app9.jpg, id=118, 613.3314pt x 358.4592pt>
 File: figs/app9.jpg Graphic file (type jpg)
  <use figs/app9.jpg>
-Package pdftex.def Info: figs/app9.jpg used on input line 300.
+Package pdftex.def Info: figs/app9.jpg used on input line 305.
 (pdftex.def)             Requested size: 417.91142pt x 244.25223pt.
  [14 <./figs/app7_3.jpg> <./figs/app8.jpg>]
 Package epstopdf Info: Source file: <figs/Scrum4.eps>
@@ -1441,23 +1442,23 @@ Package epstopdf Info: Source file: <figs/Scrum4.eps>
 (epstopdf)                    size: 36132 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/Scrum4-eps-converted-t
 o.pdf figs/Scrum4.eps>
-(epstopdf)             \includegraphics on input line 323.
+(epstopdf)             \includegraphics on input line 328.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/Scrum4-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/Scrum4-eps-converted-to.pdf, id=129, 1429.84187pt x 586.29034pt>
+<figs/Scrum4-eps-converted-to.pdf, id=122, 1429.84187pt x 586.29034pt>
 File: figs/Scrum4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/Scrum4-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Scrum4-eps-converted-to.pdf used on input line 32
-3.
+8.
 (pdftex.def)             Requested size: 325.043pt x 133.27838pt.
  [15 <./figs/app9.jpg>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 342.
+               Default added (so using `tbp') on input line 347.
 
 Package epstopdf Info: Source file: <figs/SCRUM6.eps>
 (epstopdf)                    date: 2016-04-14 20:45:45
@@ -1467,7 +1468,7 @@ Package epstopdf Info: Source file: <figs/SCRUM6.eps>
 (epstopdf)                    size: 68991 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/SCRUM6-eps-converted-t
 o.pdf figs/SCRUM6.eps>
-(epstopdf)             \includegraphics on input line 372.
+(epstopdf)             \includegraphics on input line 377.
 runsystem(epstopdf --outfile=figs/SCRUM6-eps-converted-to.pdf figs/SCRUM6.eps).
 ..disabled (restricted).
 
@@ -1478,12 +1479,12 @@ Package epstopdf Info: Result file: <figs/SCRUM6-eps-converted-to.pdf>
 
 pdfTeX warning: pdflatex.exe (file ./figs/SCRUM6-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/SCRUM6-eps-converted-to.pdf, id=134, 883.3pt x 642.60077pt>
+<figs/SCRUM6-eps-converted-to.pdf, id=126, 883.3pt x 642.60077pt>
 File: figs/SCRUM6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SCRUM6-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SCRUM6-eps-converted-to.pdf used on input line 37
-2.
+7.
 (pdftex.def)             Requested size: 232.17459pt x 168.90584pt.
 
 
@@ -1498,18 +1499,18 @@ Package epstopdf Info: Source file: <figs/scrum7.eps>
 (epstopdf)                    size: 13421 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/scrum7-eps-converted-t
 o.pdf figs/scrum7.eps>
-(epstopdf)             \includegraphics on input line 395.
+(epstopdf)             \includegraphics on input line 400.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/scrum7-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/scrum7-eps-converted-to.pdf, id=142, 331.2375pt x 331.2375pt>
+<figs/scrum7-eps-converted-to.pdf, id=134, 331.2375pt x 331.2375pt>
 File: figs/scrum7-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/scrum7-eps-converted-to.pdf>
-Package pdftex.def Info: figs/scrum7-eps-converted-to.pdf used on input line 39
-5.
+Package pdftex.def Info: figs/scrum7-eps-converted-to.pdf used on input line 40
+0.
 (pdftex.def)             Requested size: 232.17459pt x 232.17297pt.
 
 
@@ -1524,18 +1525,18 @@ Package epstopdf Info: Source file: <figs/Scrum3.eps>
 (epstopdf)                    size: 42160 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/Scrum3-eps-converted-t
 o.pdf figs/Scrum3.eps>
-(epstopdf)             \includegraphics on input line 406.
+(epstopdf)             \includegraphics on input line 411.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/Scrum3-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/Scrum3-eps-converted-to.pdf, id=147, 704.43173pt x 518.93875pt>
+<figs/Scrum3-eps-converted-to.pdf, id=139, 704.43173pt x 518.93875pt>
 File: figs/Scrum3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/Scrum3-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Scrum3-eps-converted-to.pdf used on input line 40
-6.
+Package pdftex.def Info: figs/Scrum3-eps-converted-to.pdf used on input line 41
+1.
 (pdftex.def)             Requested size: 232.17459pt x 171.03651pt.
  [18 <./figs/SCRUM6-eps-converted-to.pdf> <./figs/scrum7-eps-converted-to.pdf>]
  [19 <./figs/Scrum3-eps-converted-to.pdf>]
@@ -1547,43 +1548,43 @@ Package epstopdf Info: Source file: <figs/scrum2.eps>
 (epstopdf)                    size: 402994 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/scrum2-eps-converted-t
 o.pdf figs/scrum2.eps>
-(epstopdf)             \includegraphics on input line 460.
+(epstopdf)             \includegraphics on input line 465.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/scrum2-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/scrum2-eps-converted-to.pdf, id=163, 3351.01938pt x 2541.6957pt>
+<figs/scrum2-eps-converted-to.pdf, id=155, 3351.01938pt x 2541.6957pt>
 File: figs/scrum2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/scrum2-eps-converted-to.pdf>
 Package pdftex.def Info: figs/scrum2-eps-converted-to.pdf used on input line 46
-0.
+5.
 (pdftex.def)             Requested size: 232.17459pt x 176.07529pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 469.
+               Default added (so using `tbp') on input line 474.
 
-[20 <./figs/scrum2-eps-converted-to.pdf>]
-<figs/tabRankingUniversidades.jpg, id=169, 600.13008pt x 320.30064pt>
+[20 <./figs/scrum2-eps-converted-to.pdf>] [21]
+<figs/tabRankingUniversidades.jpg, id=164, 600.13008pt x 320.30064pt>
 File: figs/tabRankingUniversidades.jpg Graphic file (type jpg)
 
 <use figs/tabRankingUniversidades.jpg>
-Package pdftex.def Info: figs/tabRankingUniversidades.jpg used on input line 50
-1.
+Package pdftex.def Info: figs/tabRankingUniversidades.jpg used on input line 51
+4.
 (pdftex.def)             Requested size: 464.34918pt x 247.82965pt.
- [21]
-<figs/t2.jpg, id=173, 478.71648pt x 191.94913pt>
+
+<figs/t2.jpg, id=165, 478.71648pt x 191.94913pt>
 File: figs/t2.jpg Graphic file (type jpg)
  <use figs/t2.jpg>
-Package pdftex.def Info: figs/t2.jpg used on input line 512.
+Package pdftex.def Info: figs/t2.jpg used on input line 525.
 (pdftex.def)             Requested size: 325.043pt x 130.33623pt.
 
-<figs/t3.jpg, id=174, 541.15776pt x 358.4592pt>
+<figs/t3.jpg, id=166, 541.15776pt x 358.4592pt>
 File: figs/t3.jpg Graphic file (type jpg)
  <use figs/t3.jpg>
-Package pdftex.def Info: figs/t3.jpg used on input line 519.
+Package pdftex.def Info: figs/t3.jpg used on input line 532.
 (pdftex.def)             Requested size: 325.043pt x 215.30142pt.
  [22 <./figs/tabRankingUniversidades.jpg> <./figs/t2.jpg>]
 Package epstopdf Info: Source file: <figs/PossivelUsarGalileo.eps>
@@ -1595,7 +1596,7 @@ pdf>
 (epstopdf)                    size: 19243 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/PossivelUsarGalileo-ep
 s-converted-to.pdf figs/PossivelUsarGalileo.eps>
-(epstopdf)             \includegraphics on input line 531.
+(epstopdf)             \includegraphics on input line 544.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1603,124 +1604,18 @@ pdfTeX warning: pdflatex.exe (file ./figs/PossivelUsarGalileo-eps-converted-to.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<figs/PossivelUsarGalileo-eps-converted-to.pdf, id=178, 649.2255pt x 408.52625p
+<figs/PossivelUsarGalileo-eps-converted-to.pdf, id=170, 649.2255pt x 408.52625p
 t>
 File: figs/PossivelUsarGalileo-eps-converted-to.pdf Graphic file (type pdf)
  <use figs/PossivelUsarGalileo-eps-converted-to.pdf>
 Package pdftex.def Info: figs/PossivelUsarGalileo-eps-converted-to.pdf used on 
-input line 531.
+input line 544.
 (pdftex.def)             Requested size: 325.043pt x 204.53067pt.
  [23 <./figs/t3.jpg> <./figs/PossivelUsarGalileo-eps-converted-to.pdf>]
-Overfull \hbox (1.28725pt too wide) in paragraph at lines 565--571
- [][] 
- []
-
-[24] [25] [26]
-Overfull \vbox (22.46036pt too high) has occurred while \output is active []
-
-
-[27]
-Overfull \hbox (4.95068pt too wide) in paragraph at lines 618--632
- [][] 
- []
-
-[28]
-Package epstopdf Info: Source file: <figs/scrumdo1.eps>
-(epstopdf)                    date: 2016-04-04 22:14:38
-(epstopdf)                    size: 10218642 bytes
-(epstopdf)             Output file: <figs/scrumdo1-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-04-04 22:11:25
-(epstopdf)                    size: 72497 bytes
-(epstopdf)             Command: <epstopdf --outfile=figs/scrumdo1-eps-converted
--to.pdf figs/scrumdo1.eps>
-(epstopdf)             \includegraphics on input line 675.
-runsystem(epstopdf --outfile=figs/scrumdo1-eps-converted-to.pdf figs/scrumdo1.e
-ps)...disabled (restricted).
-
-Package epstopdf Info: Result file: <figs/scrumdo1-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-04-04 22:11:25
-(epstopdf)                    size: 72497 bytes.
-
-
-pdfTeX warning: pdflatex.exe (file ./figs/scrumdo1-eps-converted-to.pdf): PDF i
-nclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/scrumdo1-eps-converted-to.pdf, id=200, 2050.36008pt x 999.23312pt>
-File: figs/scrumdo1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figs/scrumdo1-eps-converted-to.pdf>
-Package pdftex.def Info: figs/scrumdo1-eps-converted-to.pdf used on input line 
-675.
-(pdftex.def)             Requested size: 464.34918pt x 226.2967pt.
- [29]
-Package epstopdf Info: Source file: <figs/scrumdo2.eps>
-(epstopdf)                    date: 2016-04-07 20:32:02
-(epstopdf)                    size: 3447711 bytes
-(epstopdf)             Output file: <figs/scrumdo2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-04-07 20:32:24
-(epstopdf)                    size: 49117 bytes
-(epstopdf)             Command: <epstopdf --outfile=figs/scrumdo2-eps-converted
--to.pdf figs/scrumdo2.eps>
-(epstopdf)             \includegraphics on input line 685.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./figs/scrumdo2-eps-converted-to.pdf): PDF i
-nclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/scrumdo2-eps-converted-to.pdf, id=205, 1284.09743pt x 537.7089pt>
-File: figs/scrumdo2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figs/scrumdo2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/scrumdo2-eps-converted-to.pdf used on input line 
-685.
-(pdftex.def)             Requested size: 464.34918pt x 194.43655pt.
- [30 <./figs/scrumdo1-eps-converted-to.pdf> <./figs/scrumdo2-eps-converted-to.p
-df>]
-Package epstopdf Info: Source file: <figs/scrumdo3.eps>
-(epstopdf)                    date: 2016-04-07 20:56:52
-(epstopdf)                    size: 2864563 bytes
-(epstopdf)             Output file: <figs/scrumdo3-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-04-07 20:57:19
-(epstopdf)                    size: 22859 bytes
-(epstopdf)             Command: <epstopdf --outfile=figs/scrumdo3-eps-converted
--to.pdf figs/scrumdo3.eps>
-(epstopdf)             \includegraphics on input line 695.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./figs/scrumdo3-eps-converted-to.pdf): PDF i
-nclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/scrumdo3-eps-converted-to.pdf, id=215, 1207.91278pt x 474.77374pt>
-File: figs/scrumdo3-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figs/scrumdo3-eps-converted-to.pdf>
-Package pdftex.def Info: figs/scrumdo3-eps-converted-to.pdf used on input line 
-695.
-(pdftex.def)             Requested size: 464.34918pt x 182.50954pt.
-Package epstopdf Info: Source file: <figs/app1.eps>
-(epstopdf)                    date: 2016-04-07 21:24:08
-(epstopdf)                    size: 6064848 bytes
-(epstopdf)             Output file: <figs/app1-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-04-07 21:24:39
-(epstopdf)                    size: 137066 bytes
-(epstopdf)             Command: <epstopdf --outfile=figs/app1-eps-converted-to.
-pdf figs/app1.eps>
-(epstopdf)             \includegraphics on input line 702.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex.exe (file ./figs/app1-eps-converted-to.pdf): PDF inclu
-sion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/app1-eps-converted-to.pdf, id=216, 1407.75937pt x 863.42577pt>
-File: figs/app1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figs/app1-eps-converted-to.pdf>
-Package pdftex.def Info: figs/app1-eps-converted-to.pdf used on input line 702.
-
-(pdftex.def)             Requested size: 464.34918pt x 284.79964pt.
- [31 <./figs/scrumdo3-eps-converted-to.pdf> <./figs/app1-eps-converted-to.pdf>]
- [32] [33] [34] [35] [36] [37]
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 552.
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 911.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 573.
 Package epstopdf Info: Source file: <figs/galileoFrentePinos.eps>
 (epstopdf)                    date: 2016-02-25 18:22:27
 (epstopdf)                    size: 1173150 bytes
@@ -1730,19 +1625,19 @@ df>
 (epstopdf)                    size: 89465 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/galileoFrentePinos-eps
 -converted-to.pdf figs/galileoFrentePinos.eps>
-(epstopdf)             \includegraphics on input line 920.
+(epstopdf)             \includegraphics on input line 582.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/galileoFrentePinos-eps-converted-to.p
 df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<figs/galileoFrentePinos-eps-converted-to.pdf, id=245, 623.83063pt x 375.4025pt
+<figs/galileoFrentePinos-eps-converted-to.pdf, id=177, 623.83063pt x 375.4025pt
 >
 File: figs/galileoFrentePinos-eps-converted-to.pdf Graphic file (type pdf)
  <use figs/galileoFrentePinos-eps-converted-to.pdf>
 Package pdftex.def Info: figs/galileoFrentePinos-eps-converted-to.pdf used on i
-nput line 920.
+nput line 582.
 (pdftex.def)             Requested size: 143.9471pt x 86.62143pt.
 Package epstopdf Info: Source file: <figs/galileoTrasPinos.eps>
 (epstopdf)                    date: 2016-02-25 18:22:41
@@ -1753,31 +1648,31 @@ Package epstopdf Info: Source file: <figs/galileoTrasPinos.eps>
 (epstopdf)                    size: 75883 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/galileoTrasPinos-eps-c
 onverted-to.pdf figs/galileoTrasPinos.eps>
-(epstopdf)             \includegraphics on input line 928.
+(epstopdf)             \includegraphics on input line 590.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/galileoTrasPinos-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<figs/galileoTrasPinos-eps-converted-to.pdf, id=246, 496.85625pt x 321.30038pt>
+<figs/galileoTrasPinos-eps-converted-to.pdf, id=178, 496.85625pt x 321.30038pt>
 File: figs/galileoTrasPinos-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/galileoTrasPinos-eps-converted-to.pdf>
 Package pdftex.def Info: figs/galileoTrasPinos-eps-converted-to.pdf used on inp
-ut line 928.
+ut line 590.
 (pdftex.def)             Requested size: 143.9471pt x 93.08647pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 939.
+               Default added (so using `tbp') on input line 601.
 
 
-Overfull \hbox (15.56554pt too wide) in paragraph at lines 943--958
+Overfull \hbox (15.56554pt too wide) in paragraph at lines 605--620
  [][] 
  []
 
-[38 <./figs/galileoTrasPinos-eps-converted-to.pdf> <./figs/galileoFrentePinos-e
-ps-converted-to.pdf>] [39]
+[24 <./figs/galileoTrasPinos-eps-converted-to.pdf> <./figs/galileoFrentePinos-e
+ps-converted-to.pdf>] [25]
 Package epstopdf Info: Source file: <figs/PWM.eps>
 (epstopdf)                    date: 2016-02-28 17:41:00
 (epstopdf)                    size: 1079940 bytes
@@ -1786,7 +1681,7 @@ Package epstopdf Info: Source file: <figs/PWM.eps>
 (epstopdf)                    size: 16431 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/PWM-eps-converted-to.p
 df figs/PWM.eps>
-(epstopdf)             \includegraphics on input line 994.
+(epstopdf)             \includegraphics on input line 656.
 runsystem(epstopdf --outfile=figs/PWM-eps-converted-to.pdf figs/PWM.eps)...disa
 bled (restricted).
 
@@ -1797,18 +1692,17 @@ Package epstopdf Info: Result file: <figs/PWM-eps-converted-to.pdf>
 
 pdfTeX warning: pdflatex.exe (file ./figs/PWM-eps-converted-to.pdf): PDF inclus
 ion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/PWM-eps-converted-to.pdf, id=261, 682.34924pt x 315.77975pt>
+<figs/PWM-eps-converted-to.pdf, id=195, 682.34924pt x 315.77975pt>
 File: figs/PWM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/PWM-eps-converted-to.pdf>
-Package pdftex.def Info: figs/PWM-eps-converted-to.pdf used on input line 994.
+Package pdftex.def Info: figs/PWM-eps-converted-to.pdf used on input line 656.
 (pdftex.def)             Requested size: 464.34918pt x 214.8912pt.
- [40] [41 <./figs/PWM-eps-converted-to.pdf>]
+ [26] [27 <./figs/PWM-eps-converted-to.pdf>]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1043.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 705.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 707.
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1045
-.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -1820,20 +1714,20 @@ Package epstopdf Info: Source file: <figs/ADC1.eps>
 (epstopdf)                    size: 25825 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/ADC1-eps-converted-to.
 pdf figs/ADC1.eps>
-(epstopdf)             \includegraphics on input line 1078.
+(epstopdf)             \includegraphics on input line 740.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/ADC1-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/ADC1-eps-converted-to.pdf, id=274, 671.30798pt x 393.06851pt>
+<figs/ADC1-eps-converted-to.pdf, id=207, 671.30798pt x 393.06851pt>
 File: figs/ADC1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/ADC1-eps-converted-to.pdf>
-Package pdftex.def Info: figs/ADC1-eps-converted-to.pdf used on input line 1078
-.
+Package pdftex.def Info: figs/ADC1-eps-converted-to.pdf used on input line 740.
+
 (pdftex.def)             Requested size: 464.34918pt x 271.89531pt.
- [42]
+ [28] [29 <./figs/ADC1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/I2C1.eps>
 (epstopdf)                    date: 2016-03-01 16:53:39
 (epstopdf)                    size: 596069 bytes
@@ -1842,20 +1736,19 @@ Package epstopdf Info: Source file: <figs/I2C1.eps>
 (epstopdf)                    size: 23464 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/I2C1-eps-converted-to.
 pdf figs/I2C1.eps>
-(epstopdf)             \includegraphics on input line 1104.
+(epstopdf)             \includegraphics on input line 766.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/I2C1-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/I2C1-eps-converted-to.pdf, id=281, 579.66562pt x 204.26312pt>
+<figs/I2C1-eps-converted-to.pdf, id=221, 579.66562pt x 204.26312pt>
 File: figs/I2C1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/I2C1-eps-converted-to.pdf>
-Package pdftex.def Info: figs/I2C1-eps-converted-to.pdf used on input line 1104
-.
+Package pdftex.def Info: figs/I2C1-eps-converted-to.pdf used on input line 766.
+
 (pdftex.def)             Requested size: 371.48076pt x 130.90248pt.
- [43 <./figs/ADC1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/I2C2.eps>
 (epstopdf)                    date: 2016-03-01 18:43:31
 (epstopdf)                    size: 1285650 bytes
@@ -1864,20 +1757,21 @@ Package epstopdf Info: Source file: <figs/I2C2.eps>
 (epstopdf)                    size: 28529 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/I2C2-eps-converted-to.
 pdf figs/I2C2.eps>
-(epstopdf)             \includegraphics on input line 1120.
+(epstopdf)             \includegraphics on input line 782.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/I2C2-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/I2C2-eps-converted-to.pdf, id=288, 662.475pt x 387.54788pt>
+<figs/I2C2-eps-converted-to.pdf, id=222, 662.475pt x 387.54788pt>
 File: figs/I2C2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/I2C2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/I2C2-eps-converted-to.pdf used on input line 1120
-.
+Package pdftex.def Info: figs/I2C2-eps-converted-to.pdf used on input line 782.
+
 (pdftex.def)             Requested size: 278.61234pt x 162.9878pt.
- [44 <./figs/I2C1-eps-converted-to.pdf> <./figs/I2C2-eps-converted-to.pdf>]
+ [30 <./figs/I2C1-eps-converted-to.pdf>]
+[31 <./figs/I2C2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/SPI0.eps>
 (epstopdf)                    date: 2016-03-01 20:49:35
 (epstopdf)                    size: 982105 bytes
@@ -1886,20 +1780,20 @@ Package epstopdf Info: Source file: <figs/SPI0.eps>
 (epstopdf)                    size: 27068 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/SPI0-eps-converted-to.
 pdf figs/SPI0.eps>
-(epstopdf)             \includegraphics on input line 1154.
+(epstopdf)             \includegraphics on input line 816.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/SPI0-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/SPI0-eps-converted-to.pdf, id=298, 496.85625pt x 394.17264pt>
+<figs/SPI0-eps-converted-to.pdf, id=235, 496.85625pt x 394.17264pt>
 File: figs/SPI0-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SPI0-eps-converted-to.pdf>
-Package pdftex.def Info: figs/SPI0-eps-converted-to.pdf used on input line 1154
-.
+Package pdftex.def Info: figs/SPI0-eps-converted-to.pdf used on input line 816.
+
 (pdftex.def)             Requested size: 371.48076pt x 294.71452pt.
- [45] [46 <./figs/SPI0-eps-converted-to.pdf>]
+ [32 <./figs/SPI0-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/UART2.eps>
 (epstopdf)                    date: 2016-03-02 16:11:54
 (epstopdf)                    size: 1160473 bytes
@@ -1908,7 +1802,7 @@ Package epstopdf Info: Source file: <figs/UART2.eps>
 (epstopdf)                    size: 32349 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/UART2-eps-converted-to
 .pdf figs/UART2.eps>
-(epstopdf)             \includegraphics on input line 1192.
+(epstopdf)             \includegraphics on input line 854.
 runsystem(epstopdf --outfile=figs/UART2-eps-converted-to.pdf figs/UART2.eps)...
 disabled (restricted).
 
@@ -1919,12 +1813,12 @@ Package epstopdf Info: Result file: <figs/UART2-eps-converted-to.pdf>
 
 pdfTeX warning: pdflatex.exe (file ./figs/UART2-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/UART2-eps-converted-to.pdf, id=308, 552.0625pt x 419.5675pt>
+<figs/UART2-eps-converted-to.pdf, id=242, 552.0625pt x 419.5675pt>
 File: figs/UART2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/UART2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/UART2-eps-converted-to.pdf used on input line 119
-2.
+Package pdftex.def Info: figs/UART2-eps-converted-to.pdf used on input line 854
+.
 (pdftex.def)             Requested size: 325.043pt x 247.0433pt.
 Package epstopdf Info: Source file: <figs/UART1.eps>
 (epstopdf)                    date: 2016-03-02 16:00:20
@@ -1934,21 +1828,21 @@ Package epstopdf Info: Source file: <figs/UART1.eps>
 (epstopdf)                    size: 38050 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/UART1-eps-converted-to
 .pdf figs/UART1.eps>
-(epstopdf)             \includegraphics on input line 1201.
+(epstopdf)             \includegraphics on input line 863.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/UART1-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/UART1-eps-converted-to.pdf, id=309, 1190.2468pt x 181.07649pt>
+<figs/UART1-eps-converted-to.pdf, id=243, 1190.2468pt x 181.07649pt>
 File: figs/UART1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/UART1-eps-converted-to.pdf>
-Package pdftex.def Info: figs/UART1-eps-converted-to.pdf used on input line 120
-1.
+Package pdftex.def Info: figs/UART1-eps-converted-to.pdf used on input line 863
+.
 (pdftex.def)             Requested size: 371.48076pt x 56.51442pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1204--1204
+Underfull \hbox (badness 10000) in paragraph at lines 866--866
 []|\T1/cmr/m/n/10.95 Fonte: http://www.mathworks.com/help/hdlverifier/examples/
 generate-fifo-interface-dpi-
  []
@@ -1961,22 +1855,21 @@ Package epstopdf Info: Source file: <figs/UART3.eps>
 (epstopdf)                    size: 78191 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/UART3-eps-converted-to
 .pdf figs/UART3.eps>
-(epstopdf)             \includegraphics on input line 1210.
+(epstopdf)             \includegraphics on input line 872.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/UART3-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/UART3-eps-converted-to.pdf, id=310, 1567.8575pt x 395.27673pt>
+<figs/UART3-eps-converted-to.pdf, id=244, 1567.8575pt x 395.27673pt>
 File: figs/UART3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/UART3-eps-converted-to.pdf>
-Package pdftex.def Info: figs/UART3-eps-converted-to.pdf used on input line 121
-0.
+Package pdftex.def Info: figs/UART3-eps-converted-to.pdf used on input line 872
+.
 (pdftex.def)             Requested size: 464.34918pt x 117.06401pt.
- [47 <./figs/UART2-eps-converted-to.pdf>]
-[48 <./figs/UART1-eps-converted-to.pdf> <./figs/UART3-eps-converted-to.pdf>]
-[49]
+ [33] [34 <./figs/UART2-eps-converted-to.pdf> <./figs/UART1-eps-converted-to.pd
+f>] [35 <./figs/UART3-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/cache0.eps>
 (epstopdf)                    date: 2016-03-02 18:46:35
 (epstopdf)                    size: 2088023 bytes
@@ -1985,18 +1878,18 @@ Package epstopdf Info: Source file: <figs/cache0.eps>
 (epstopdf)                    size: 26326 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/cache0-eps-converted-t
 o.pdf figs/cache0.eps>
-(epstopdf)             \includegraphics on input line 1266.
+(epstopdf)             \includegraphics on input line 928.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/cache0-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/cache0-eps-converted-to.pdf, id=331, 767.36688pt x 544.33362pt>
+<figs/cache0-eps-converted-to.pdf, id=265, 767.36688pt x 544.33362pt>
 File: figs/cache0-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/cache0-eps-converted-to.pdf>
-Package pdftex.def Info: figs/cache0-eps-converted-to.pdf used on input line 12
-66.
+Package pdftex.def Info: figs/cache0-eps-converted-to.pdf used on input line 92
+8.
 (pdftex.def)             Requested size: 232.17459pt x 164.68842pt.
 Package epstopdf Info: Source file: <figs/SRAM0.eps>
 (epstopdf)                    date: 2016-03-02 19:49:01
@@ -2006,26 +1899,26 @@ Package epstopdf Info: Source file: <figs/SRAM0.eps>
 (epstopdf)                    size: 16762 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/SRAM0-eps-converted-to
 .pdf figs/SRAM0.eps>
-(epstopdf)             \includegraphics on input line 1279.
+(epstopdf)             \includegraphics on input line 941.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/SRAM0-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/SRAM0-eps-converted-to.pdf, id=332, 414.04688pt x 310.25912pt>
+<figs/SRAM0-eps-converted-to.pdf, id=266, 414.04688pt x 310.25912pt>
 File: figs/SRAM0-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SRAM0-eps-converted-to.pdf>
-Package pdftex.def Info: figs/SRAM0-eps-converted-to.pdf used on input line 127
-9.
+Package pdftex.def Info: figs/SRAM0-eps-converted-to.pdf used on input line 941
+.
 (pdftex.def)             Requested size: 185.73683pt x 139.17976pt.
 
-Underfull \hbox (badness 4995) in paragraph at lines 1282--1282
+Underfull \hbox (badness 4995) in paragraph at lines 944--944
 []|\T1/cmr/m/n/10.95 Fonte: http://web.sfc.keio.ac.jp/ rdv/keio/sfc/teaching/ar
 chitecture/architecture-2009/lec08-
  []
 
-[50 <./figs/cache0-eps-converted-to.pdf> <./figs/SRAM0-eps-converted-to.pdf>]
+[36 <./figs/cache0-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/SRAM1.eps>
 (epstopdf)                    date: 2016-03-03 17:07:29
 (epstopdf)                    size: 386069 bytes
@@ -2034,7 +1927,7 @@ Package epstopdf Info: Source file: <figs/SRAM1.eps>
 (epstopdf)                    size: 16931 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/SRAM1-eps-converted-to
 .pdf figs/SRAM1.eps>
-(epstopdf)             \includegraphics on input line 1289.
+(epstopdf)             \includegraphics on input line 951.
 runsystem(epstopdf --outfile=figs/SRAM1-eps-converted-to.pdf figs/SRAM1.eps)...
 disabled (restricted).
 
@@ -2045,19 +1938,20 @@ Package epstopdf Info: Result file: <figs/SRAM1-eps-converted-to.pdf>
 
 pdfTeX warning: pdflatex.exe (file ./figs/SRAM1-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/SRAM1-eps-converted-to.pdf, id=342, 552.0625pt x 414.04688pt>
+<figs/SRAM1-eps-converted-to.pdf, id=273, 552.0625pt x 414.04688pt>
 File: figs/SRAM1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SRAM1-eps-converted-to.pdf>
-Package pdftex.def Info: figs/SRAM1-eps-converted-to.pdf used on input line 128
-9.
+Package pdftex.def Info: figs/SRAM1-eps-converted-to.pdf used on input line 951
+.
 (pdftex.def)             Requested size: 185.73683pt x 139.30202pt.
 
-Underfull \hbox (badness 4995) in paragraph at lines 1292--1292
+Underfull \hbox (badness 4995) in paragraph at lines 954--954
 []|\T1/cmr/m/n/10.95 Fonte: http://web.sfc.keio.ac.jp/ rdv/keio/sfc/teaching/ar
 chitecture/architecture-2009/lec08-
  []
 
+[37 <./figs/SRAM0-eps-converted-to.pdf> <./figs/SRAM1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/DRAM1.eps>
 (epstopdf)                    date: 2016-03-03 16:53:39
 (epstopdf)                    size: 675017 bytes
@@ -2066,21 +1960,20 @@ Package epstopdf Info: Source file: <figs/DRAM1.eps>
 (epstopdf)                    size: 21444 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/DRAM1-eps-converted-to
 .pdf figs/DRAM1.eps>
-(epstopdf)             \includegraphics on input line 1306.
+(epstopdf)             \includegraphics on input line 968.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/DRAM1-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/DRAM1-eps-converted-to.pdf, id=343, 662.475pt x 607.26875pt>
+<figs/DRAM1-eps-converted-to.pdf, id=283, 662.475pt x 607.26875pt>
 File: figs/DRAM1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/DRAM1-eps-converted-to.pdf>
-Package pdftex.def Info: figs/DRAM1-eps-converted-to.pdf used on input line 130
-6.
+Package pdftex.def Info: figs/DRAM1-eps-converted-to.pdf used on input line 968
+.
 (pdftex.def)             Requested size: 325.043pt x 297.95348pt.
- [51 <./figs/SRAM1-eps-converted-to.pdf>]
-[52 <./figs/DRAM1-eps-converted-to.pdf>]
+ [38 <./figs/DRAM1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/PCI1.eps>
 (epstopdf)                    date: 2016-03-03 21:05:54
 (epstopdf)                    size: 3872594 bytes
@@ -2089,7 +1982,7 @@ Package epstopdf Info: Source file: <figs/PCI1.eps>
 (epstopdf)                    size: 153138 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/PCI1-eps-converted-to.
 pdf figs/PCI1.eps>
-(epstopdf)             \includegraphics on input line 1354.
+(epstopdf)             \includegraphics on input line 1016.
 runsystem(epstopdf --outfile=figs/PCI1-eps-converted-to.pdf figs/PCI1.eps)...di
 sabled (restricted).
 
@@ -2100,14 +1993,14 @@ Package epstopdf Info: Result file: <figs/PCI1-eps-converted-to.pdf>
 
 pdfTeX warning: pdflatex.exe (file ./figs/PCI1-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/PCI1-eps-converted-to.pdf, id=356, 993.7125pt x 780.6164pt>
+<figs/PCI1-eps-converted-to.pdf, id=290, 993.7125pt x 780.6164pt>
 File: figs/PCI1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/PCI1-eps-converted-to.pdf>
-Package pdftex.def Info: figs/PCI1-eps-converted-to.pdf used on input line 1354
+Package pdftex.def Info: figs/PCI1-eps-converted-to.pdf used on input line 1016
 .
 (pdftex.def)             Requested size: 232.17459pt x 182.38478pt.
- [53 <./figs/PCI1-eps-converted-to.pdf>]
+ [39]
 Package epstopdf Info: Source file: <figs/USB3.eps>
 (epstopdf)                    date: 2016-03-04 20:37:23
 (epstopdf)                    size: 134407 bytes
@@ -2116,20 +2009,20 @@ Package epstopdf Info: Source file: <figs/USB3.eps>
 (epstopdf)                    size: 19816 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/USB3-eps-converted-to.
 pdf figs/USB3.eps>
-(epstopdf)             \includegraphics on input line 1390.
+(epstopdf)             \includegraphics on input line 1052.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/USB3-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/USB3-eps-converted-to.pdf, id=364, 463.7325pt x 165.61874pt>
+<figs/USB3-eps-converted-to.pdf, id=294, 463.7325pt x 165.61874pt>
 File: figs/USB3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/USB3-eps-converted-to.pdf>
-Package pdftex.def Info: figs/USB3-eps-converted-to.pdf used on input line 1390
+Package pdftex.def Info: figs/USB3-eps-converted-to.pdf used on input line 1052
 .
 (pdftex.def)             Requested size: 278.61234pt x 99.50594pt.
- [54 <./figs/USB3-eps-converted-to.pdf>]
+ [40 <./figs/PCI1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/USB1.eps>
 (epstopdf)                    date: 2016-03-04 19:55:17
 (epstopdf)                    size: 701716 bytes
@@ -2138,17 +2031,17 @@ Package epstopdf Info: Source file: <figs/USB1.eps>
 (epstopdf)                    size: 17930 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/USB1-eps-converted-to.
 pdf figs/USB1.eps>
-(epstopdf)             \includegraphics on input line 1410.
+(epstopdf)             \includegraphics on input line 1072.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/USB1-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/USB1-eps-converted-to.pdf, id=371, 364.36125pt x 383.1314pt>
+<figs/USB1-eps-converted-to.pdf, id=301, 364.36125pt x 383.1314pt>
 File: figs/USB1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/USB1-eps-converted-to.pdf>
-Package pdftex.def Info: figs/USB1-eps-converted-to.pdf used on input line 1410
+Package pdftex.def Info: figs/USB1-eps-converted-to.pdf used on input line 1072
 .
 (pdftex.def)             Requested size: 208.9557pt x 219.72006pt.
 Package epstopdf Info: Source file: <figs/JTAG1.eps>
@@ -2159,19 +2052,20 @@ Package epstopdf Info: Source file: <figs/JTAG1.eps>
 (epstopdf)                    size: 20393 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/JTAG1-eps-converted-to
 .pdf figs/JTAG1.eps>
-(epstopdf)             \includegraphics on input line 1425.
+(epstopdf)             \includegraphics on input line 1087.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/JTAG1-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/JTAG1-eps-converted-to.pdf, id=372, 611.68527pt x 251.74051pt>
+<figs/JTAG1-eps-converted-to.pdf, id=302, 611.68527pt x 251.74051pt>
 File: figs/JTAG1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/JTAG1-eps-converted-to.pdf>
-Package pdftex.def Info: figs/JTAG1-eps-converted-to.pdf used on input line 142
-5.
+Package pdftex.def Info: figs/JTAG1-eps-converted-to.pdf used on input line 108
+7.
 (pdftex.def)             Requested size: 371.48076pt x 152.88925pt.
+ [41 <./figs/USB3-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/JTAG2.eps>
 (epstopdf)                    date: 2016-03-04 22:02:50
 (epstopdf)                    size: 441052 bytes
@@ -2180,20 +2074,20 @@ Package epstopdf Info: Source file: <figs/JTAG2.eps>
 (epstopdf)                    size: 38582 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/JTAG2-eps-converted-to
 .pdf figs/JTAG2.eps>
-(epstopdf)             \includegraphics on input line 1442.
+(epstopdf)             \includegraphics on input line 1104.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/JTAG2-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/JTAG2-eps-converted-to.pdf, id=373, 649.2255pt x 403.00563pt>
+<figs/JTAG2-eps-converted-to.pdf, id=310, 649.2255pt x 403.00563pt>
 File: figs/JTAG2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/JTAG2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/JTAG2-eps-converted-to.pdf used on input line 144
-2.
+Package pdftex.def Info: figs/JTAG2-eps-converted-to.pdf used on input line 110
+4.
 (pdftex.def)             Requested size: 325.043pt x 201.76674pt.
- [55 <./figs/USB1-eps-converted-to.pdf>]
+ [42 <./figs/USB1-eps-converted-to.pdf> <./figs/JTAG1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/JTAG3.eps>
 (epstopdf)                    date: 2016-03-04 22:04:39
 (epstopdf)                    size: 773436 bytes
@@ -2202,32 +2096,708 @@ Package epstopdf Info: Source file: <figs/JTAG3.eps>
 (epstopdf)                    size: 23233 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/JTAG3-eps-converted-to
 .pdf figs/JTAG3.eps>
-(epstopdf)             \includegraphics on input line 1455.
+(epstopdf)             \includegraphics on input line 1117.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./figs/JTAG3-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/JTAG3-eps-converted-to.pdf, id=380, 611.68527pt x 251.74051pt>
+<figs/JTAG3-eps-converted-to.pdf, id=320, 611.68527pt x 251.74051pt>
 File: figs/JTAG3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/JTAG3-eps-converted-to.pdf>
-Package pdftex.def Info: figs/JTAG3-eps-converted-to.pdf used on input line 145
-5.
+Package pdftex.def Info: figs/JTAG3-eps-converted-to.pdf used on input line 111
+7.
 (pdftex.def)             Requested size: 371.48076pt x 152.88925pt.
-) [56 <./figs/JTAG1-eps-converted-to.pdf> <./figs/JTAG2-eps-converted-to.pdf>] 
-[57 <./figs/JTAG3-eps-converted-to.pdf>]
+ [43 <./figs/JTAG2-eps-converted-to.pdf> <./figs/JTAG3-eps-converted-to.pdf>]
+Overfull \hbox (53.01285pt too wide) in paragraph at lines 1162--1170
+ [][] 
+ []
+
+[44] [45]
+Overfull \hbox (1.28725pt too wide) in paragraph at lines 1196--1202
+ [][] 
+ []
+
+[46] [47]
+Overfull \vbox (22.46036pt too high) has occurred while \output is active []
+
+
+[48]
+Overfull \hbox (4.95068pt too wide) in paragraph at lines 1249--1263
+ [][] 
+ []
+
+[49]
+Package epstopdf Info: Source file: <figs/scrumdo1.eps>
+(epstopdf)                    date: 2016-04-04 22:14:38
+(epstopdf)                    size: 10218642 bytes
+(epstopdf)             Output file: <figs/scrumdo1-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-04-04 22:11:25
+(epstopdf)                    size: 72497 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/scrumdo1-eps-converted
+-to.pdf figs/scrumdo1.eps>
+(epstopdf)             \includegraphics on input line 1306.
+runsystem(epstopdf --outfile=figs/scrumdo1-eps-converted-to.pdf figs/scrumdo1.e
+ps)...disabled (restricted).
+
+Package epstopdf Info: Result file: <figs/scrumdo1-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-04-04 22:11:25
+(epstopdf)                    size: 72497 bytes.
+
+
+pdfTeX warning: pdflatex.exe (file ./figs/scrumdo1-eps-converted-to.pdf): PDF i
+nclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<figs/scrumdo1-eps-converted-to.pdf, id=349, 2050.36008pt x 999.23312pt>
+File: figs/scrumdo1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/scrumdo1-eps-converted-to.pdf>
+Package pdftex.def Info: figs/scrumdo1-eps-converted-to.pdf used on input line 
+1306.
+(pdftex.def)             Requested size: 464.34918pt x 226.2967pt.
+ [50]
+Package epstopdf Info: Source file: <figs/scrumdo2.eps>
+(epstopdf)                    date: 2016-04-07 20:32:02
+(epstopdf)                    size: 3447711 bytes
+(epstopdf)             Output file: <figs/scrumdo2-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-04-07 20:32:24
+(epstopdf)                    size: 49117 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/scrumdo2-eps-converted
+-to.pdf figs/scrumdo2.eps>
+(epstopdf)             \includegraphics on input line 1316.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./figs/scrumdo2-eps-converted-to.pdf): PDF i
+nclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<figs/scrumdo2-eps-converted-to.pdf, id=353, 1284.09743pt x 537.7089pt>
+File: figs/scrumdo2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/scrumdo2-eps-converted-to.pdf>
+Package pdftex.def Info: figs/scrumdo2-eps-converted-to.pdf used on input line 
+1316.
+(pdftex.def)             Requested size: 464.34918pt x 194.43655pt.
+ [51 <./figs/scrumdo1-eps-converted-to.pdf> <./figs/scrumdo2-eps-converted-to.p
+df>]
+Package epstopdf Info: Source file: <figs/scrumdo3.eps>
+(epstopdf)                    date: 2016-04-07 20:56:52
+(epstopdf)                    size: 2864563 bytes
+(epstopdf)             Output file: <figs/scrumdo3-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-04-07 20:57:19
+(epstopdf)                    size: 22859 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/scrumdo3-eps-converted
+-to.pdf figs/scrumdo3.eps>
+(epstopdf)             \includegraphics on input line 1326.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./figs/scrumdo3-eps-converted-to.pdf): PDF i
+nclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<figs/scrumdo3-eps-converted-to.pdf, id=363, 1207.91278pt x 474.77374pt>
+File: figs/scrumdo3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/scrumdo3-eps-converted-to.pdf>
+Package pdftex.def Info: figs/scrumdo3-eps-converted-to.pdf used on input line 
+1326.
+(pdftex.def)             Requested size: 464.34918pt x 182.50954pt.
+Package epstopdf Info: Source file: <figs/app1.eps>
+(epstopdf)                    date: 2016-04-07 21:24:08
+(epstopdf)                    size: 6064848 bytes
+(epstopdf)             Output file: <figs/app1-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-04-07 21:24:39
+(epstopdf)                    size: 137066 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs/app1-eps-converted-to.
+pdf figs/app1.eps>
+(epstopdf)             \includegraphics on input line 1333.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./figs/app1-eps-converted-to.pdf): PDF inclu
+sion: found PDF version <1.6>, but at most version <1.5> allowed
+<figs/app1-eps-converted-to.pdf, id=364, 1407.75937pt x 863.42577pt>
+File: figs/app1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/app1-eps-converted-to.pdf>
+Package pdftex.def Info: figs/app1-eps-converted-to.pdf used on input line 1333
+.
+(pdftex.def)             Requested size: 464.34918pt x 284.79964pt.
+ [52 <./figs/scrumdo3-eps-converted-to.pdf> <./figs/app1-eps-converted-to.pdf>]
+ [53] [54] [55] [56] [57] [58]) [59]
+\openout2 = `cap_Experimentos.aux'.
+
+
+(cap_Experimentos.tex
+Cap\'{\i }tulo 3.
+<figs/resistor1.jpg, id=397, 225.84375pt x 225.84375pt>
+File: figs/resistor1.jpg Graphic file (type jpg)
+
+<use figs/resistor1.jpg>
+Package pdftex.def Info: figs/resistor1.jpg used on input line 35.
+(pdftex.def)             Requested size: 232.17459pt x 232.18744pt.
+ [60
+
+
+
+]
+<figs/resistor2.png, id=401, 409.53pt x 224.037pt>
+File: figs/resistor2.png Graphic file (type png)
+ <use figs/resistor2.png>
+Package pdftex.def Info: figs/resistor2.png used on input line 44.
+(pdftex.def)             Requested size: 278.61234pt x 152.42517pt.
+
+<figs/resistor3.jpg, id=402, 525.965pt x 205.76875pt>
+File: figs/resistor3.jpg Graphic file (type jpg)
+ <use figs/resistor3.jpg>
+Package pdftex.def Info: figs/resistor3.jpg used on input line 52.
+(pdftex.def)             Requested size: 232.17459pt x 90.83052pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 68.
+
+[61 <./figs/resistor1.jpg> <./figs/resistor2.png>] [62 <./figs/resistor3.jpg>]
+<figs/circuito1.png, id=410, 99.44353pt x 93.66193pt>
+File: figs/circuito1.png Graphic file (type png)
+ <use figs/circuito1.png>
+Package pdftex.def Info: figs/circuito1.png used on input line 140.
+(pdftex.def)             Requested size: 232.17459pt x 218.68779pt.
+
+<figs/circuito3.jpg, id=411, 159.59625pt x 136.51pt>
+File: figs/circuito3.jpg Graphic file (type jpg)
+ <use figs/circuito3.jpg>
+Package pdftex.def Info: figs/circuito3.jpg used on input line 160.
+(pdftex.def)             Requested size: 232.17459pt x 198.59055pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[63 <./figs/circuito1.png>]
+<figs/circuito2.png, id=416, 122.56992pt x 138.7584pt>
+File: figs/circuito2.png Graphic file (type png)
+
+<use figs/circuito2.png>
+Package pdftex.def Info: figs/circuito2.png used on input line 178.
+(pdftex.def)             Requested size: 232.17459pt x 262.85394pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `Embassamento_resitor' on page 64 undefined on input l
+ine 199.
+
+
+LaTeX Warning: Reference `Embassamento_LED' on page 64 undefined on input line 
+201.
+
+[64 <./figs/circuito3.jpg>]
+<figs/circuito4.png, id=420, 354.32375pt x 96.36pt>
+File: figs/circuito4.png Graphic file (type png)
+ <use figs/circuito4.png>
+Package pdftex.def Info: figs/circuito4.png used on input line 210.
+(pdftex.def)             Requested size: 232.17459pt x 63.14197pt.
+
+<figs/circuito5.png, id=421, 206.40312pt x 58.39417pt>
+File: figs/circuito5.png Graphic file (type png)
+
+<use figs/circuito5.png>
+Package pdftex.def Info: figs/circuito5.png used on input line 219.
+(pdftex.def)             Requested size: 232.17459pt x 65.6888pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[65 <./figs/circuito2.png> <./figs/circuito4.png>]
+<figs/circuito6.png, id=428, 174.02615pt x 102.33432pt>
+File: figs/circuito6.png Graphic file (type png)
+
+<use figs/circuito6.png>
+Package pdftex.def Info: figs/circuito6.png used on input line 284.
+(pdftex.def)             Requested size: 232.17459pt x 136.53545pt.
+ [66 <./figs/circuito5.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 294.
+
+
+Overfull \hbox (31.21214pt too wide) in paragraph at lines 298--304
+ [][] 
+ []
+
+[67 <./figs/circuito6.png>] <figs/LED0.png, id=439, 337.26pt x 70.2625pt>
+File: figs/LED0.png Graphic file (type png)
+
+<use figs/LED0.png>
+Package pdftex.def Info: figs/LED0.png used on input line 323.
+(pdftex.def)             Requested size: 464.34918pt x 96.74147pt.
+ <figs/diodo1.png, id=440, 348.30125pt x 145.54375pt>
+File: figs/diodo1.png Graphic file (type png)
+
+<use figs/diodo1.png>
+Package pdftex.def Info: figs/diodo1.png used on input line 331.
+(pdftex.def)             Requested size: 232.17459pt x 97.01855pt.
+ <figs/LED2.png, id=441, 501.875pt x 301.125pt>
+File: figs/LED2.png Graphic file (type png)
+
+<use figs/LED2.png>
+Package pdftex.def Info: figs/LED2.png used on input line 354.
+(pdftex.def)             Requested size: 464.34918pt x 278.62355pt.
+ [68 <./figs/LED0.png> <./figs/diodo1.png>]
+<figs/LED3.jpg, id=447, 636.3775pt x 312.16624pt>
+File: figs/LED3.jpg Graphic file (type jpg)
+ <use figs/LED3.jpg>
+Package pdftex.def Info: figs/LED3.jpg used on input line 366.
+(pdftex.def)             Requested size: 464.34918pt x 227.77943pt.
+ [69 <./figs/LED2.png>] <figs/protoboard1.jpg, id=452, 662.475pt x 483.8075pt>
+File: figs/protoboard1.jpg Graphic file (type jpg)
+
+<use figs/protoboard1.jpg>
+Package pdftex.def Info: figs/protoboard1.jpg used on input line 392.
+(pdftex.def)             Requested size: 232.17459pt x 169.55663pt.
+ [70 <./figs/LED3.jpg>]
+<figs/protoboard3.jpg, id=456, 714.0276pt x 290.81448pt>
+File: figs/protoboard3.jpg Graphic file (type jpg)
+
+<use figs/protoboard3.jpg>
+Package pdftex.def Info: figs/protoboard3.jpg used on input line 404.
+(pdftex.def)             Requested size: 464.34918pt x 189.12923pt.
+
+<figs/divisor1.png, id=457, 126.4725pt x 160.1985pt>
+File: figs/divisor1.png Graphic file (type png)
+ <use figs/divisor1.png>
+Package pdftex.def Info: figs/divisor1.png used on input line 419.
+(pdftex.def)             Requested size: 232.17459pt x 294.09415pt.
+
+[71 <./figs/protoboard1.jpg> <./figs/protoboard3.jpg>] [72 <./figs/divisor1.png
+>] <figs/potenciometro1.png, id=466, 324.21124pt x 235.88126pt>
+File: figs/potenciometro1.png Graphic file (type png)
+
+<use figs/potenciometro1.png>
+Package pdftex.def Info: figs/potenciometro1.png used on input line 479.
+(pdftex.def)             Requested size: 232.17459pt x 168.92015pt.
+
+<figs/potenciometro2.png, id=467, 391.4625pt x 270.25969pt>
+File: figs/potenciometro2.png Graphic file (type png)
+
+<use figs/potenciometro2.png>
+Package pdftex.def Info: figs/potenciometro2.png used on input line 494.
+(pdftex.def)             Requested size: 232.17459pt x 160.29309pt.
+ [73 <./figs/potenciometro1.png>]
+<figs/potenciometro4.jpg, id=471, 501.875pt x 501.875pt>
+File: figs/potenciometro4.jpg Graphic file (type jpg)
+
+<use figs/potenciometro4.jpg>
+Package pdftex.def Info: figs/potenciometro4.jpg used on input line 502.
+(pdftex.def)             Requested size: 232.17459pt x 232.1748pt.
+
+<figs/potenciometro5.jpg, id=472, 120.85284pt x 77.82922pt>
+File: figs/potenciometro5.jpg Graphic file (type jpg)
+
+<use figs/potenciometro5.jpg>
+Package pdftex.def Info: figs/potenciometro5.jpg used on input line 512.
+(pdftex.def)             Requested size: 232.17459pt x 149.53012pt.
+ [74 <./figs/potenciometro2.png> <./figs/potenciometro4.jpg>] <figs/potenciomet
+ro3.png, id=476, 147.21666pt x 65.57834pt>
+File: figs/potenciometro3.png Graphic file (type png)
+
+<use figs/potenciometro3.png>
+Package pdftex.def Info: figs/potenciometro3.png used on input line 530.
+(pdftex.def)             Requested size: 232.17459pt x 103.4315pt.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 542.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+<figs/ldr1.png, id=477, 602.25pt x 501.875pt>
+File: figs/ldr1.png Graphic file (type png)
+ <use figs/ldr1.png>
+Package pdftex.def Info: figs/ldr1.png used on input line 547.
+(pdftex.def)             Requested size: 232.17459pt x 193.479pt.
+ [75 <./figs/potenciometro5.jpg> <./figs/potenciometro3.png>]
+<figs/ldr3.jpg, id=481, 147.55125pt x 110.4125pt>
+File: figs/ldr3.jpg Graphic file (type jpg)
+ <use figs/ldr3.jpg>
+Package pdftex.def Info: figs/ldr3.jpg used on input line 555.
+(pdftex.def)             Requested size: 185.73683pt x 138.98906pt.
+
+<figs/ldr2.jpg, id=482, 580.1675pt x 422.57875pt>
+File: figs/ldr2.jpg Graphic file (type jpg)
+ <use figs/ldr2.jpg>
+Package pdftex.def Info: figs/ldr2.jpg used on input line 565.
+(pdftex.def)             Requested size: 232.17459pt x 169.11232pt.
+ [76 <./figs/ldr1.png (PNG copy)> <./figs/ldr3.jpg>]
+<figs/ldr4.jpg, id=487, 128.73094pt x 198.7425pt>
+File: figs/ldr4.jpg Graphic file (type jpg)
+ <use figs/ldr4.jpg>
+Package pdftex.def Info: figs/ldr4.jpg used on input line 577.
+(pdftex.def)             Requested size: 232.17459pt x 358.47615pt.
+ [77 <./figs/ldr2.jpg> <./figs/ldr4.jpg>]
+<figs/interruptor1.jpg, id=492, 217.38815pt x 137.60208pt>
+File: figs/interruptor1.jpg Graphic file (type jpg)
+
+<use figs/interruptor1.jpg>
+Package pdftex.def Info: figs/interruptor1.jpg used on input line 608.
+(pdftex.def)             Requested size: 232.17459pt x 146.9682pt.
+
+<figs/interruptor2.jpg, id=493, 215.65369pt x 116.21016pt>
+File: figs/interruptor2.jpg Graphic file (type jpg)
+
+<use figs/interruptor2.jpg>
+Package pdftex.def Info: figs/interruptor2.jpg used on input line 619.
+(pdftex.def)             Requested size: 232.17459pt x 125.11853pt.
+ [78 <./figs/interruptor1.jpg>]
+<figs/interruptor3.jpg, id=497, 401.5pt x 120.45pt>
+File: figs/interruptor3.jpg Graphic file (type jpg)
+
+<use figs/interruptor3.jpg>
+Package pdftex.def Info: figs/interruptor3.jpg used on input line 632.
+(pdftex.def)             Requested size: 232.17459pt x 69.65335pt.
+
+<figs/interruptor4.jpg, id=498, 673.51625pt x 369.38pt>
+File: figs/interruptor4.jpg Graphic file (type jpg)
+
+<use figs/interruptor4.jpg>
+Package pdftex.def Info: figs/interruptor4.jpg used on input line 651.
+(pdftex.def)             Requested size: 371.48076pt x 203.73451pt.
+ [79 <./figs/interruptor2.jpg> <./figs/interruptor3.jpg>] <figs/interruptor5.jp
+g, id=503, 1520.5608pt x 455.59007pt>
+File: figs/interruptor5.jpg Graphic file (type jpg)
+
+<use figs/interruptor5.jpg>
+Package pdftex.def Info: figs/interruptor5.jpg used on input line 661.
+(pdftex.def)             Requested size: 371.48076pt x 111.30423pt.
+
+<figs/shift1.jpg, id=504, 241.67088pt x 76.89528pt>
+File: figs/shift1.jpg Graphic file (type jpg)
+ <use figs/shift1.jpg>
+Package pdftex.def Info: figs/shift1.jpg used on input line 676.
+(pdftex.def)             Requested size: 371.48076pt x 118.20436pt.
+
+[80 <./figs/interruptor4.jpg> <./figs/interruptor5.jpg>]
+<figs/shift2.png, id=508, 414.54875pt x 141.52875pt>
+File: figs/shift2.png Graphic file (type png)
+ <use figs/shift2.png>
+Package pdftex.def Info: figs/shift2.png used on input line 691.
+(pdftex.def)             Requested size: 371.48076pt x 126.82832pt.
+
+[81 <./figs/shift1.jpg> <./figs/shift2.png>]
+<figs/shift3.jpg, id=512, 298.33057pt x 344.58336pt>
+File: figs/shift3.jpg Graphic file (type jpg)
+ <use figs/shift3.jpg>
+Package pdftex.def Info: figs/shift3.jpg used on input line 706.
+(pdftex.def)             Requested size: 371.48076pt x 429.09819pt.
+
+[82 <./figs/shift3.jpg>] <figs/lm35.jpg, id=516, 315.1775pt x 345.29pt>
+File: figs/lm35.jpg Graphic file (type jpg)
+
+<use figs/lm35.jpg>
+Package pdftex.def Info: figs/lm35.jpg used on input line 750.
+(pdftex.def)             Requested size: 185.73683pt x 203.48222pt.
+ [83] <figs/lm35_2.jpg, id=521, 341.275pt x 275.0275pt>
+File: figs/lm35_2.jpg Graphic file (type jpg)
+
+<use figs/lm35_2.jpg>
+Package pdftex.def Info: figs/lm35_2.jpg used on input line 757.
+(pdftex.def)             Requested size: 185.73683pt x 149.68347pt.
+ <figs/lm35_3.jpg, id=522, 989.6975pt x 532.99126pt>
+File: figs/lm35_3.jpg Graphic file (type jpg)
+
+<use figs/lm35_3.jpg>
+Package pdftex.def Info: figs/lm35_3.jpg used on input line 773.
+(pdftex.def)             Requested size: 371.48076pt x 200.05829pt.
+ [84 <./figs/lm35.jpg> <./figs/lm35_2.jpg>]
+<figs/capacitor1.jpg, id=526, 218.8175pt x 173.64874pt>
+File: figs/capacitor1.jpg Graphic file (type jpg)
+
+<use figs/capacitor1.jpg>
+Package pdftex.def Info: figs/capacitor1.jpg used on input line 788.
+(pdftex.def)             Requested size: 278.61234pt x 221.10378pt.
+ [85 <./figs/lm35_3.jpg> <./figs/capacitor1.jpg>]
+<figs/capacitor3.jpg, id=530, 892.67905pt x 350.94312pt>
+File: figs/capacitor3.jpg Graphic file (type jpg)
+
+<use figs/capacitor3.jpg>
+Package pdftex.def Info: figs/capacitor3.jpg used on input line 829.
+(pdftex.def)             Requested size: 371.48076pt x 146.04028pt.
+
+<figs/capacitor4.jpg, id=531, 149.74344pt x 112.16304pt>
+File: figs/capacitor4.jpg Graphic file (type jpg)
+
+<use figs/capacitor4.jpg>
+Package pdftex.def Info: figs/capacitor4.jpg used on input line 842.
+(pdftex.def)             Requested size: 278.61234pt x 208.72379pt.
+ [86 <./figs/capacitor3.jpg>] [87 <./figs/capacitor4.jpg>] <figs/capacitor5.jpg
+, id=538, 582.67688pt x 435.87843pt>
+File: figs/capacitor5.jpg Graphic file (type jpg)
+
+<use figs/capacitor5.jpg>
+Package pdftex.def Info: figs/capacitor5.jpg used on input line 891.
+(pdftex.def)             Requested size: 278.61234pt x 208.42114pt.
+ [88 <./figs/capacitor5.jpg>]
+<figs/Arduino13.jpeg, id=542, 597.58257pt x 516.7305pt>
+File: figs/Arduino13.jpeg Graphic file (type jpg)
+
+<use figs/Arduino13.jpeg>
+Package pdftex.def Info: figs/Arduino13.jpeg used on input line 955.
+(pdftex.def)             Requested size: 325.043pt x 281.07243pt.
+ [89] [90 <./figs/Arduino13.jpeg>]
+<figs/compilador1.png, id=550, 120.45pt x 410.53375pt>
+File: figs/compilador1.png Graphic file (type png)
+
+<use figs/compilador1.png>
+Package pdftex.def Info: figs/compilador1.png used on input line 1007.
+(pdftex.def)             Requested size: 92.86841pt x 316.53793pt.
+ [91]
+<figs/compilador3.jpg, id=555, 351.52129pt x 271.7352pt>
+File: figs/compilador3.jpg Graphic file (type jpg)
+
+<use figs/compilador3.jpg>
+Package pdftex.def Info: figs/compilador3.jpg used on input line 1023.
+(pdftex.def)             Requested size: 232.17459pt x 179.47845pt.
+ [92 <./figs/compilador1.png>]
+<figs/compilador4.jpg, id=560, 762.59303pt x 346.896pt>
+File: figs/compilador4.jpg Graphic file (type jpg)
+
+<use figs/compilador4.jpg>
+Package pdftex.def Info: figs/compilador4.jpg used on input line 1035.
+(pdftex.def)             Requested size: 464.34918pt x 211.23572pt.
+
+<figs/compilador5.jpg, id=561, 533.06352pt x 155.52504pt>
+File: figs/compilador5.jpg Graphic file (type jpg)
+
+<use figs/compilador5.jpg>
+Package pdftex.def Info: figs/compilador5.jpg used on input line 1044.
+(pdftex.def)             Requested size: 464.34918pt x 135.48366pt.
+ [93 <./figs/compilador3.jpg> <./figs/compilador4.jpg>] [94 <./figs/compilador5
+.jpg>] [95] [96]
+<figs/tabVariaveis2.jpg, id=575, 630.355pt x 499.8675pt>
+File: figs/tabVariaveis2.jpg Graphic file (type jpg)
+
+<use figs/tabVariaveis2.jpg>
+Package pdftex.def Info: figs/tabVariaveis2.jpg used on input line 1193.
+(pdftex.def)             Requested size: 464.34918pt x 368.22577pt.
+ [97] [98 <./figs/tabVariaveis2.jpg>] [99]
+Overfull \hbox (6.2742pt too wide) in paragraph at lines 1291--1298
+ [][] 
+ []
+
+[100] <figs/condicional2.jpg, id=588, 279.0425pt x 144.54pt>
+File: figs/condicional2.jpg Graphic file (type jpg)
+
+<use figs/condicional2.jpg>
+Package pdftex.def Info: figs/condicional2.jpg used on input line 1308.
+(pdftex.def)             Requested size: 278.61234pt x 144.32127pt.
+
+<figs/condicional3.jpg, id=589, 276.03125pt x 137.51375pt>
+File: figs/condicional3.jpg Graphic file (type jpg)
+
+<use figs/condicional3.jpg>
+Package pdftex.def Info: figs/condicional3.jpg used on input line 1323.
+(pdftex.def)             Requested size: 278.61234pt x 138.81435pt.
+ [101 <./figs/condicional2.jpg>]
+<figs/condicional4.jpg, id=594, 104.64696pt x 46.2528pt>
+File: figs/condicional4.jpg Graphic file (type jpg)
+
+<use figs/condicional4.jpg>
+Package pdftex.def Info: figs/condicional4.jpg used on input line 1337.
+(pdftex.def)             Requested size: 278.61234pt x 123.16852pt.
+ [102 <./figs/condicional3.jpg> <./figs/condicional4.jpg>] <figs/condicional5.j
+pg, id=598, 355.3275pt x 328.22626pt>
+File: figs/condicional5.jpg Graphic file (type jpg)
+
+<use figs/condicional5.jpg>
+Package pdftex.def Info: figs/condicional5.jpg used on input line 1362.
+(pdftex.def)             Requested size: 278.61234pt x 257.36769pt.
+ [103 <./figs/condicional5.jpg>] [104] [105]
+[106] [107]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1598.
+ [108] <figs/loop1.jpg, id=618, 896.34875pt x 444.66125pt>
+File: figs/loop1.jpg Graphic file (type jpg)
+
+<use figs/loop1.jpg>
+Package pdftex.def Info: figs/loop1.jpg used on input line 1682.
+(pdftex.def)             Requested size: 325.043pt x 161.24493pt.
+ [109] <figs/loop2.jpg, id=622, 769.87625pt x 249.93375pt>
+File: figs/loop2.jpg Graphic file (type jpg)
+
+<use figs/loop2.jpg>
+Package pdftex.def Info: figs/loop2.jpg used on input line 1702.
+(pdftex.def)             Requested size: 325.043pt x 105.52443pt.
+ [110 <./figs/loop1.jpg> <./figs/loop2.jpg>]
+
+LaTeX Warning: Reference `' on page 111 undefined on input line 1758.
+
+<figs/loop5.jpg, id=626, 725.71124pt x 460.72125pt>
+File: figs/loop5.jpg Graphic file (type jpg)
+ <use figs/loop5.jpg>
+Package pdftex.def Info: figs/loop5.jpg used on input line 1763.
+(pdftex.def)             Requested size: 325.043pt x 206.35953pt.
+
+[111] [112 <./figs/loop5.jpg>]
+
+LaTeX Warning: Reference `loop8' on page 113 undefined on input line 1841.
+
+<figs/loop8.jpg, id=633, 744.7825pt x 486.81876pt>
+File: figs/loop8.jpg Graphic file (type jpg)
+ <use figs/loop8.jpg>
+Package pdftex.def Info: figs/loop8.jpg used on input line 1846.
+(pdftex.def)             Requested size: 325.043pt x 212.4627pt.
+
+[113]
+
+LaTeX Warning: Reference `loop9' on page 114 undefined on input line 1851.
+
+[114 <./figs/loop8.jpg>]
+<figs/fig_vetor1.jpg, id=641, 219.12263pt x 83.25504pt>
+File: figs/fig_vetor1.jpg Graphic file (type jpg)
+
+<use figs/fig_vetor1.jpg>
+Package pdftex.def Info: figs/fig_vetor1.jpg used on input line 1902.
+(pdftex.def)             Requested size: 325.043pt x 123.51404pt.
+
+
+LaTeX Warning: Reference `vetor2' on page 115 undefined on input line 1916.
+
+[115 <./figs/fig_vetor1.jpg>]
+
+LaTeX Warning: Reference `vector2' on page 116 undefined on input line 1930.
+
+
+LaTeX Warning: Reference `vector3' on page 116 undefined on input line 1932.
+
+[116] [117] <figs/tiposAvancados1.jpg, id=651, 183.85487pt x 380.42928pt>
+File: figs/tiposAvancados1.jpg Graphic file (type jpg)
+
+<use figs/tiposAvancados1.jpg>
+Package pdftex.def Info: figs/tiposAvancados1.jpg used on input line 2063.
+(pdftex.def)             Requested size: 232.17459pt x 480.43472pt.
+ [118] [119 <./figs/tiposAvancados1.jpg>]
+
+LaTeX Warning: Reference `pont2' on page 120 undefined on input line 2107.
+
+[120] <figs/pont3.jpg, id=662, 424.9476pt x 120.25728pt>
+File: figs/pont3.jpg Graphic file (type jpg)
+ <use figs/pont3.jpg>
+Package pdftex.def Info: figs/pont3.jpg used on input line 2149.
+(pdftex.def)             Requested size: 232.17459pt x 65.70496pt.
+
+<figs/pont4.jpg, id=663, 507.62448pt x 143.38368pt>
+File: figs/pont4.jpg Graphic file (type jpg)
+ <use figs/pont4.jpg>
+Package pdftex.def Info: figs/pont4.jpg used on input line 2158.
+(pdftex.def)             Requested size: 348.26189pt x 98.37474pt.
+
+
+LaTeX Warning: Reference `pont5' on page 121 undefined on input line 2169.
+
+[121 <./figs/pont3.jpg> <./figs/pont4.jpg>] [122]
+Overfull \hbox (70.236pt too wide) in paragraph at lines 2249--2250
+[]\T1/cmr/m/n/10.95 O con-junto de ca-rac-te-res "MI-NHAS-TRING", caso atri-buí
+do à va-riá-vel string ($\OML/cmm/m/it/10.95 string \OT1/cmr/m/n/10.95 = "\OML/
+cmm/m/it/10.95 MINHASTRING\OT1/cmr/m/n/10.95 "$\T1/cmr/m/n/10.95 )
+ []
+
+[123] [124] [125] [126] [127] [128]
+Overfull \hbox (8.43335pt too wide) in paragraph at lines 2558--2558
+[] 
+ []
+
+
+Overfull \hbox (6.48108pt too wide) in paragraph at lines 2568--2568
+[] 
+ []
+
+Missing character: There is no á in font cmr8!
+Missing character: There is no á in font cmr8!
+[129] <figs/bin1.jpg, id=692, 469.46593pt x 333.02016pt>
+File: figs/bin1.jpg Graphic file (type jpg)
+ <use figs/bin1.jpg>
+Package pdftex.def Info: figs/bin1.jpg used on input line 2610.
+(pdftex.def)             Requested size: 348.26189pt x 247.05608pt.
+
+[130] [131 <./figs/bin1.jpg>] [132]
+
+LaTeX Warning: Reference `funcao3' on page 133 undefined on input line 2699.
+
+
+LaTeX Warning: Reference `funcao3' on page 133 undefined on input line 2702.
+
+
+LaTeX Warning: Reference `funcao3' on page 133 undefined on input line 2703.
+
+
+LaTeX Warning: Reference `funcao3' on page 133 undefined on input line 2707.
+
+
+LaTeX Warning: Reference `funcao3' on page 133 undefined on input line 2709.
+
+[133] [134] <figs/interrupcao0.jpg, id=709, 202.356pt x 148.00896pt>
+File: figs/interrupcao0.jpg Graphic file (type jpg)
+
+<use figs/interrupcao0.jpg>
+Package pdftex.def Info: figs/interrupcao0.jpg used on input line 2806.
+(pdftex.def)             Requested size: 325.043pt x 237.75864pt.
+ [135]
+<figs/interrupcao1.jpg, id=713, 271.76532pt x 199.49532pt>
+File: figs/interrupcao1.jpg Graphic file (type jpg)
+
+<use figs/interrupcao1.jpg>
+Package pdftex.def Info: figs/interrupcao1.jpg used on input line 2832.
+(pdftex.def)             Requested size: 325.043pt x 238.61693pt.
+ [136 <./figs/interrupcao0.jpg>]
+<figs/interrupcao3.jpg, id=717, 247.67531pt x 237.13594pt>
+File: figs/interrupcao3.jpg Graphic file (type jpg)
+
+<use figs/interrupcao3.jpg>
+Package pdftex.def Info: figs/interrupcao3.jpg used on input line 2840.
+(pdftex.def)             Requested size: 278.61234pt x 266.77364pt.
+
+<figs/interrupcao2.png, id=718, 168.24455pt x 100.02168pt>
+File: figs/interrupcao2.png Graphic file (type png)
+
+<use figs/interrupcao2.png>
+Package pdftex.def Info: figs/interrupcao2.png used on input line 2847.
+(pdftex.def)             Requested size: 278.61234pt x 165.66048pt.
+ [137 <./figs/interrupcao1.jpg> <./figs/interrupcao3.jpg>]
+
+LaTeX Warning: Reference `intecod' on page 138 undefined on input line 2856.
+
+
+LaTeX Warning: Reference `intecod' on page 138 undefined on input line 2877.
+
+[138 <./figs/interrupcao2.png>]
+
+LaTeX Warning: Reference `intecod2' on page 139 undefined on input line 2894.
+
+[139] <figs/timer2.jpg, id=730, 1900.09875pt x 911.405pt>
+File: figs/timer2.jpg Graphic file (type jpg)
+
+<use figs/timer2.jpg>
+Package pdftex.def Info: figs/timer2.jpg used on input line 2948.
+(pdftex.def)             Requested size: 325.043pt x 155.91028pt.
+ <figs/timer3.jpg, id=731, 1092.14424pt x 390.83617pt>
+File: figs/timer3.jpg Graphic file (type jpg)
+
+<use figs/timer3.jpg>
+Package pdftex.def Info: figs/timer3.jpg used on input line 2963.
+(pdftex.def)             Requested size: 417.91142pt x 149.551pt.
+ [140 <./figs/timer2.jpg> <./figs/timer3.jpg>]) [141]
 \openout2 = `cap_Desenvolvimento.aux'.
 
 
 (cap_Desenvolvimento.tex
-Cap\'{\i }tulo 3.
+Cap\'{\i }tulo 4.
 
 Overfull \hbox (26.17928pt too wide) in paragraph at lines 32--43
  [][] 
  []
 
-[58
+[142
 
 
 
@@ -2251,14 +2821,14 @@ Package epstopdf Info: Result file: <figs/arduino1-eps-converted-to.pdf>
 
 pdfTeX warning: pdflatex.exe (file ./figs/arduino1-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/arduino1-eps-converted-to.pdf, id=399, 2119.92pt x 1100.81258pt>
+<figs/arduino1-eps-converted-to.pdf, id=742, 2119.92pt x 1100.81258pt>
 File: figs/arduino1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/arduino1-eps-converted-to.pdf>
 Package pdftex.def Info: figs/arduino1-eps-converted-to.pdf used on input line 
 56.
 (pdftex.def)             Requested size: 371.48076pt x 192.89703pt.
- [59]
+ [143]
 Package epstopdf Info: Source file: <figs/arduino2.eps>
 (epstopdf)                    date: 2016-04-19 20:21:55
 (epstopdf)                    size: 1291627 bytes
@@ -2273,7 +2843,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./figs/arduino2-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/arduino2-eps-converted-to.pdf, id=404, 503.481pt x 512.314pt>
+<figs/arduino2-eps-converted-to.pdf, id=747, 503.481pt x 512.314pt>
 File: figs/arduino2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/arduino2-eps-converted-to.pdf>
@@ -2282,8 +2852,8 @@ Package pdftex.def Info: figs/arduino2-eps-converted-to.pdf used on input line
 (pdftex.def)             Requested size: 325.043pt x 330.74878pt.
 LaTeX Font Info:    Font shape `OMS/cmr/bx/it' in size <8> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 71.
- [60 <./figs/arduino1-eps-converted-to.pdf> <./figs/arduino2-eps-converted-to.p
-df>]
+ [144 <./figs/arduino1-eps-converted-to.pdf> <./figs/arduino2-eps-converted-to.
+pdf>]
 Package epstopdf Info: Source file: <figs/arduino3.eps>
 (epstopdf)                    date: 2016-04-19 20:24:58
 (epstopdf)                    size: 2378360 bytes
@@ -2303,7 +2873,7 @@ Package epstopdf Info: Result file: <figs/arduino3-eps-converted-to.pdf>
 
 pdfTeX warning: pdflatex.exe (file ./figs/arduino3-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/arduino3-eps-converted-to.pdf, id=414, 923.04848pt x 515.62639pt>
+<figs/arduino3-eps-converted-to.pdf, id=757, 923.04848pt x 515.62639pt>
 File: figs/arduino3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/arduino3-eps-converted-to.pdf>
@@ -2324,15 +2894,15 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./figs/arduino4-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/arduino4-eps-converted-to.pdf, id=415, 590.70688pt x 587.39452pt>
+<figs/arduino4-eps-converted-to.pdf, id=758, 590.70688pt x 587.39452pt>
 File: figs/arduino4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/arduino4-eps-converted-to.pdf>
 Package pdftex.def Info: figs/arduino4-eps-converted-to.pdf used on input line 
 84.
 (pdftex.def)             Requested size: 325.043pt x 323.22931pt.
- [61 <./figs/arduino3-eps-converted-to.pdf> <./figs/arduino4-eps-converted-to.p
-df>]
+ [145 <./figs/arduino3-eps-converted-to.pdf> <./figs/arduino4-eps-converted-to.
+pdf>]
 Package epstopdf Info: Source file: <figs/arduino5.eps>
 (epstopdf)                    date: 2016-04-19 21:34:46
 (epstopdf)                    size: 5215871 bytes
@@ -2352,7 +2922,7 @@ Package epstopdf Info: Result file: <figs/arduino5-eps-converted-to.pdf>
 
 pdfTeX warning: pdflatex.exe (file ./figs/arduino5-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/arduino5-eps-converted-to.pdf, id=425, 1201.28806pt x 870.05049pt>
+<figs/arduino5-eps-converted-to.pdf, id=768, 1201.28806pt x 870.05049pt>
 File: figs/arduino5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/arduino5-eps-converted-to.pdf>
@@ -2385,7 +2955,7 @@ Package epstopdf Info: Result file: <figs/arduino6-eps-converted-to.pdf>
 
 pdfTeX warning: pdflatex.exe (file ./figs/arduino6-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/arduino6-eps-converted-to.pdf, id=426, 2208.25pt x 1075.41777pt>
+<figs/arduino6-eps-converted-to.pdf, id=769, 2208.25pt x 1075.41777pt>
 File: figs/arduino6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/arduino6-eps-converted-to.pdf>
@@ -2406,15 +2976,15 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./figs/arduino7-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/arduino7-eps-converted-to.pdf, id=427, 1196.87152pt x 877.77937pt>
+<figs/arduino7-eps-converted-to.pdf, id=770, 1196.87152pt x 877.77937pt>
 File: figs/arduino7-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/arduino7-eps-converted-to.pdf>
 Package pdftex.def Info: figs/arduino7-eps-converted-to.pdf used on input line 
 115.
 (pdftex.def)             Requested size: 325.043pt x 238.38316pt.
- [62 <./figs/arduino5-eps-converted-to.pdf> <./figs/arduino6-eps-converted-to.p
-df>]
+ [146 <./figs/arduino5-eps-converted-to.pdf> <./figs/arduino6-eps-converted-to.
+pdf>]
 Package epstopdf Info: Source file: <figs/arduino8.eps>
 (epstopdf)                    date: 2016-04-19 22:09:39
 (epstopdf)                    size: 5170997 bytes
@@ -2434,7 +3004,7 @@ Package epstopdf Info: Result file: <figs/arduino8-eps-converted-to.pdf>
 
 pdfTeX warning: pdflatex.exe (file ./figs/arduino8-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/arduino8-eps-converted-to.pdf, id=437, 1192.455pt x 868.94638pt>
+<figs/arduino8-eps-converted-to.pdf, id=780, 1192.455pt x 868.94638pt>
 File: figs/arduino8-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/arduino8-eps-converted-to.pdf>
@@ -2460,15 +3030,15 @@ Package epstopdf Info: Result file: <figs/arduino9-eps-converted-to.pdf>
 
 pdfTeX warning: pdflatex.exe (file ./figs/arduino9-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/arduino9-eps-converted-to.pdf, id=438, 1306.17993pt x 772.8875pt>
+<figs/arduino9-eps-converted-to.pdf, id=781, 1306.17993pt x 772.8875pt>
 File: figs/arduino9-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/arduino9-eps-converted-to.pdf>
 Package pdftex.def Info: figs/arduino9-eps-converted-to.pdf used on input line 
 133.
 (pdftex.def)             Requested size: 325.043pt x 192.3251pt.
- [63 <./figs/arduino7-eps-converted-to.pdf> <./figs/arduino8-eps-converted-to.p
-df>]
+ [147 <./figs/arduino7-eps-converted-to.pdf> <./figs/arduino8-eps-converted-to.
+pdf>]
 Package epstopdf Info: Source file: <figs/arduino10.eps>
 (epstopdf)                    date: 2016-04-19 22:21:11
 (epstopdf)                    size: 5083564 bytes
@@ -2483,7 +3053,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./figs/arduino10-eps-converted-to.pdf): PDF 
 inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/arduino10-eps-converted-to.pdf, id=448, 1185.83028pt x 859.00923pt>
+<figs/arduino10-eps-converted-to.pdf, id=791, 1185.83028pt x 859.00923pt>
 File: figs/arduino10-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/arduino10-eps-converted-to.pdf>
@@ -2504,18 +3074,18 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./figs/arduino11-eps-converted-to.pdf): PDF 
 inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/arduino11-eps-converted-to.pdf, id=449, 507.8975pt x 443.85826pt>
+<figs/arduino11-eps-converted-to.pdf, id=792, 507.8975pt x 443.85826pt>
 File: figs/arduino11-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/arduino11-eps-converted-to.pdf>
 Package pdftex.def Info: figs/arduino11-eps-converted-to.pdf used on input line
  151.
 (pdftex.def)             Requested size: 325.043pt x 284.0683pt.
- [64 <./figs/arduino9-eps-converted-to.pdf> <./figs/arduino10-eps-converted-to.
-pdf>]
+ [148 <./figs/arduino9-eps-converted-to.pdf> <./figs/arduino10-eps-converted-to
+.pdf>]
 
-LaTeX Warning: Reference `Embassamento_LED' on page 65 undefined on input line 
-162.
+LaTeX Warning: Reference `Embassamento_LED' on page 149 undefined on input line
+ 162.
 
 Package epstopdf Info: Source file: <figs/arduino12.eps>
 (epstopdf)                    date: 2016-04-20 23:43:43
@@ -2531,38 +3101,38 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./figs/arduino12-eps-converted-to.pdf): PDF 
 inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figs/arduino12-eps-converted-to.pdf, id=459, 1043.39813pt x 659.16264pt>
+<figs/arduino12-eps-converted-to.pdf, id=802, 1043.39813pt x 659.16264pt>
 File: figs/arduino12-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/arduino12-eps-converted-to.pdf>
 Package pdftex.def Info: figs/arduino12-eps-converted-to.pdf used on input line
  178.
 (pdftex.def)             Requested size: 417.91142pt x 264.01242pt.
- [65 <./figs/arduino11-eps-converted-to.pdf>] (Praticas/Pratica1/blink/blink.in
-o [66 <./figs/arduino12-eps-converted-to.pdf>])
+ [149 <./figs/arduino11-eps-converted-to.pdf>] (Praticas/Pratica1/blink/blink.i
+no [150 <./figs/arduino12-eps-converted-to.pdf>])
 Overfull \hbox (60.28377pt too wide) in paragraph at lines 213--224
  [][] 
  []
 
-[67]
+[151]
 Overfull \vbox (44.94289pt too high) has occurred while \output is active []
 
 
-[68] <figs/pratica2_1.jpg, id=480, 594.22pt x 540.0175pt>
+[152] <figs/pratica2_1.jpg, id=822, 594.22pt x 540.0175pt>
 File: figs/pratica2_1.jpg Graphic file (type jpg)
 
 <use figs/pratica2_1.jpg>
 Package pdftex.def Info: figs/pratica2_1.jpg used on input line 243.
 (pdftex.def)             Requested size: 301.82413pt x 274.30112pt.
 
-<figs/pratica2_2.jpg, id=481, 1551.7975pt x 766.865pt>
+<figs/pratica2_2.jpg, id=823, 1551.7975pt x 766.865pt>
 File: figs/pratica2_2.jpg Graphic file (type jpg)
 
 <use figs/pratica2_2.jpg>
 Package pdftex.def Info: figs/pratica2_2.jpg used on input line 253.
 (pdftex.def)             Requested size: 301.82413pt x 149.14607pt.
- [69 <./figs/pratica2_1.jpg>]
-(Praticas/Pratica2/pratica2Arduino.ino) [70 <./figs/pratica2_2.jpg>]
+ [153 <./figs/pratica2_1.jpg>]
+(Praticas/Pratica2/pratica2Arduino.ino) [154 <./figs/pratica2_2.jpg>]
 Overfull \hbox (55.29643pt too wide) in paragraph at lines 269--269
 []\T1/cmr/bx/n/14.4 Prática 3: Uso de cha-ves/-bo-tões e con-tro-la-do-res de f
 luxo(Condicionais) 
@@ -2572,21 +3142,21 @@ luxo(Condicionais)
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 292.
 
-<figs/pratica3_1.jpg, id=488, 944.52875pt x 827.09pt>
+<figs/pratica3_1.jpg, id=830, 944.52875pt x 827.09pt>
 File: figs/pratica3_1.jpg Graphic file (type jpg)
 
 <use figs/pratica3_1.jpg>
 Package pdftex.def Info: figs/pratica3_1.jpg used on input line 326.
 (pdftex.def)             Requested size: 301.82413pt x 264.2956pt.
- [71] [72]
-<figs/pratica3_2.jpg, id=496, 1498.59875pt x 811.03pt>
+ [155] [156]
+<figs/pratica3_2.jpg, id=838, 1498.59875pt x 811.03pt>
 File: figs/pratica3_2.jpg Graphic file (type jpg)
 
 <use figs/pratica3_2.jpg>
 Package pdftex.def Info: figs/pratica3_2.jpg used on input line 336.
 (pdftex.def)             Requested size: 301.82413pt x 163.34164pt.
- (Praticas/Pratica3/pratica3code.ino [73 <./figs/pratica3_1.jpg> <./figs/pratic
-a3_2.jpg>] [74])
+ (Praticas/Pratica3/pratica3code.ino [157 <./figs/pratica3_1.jpg> <./figs/prati
+ca3_2.jpg>] [158])
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 372.
@@ -2596,21 +3166,21 @@ Overfull \hbox (56.37813pt too wide) in paragraph at lines 376--387
  [][] 
  []
 
-<figs/pratica4_1.jpg, id=503, 783.92876pt x 672.5125pt>
+<figs/pratica4_1.jpg, id=845, 783.92876pt x 672.5125pt>
 File: figs/pratica4_1.jpg Graphic file (type jpg)
 
 <use figs/pratica4_1.jpg>
 Package pdftex.def Info: figs/pratica4_1.jpg used on input line 406.
 (pdftex.def)             Requested size: 301.82413pt x 258.9335pt.
- [75] [76]
-<figs/pratica4_2.jpg, id=510, 1494.58376pt x 800.9925pt>
+ [159] [160]
+<figs/pratica4_2.jpg, id=852, 1494.58376pt x 800.9925pt>
 File: figs/pratica4_2.jpg Graphic file (type jpg)
 
 <use figs/pratica4_2.jpg>
 Package pdftex.def Info: figs/pratica4_2.jpg used on input line 416.
 (pdftex.def)             Requested size: 301.82413pt x 161.74786pt.
- (Praticas/Pratica4/pratica4code.ino [77 <./figs/pratica4_1.jpg> <./figs/pratic
-a4_2.jpg>] [78] [79] [80])
+ (Praticas/Pratica4/pratica4code.ino [161 <./figs/pratica4_1.jpg> <./figs/prati
+ca4_2.jpg>] [162] [163] [164])
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 456.
@@ -2620,527 +3190,42 @@ Overfull \hbox (40.03867pt too wide) in paragraph at lines 460--470
  [][] 
  []
 
-[81] [82] <figs/pratica5_1.jpg, id=530, 512.91624pt x 751.80875pt>
+[165] [166] <figs/pratica5_1.jpg, id=872, 512.91624pt x 751.80875pt>
 File: figs/pratica5_1.jpg Graphic file (type jpg)
 
 <use figs/pratica5_1.jpg>
 Package pdftex.def Info: figs/pratica5_1.jpg used on input line 490.
 (pdftex.def)             Requested size: 301.82413pt x 442.40468pt.
 
-<figs/pratica5_2.jpg, id=531, 1079.03125pt x 819.06pt>
+<figs/pratica5_2.jpg, id=873, 1079.03125pt x 819.06pt>
 File: figs/pratica5_2.jpg Graphic file (type jpg)
 
 <use figs/pratica5_2.jpg>
 Package pdftex.def Info: figs/pratica5_2.jpg used on input line 500.
 (pdftex.def)             Requested size: 371.48076pt x 281.9761pt.
- [83 <./figs/pratica5_1.jpg>]
-(Praticas/Pratica5/pratica5code.ino [84 <./figs/pratica5_2.jpg>])
-(Praticas/Pratica5/pratica5code2.ino [85]) [86]
+ [167 <./figs/pratica5_1.jpg>]
+(Praticas/Pratica5/pratica5code.ino [168 <./figs/pratica5_2.jpg>])
+(Praticas/Pratica5/pratica5code2.ino [169]) [170]
 Overfull \hbox (31.7614pt too wide) in paragraph at lines 543--554
  [][] 
  []
 
-[87] <figs/pratica6_1.jpg, id=548, 745.78625pt x 704.6325pt>
+[171] <figs/pratica6_1.jpg, id=890, 745.78625pt x 704.6325pt>
 File: figs/pratica6_1.jpg Graphic file (type jpg)
 
 <use figs/pratica6_1.jpg>
 Package pdftex.def Info: figs/pratica6_1.jpg used on input line 573.
 (pdftex.def)             Requested size: 301.82413pt x 285.15958pt.
 
-<figs/pratica6_2.jpg, id=549, 1519.6775pt x 815.045pt>
+<figs/pratica6_2.jpg, id=891, 1519.6775pt x 815.045pt>
 File: figs/pratica6_2.jpg Graphic file (type jpg)
 
 <use figs/pratica6_2.jpg>
 Package pdftex.def Info: figs/pratica6_2.jpg used on input line 583.
 (pdftex.def)             Requested size: 371.48076pt x 199.23383pt.
- [88 <./figs/pratica6_1.jpg>]
-(Praticas/Pratica6/pratica6code.ino [89 <./figs/pratica6_2.jpg>])) [90]
-[91]
-\openout2 = `cap_Experimentos.aux'.
-
- (cap_Experimentos.tex
-Cap\'{\i }tulo 4.
-<figs/resistor1.jpg, id=563, 225.84375pt x 225.84375pt>
-File: figs/resistor1.jpg Graphic file (type jpg)
-
-<use figs/resistor1.jpg>
-Package pdftex.def Info: figs/resistor1.jpg used on input line 35.
-(pdftex.def)             Requested size: 232.17459pt x 232.18744pt.
- [92
-
-
-
-]
-<figs/resistor2.png, id=567, 409.53pt x 224.037pt>
-File: figs/resistor2.png Graphic file (type png)
- <use figs/resistor2.png>
-Package pdftex.def Info: figs/resistor2.png used on input line 44.
-(pdftex.def)             Requested size: 278.61234pt x 152.42517pt.
-
-<figs/resistor3.jpg, id=568, 525.965pt x 205.76875pt>
-File: figs/resistor3.jpg Graphic file (type jpg)
- <use figs/resistor3.jpg>
-Package pdftex.def Info: figs/resistor3.jpg used on input line 52.
-(pdftex.def)             Requested size: 232.17459pt x 90.83052pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 68.
-
-[93 <./figs/resistor1.jpg> <./figs/resistor2.png>] [94 <./figs/resistor3.jpg>]
-<figs/circuito1.png, id=576, 99.44353pt x 93.66193pt>
-File: figs/circuito1.png Graphic file (type png)
- <use figs/circuito1.png>
-Package pdftex.def Info: figs/circuito1.png used on input line 140.
-(pdftex.def)             Requested size: 232.17459pt x 218.68779pt.
-
-<figs/circuito3.jpg, id=577, 159.59625pt x 136.51pt>
-File: figs/circuito3.jpg Graphic file (type jpg)
- <use figs/circuito3.jpg>
-Package pdftex.def Info: figs/circuito3.jpg used on input line 160.
-(pdftex.def)             Requested size: 232.17459pt x 198.59055pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[95 <./figs/circuito1.png>]
-<figs/circuito2.png, id=583, 122.56992pt x 138.7584pt>
-File: figs/circuito2.png Graphic file (type png)
-
-<use figs/circuito2.png>
-Package pdftex.def Info: figs/circuito2.png used on input line 178.
-(pdftex.def)             Requested size: 232.17459pt x 262.85394pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `Embassamento_resitor' on page 96 undefined on input l
-ine 199.
-
-
-LaTeX Warning: Reference `Embassamento_LED' on page 96 undefined on input line 
-201.
-
-[96 <./figs/circuito3.jpg>]
-<figs/circuito4.png, id=587, 354.32375pt x 96.36pt>
-File: figs/circuito4.png Graphic file (type png)
- <use figs/circuito4.png>
-Package pdftex.def Info: figs/circuito4.png used on input line 210.
-(pdftex.def)             Requested size: 232.17459pt x 63.14197pt.
-
-<figs/circuito5.png, id=588, 206.40312pt x 58.39417pt>
-File: figs/circuito5.png Graphic file (type png)
-
-<use figs/circuito5.png>
-Package pdftex.def Info: figs/circuito5.png used on input line 219.
-(pdftex.def)             Requested size: 232.17459pt x 65.6888pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[97 <./figs/circuito2.png> <./figs/circuito4.png>]
-<figs/circuito6.png, id=594, 174.02615pt x 102.33432pt>
-File: figs/circuito6.png Graphic file (type png)
-
-<use figs/circuito6.png>
-Package pdftex.def Info: figs/circuito6.png used on input line 284.
-(pdftex.def)             Requested size: 232.17459pt x 136.53545pt.
- [98 <./figs/circuito5.png>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 294.
-
-
-Overfull \hbox (31.21214pt too wide) in paragraph at lines 298--304
- [][] 
- []
-
-[99 <./figs/circuito6.png>] <figs/LED0.png, id=605, 337.26pt x 70.2625pt>
-File: figs/LED0.png Graphic file (type png)
-
-<use figs/LED0.png>
-Package pdftex.def Info: figs/LED0.png used on input line 323.
-(pdftex.def)             Requested size: 464.34918pt x 96.74147pt.
- <figs/diodo1.png, id=606, 348.30125pt x 145.54375pt>
-File: figs/diodo1.png Graphic file (type png)
-
-<use figs/diodo1.png>
-Package pdftex.def Info: figs/diodo1.png used on input line 331.
-(pdftex.def)             Requested size: 232.17459pt x 97.01855pt.
- <figs/LED2.png, id=607, 501.875pt x 301.125pt>
-File: figs/LED2.png Graphic file (type png)
-
-<use figs/LED2.png>
-Package pdftex.def Info: figs/LED2.png used on input line 354.
-(pdftex.def)             Requested size: 464.34918pt x 278.62355pt.
- [100 <./figs/LED0.png> <./figs/diodo1.png>]
-<figs/LED3.jpg, id=613, 636.3775pt x 312.16624pt>
-File: figs/LED3.jpg Graphic file (type jpg)
- <use figs/LED3.jpg>
-Package pdftex.def Info: figs/LED3.jpg used on input line 366.
-(pdftex.def)             Requested size: 464.34918pt x 227.77943pt.
- [101 <./figs/LED2.png>] <figs/protoboard1.jpg, id=619, 662.475pt x 483.8075pt>
-File: figs/protoboard1.jpg Graphic file (type jpg)
-
-<use figs/protoboard1.jpg>
-Package pdftex.def Info: figs/protoboard1.jpg used on input line 392.
-(pdftex.def)             Requested size: 232.17459pt x 169.55663pt.
- [102 <./figs/LED3.jpg>]
-<figs/protoboard3.jpg, id=623, 714.0276pt x 290.81448pt>
-File: figs/protoboard3.jpg Graphic file (type jpg)
-
-<use figs/protoboard3.jpg>
-Package pdftex.def Info: figs/protoboard3.jpg used on input line 404.
-(pdftex.def)             Requested size: 464.34918pt x 189.12923pt.
-
-<figs/divisor1.png, id=624, 126.4725pt x 160.1985pt>
-File: figs/divisor1.png Graphic file (type png)
- <use figs/divisor1.png>
-Package pdftex.def Info: figs/divisor1.png used on input line 419.
-(pdftex.def)             Requested size: 232.17459pt x 294.09415pt.
-
-[103 <./figs/protoboard1.jpg> <./figs/protoboard3.jpg>] [104 <./figs/divisor1.p
-ng>] <figs/potenciometro1.png, id=632, 324.21124pt x 235.88126pt>
-File: figs/potenciometro1.png Graphic file (type png)
-
-<use figs/potenciometro1.png>
-Package pdftex.def Info: figs/potenciometro1.png used on input line 479.
-(pdftex.def)             Requested size: 232.17459pt x 168.92015pt.
-
-<figs/potenciometro2.png, id=633, 391.4625pt x 270.25969pt>
-File: figs/potenciometro2.png Graphic file (type png)
-
-<use figs/potenciometro2.png>
-Package pdftex.def Info: figs/potenciometro2.png used on input line 494.
-(pdftex.def)             Requested size: 232.17459pt x 160.29309pt.
- [105 <./figs/potenciometro1.png>]
-<figs/potenciometro4.jpg, id=637, 501.875pt x 501.875pt>
-File: figs/potenciometro4.jpg Graphic file (type jpg)
-
-<use figs/potenciometro4.jpg>
-Package pdftex.def Info: figs/potenciometro4.jpg used on input line 502.
-(pdftex.def)             Requested size: 232.17459pt x 232.1748pt.
-
-<figs/potenciometro5.jpg, id=638, 120.85284pt x 77.82922pt>
-File: figs/potenciometro5.jpg Graphic file (type jpg)
-
-<use figs/potenciometro5.jpg>
-Package pdftex.def Info: figs/potenciometro5.jpg used on input line 512.
-(pdftex.def)             Requested size: 232.17459pt x 149.53012pt.
- [106 <./figs/potenciometro2.png> <./figs/potenciometro4.jpg>] <figs/potenciome
-tro3.png, id=642, 147.21666pt x 65.57834pt>
-File: figs/potenciometro3.png Graphic file (type png)
-
-<use figs/potenciometro3.png>
-Package pdftex.def Info: figs/potenciometro3.png used on input line 530.
-(pdftex.def)             Requested size: 232.17459pt x 103.4315pt.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 542.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
-File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-<figs/ldr1.png, id=643, 602.25pt x 501.875pt>
-File: figs/ldr1.png Graphic file (type png)
- <use figs/ldr1.png>
-Package pdftex.def Info: figs/ldr1.png used on input line 547.
-(pdftex.def)             Requested size: 232.17459pt x 193.479pt.
- [107 <./figs/potenciometro5.jpg> <./figs/potenciometro3.png>]
-<figs/ldr3.jpg, id=648, 147.55125pt x 110.4125pt>
-File: figs/ldr3.jpg Graphic file (type jpg)
- <use figs/ldr3.jpg>
-Package pdftex.def Info: figs/ldr3.jpg used on input line 555.
-(pdftex.def)             Requested size: 185.73683pt x 138.98906pt.
-
-<figs/ldr2.jpg, id=649, 580.1675pt x 422.57875pt>
-File: figs/ldr2.jpg Graphic file (type jpg)
- <use figs/ldr2.jpg>
-Package pdftex.def Info: figs/ldr2.jpg used on input line 565.
-(pdftex.def)             Requested size: 232.17459pt x 169.11232pt.
- [108 <./figs/ldr1.png (PNG copy)> <./figs/ldr3.jpg>]
-<figs/ldr4.jpg, id=654, 128.73094pt x 198.7425pt>
-File: figs/ldr4.jpg Graphic file (type jpg)
- <use figs/ldr4.jpg>
-Package pdftex.def Info: figs/ldr4.jpg used on input line 577.
-(pdftex.def)             Requested size: 232.17459pt x 358.47615pt.
- [109 <./figs/ldr2.jpg> <./figs/ldr4.jpg>]
-<figs/interruptor1.jpg, id=658, 217.38815pt x 137.60208pt>
-File: figs/interruptor1.jpg Graphic file (type jpg)
-
-<use figs/interruptor1.jpg>
-Package pdftex.def Info: figs/interruptor1.jpg used on input line 608.
-(pdftex.def)             Requested size: 232.17459pt x 146.9682pt.
-
-<figs/interruptor2.jpg, id=659, 215.65369pt x 116.21016pt>
-File: figs/interruptor2.jpg Graphic file (type jpg)
-
-<use figs/interruptor2.jpg>
-Package pdftex.def Info: figs/interruptor2.jpg used on input line 619.
-(pdftex.def)             Requested size: 232.17459pt x 125.11853pt.
- [110 <./figs/interruptor1.jpg>]
-<figs/interruptor3.jpg, id=663, 401.5pt x 120.45pt>
-File: figs/interruptor3.jpg Graphic file (type jpg)
-
-<use figs/interruptor3.jpg>
-Package pdftex.def Info: figs/interruptor3.jpg used on input line 632.
-(pdftex.def)             Requested size: 232.17459pt x 69.65335pt.
-
-<figs/interruptor4.jpg, id=664, 673.51625pt x 369.38pt>
-File: figs/interruptor4.jpg Graphic file (type jpg)
-
-<use figs/interruptor4.jpg>
-Package pdftex.def Info: figs/interruptor4.jpg used on input line 651.
-(pdftex.def)             Requested size: 371.48076pt x 203.73451pt.
- [111 <./figs/interruptor2.jpg> <./figs/interruptor3.jpg>] <figs/interruptor5.j
-pg, id=669, 1520.5608pt x 455.59007pt>
-File: figs/interruptor5.jpg Graphic file (type jpg)
-
-<use figs/interruptor5.jpg>
-Package pdftex.def Info: figs/interruptor5.jpg used on input line 661.
-(pdftex.def)             Requested size: 371.48076pt x 111.30423pt.
-
-<figs/shift1.jpg, id=670, 241.67088pt x 76.89528pt>
-File: figs/shift1.jpg Graphic file (type jpg)
- <use figs/shift1.jpg>
-Package pdftex.def Info: figs/shift1.jpg used on input line 676.
-(pdftex.def)             Requested size: 371.48076pt x 118.20436pt.
-
-[112 <./figs/interruptor4.jpg> <./figs/interruptor5.jpg>]
-<figs/shift2.png, id=674, 414.54875pt x 141.52875pt>
-File: figs/shift2.png Graphic file (type png)
- <use figs/shift2.png>
-Package pdftex.def Info: figs/shift2.png used on input line 691.
-(pdftex.def)             Requested size: 371.48076pt x 126.82832pt.
-
-[113 <./figs/shift1.jpg> <./figs/shift2.png>]
-<figs/shift3.jpg, id=679, 298.33057pt x 344.58336pt>
-File: figs/shift3.jpg Graphic file (type jpg)
- <use figs/shift3.jpg>
-Package pdftex.def Info: figs/shift3.jpg used on input line 706.
-(pdftex.def)             Requested size: 371.48076pt x 429.09819pt.
-
-[114 <./figs/shift3.jpg>] <figs/lm35.jpg, id=683, 315.1775pt x 345.29pt>
-File: figs/lm35.jpg Graphic file (type jpg)
-
-<use figs/lm35.jpg>
-Package pdftex.def Info: figs/lm35.jpg used on input line 750.
-(pdftex.def)             Requested size: 185.73683pt x 203.48222pt.
- [115] <figs/lm35_2.jpg, id=687, 341.275pt x 275.0275pt>
-File: figs/lm35_2.jpg Graphic file (type jpg)
-
-<use figs/lm35_2.jpg>
-Package pdftex.def Info: figs/lm35_2.jpg used on input line 757.
-(pdftex.def)             Requested size: 185.73683pt x 149.68347pt.
- <figs/lm35_3.jpg, id=688, 989.6975pt x 532.99126pt>
-File: figs/lm35_3.jpg Graphic file (type jpg)
-
-<use figs/lm35_3.jpg>
-Package pdftex.def Info: figs/lm35_3.jpg used on input line 773.
-(pdftex.def)             Requested size: 371.48076pt x 200.05829pt.
- [116 <./figs/lm35.jpg> <./figs/lm35_2.jpg>] [117 <./figs/lm35_3.jpg>] <figs/Ar
-duino13.jpeg, id=695, 597.58257pt x 516.7305pt>
-File: figs/Arduino13.jpeg Graphic file (type jpg)
-
-<use figs/Arduino13.jpeg>
-Package pdftex.def Info: figs/Arduino13.jpeg used on input line 836.
-(pdftex.def)             Requested size: 325.043pt x 281.07243pt.
- [118] [119 <./figs/Arduino13.jpeg>]
-<figs/compilador1.png, id=703, 120.45pt x 410.53375pt>
-File: figs/compilador1.png Graphic file (type png)
-
-<use figs/compilador1.png>
-Package pdftex.def Info: figs/compilador1.png used on input line 888.
-(pdftex.def)             Requested size: 92.86841pt x 316.53793pt.
- [120]
-<figs/compilador3.jpg, id=707, 351.52129pt x 271.7352pt>
-File: figs/compilador3.jpg Graphic file (type jpg)
-
-<use figs/compilador3.jpg>
-Package pdftex.def Info: figs/compilador3.jpg used on input line 904.
-(pdftex.def)             Requested size: 232.17459pt x 179.47845pt.
- [121 <./figs/compilador1.png>]
-<figs/compilador4.jpg, id=712, 762.59303pt x 346.896pt>
-File: figs/compilador4.jpg Graphic file (type jpg)
-
-<use figs/compilador4.jpg>
-Package pdftex.def Info: figs/compilador4.jpg used on input line 916.
-(pdftex.def)             Requested size: 464.34918pt x 211.23572pt.
-
-<figs/compilador5.jpg, id=713, 533.06352pt x 155.52504pt>
-File: figs/compilador5.jpg Graphic file (type jpg)
-
-<use figs/compilador5.jpg>
-Package pdftex.def Info: figs/compilador5.jpg used on input line 925.
-(pdftex.def)             Requested size: 464.34918pt x 135.48366pt.
- [122 <./figs/compilador3.jpg> <./figs/compilador4.jpg>] [123 <./figs/compilado
-r5.jpg>] [124] [125]
-<figs/tabVariaveis2.jpg, id=727, 630.355pt x 499.8675pt>
-File: figs/tabVariaveis2.jpg Graphic file (type jpg)
-
-<use figs/tabVariaveis2.jpg>
-Package pdftex.def Info: figs/tabVariaveis2.jpg used on input line 1074.
-(pdftex.def)             Requested size: 464.34918pt x 368.22577pt.
- [126] [127 <./figs/tabVariaveis2.jpg>] [128]
-Overfull \hbox (6.2742pt too wide) in paragraph at lines 1172--1179
- [][] 
- []
-
-[129] <figs/condicional2.jpg, id=740, 279.0425pt x 144.54pt>
-File: figs/condicional2.jpg Graphic file (type jpg)
-
-<use figs/condicional2.jpg>
-Package pdftex.def Info: figs/condicional2.jpg used on input line 1189.
-(pdftex.def)             Requested size: 278.61234pt x 144.32127pt.
-
-<figs/condicional3.jpg, id=741, 276.03125pt x 137.51375pt>
-File: figs/condicional3.jpg Graphic file (type jpg)
-
-<use figs/condicional3.jpg>
-Package pdftex.def Info: figs/condicional3.jpg used on input line 1204.
-(pdftex.def)             Requested size: 278.61234pt x 138.81435pt.
- [130 <./figs/condicional2.jpg>]
-<figs/condicional4.jpg, id=745, 104.64696pt x 46.2528pt>
-File: figs/condicional4.jpg Graphic file (type jpg)
-
-<use figs/condicional4.jpg>
-Package pdftex.def Info: figs/condicional4.jpg used on input line 1218.
-(pdftex.def)             Requested size: 278.61234pt x 123.16852pt.
- [131 <./figs/condicional3.jpg> <./figs/condicional4.jpg>] <figs/condicional5.j
-pg, id=750, 355.3275pt x 328.22626pt>
-File: figs/condicional5.jpg Graphic file (type jpg)
-
-<use figs/condicional5.jpg>
-Package pdftex.def Info: figs/condicional5.jpg used on input line 1243.
-(pdftex.def)             Requested size: 278.61234pt x 257.36769pt.
- [132 <./figs/condicional5.jpg>] [133] [134]
-[135] [136]
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1479.
- [137] <figs/loop1.jpg, id=770, 896.34875pt x 444.66125pt>
-File: figs/loop1.jpg Graphic file (type jpg)
-
-<use figs/loop1.jpg>
-Package pdftex.def Info: figs/loop1.jpg used on input line 1563.
-(pdftex.def)             Requested size: 325.043pt x 161.24493pt.
- [138] <figs/loop2.jpg, id=774, 769.87625pt x 249.93375pt>
-File: figs/loop2.jpg Graphic file (type jpg)
-
-<use figs/loop2.jpg>
-Package pdftex.def Info: figs/loop2.jpg used on input line 1583.
-(pdftex.def)             Requested size: 325.043pt x 105.52443pt.
- [139 <./figs/loop1.jpg> <./figs/loop2.jpg>]
-
-LaTeX Warning: Reference `' on page 140 undefined on input line 1639.
-
-<figs/loop5.jpg, id=778, 725.71124pt x 460.72125pt>
-File: figs/loop5.jpg Graphic file (type jpg)
- <use figs/loop5.jpg>
-Package pdftex.def Info: figs/loop5.jpg used on input line 1644.
-(pdftex.def)             Requested size: 325.043pt x 206.35953pt.
-
-[140] [141 <./figs/loop5.jpg>]
-
-LaTeX Warning: Reference `loop8' on page 142 undefined on input line 1722.
-
-<figs/loop8.jpg, id=785, 744.7825pt x 486.81876pt>
-File: figs/loop8.jpg Graphic file (type jpg)
- <use figs/loop8.jpg>
-Package pdftex.def Info: figs/loop8.jpg used on input line 1727.
-(pdftex.def)             Requested size: 325.043pt x 212.4627pt.
-
-[142]
-
-LaTeX Warning: Reference `loop9' on page 143 undefined on input line 1732.
-
-[143 <./figs/loop8.jpg>]
-<figs/fig_vetor1.jpg, id=793, 219.12263pt x 83.25504pt>
-File: figs/fig_vetor1.jpg Graphic file (type jpg)
-
-<use figs/fig_vetor1.jpg>
-Package pdftex.def Info: figs/fig_vetor1.jpg used on input line 1783.
-(pdftex.def)             Requested size: 325.043pt x 123.51404pt.
-
-
-LaTeX Warning: Reference `vetor2' on page 144 undefined on input line 1797.
-
-[144 <./figs/fig_vetor1.jpg>]
-
-LaTeX Warning: Reference `vector2' on page 145 undefined on input line 1811.
-
-
-LaTeX Warning: Reference `vector3' on page 145 undefined on input line 1813.
-
-[145] [146] <figs/tiposAvancados1.jpg, id=803, 183.85487pt x 380.42928pt>
-File: figs/tiposAvancados1.jpg Graphic file (type jpg)
-
-<use figs/tiposAvancados1.jpg>
-Package pdftex.def Info: figs/tiposAvancados1.jpg used on input line 1944.
-(pdftex.def)             Requested size: 232.17459pt x 480.43472pt.
- [147] [148 <./figs/tiposAvancados1.jpg>]
-
-LaTeX Warning: Reference `pont2' on page 149 undefined on input line 1988.
-
-[149] <figs/pont3.jpg, id=814, 424.9476pt x 120.25728pt>
-File: figs/pont3.jpg Graphic file (type jpg)
- <use figs/pont3.jpg>
-Package pdftex.def Info: figs/pont3.jpg used on input line 2030.
-(pdftex.def)             Requested size: 232.17459pt x 65.70496pt.
-
-<figs/pont4.jpg, id=815, 507.62448pt x 143.38368pt>
-File: figs/pont4.jpg Graphic file (type jpg)
- <use figs/pont4.jpg>
-Package pdftex.def Info: figs/pont4.jpg used on input line 2039.
-(pdftex.def)             Requested size: 348.26189pt x 98.37474pt.
-
-
-LaTeX Warning: Reference `pont5' on page 150 undefined on input line 2050.
-
-[150 <./figs/pont3.jpg> <./figs/pont4.jpg>] [151]
-Overfull \hbox (70.236pt too wide) in paragraph at lines 2130--2131
-[]\T1/cmr/m/n/10.95 O con-junto de ca-rac-te-res "MI-NHAS-TRING", caso atri-buí
-do à va-riá-vel string ($\OML/cmm/m/it/10.95 string \OT1/cmr/m/n/10.95 = "\OML/
-cmm/m/it/10.95 MINHASTRING\OT1/cmr/m/n/10.95 "$\T1/cmr/m/n/10.95 )
- []
-
-[152] [153]
-Overfull \hbox (8.43335pt too wide) in paragraph at lines 2252--2252
-[] 
- []
-
-[154]
-Overfull \hbox (6.48108pt too wide) in paragraph at lines 2262--2262
-[] 
- []
-
-Missing character: There is no á in font cmr8!
-Missing character: There is no á in font cmr8!
-<figs/bin1.jpg, id=831, 469.46593pt x 333.02016pt>
-File: figs/bin1.jpg Graphic file (type jpg)
- <use figs/bin1.jpg>
-Package pdftex.def Info: figs/bin1.jpg used on input line 2304.
-(pdftex.def)             Requested size: 348.26189pt x 247.05608pt.
- [155]
-[156 <./figs/bin1.jpg>] [157]
-
-LaTeX Warning: Reference `funcao3' on page 158 undefined on input line 2393.
-
-
-LaTeX Warning: Reference `funcao3' on page 158 undefined on input line 2396.
-
-
-LaTeX Warning: Reference `funcao3' on page 158 undefined on input line 2397.
-
-
-LaTeX Warning: Reference `funcao3' on page 158 undefined on input line 2401.
-
-
-LaTeX Warning: Reference `funcao3' on page 158 undefined on input line 2403.
-
-[158] [159]) [160] (principal_relatorio.bbl [161
+ [172 <./figs/pratica6_1.jpg>]
+(Praticas/Pratica6/pratica6code.ino [173 <./figs/pratica6_2.jpg>])) [174]
+[175] (principal_relatorio.bbl [176
 
 
 ]
@@ -3161,22 +3246,22 @@ Underfull \hbox (badness 4556) in paragraph at lines 92--98
 014. ISSN 0747-5632. Dis-po-ní-vel em:
  []
 
-
-Underfull \hbox (badness 1142) in paragraph at lines 151--155
+[177]
+Underfull \hbox (badness 1142) in paragraph at lines 202--206
 \T1/cmr/m/n/10.95 sics te-a-ching in bra-zil. \T1/cmr/m/it/10.95 Phy-sics Edu-c
 a-tion\T1/cmr/m/n/10.95 , v. 50, n. 4, p. 482, 2015. Dis-po-ní-vel em:
  []
 
-[162]) [163]
+) [178]
 \c@noAnexo=\count292
 \tf@thm=\write10
 \openout10 = `principal_relatorio.thm'.
 
- [164
+ [179
 
 ] (principal_relatorio.aux (resumos.aux) (simbolos.aux)
-(cap_Introducao.aux) (cap_RevisaoBibliografica.aux) (cap_Desenvolvimento.aux)
-(cap_Experimentos.aux))
+(cap_Introducao.aux) (cap_RevisaoBibliografica.aux) (cap_Experimentos.aux)
+(cap_Desenvolvimento.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -3185,15 +3270,15 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27235 strings out of 493634
- 504545 string characters out of 3143748
- 705502 words of memory out of 3000000
- 29993 multiletter control sequences out of 15000+200000
- 42581 words of font info for 112 fonts, out of 3000000 for 9000
+ 27422 strings out of 493634
+ 507368 string characters out of 3143748
+ 705738 words of memory out of 3000000
+ 30168 multiletter control sequences out of 15000+200000
+ 41211 words of font info for 110 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  53i,17n,92p,10389b,1556s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{C:/Pr
-ogram Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Program Fil
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/Pro
+gram Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/font
@@ -3216,18 +3301,14 @@ iKTeX 2.9/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Program Files/MiKTeX 2.9
 pe1/public/cm-super/sfcc1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/cm-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
 r/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm090
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/cm-super/sfti1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/cm-super/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/
-sftt1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1095.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1095.pfb>
-Output written on principal_relatorio.pdf (178 pages, 9000501 bytes).
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1095.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/cm-super/sftt1095.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/cm-super/sfxc1095.pfb>
+Output written on principal_relatorio.pdf (193 pages, 9464429 bytes).
 PDF statistics:
- 979 PDF objects out of 1000 (max. 8388607)
+ 1019 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 611 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 661 words of extra memory for PDF output out of 10000 (max. 10000000)
 

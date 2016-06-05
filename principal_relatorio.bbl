@@ -139,20 +139,6 @@ ISBN 1-4166-0032-9.}
 \emph{Revista Pesquisa e Debate em Educação}, v.~4, n.~2, p. 15--30, August
   2014.}
 
-\bibitem{aprendizagemAtivaArduino}
-\abntrefinfo{Recktenwald e Hall}{RECKTENWALD; HALL}{2011}
-{RECKTENWALD, G.~W.; HALL, D.~E. Using arduino as a platform for programming,
-  design and measurement in a freshman engineering course. In:  \emph{2011
-  Annual Conference \& Exposition}. Vancouver, BC: ASEE Conferences, 2011.
-  Https://peer.asee.org/18720.}
-
-\bibitem{Laboratorio2}
-\abntrefinfo{Souza e Duarte}{SOUZA; DUARTE}{2015}
-{SOUZA, M. A.~M.; DUARTE, J. R.~R. Low-cost educational robotics applied to
-  physics teaching in brazil.
-\emph{Physics Education}, v.~50, n.~4, p.~482, 2015.
-Dispon{\'\i}vel em: $<$http://stacks.iop.org/0031-9120/50/i=4/a=482$>$.}
-
 \bibitem{DATASHEET0}
 \abntrefinfo{Intel}{INTEL}{2014}
 {INTEL. \emph{DataSheet Intel Galileo Gen 2 Development Board}.
@@ -204,16 +190,19 @@ ISBN 978-0-12-383872-8.}
   Berlin New York: Springer, 2011.
 ISBN 978-3-642-19567-9.}
 
-\bibitem{livroEletronica}
-\abntrefinfo{Basic\ldots}{BASIC\ldots}{1973}
-{BASIC electronics. New York: Dover Publications, 1973.
-ISBN 978-0486210766.}
+\bibitem{aprendizagemAtivaArduino}
+\abntrefinfo{Recktenwald e Hall}{RECKTENWALD; HALL}{2011}
+{RECKTENWALD, G.~W.; HALL, D.~E. Using arduino as a platform for programming,
+  design and measurement in a freshman engineering course. In:  \emph{2011
+  Annual Conference \& Exposition}. Vancouver, BC: ASEE Conferences, 2011.
+  Https://peer.asee.org/18720.}
 
-\bibitem{livroProgramacaoC}
-\abntrefinfo{Kernighan}{KERNIGHAN}{1988}
-{KERNIGHAN, B. \emph{The C programming language}. Englewood Cliffs, N.J:
-  Prentice Hall, 1988.
-ISBN 978-0131103627.}
+\bibitem{Laboratorio2}
+\abntrefinfo{Souza e Duarte}{SOUZA; DUARTE}{2015}
+{SOUZA, M. A.~M.; DUARTE, J. R.~R. Low-cost educational robotics applied to
+  physics teaching in brazil.
+\emph{Physics Education}, v.~50, n.~4, p.~482, 2015.
+Dispon{\'\i}vel em: $<$http://stacks.iop.org/0031-9120/50/i=4/a=482$>$.}
 
 \bibitem{DATASHEET3}
 \abntrefinfo{DEVICES}{DEVICES}{2011}
@@ -224,5 +213,16 @@ One Technology Way, P.O. Box 9106, Norwood, MA 02062-9106, U.S.A., 2011.}
 \abntrefinfo{DEVICES}{DEVICES}{209}
 {DEVICES, A. \emph{DATASHEET LM35}.
 One Technology Way, P.O. Box 9106, Norwood, MA 02062-9106, U.S.A., 209.}
+
+\bibitem{livroEletronica}
+\abntrefinfo{Basic\ldots}{BASIC\ldots}{1973}
+{BASIC electronics. New York: Dover Publications, 1973.
+ISBN 978-0486210766.}
+
+\bibitem{livroProgramacaoC}
+\abntrefinfo{Kernighan}{KERNIGHAN}{1988}
+{KERNIGHAN, B. \emph{The C programming language}. Englewood Cliffs, N.J:
+  Prentice Hall, 1988.
+ISBN 978-0131103627.}
 
 \end{thebibliography}

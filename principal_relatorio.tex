@@ -6,6 +6,7 @@
 % \documentclass[11pt,a4paper,openright,titlepage]{book}
 
 % Pacotes
+\usepackage{import}
 \usepackage{gensymb}
 \usepackage{epsfig}
 %\usepackage{subfig}
@@ -166,7 +167,7 @@
 \begin{document}
 
 \setcounter{secnumdepth}{3} % numeração de seções até nível 3
-\setcounter{tocdepth}{2} % numeração de seções no sumário até nível 2
+\setcounter{tocdepth}{3} % numeração de seções no sumário até nível 2
 \pagestyle{empty}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -219,7 +220,7 @@
 
 % Comandos para criar a capa e a página de assinaturas.
 %\capaprincipal
-\capaassinaturas
+%\capaassinaturas
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Dedicatória 
@@ -287,14 +288,18 @@
 
 % *** Revisao Bibliografica ***
 % *** Proposta de Formato de Curso
+%\include{cap_teste}
 %\include{cap_PropostaCurso}
 \include{cap_RevisaoBibliografica}
 % *** Desenvolvimento ***
+\include{cap_Experimentos}
+
 \include{cap_Desenvolvimento}
+
+
 
 % *** Resultados Experimentais ***
 
-\include{cap_Experimentos}
 
 % *** Conclusões
 %\include{cap_Conclusoes}
