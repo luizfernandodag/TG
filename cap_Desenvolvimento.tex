@@ -597,3 +597,170 @@ A construção do circuito na protoboard é mostrada na Figura \ref{pratica6_2}.
 
 
 Pode-se dizer que a quantidade de funções definidas para esta prática foi além do necessário, entretanto, é realmente preciso que o aluno saiba identificar e dividir o problema, não apenas como uma habilidade para desenvolvimento de programas, mas como uma habilidade a ser usada em todas áreas da vida.
+
+
+\section{Prática 7: Uso de structs, interrupção de hardware e circuito de debounce de sinais}
+\label{pratica7}
+
+Esta prática é destinada, com relação aos tópicos de programação, ao uso de de structs e interrupções de hardware.
+
+Os objetivos desta prática são: 
+
+\begin{itemize}
+	\item Criar um circuito para implementar um pequeno jogo.
+	\item O jogo consistirá numa disputa entre dois jogadores para descobrir qual dos dois é mais rápido em apertar botão.
+	\item Para ler os botões, devem ser implementadas rotinas de interrupção de harware (seção \ref{intHard}). 
+	\item Os sinais dos botões deve passar pelo processo de \textit{deboucing} (seção \ref{debounce} ) para uma contagem válida da quantidade de rampas de subida.
+	\item Deve ser criada uma \textit{struct} para armazenar: O nome do jogador, quantidade de vezes que ele apertou o botão e a velocidade de apertar o botão e uma frase a ser imprimida no monitor serial em caso de vitória.
+	\item O tempo de disputa é de 5000 ms. Nesse tempo, a placa Galileo deve contar quantas vezes os jogadores apertaram seus respectivos botões.
+	\item Ao final dos 5000 ms, a placa Galileo deve imprimir no monitor serial: as informações dos dois jogadores, a quantidade de vezes que cada um apertou seu respectivo botão e sua velocidade.
+	\item Após imprimir as informações dos jogadores, deve ser impresso o nome do vencedor e sua respectiva frase de vitória.
+	\item Caso ocorra um empate, devem ser impressos os dois nomes e as duas frases de vitória.
+	\item Para cada um dos jogadores, deve existir um LED pronto para piscar. Após imprimir a frase de vitória, um LED deve piscar exatamente a quantidade de vezes que o vencedor apertou o botão.
+	\item Caso ocorra um empate, os dois LED devem piscar conjuntamente.
+\end{itemize}
+
+
+\begin{table}[H]
+	\centering
+	\caption{Prática 7 - Tabela de Descrição}
+	\label{tabPratica7}
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Nome da prática}                                                                                  & \begin{tabular}[c]{@{}l@{}}Prática 7: Uso de structs, interrupção de hardware\\  e circuito de debounce de sinais\end{tabular}                                                                                                                                                                                                                                                                                                                  \\ \hline
+		\textbf{Objetivos}                                                                                        & \begin{tabular}[c]{@{}l@{}}1)Aprender a utilizar interrupções de hardware\\ 2)Aprender a utilizar um filtro RC para realizar \\ deboucing de um sinal\\ 3)Aprender a criar e utilizar struct\end{tabular}                                                                                                                                                                                                                                       \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Pré-requisitos/ \\ Habilidades masterizadas  necessárias\end{tabular}} & - pratica 6 seção \ref{pratica6}                                                                                                                                                                                                                                                                                                                                                                                                              \\ \hline
+		\textbf{Revisão Téorica - Hardware}                                                                       & \begin{tabular}[c]{@{}l@{}}- Capacitores seção \ref{capac}\\ - Filtro RC seção \ref{filtroRC}\\ - Inversor Schmitt trigger seção \ref{inversor}\\ - Debouncing seção \ref{debounce}\end{tabular}                                                                                                                                                                                                                                                                     \\ \hline
+		\textbf{Revisão Téorica - Software}                                                                       & -Interrupção seção \ref{EmbassamentoSoftware_Interrupcao}                                                                                                                                                                                                                                                                                                                                                                                                                     \\ \hline
+		\textbf{Material necessário}                                                                              & \begin{tabular}[c]{@{}l@{}}- 1 Placa Galileo\\ - 1 Transformador 220/120 V -\textgreater 12 V\\ - 1 cabo USB-Micro-USB \\ - 1 Protoboard\\ - 2 LED\\ - 2 Resistores 220 Ohm\\ - 2 Resistores 10k Ohm\\ - 2 Capacitores 10u F\\ - 1 chip Schmitt trigger SN74HC14\end{tabular}                                                                                                                                                                   \\ \hline
+		\textbf{Bibliografia}                                                                                     & \begin{tabular}[c]{@{}l@{}}-Eletrônica Básica \cite{livroEletronica}\\ -A linguagem de programação C \cite{livroProgramacaoC}\end{tabular}                                                                                                                                                                                                                                                                                                                                    \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Habilidades a serem masterizadas\\ com essa prática\end{tabular}}      & \begin{tabular}[c]{@{}l@{}}1) O aluno é capaz de criar filtros simples de sinais\\ de interruptores para evitar o bouncing de sinais de \\ origem mecânica\\ 2) O aluno é capaz de escrever rotinas de interrup-\\ ção (ISR) de acordo com interrupções de hardware\\ 3) O aluno é capaz de transcrever regras de negó-\\ cios de jogos em algoritmos de programação\\ utilizando estruturas condicionais e laços de repe-\\ tição\end{tabular} \\ \hline
+	\end{tabular}
+\end{table}	
+
+\subsection{Procedimentos}
+
+Os passos a serem seguidos nessa prática são os seguintes:
+
+\begin{itemize}
+	\item Montar 2 conjuntos interruptor + circuito deboucing(Sdhmitt trigger e filtro RC).
+	\item Conectar a saída dos conjuntos supracitados às portas digitais 2 e 3, as quais são as que oferecem interrupções de hardware.
+	\item Conectar 2 LED + resistor 220 ohm às portas digitais 5 e 6.
+	\item Escrever um código para cumprir o algoritmo descrito para essa prática.
+\end{itemize}
+
+
+\subsection{Esquema de montagem}
+
+Para esta prática, um circuito de acordo com o esquemático mostrado na Figura \ref{pratica7_1}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.65\textwidth]{figs/pratica7_1.jpg}
+	\caption{Esquemático do circuito da prática 7.}
+	\label{pratic7_1}
+\end{figure}
+
+A construção do circuito na protoboard é mostrada na Figura \ref{pratica7_2}.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/pratica7_2.jpg}
+	\caption{Circuito da prática 7 construído numa protoboard.}
+	\label{pratica7_2}
+\end{figure}
+
+\subsection{Código fonte}
+\label{Pratica7Codigo}
+
+%\Praticas\Pratica 2\pratica2Arduino.ino
+
+\lstinputlisting[label = Pratica7, caption = Código Prática 7.]{Praticas/pratica7/pratica7code.ino}
+
+
+\subsection{Comentários}
+
+Esta prática é destinada ao desenvolvimento de habilidades relacionadas a uso de interrupções, inversores, filtros RC e codificação de regras de negócio especificas. O professor pode decidir alterar as regras de negócio propostas nessa prática assim como o resultado do uso do botões com filtros de \textit{debouncing} .
+
+
+
+
+\section{Prática 8: Prática final}
+\label{pratica7}
+
+Esta prática é prática final do curso. Todos conhecimento de programação visto neste curso podem fazer parte da solução do problema proposto.
+
+Os objetivos desta prática são: 
+
+\begin{itemize}
+	\item Criar um circuito para implementar um jogo \textit{Snake Game}
+	\item O jogo deve ser implementado sobre uma matriz de led 8x8
+	\item Para controlar a cobra, deve ser utilizado um joystick ou 4 botões
+	\item Não é necessária a implementação de rotinas de interrupção para esta prática
+	\item A cobra deve inicialmente ocupar 3 LEDs
+	\item A posição da presa deve ser aleatória e não deve ocupar nenhum parte do corpo da cobra
+	\item Toda vez que a presa for alcançada pela cobra, o corpo da cobra deve aumentar em 1 LED.
+\end{itemize}
+
+
+\begin{table}[H]
+	\centering
+	\caption{Prática 8 - Tabela de Descrição}
+	\label{tabPratica8}
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Nome da prática}                                                                                  & Prática 8: Prática final                                                                                                                                                                                                                                           \\ \hline
+		\textbf{Objetivos}                                                                                        & \begin{tabular}[c]{@{}l@{}}1)Utilizar todos conhecimentos aprendidos\\ para criar um jogo Snake Game utilizando uma\\ matrzi de led 8x8 e um joystick ou 4 botões\end{tabular}                                                                                     \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Pré-requisitos/ \\ Habilidades masterizadas  necessárias\end{tabular}} & - pratica 7 seção \ref{pratica7}                                                                                                                                                                                                                                 \\ \hline
+		\textbf{Revisão Téorica - Hardware}                                                                       & \begin{tabular}[c]{@{}l@{}}- Matriz de Led seção \ref{driver}\\ - Potênciometro (joystick)seção \ref{EmbassamentoHardware_Potenciometro}\\ - Interruptores seção \ref{interruptores}\end{tabular}                                                                                                                 \\ \hline
+		\textbf{Revisão Téorica - Software}                                                                       & - Todas seções                                                                                                                                                                                                                                                     \\ \hline
+		\textbf{Material necessário}                                                                              & \begin{tabular}[c]{@{}l@{}}- 1 Placa Galileo\\ - 1 Transformador 220/120 V -\textgreater 12 V\\ - 1 cabo USB-Micro-USB \\ - 1 Protoboard\\ - 1 Joystick ou 4 botões\\ - 4 Resistores 10k Ohm (se 4 botões forem\\ utilizados)\\ - 1 matriz de led 8x8\end{tabular} \\ \hline
+		\textbf{Bibliografia}                                                                                     & \begin{tabular}[c]{@{}l@{}}-Eletrônica Básica \ref{livroEletronica}\\ -A linguagem de programação C \ref{livroProgramacaoC}\end{tabular}                                                                                                                                                       \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Habilidades a serem masterizadas\\ com essa prática\end{tabular}}      & \begin{tabular}[c]{@{}l@{}}1) O aluno de unir conhecimentos pontuais\\ de programação e eletrônica para construir\\ projetos razoavelmente complexos.\end{tabular}                                                                                                 \\ \hline
+	\end{tabular}
+\end{table}
+
+
+Os passos a serem seguidos nessa prática são os seguintes:
+
+\begin{itemize}
+	\item Montar um circuito com uma matriz de leds 8x8 com uma solução para leitura de movimentos 
+	\item Escrever um código para cumprir o algoritmo descrito para essa prática.
+\end{itemize}
+
+
+\subsection{Esquema de montagem}
+
+Para esta prática, um circuito de acordo com o esquemático mostrado na Figura \ref{pratica8_1}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.65\textwidth]{figs/pratica8_1.jpg}
+	\caption{Esquemático do circuito da prática 8.}
+	\label{pratica8_1}
+\end{figure}
+
+A construção do circuito na protoboard é mostrada na Figura \ref{pratica8_2}.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/pratica8_2.jpg}
+	\caption{Circuito da prática 8 construído numa protoboard.}
+	\label{pratica8_2}
+\end{figure}
+
+\subsection{Código fonte}
+\label{Pratica8Codigo}
+
+%\Praticas\Pratica 2\pratica2Arduino.ino
+
+\lstinputlisting[label = Pratica8, caption = Código Prática 8.]{Praticas/pratica8/pratica8code.ino}
+
+
+\subsection{Comentários}
+
+Como a última prática do curso, o foco desta são as habilidades e conhecimentos de programação em C. A maior forma de resolução deste problema é o uso de struct apropriadas e modularizarão de instruções de forma adequada. Não é necessário o uso de interrupções de hardware ou software para esta prática.  
+
+

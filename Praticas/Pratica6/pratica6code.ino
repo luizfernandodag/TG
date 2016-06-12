@@ -23,7 +23,7 @@ float leTemperatura(int porta)
 	
 	sensor = analogRead(porta);
 	valorLido = (float)(sensor*5)/1023; // regra de tres entre as escalas 0 -> 1023  ; 0 -> 5
-	// aqui valorLido guarda o valor da tensão lida nos terminais do LM35
+	// aqui valorLido guarda o valor da tens?o lida nos terminais do LM35
 
 	valorLido = valorLido/0.01; // Agora, valorLido guardar a temperatura lida (sensibilidade LM35 = 10mV/C) 
 

@@ -12,18 +12,20 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Tabela de leitura de valor e tolerância de um resistor\relax }}{62}
 \contentsline {table}{\numberline {3.2}{\ignorespaces Resumo - Ligação em série X Ligação em paralelo\relax }}{67}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Tamanho e faixa de uso para os tipos básicos váriaveis\relax }}{97}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Todos os Tipos de dados definidos pelo Padrão ANSI C, seus tamanhos em bytes e suas faixa de valores.\relax }}{98}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Operadores relacionais\relax }}{100}
-\contentsline {table}{\numberline {3.6}{\ignorespaces Operadores \textbf {E}, \textbf {OU} e \textbf {Negação}\relax }}{101}
-\contentsline {table}{\numberline {3.7}{\ignorespaces Tabela verdade do operador ||.\relax }}{101}
-\contentsline {table}{\numberline {3.8}{\ignorespaces Tabela verdade do operador \&\& .\relax }}{102}
-\contentsline {table}{\numberline {3.9}{\ignorespaces Tabela verdade do operador ! .\relax }}{102}
-\contentsline {table}{\numberline {3.10}{\ignorespaces Tipos básicos e avançados ( destacados em vermelho) de variáveis.\relax }}{119}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Tamanho e faixa de uso para os tipos básicos váriaveis\relax }}{108}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Todos os Tipos de dados definidos pelo Padrão ANSI C, seus tamanhos em bytes e suas faixa de valores.\relax }}{109}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Operadores relacionais\relax }}{111}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Operadores \textbf {E}, \textbf {OU} e \textbf {Negação}\relax }}{112}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Tabela verdade do operador ||.\relax }}{112}
+\contentsline {table}{\numberline {3.8}{\ignorespaces Tabela verdade do operador \&\& .\relax }}{113}
+\contentsline {table}{\numberline {3.9}{\ignorespaces Tabela verdade do operador ! .\relax }}{113}
+\contentsline {table}{\numberline {3.10}{\ignorespaces Tipos básicos e avançados ( destacados em vermelho) de variáveis.\relax }}{130}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Prática 1 - Tabela de descrição.\relax }}{143}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Prática 2 - Tabela de descrição.\relax }}{152}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Prática 3 - Tabela de descrição.\relax }}{156}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Prática 4 - Tabela de Descrição\relax }}{160}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Prática 5 - Tabela de Descrição\relax }}{166}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Prática 6 - Tabela de Descrição\relax }}{171}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Prática 1 - Tabela de descrição.\relax }}{159}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Prática 2 - Tabela de descrição.\relax }}{168}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Prática 3 - Tabela de descrição.\relax }}{172}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Prática 4 - Tabela de Descrição\relax }}{176}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Prática 5 - Tabela de Descrição\relax }}{182}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Prática 6 - Tabela de Descrição\relax }}{187}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Prática 7 - Tabela de Descrição\relax }}{192}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Prática 8 - Tabela de Descrição\relax }}{199}

@@ -532,7 +532,27 @@ Assumindo que a resistência entreos terminais externos do potêncioemtro da Figur
 	\label{potenciometro3}
 \end{figure}
 
+Um exemplo de utilização de potenciômetros são os \textit{joysticks} utilizados em jogos eletrônicos. A Figura \ref{potenciometro7} mostra um circuito integrado de um joystick. 
 
+O joystick mostrado é implementado utilizando dois potenciômetros. Um dos potenciômetros é traduz em tensão a posição X em relação à posição inicial e o outro traduz a posição Y.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figs/potenciometro7.jpg}
+	\caption{Circuito integrado de um joystick que utiliza dois potenciômetros para tradução de sua posição em tensão. }
+	\label{potenciometro7}
+\end{figure}
+
+A Figura \ref{potenciometro6} mostra um circuito esquemático utilizando um joystick construído com 2 potenciômetros.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/potenciometro6.jpg}
+	\caption{Circuito esquemático de um circuito utilizando um joystick similar ao mostrado na Figura \ref{potenciometro7} com a placa Galileo.}
+	\label{potenciometro6}
+\end{figure}
+
+Para o circuito mostrado na Figura \ref{potenciometro6}, os potenciômetros estão sob 5V de tensão. Na posição inicial, ambas portas analógicas 0 e 1 ,que leêm as posições X e Y, lerão 2.5 V. Ao se movimentar o joystick, as portas analógicas lerão algum valor entre 0 e 5V.
 
 \subsection{LDR}
 \label{EmbassamentoHardware_LDR}
@@ -595,7 +615,7 @@ Ao se desenvolver circuitos eletrônicos, existem duas expressões muita comuns: c
 
 Um circuito aberto é mostrado na Figura \ref{interruptor1}. Nesse circuito, corrente alguma sai da fonte e passa pela lâmpada.
 
- Pode-se dizer que a região entre A e B é uma resistor com resistência que tende ao infinito. Usando essa suposição, ao se calcular a corrente que circula numa região de circuito aberto tem-se o seguinte:
+ Pode-se dizer que a região entre A e B é uma resistor com resistência que tende ao infinito. Usando essa suposição, ao se calcular a corrente que circula numa região de circuito aberto tem-se a seguinte expressão:
 
 \begin{equation}\label{eqCircuitoAberto}
  \begin{split}
@@ -725,6 +745,8 @@ A descrição dos pinos é a seguinte:
 
 Os bits que entram no pino 14 de forma serial e saem, como dito, sequencialmente nos pinos Q0, Q1, Q2, Q3, Q4, Q5, Q6 e Q7. 
 
+
+
 \subsection{Sensor de Temperatura - LM35}
 \label{sensorTemperatura}
 
@@ -778,7 +800,7 @@ A Figura \ref{lm35_3} mostra a forma adequada de se conectar o LM35 à placa Gali
 Nesse circuito, a temperatura é lida no pino analógico A0.
 
 \subsection{Capacitores}
-
+\label{capac}
 Capacitores, ao contrário dos resistores que apenas dissipam energia, são dispositivos ativos num circuito elétrico, ou seja, eles armazenam energia. Tal armazenagem é realizada pelo mantimento de cargas elétricas num campo elétrico.
 
 Tipicamente, os capacitores consistem em dois eletrodos ou placas que armazenam cargas de polaridades opostas e um dielétrico isolando tais placas. A Figura \ref{cap1} mostra a estrutura de um capacitor formados por duas placas.
@@ -833,7 +855,7 @@ Neste trabalho, será explicado o filtro passa-baixa o qual tem aplicações direta
 
 
 \subsection{Filtro RC}
-
+\label{filtroRC}
 
 Um circuito formato com um resistor e um capacitor (filtro RC) é um dos mais simples filtros de sinais elétricos.
 
@@ -873,15 +895,20 @@ A solução dessa equação para a tensão sobre o capacitor, assumindo condições ini
 V_{c} = V_{s}(1 - e^{\frac{t}{RC}})
 \end{equation}
 
+O gráfico mostrado na Figura \ref{cap7} mostra a evolução da tensão sobre o capacitor e sobre o resistor num circuito RC. A constante $\tau$ é igual a RC.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/capacitor7.jpg}
+	\caption{Evolução da tensão no capacitor e no resistor no tempo, num circuito RC.}
+	\label{cap7}
+\end{figure}
 
 
-
-A expressão \textit{RC} da equação \ref{eqCap8} indica quanto tempo o capacitor leva para carregar. Quando o tempo tende para o infinito, o capacitor num circuito RC tende a se comportar como um circuito aberto. A tensão sobre o capacitor tende a tensão de alimentação e a corrente tende a zero, ou seja, 
+A exp \textit{RC} da equação \ref{eqCap8} indica quanto tempo o capacitor leva para carregar 69 por cento do seu valor final. Quando o tempo tende para o infinito, o capacitor num circuito RC tende a se comportar como um circuito aberto. A tensão sobre o capacitor tende a tensão de alimentação e a corrente tende a zero, ou seja, 
 
 \begin{equation}\label{eqCap9}
 \lim_{t\to\infty} V_{c} = V_{s}
 \end{equation}
-
 
 
 Com relação a sinais AC, circuitos RC são muito utilizados como filtros passa-baixa, como mostrado no diagrama de bode da Figura \ref{cap5}. Para frequências acima da frequência de corte $ \frac{1}{2 \pi RC}$ a amplitude do sinal é atenuada. 
@@ -895,9 +922,247 @@ Com relação a sinais AC, circuitos RC são muito utilizados como filtros passa-ba
 
 Para os propósitos deste trabalho, o filtro RC será utilizado para atenuar ruídos de alta frequência e realização a estabilização de sinais enviados à placa Galileo por meio de interruptores.
 
+\subsection{Inversor Schmitt trigger}
+\label{inversor}
+
+Um inversor é um circuito comparador com histerese com feedback na entrada positiva de um comparador ou um amplificado operacional. Define-se histerese como um comportamento relativo a variável de saída que é distinto nos caminho de aumento da variável de entrada e subsequente diminuição desta.
+
+A Figura \ref{histerese} mostra um sinal com histerese. Tendo a variável de entrada \textit{in} partindo do valor -T a até o valor T, a variável de saída \textit{out} terá valor -M. Após isso, caso a variável de entrada \textit{in} volte para o valor -T, a variável de saída terá como valor +M.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/histerese.png}
+	\caption{Sinal com histerese.}
+	\label{histerese}
+\end{figure}
+
+Um inversor \textit{Schimtt trigger} pode ser implementado utilizando, como dito, feedback na entrada positiva de um amplificado operacional como mostrado na Figura \ref{histerese2}.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/histerese2.png}
+	\caption{Implementação de um inversor com histerese com amplificador operacional e diodos zener.}
+	\label{histerese2}
+	\source{Adaptado de Alessio Damato - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=1178935}
+\end{figure}
+
+
+O circuito mostrado na Figura  \ref{histerese2} é um comparador implementado com um amplificador operacional. A saída do amplificador $V_{out}$ obedece às seguintes expressões
+
+
+\begin{equation}\label{eqinversor1}
+V_{out} = +V_{z}, quando V_{+} > V_{-}
+\end{equation}
+
+e
+
+
+\begin{equation}\label{eqinversor2}
+V_{out} = -V_{z}, quando V_{+} < V_{-}
+\end{equation}
+
+$V_{z}$ é a tensão de quebra dos diodos zeners, conectados na saída do amplificador operacional. 
+
+As tensões de ida e volta de histerese para esse circuito são encontradas seguindo a seguinte expressão:
+
+\begin{equation}\label{eqinversor3}
+V_{+} = V_{in} . \frac{R2}{R1 + R2} + V_{out}\frac{R1}{R1 + R2} 
+\end{equation}
+
+A expressão da equação \ref{eqinversor3} é obtida utilizando a segunda lei de Kirchoff (equação \ref{eqKirchoof2}) e o teorema da superposição.
+
+Os pontos de quebra +M e -M são obtidas da equação \ref{eqinversor3} quando $V_{+}$ é igual a $V_{-}$, ou seja:
+
+
+\begin{equation}\label{eqinversor4}
++T = V_{in} = V_{-} . (1 + \frac{R1}{R2}) - V_{out} . \frac{R1}{R2}
+\end{equation}
+
+e
+
+
+\begin{equation}\label{eqinversor5}
+-T = - V_{in} = - V_{-} . (1 + \frac{R1}{R2}) + V_{out} . \frac{R1}{R2}
+\end{equation}
+
+Caso a tensão $V_{-}$ seja igual a zero, tem-se:
+
+\begin{equation}\label{eqinversor6}
+T = V_{in} . \frac{R1}{R2}
+\end{equation}
+
+e
+
+
+\begin{equation}\label{eqinversor7}
+-T = V_{in} . \frac{R1}{R2}
+\end{equation}
+
+As expressão \ref{eqinversor3}, \ref{eqinversor4} e \ref{eqinversor5} são validas para o caso de $V_{-} = 0$. Caso $V_{-}$ seja diferente de zero, o gráfico mostrado na Figura \ref{histerese} será deslocado para direita ou esquerda a depender do valor de $V_{-}$ e resistores $R1 e R2$ como indicado pelas equações \ref{eqinversor3} e \ref{eqinversor4}.  
+
+Em resumo, a saída de tensão do Schmitt trigger mostrado na Figura \ref{histerese2} se resumirá apenas aos valores $+V_{z} e - V_{z} $ independentemente de ruídos na entrada.
+
+
+O inversor Schmitt trigger a ser usado nas práticas propostas neste trabalho é o 74HC14 \cite{DATASHEET5}.
+
+A Figura \ref{inversor2} mostra os pinos do chip 74HC14. No 74HC14, 6 inputs distintos podem ser invertidos usando os pinos de 1 a 12.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/inversor2.jpg}
+	\caption{Inversor Schmitt trigger 74HC14 \cite{DATASHEET5} - pinos.}
+	\label{inversor2}
+\end{figure}
+
+A Figura \ref{inversor1} mostra digramas lógicos do chip 74HC14. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/inversor1.jpg}
+	\caption{Inversor Schmitt trigger 74HC14 \cite{DATASHEET5} - diagramas lógicos.}
+	\label{inversor1}
+\end{figure}
+
+A Figura \ref{inversor3} mostra parâmetros eletrônicos e a curva de histerese do chip 74HC14. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/inversor3.jpg}
+	\caption{Inversor Schmitt trigger 74HC14 \cite{DATASHEET5} - parâmetros eletrônicos e curva de histerese.}
+	\label{inversor3}
+\end{figure}
+
+
 	
+\subsection{Debouncing - estabilização de sinais de interruptores}
+\label{debounce}
+Um dos grandes problemas ao se trabalhar com interruptores ligados a interrupções de hardware é o fenômeno do \textit{bouncing}. \textit{Bouncing} é uma oscilação num sinal de um botão no momento que a tecla é apertada ou solta. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/bouncing1.jpg}
+	\caption{Fenômeno de \textit{bouncing} de um sinal de um interruptor.}
+	\label{boun1}
+\end{figure}
 
 
+
+A Figura \ref{boun1} mostra um exemplo do fenômeno do \textit{bouncing}. Quando uma pessoa fecha um interruptor, o sinal deveria, quase instantaneamente, ir para o valor alto, entretanto, o sinal vai e volta aos nível baixo e alto até se estabilizar. 
+
+O mesmo fenômeno se repete quando o interruptor é aberto. O sinal vai e volta aos níveis alto e baixo até eventualmente se estabilizar.
+
+O fenômeno do \textit{bouncing} associado a interruptores causa problemas nas leituras de interrupções de hardware. Tomando a Figura \ref{boun2} como exemplo, não apenas uma interrupção de rampa de subida (seção \ref{intHard}) será identifica pelo micro-controlador, mas 5.
+
+Ao se identificar mais de uma rampa de subida, a rotina associada à tal interrupção será executada mais de uma vez. 
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/bouncing2.jpg}
+	\caption{Interrupções de rampa de subida causadas pelo fenômeno do \textit{bouncing}.}
+	\label{boun2}
+\end{figure}
+
+Para evitar o fenômeno do \textit{bouncing}, deve-se utilizar um filtro RC (seção \ref{filtroRC}) associado a um inversor Schmitt trigeer (seção \ref{inversor}). 
+
+
+O esquemático do circuito de deboucing é mostrado na Figura \ref{boun3}.  
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/debounce1.jpg}
+	\caption{Circuito para \textit{debouncing} de um sinal de um interruptor.}
+	\label{boun3}
+\end{figure}
+
+A tensão de saída é o inversor da tensão lida no capacitor $V_{c}$, obedecendo a curva de histerese do Schmitt trigger mostrada na Figura \ref{inversor3}. Com o botão aberto, a tensão sobre o capacitor será 5 V, e a tensão de saída $V_{out}$ será 0V ou 0 lógico
+
+Quando a chave é fechada, o capacitor começa a descarregar. No final desse processo, a tensão sobre o capacitor será próxima a 0V e a tensão de saída será 5V ou lógico 1.
+
+A Figura \ref{boun4} mostra o resultado do uso do circuito de debounce. Aparte qualquer \textit{bouncing} que ocorrer no sinal do interruptor, o uso do capacitor suavizará tais efeitos e o uso do inversor adequará os níveis lógicos do sinal de saída para a leitura de interrupçõescom apenas uma rampa de subida ou descida como sinal do interruptor.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/debounce2.jpg}
+	\caption{Resultado do uso do circuito de \textit{debouncing} de um sinal de um interruptor.}
+	\label{boun4}
+	\source{http://www.carlitoscontraptions.com/2007/03/switch-debouncer/}
+\end{figure}
+
+Uma escolha adequada para os valores do capacitor e resistor são respectivamente 10kohm e 10 uF. Com essa escolha a constante RC tem como valor 0.1 segundos para. Tem valor é mais que adequada ao tempo de resposta humana.
+\subsection{Matriz de Leds}
+\label{matrizLeds}
+
+Muitas vezes, se deseja trabalhar com um conjunto de leds dispostos na formato de uma matriz como mostrado na Figura \ref{matrix1}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.45\textwidth]{figs/matrix1.jpg}
+	\caption{Estrutura esquemática de uma matriz de leds 8x8.}
+	\label{matrix1}
+\end{figure}
+
+Para acender um LED em específico na estrutura da matriz de leds, deve-se setar uma das linhas com valor alto de tensão (valor lógico 1) e uma das colunas com valor baixo de tensão (valor lógico 0). 
+
+Caso se queria, por exemplo, acender o led localizado na linha 7 e coluna 2, deve-se colocar na trilha da linha 7 5 Volts (valor lógico 1).
+
+Ao se setar linha ou coluna ao certo estado (0 ou 1 lógico), toda a linha ou coluna fica comprometida a esse estado, daí, não será possível acender uma linha e uma coluna ao mesmo tempo. 
+
+Para poder acender uma linha e uma coluna, deve-se multiplexar tais estados, ou seja, acender e apagar, alternadamente, linhas e colunas rapidamente, de forma que a visão humana seja incapaz de perceber tal alternação de estados.
+
+\subsection{Driver de matriz de led}
+\label{driver}
+
+Uma matriz de leds NxN (seção \ref{matrizLeds}) pode ser controlado utilizando 2N portas digitais. Por exemplo, se for usada uma matriz de led 8X8 serão necessárias 16 portas digitais para controlar tal matriz. 
+
+Caso fosse usada uma matriz 16X16, seriam necessários 32 portas digitais para controle de tal matriz. Não há placa que seja capaz de oferecer tal quantidade de portas. 
+
+Para possibilitar o controle de tantos led sem utilizar tantas portas digitais, é necessário utilizar um circuito integrado que, como o chip 74HC595 (seção \ref{shift}), transforme comunicação serial em comunicação paralela. 
+
+Para realizar o propósito de controlar uma matriz de leds usando poucas portas digitais, deve-se usar um \textit{driver de display}. 
+
+Neste trabalho, será usado o circuito integrado MAX7219 como \textit{driver de display}. A Figura  \ref{driverLed0} mostra os pinos do MAX7219.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/driverLed0.jpg}
+	\caption{Pinos do circuito integrado MAX7219.}
+	\label{driverLed0}
+\end{figure}
+
+A conexão dos pinos é a seguinte:
+
+\begin{itemize}
+	\item Pinos 2, 11, 6, 7, 3, 10, 5 e 8 : DIG0, DIG1, DIG2, DIG3, DIG4, DIG5, DIG6 respectivamente.
+	\item Pinos 14, 16, 20, 23, 21 e 15: SEG A, SEG B, SEG C, SEG D, SEG E e SEG F respectivamente.
+	\item Pino 1 (Din): Pino digital 12 da placa Galileo.
+	\item Pino 13 (Clk): Pino digital 11 da placa Galileo.
+	\item Pino 12 (LOAD(cs)): Pino digital 10 da placa Galileo.
+	\item Pinos 4 e 9: Pino GND
+	\item Pinos 18 e 19: Pino 5V
+\end{itemize}
+
+A Figura \ref{driverLed2} mostra um esquemático de tais conexões realizadas.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figs/driverLed2.jpg}
+	\caption{Conexão dos pinos do MAX7219 à placa Galileo.}
+	\label{driverLed2}
+\end{figure}
+
+O circuito da Figura \ref{driverLed1} mostra um circuito integrado com a maioria das conexões mostradas na Figura \ref{driverLed2} já feitas exceto os pinos Vcc, GND, Din, CS, e CLK. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.45\textwidth]{figs/driverLed1.jpg}
+	\caption{Placa matriz 8x8 + MAX7219.}
+	\label{driverLed1}
+\end{figure}
+
+A seção
+
+	 
 \section{Software}
 \label{EmbassamentoSoftware}
 
@@ -2046,9 +2311,6 @@ for(i = 0; i < 5; i++)
 No exemplo, é executado o comando $ medias[i] = (float)alunos\_notas[i][j]/3$. A conversão para float, como explicado na seção \ref{EmbassamentoSoftware_ConversaoEntreVariaveis}, é necessária. A primeira razão é que a variável $medias$ é uma matriz de floats. Em geral, os compiladores já fazem essa compilação automaticamente. A segunda, e mais relevante para este exemplo, é que a operação $alunos\_notas[i][j]/3$ resultaria , sem a conversão, num número inteiro, não num número racional, causando erros no cálculo.
 
 
-
-
-
 \subsection{Tipos avançados de variáveis}
 \label{EmbassamentoSoftware_TiposAvancados}
 
@@ -2744,50 +3006,6 @@ int lerSensor(int porta)
 
 
 
-\subsection{Funções Avançadas - Arduino}
-\label{EmbassamentoSoftware_FuncoesArduino}
-
-\subsubsection{Função shiftOut}
-\label{shiftOut}
-
-A função shiftOut tem a seguinte sintaxe:
-
-$shiftOut(dataPin, clockPin, bitOrder, value);$
-
-Ela é destinada a transmitir uma série de bits (variável \textbf{value}), numa porta selecionada (variável \textbf{dataPin}), um bit de cada vez seguindo os pulsos de clock (variável \textbf{clockPin}). 
-
-A transmissão ocorre em bytes,bit a bit. Tal transmissão pode ocorrer a partir do bit mais significativo ou a partir do bit menos significativo. Para escolher qual das duas opções será escolhida deve-se usar \textbf{MSBFISRT} ou \textbf{LSBFIRST}, no argumento \textit{bitOrder}, respectivamente.   
-
-O código \ref{shiftOut1} mostra um exemplo de uso da função shiftOut.
-
-\begin{lstlisting}[ caption = Exemplo de uso da função shiftOut, label=shiftOut1,]
-#define pinoClock  7
-#define pinoLatch  6
-#define pinoData  5
-
-byte numeroOut = 154;// byte = 8 bits
-
-
-void setup() {
-pinMode(pinoLatch, OUTPUT);
-pinMode(pinoClock, OUTPUT);
-pinMode(pinoData, OUTPUT);
-}
-
-void loop() {
-
-digitalWrite(pinoLatch, LOW);
-
-// envia dados nos pinos de saida a partir do bit menos significa
-//tivo da variavel numeroOut no pinoData
-
-shiftOut(pinoData, pinoClock, LSBFIRST, numeroOut);  
-
-
-digitalWrite(pinoLatch, HIGH);
-}
-
-\end{lstlisting}
 
 
 \subsection{Interrupção}
@@ -2814,7 +3032,7 @@ A parte relacionada a \textbf{Salto} é tarefa do sistema operacional ou do micro
 Após a rotina de interrupção ter sido executada, o endereço de retorno é recolhido da pilha e a execução do programa volta ao fluxo normal.
 
 \subsubsection{Interrupção de Hardware}
-
+\label{intHard}
 Uma interrupção de hardware ocorre por um evento assíncrono. Geralmente, tal interrupção é na forma de algum tipo de uma mudança numa entrada analógica ou digital.
 
 As principais formas de interrupção de hardware são as seguintes:
@@ -2986,9 +3204,9 @@ pinMode(13, OUTPUT); //Inicializando o pino 13 como saida
 Timer1.initialize(100000); // seta o timer para o periodo
 							// 100000 microsegundos (0.1 s - // //10Hz) => a ISR serah executada 10 //vezes por segundo 
 
-Timer1.attachInterrupt( ISR_EXEMPLO ); //Vincula a ISR
+Timer1.attachInterrupt( ISR_EXEMPLO, 100000  ); //Vincula a ISR
 										// ISR_EXEMPLO ao timer
-										// de 0.1 segundos
+										// de 0.1 segundos a ser executada //todas vez que o timer for //completo (caso fosse escrito //200000 a ISR executada na //segunda vez que o timer for //completo)
 }
 
 void loop()
@@ -3010,5 +3228,192 @@ As funções da biblioteca \textit{Timer1.h} tomam os parâmetros de tempo em micro
 
 
 
+
 Nesse exemplo, a cada 100000 microsegundos, ou 0.1 segundos, a função ISR\_EXEMPLO, que foi vinculada ao timer por meio da função \textit{attachInterrupt()}, é executada, independentemente do que estiver ocorrendo no fluxo normal da função loop.
+
+\subsection{Numero randômico}
+
+Muitas vezes, num sistema computacional, faz-se necessário a geração de números aleatórios para definição de parâmetros de execução de um programa. 
+
+Número aleatórios têm aplicações em: Jogos de apostas, simulações computacionais, criptografia e outras áreas onde um resultado não predizível se faz necessário.
+
+O principal problema para geração de números aleatórios num sistema computacional é que tais sistemas são, por suas naturezas, completamente determinísticos. Um sistema determinístico não pode, realmente, gerar números aleatórios, pois, para fazê-lo, o sistema seguirá sempre os mesmos passos determinados em seus algoritmos. Dessa dificuldade nasce o termo \textit{número pseudo-aleatório}, o qual se dá a números gerados por sistemas computacional.
+
+Uma maneira, em Arduino, para gerar um número pseudo-aleatório é utilizando o comando \textit{random()}. O código \ref{rand0} mostra os modos de uso da função \textit{random()}   
+
+\begin{lstlisting}[ caption = Exemplo de geração de um número aleatório usando o comando random(),label = rand0]
+int random1 = random(1000); //gera um numero pseudo-aleatoria entre 0 e 999
+int random2 = random(10,30); //gera um numero pseudo aleatorio entre 10 e 29
+\end{lstlisting}
+
+Uma das maneiras de contornar a característica determinística de um algoritmo de geração de número pseudo-aleatório é adicionar um parâmetro determinado por uma característica física ao algoritmo como tempo ou uma leitura analógica de uma variável.
+
+Em Arduino, uma das maneiras de se adicionar ao algoritmo de geração de números aleatórios um parâmetro físico é utilizando o comando \textit{randomSeed()}. O comando \textit{randomSeed()} inicializa o gerador de números aleatórios a depender do valor passado como argumento. O código \ref{rand1} mostra uma entrada de uma porta analógica em aberto como argumento para o comando \textit{randowmSeed()}. Ao se ler uma porta analógica desconectada de um circuito tem-se um valor flutuante determinado apenas por ruídos aleatórios. 
+
+
+\begin{lstlisting}[ caption = Exemplo de geração de um número aleatório usando o comando random() e randomSeed(),label = rand1]
+void setup()
+{
+	Serial.begin(9600);
+	int pinoAnalogicoNaoUtilizado = 3; //Numero de um pino analogico nao utilizado (pino em aberto)
+	randomSeed(analogRead(pinoAnalogicoNaoUtilizado));// geracao de um sequencia de numeros a depender de uma variavel aleatoria do pino analogico em //aberto
+}
+
+void loop()
+{
+int random1 = random(1000); //gera um numero pseudo-aleatoria entre 0 e 999 utilizando o randomSeed() para inicializar a sequencia de numero aleatorios
+int random2 = random(10,30);//gera um numero pseudo aleatorio entre 10 e 29 utilizando o randomSeed() para inicializar a sequencia de numero aleatorios
+
+delay(20);
+}
+
+\end{lstlisting}
+
+\subsection{Funções e Bibliotecas Diversas - Arduino}
+\label{EmbassamentoSoftware_FuncoesArduino}
+
+\subsubsection{Função shiftOut}
+\label{shiftOut}
+
+A função shiftOut tem a seguinte sintaxe:
+
+$shiftOut(dataPin, clockPin, bitOrder, value);$
+
+Ela é destinada a transmitir uma série de bits (variável \textbf{value}), numa porta selecionada (variável \textbf{dataPin}), um bit de cada vez seguindo os pulsos de clock (variável \textbf{clockPin}). 
+
+A transmissão ocorre em bytes,bit a bit. Tal transmissão pode ocorrer a partir do bit mais significativo ou a partir do bit menos significativo. Para escolher qual das duas opções será escolhida deve-se usar \textbf{MSBFISRT} ou \textbf{LSBFIRST}, no argumento \textit{bitOrder}, respectivamente.   
+
+O código \ref{shiftOut1} mostra um exemplo de uso da função shiftOut.
+
+\begin{lstlisting}[ caption = Exemplo de uso da função shiftOut, label=shiftOut1,]
+#define pinoClock  7
+#define pinoLatch  6
+#define pinoData  5
+
+byte numeroOut = 154;// byte = 8 bits
+
+
+void setup() {
+pinMode(pinoLatch, OUTPUT);
+pinMode(pinoClock, OUTPUT);
+pinMode(pinoData, OUTPUT);
+}
+
+void loop() {
+
+digitalWrite(pinoLatch, LOW);
+
+// envia dados nos pinos de saida a partir do bit menos significa
+//tivo da variavel numeroOut no pinoData
+
+shiftOut(pinoData, pinoClock, LSBFIRST, numeroOut);  
+
+
+digitalWrite(pinoLatch, HIGH);
+}
+
+\end{lstlisting}
+
+\subsubsection{Biblioteca ledcontrol.h}
+
+A biblioteca ledcontrol.h deve ser usada em conjunto com os chips MAX7221 e MAX7219 que controlam displays de leds. 
+
+Para baixar e instalar a biblioteca ledcontrol.h, o seguintes passos devem ser seguidos:
+
+\begin{enumerate}
+	\item Abra a \textit{General User Interface} (GUI) do Arduino
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width= 0.7\textwidth]{figs/ledcontrol0.jpg}
+		\caption{GUI do Arduino aberta.}
+		\label{ledcontrol0}
+	\end{figure}
+	\item Tendo aberto a GUI do Arduino, clique na aba \textit{Manage libraries} que pode ser encontrada seguindo o seguinte caminho: Sketch/	Include Libraries/Manage Libraries...
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width= 0.7\textwidth]{figs/ledcontrol1.jpg}
+			\caption{Caminho para a aba \textit{Manage Libraries}.}
+			\label{ledcontrol1}
+		\end{figure}
+	\item Será mostrada a janela \textit{Library Manager} apresentada na Figura \ref{ledcontrol2}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width= 0.7\textwidth]{figs/ledcontrol2.jpg}
+			\caption{Janela \textit{Manage Libraries}.}
+			\label{ledcontrol2}
+		\end{figure}
+	\item Digite \textit{LedControl} no campo de texto localizado na parte superior.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width= 0.7\textwidth]{figs/ledcontrol3.jpg}
+			\caption{Resultado da busca por \textit{LedControl}.}
+			\label{ledcontrol3}
+		\end{figure}
+	\item Clique no resultado da busca e, após isso, clique em \textit{Install}.		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width= 0.7\textwidth]{figs/ledcontrol4.jpg}
+			\caption{Clique no \textit{Install}.}
+			\label{ledcontrol4}
+		\end{figure}
+	\item Após tais passos, a biblioteca \textit{LedControl.h} estará instalada.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width= 0.7\textwidth]{figs/ledcontrol5.jpg}
+		\caption{Biblioteca LedControl.h instalada.}
+		\label{ledcontrol5}
+	\end{figure}
+	
+\end{enumerate}
+
+
+Para biblioteca LedControl servirá para facilitar controle de uma matriz de LEDs em conjunto com o circuito integrado MAX7219.
+
+O código \ref{LEDCONTROL0} mostra os passos para o suo da biblioteca. Nesse código, todos led de uma matriz 8x8 são acessos e apagados iterativamente.
+
+
+\begin{lstlisting}[ caption = Exemplo de uso da biblioteca LedControl.h, label=LEDCONTROL0,]
+
+#include "LedControl.h" //  need the library
+LedControl lc=LedControl(12,11,10,1); // 
+
+// pino 12 conectado ao pino 1 do  MAX7219 
+// pino 11 conectado ao pino 13 CLK 
+// pino 10 conectado ao pino 12 LOAD
+// O número 1 indica que 1 MAX7219 será usado
+
+void setup()
+{
+	// O número 0 como o primeiro argumento de muitas funções
+	// da biblioteca LedControl.h indica o uso de 1 chip MAX7219 
+	
+	lc.shutdown(0,false);// Desliga o modo de economia de energia, 	//habilita o display
+	
+	lc.setIntensity(0,8);// seta a claridade (input entre 0 e 15)
+	lc.clearDisplay(0);// limpa o display
+}
+void loop()
+{
+	for (int linha=0; linha<8; linha++)
+	{
+		for (int coluna=0; coluna<8; coluna++)
+		{
+			lc.setLed(0,coluna,linha,true); // liga o LED na //posicao(linha, coluna)
+			delay(25);
+		}
+	}
+	
+	for (int row=0; row<8; row++)
+	{
+		for (int col=0; col<8; col++)
+		{
+			lc.setLed(0,col,row,false); // desliga o LED na 
+			//posicao(linha, coluna)			
+			delay(25);
+		}
+	}
+}
+
+\end{lstlisting}
+
 
